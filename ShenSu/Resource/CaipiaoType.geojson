@@ -1,0 +1,260 @@
+{
+	data = (
+		{
+			subTitle = "\U6bcf\U5468\U4e8c\U56db\U65e5\U5f00\U5956";
+			caipiaoid = 11;
+			rule = (
+				{
+					Cmin = 5;
+					Nmin = 01;
+					Nmax = 33;
+				},
+				{
+					Cmin = 2;
+					Nmin = 01;
+					Nmax = 16;
+				},
+			);
+			name = "\U53cc\U8272\U7403";
+			url = "http://f.apiplus.net/ssq-20.json";
+		},
+		{
+			subTitle = "\U6bcf5\U5206\U949f\U5f00\U5956";
+			caipiaoid = 73;
+			name = "\U91cd\U5e86\U65f6\U65f6\U5f69";
+			rule = (
+				{
+					Cmin = 1;
+					Nmin = 0;
+					Nmax = 9;
+				},
+				{
+					Cmin = 1;
+					Nmin = 0;
+					Nmax = 9;
+				},
+				{
+					Cmin = 1;
+					Nmin = 0;
+					Nmax = 9;
+				},
+			);
+			url = "http://f.apiplus.net/cqssc-20.json";
+		},
+		{
+			subTitle = "\U6bcf10\U5206\U652f\U5f00\U5956";
+			caipiaoid = 82;
+			rule = (
+				{
+					Cmin = 1;
+					Nmin = 1;
+					Nmax = 9;
+				},
+			);
+			name = "\U5317\U4eacPK10";
+			url = "http://f.apiplus.net/bjpk10-20.json";
+		},
+		{
+			subTitle = "\U6bcf\U5468\U4e00\U4e09\U516d\U5f00\U5956";
+			caipiaoid = 14;
+			rule = (
+				{
+					Cmin = 5;
+					Nmin = 01;
+					Nmax = 33;
+				},
+				{
+					Cmin = 1;
+					Nmin = 01;
+					Nmax = 16;
+				},
+			);
+			name = "\U5927\U4e50\U900f";
+			url = "http://f.apiplus.net/hk6-20.json";
+		},
+		{
+			subTitle = "\U6bcf5\U5206\U949f\U5f00\U5956";
+			caipiaoid = 93;
+			rule = (
+				{
+					Cmin = 1;
+					Nmin = 0;
+					Nmax = 9;
+				},
+				{
+					Cmin = 1;
+					Nmin = 0;
+					Nmax = 9;
+				},
+				{
+					Cmin = 1;
+					Nmin = 0;
+					Nmax = 9;
+				},
+			);
+			name = "\U5929\U6d25\U65f6\U65f6\U5f69";
+			url = "http://f.apiplus.net/tjssc-20.json";
+		},
+		{
+			rule = (
+				{
+					Cmin = 1;
+					Nmin = 0;
+					Nmax = 9;
+				},
+				{
+					Cmin = 1;
+					Nmin = 0;
+					Nmax = 9;
+				},
+				{
+					Cmin = 1;
+					Nmin = 0;
+					Nmax = 9;
+				},
+			);
+			subTitle = "\U6bcf5\U5206\U949f\U5f00\U5956";
+			caipiaoid = 90;
+			name = "\U65b0\U7586\U65f6\U65f6\U5f69";
+			url = "http://f.apiplus.net/xjssc-20.json";
+		},
+		{
+			subTitle = "\U6bcf10\U5206\U949f\U5f00\U5956";
+			caipiaoid = 75;
+			rule = (
+				{
+					Cmin = 1;
+					Nmin = 0;
+					Nmax = 9;
+				},
+				{
+					Cmin = 1;
+					Nmin = 0;
+					Nmax = 9;
+				},
+				{
+					Cmin = 1;
+					Nmin = 0;
+					Nmax = 9;
+				},
+			);
+			name = "\U6c5f\U82cf\U5feb3";
+			url = "http://f.apiplus.net/jsk3-20.json";
+		},
+		{
+			rule = (
+				{
+					Cmin = 1;
+					Nmin = 0;
+					Nmax = 9;
+				},
+				{
+					Cmin = 1;
+					Nmin = 0;
+					Nmax = 9;
+				},
+				{
+					Cmin = 1;
+					Nmin = 0;
+					Nmax = 9;
+				},
+			);
+			subTitle = "\U6bcf\U5929\U5f00\U5956\U4e00\U6b21";
+			caipiaoid = 12;
+			name = "\U798f\U5f693D";
+			url = "http://f.apiplus.net/gd11x5-20.json";
+		},
+		{
+			rule = (
+				{
+					Cmin = 1;
+					Nmin = 0;
+					Nmax = 9;
+				},
+				{
+					Cmin = 1;
+					Nmin = 0;
+					Nmax = 9;
+				},
+				{
+					Cmin = 1;
+					Nmin = 0;
+					Nmax = 9;
+				},
+				{
+					Cmin = 1;
+					Nmin = 0;
+					Nmax = 9;
+				},
+				{
+					Cmin = 1;
+					Nmin = 0;
+					Nmax = 9;
+				},
+			);
+			subTitle = "\U6bcf10\U5206\U949f\U5f00\U5956";
+			caipiaoid = 83;
+			name = "\U5c71\U4e1c11\U90095";
+			url = "http://f.apiplus.net/sd11x5-20.json";
+		},
+		{
+			subTitle = "\U6bcf5\U5206\U949f\U5f00\U5956";
+			caipiaoid = 69;
+			rule = (
+				{
+					Cmin = 1;
+					Nmin = 0;
+					Nmax = 9;
+				},
+				{
+					Cmin = 1;
+					Nmin = 0;
+					Nmax = 9;
+				},
+				{
+					Cmin = 1;
+					Nmin = 0;
+					Nmax = 9;
+				},
+				{
+					Cmin = 1;
+					Nmin = 0;
+					Nmax = 9;
+				},
+				{
+					Cmin = 1;
+					Nmin = 0;
+					Nmax = 9;
+				},
+			);
+			name = "\U6c5f\U897f11\U90095";
+			url = "http://f.apiplus.net/jx11x5-20.json";
+		},
+		{
+			subTitle = "\U6bcf10\U5206\U949f\U5f00\U5956";
+			caipiaoid = 115;
+			rule = (
+				{
+					Cmin = 1;
+					Nmin = 1;
+					Nmax = 21;
+				},
+			);
+			name = "\U5e7f\U4e1c\U5feb\U4e5010";
+			url = "http://f.apiplus.net/gdklsf-20.json";
+		},
+		{
+			subTitle = "\U6bcf10\U5206\U949f\U5f00\U5956";
+			caipiaoid = 94;
+			rule = (
+				{
+					Cmin = 1;
+					Nmin = 1;
+					Nmax = 21;
+				},
+			);
+			name = "\U5929\U6d25\U5feb\U4e5010";
+			url = "http://f.apiplus.net/gxklsf-20.json";
+		},
+	);
+}

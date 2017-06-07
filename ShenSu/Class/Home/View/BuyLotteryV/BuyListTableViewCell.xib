@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="62" id="KGk-i7-Jjw" customClass="BuyListTableViewCell" customModule="ShenSu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="62"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="286" height="61.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oJw-eA-GXZ">
+                        <rect key="frame" x="8" y="10" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="9Oc-pd-pwe"/>
+                            <constraint firstAttribute="width" constant="40" id="d0d-kD-iRJ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVa-67-mGX">
+                        <rect key="frame" x="56" y="8" width="225" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="9uY-b9-bG7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UWh-KB-ONO">
+                        <rect key="frame" x="56" y="37" width="225" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="0Er-n8-ozE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mVa-67-mGX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="0ji-0N-Xlb"/>
+                    <constraint firstItem="oJw-eA-GXZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="2pR-Es-rBf"/>
+                    <constraint firstAttribute="bottom" secondItem="UWh-KB-ONO" secondAttribute="bottom" constant="3.5" id="58W-eX-LLb"/>
+                    <constraint firstItem="UWh-KB-ONO" firstAttribute="leading" secondItem="oJw-eA-GXZ" secondAttribute="trailing" constant="8" id="BHT-wg-0mh"/>
+                    <constraint firstItem="mVa-67-mGX" firstAttribute="leading" secondItem="oJw-eA-GXZ" secondAttribute="trailing" constant="8" id="Xbo-Mb-baW"/>
+                    <constraint firstAttribute="trailing" secondItem="UWh-KB-ONO" secondAttribute="trailing" constant="6" id="Yyu-6f-jb5"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="oJw-eA-GXZ" secondAttribute="bottom" constant="3.5" id="c1c-gW-Wk5"/>
+                    <constraint firstItem="UWh-KB-ONO" firstAttribute="top" secondItem="mVa-67-mGX" secondAttribute="bottom" constant="8" id="dRQ-Aa-4Wm"/>
+                    <constraint firstItem="UWh-KB-ONO" firstAttribute="top" secondItem="mVa-67-mGX" secondAttribute="bottom" constant="8" id="hPu-md-h2u"/>
+                    <constraint firstItem="UWh-KB-ONO" firstAttribute="leading" secondItem="oJw-eA-GXZ" secondAttribute="trailing" constant="8" id="ls7-ZA-HwY"/>
+                    <constraint firstAttribute="trailing" secondItem="mVa-67-mGX" secondAttribute="trailing" constant="6" id="moz-yS-faP"/>
+                    <constraint firstItem="oJw-eA-GXZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="qG5-Nn-rl0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lotteryCount" destination="UWh-KB-ONO" id="8yC-EJ-lRQ"/>
+                <outlet property="lotteryImage" destination="oJw-eA-GXZ" id="nBx-CI-4Q6"/>
+                <outlet property="lotteryNumber" destination="mVa-67-mGX" id="eTl-LZ-1ai"/>
+            </connections>
+            <point key="canvasLocation" x="33" y="127"/>
+        </tableViewCell>
+    </objects>
+</document>

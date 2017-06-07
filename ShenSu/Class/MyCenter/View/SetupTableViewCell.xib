@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SetupTableViewCell" customModule="ShenSu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZxH-rQ-lLD">
+                        <rect key="frame" x="8" y="4" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="eeh-gF-Ou2"/>
+                            <constraint firstAttribute="height" constant="35" id="tNO-1W-Ybi"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9Q-0E-2jA">
+                        <rect key="frame" x="51" y="11" width="194" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="tAB-OW-xgP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jQB-NN-IfU">
+                        <rect key="frame" x="253" y="6" width="51" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="31" id="7aI-yr-ZgY"/>
+                            <constraint firstAttribute="width" constant="49" id="tG1-Pg-3mJ"/>
+                        </constraints>
+                        <connections>
+                            <action selector="switchClick:" destination="KGk-i7-Jjw" eventType="valueChanged" id="okF-dI-6Mv"/>
+                        </connections>
+                    </switch>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ZxH-rQ-lLD" secondAttribute="bottom" constant="4" id="2BR-XH-p0h"/>
+                    <constraint firstAttribute="bottom" secondItem="jQB-NN-IfU" secondAttribute="bottom" constant="6" id="2iy-cb-D8b"/>
+                    <constraint firstItem="B9Q-0E-2jA" firstAttribute="leading" secondItem="ZxH-rQ-lLD" secondAttribute="trailing" constant="8" id="4cU-QQ-xvQ"/>
+                    <constraint firstItem="jQB-NN-IfU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="BNm-Co-WNB"/>
+                    <constraint firstItem="ZxH-rQ-lLD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="CFQ-BD-qSA"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="B9Q-0E-2jA" secondAttribute="bottom" constant="3" id="Woc-qk-0ZB"/>
+                    <constraint firstItem="jQB-NN-IfU" firstAttribute="leading" secondItem="B9Q-0E-2jA" secondAttribute="trailing" constant="8" id="hM7-eO-XAu"/>
+                    <constraint firstItem="jQB-NN-IfU" firstAttribute="leading" secondItem="B9Q-0E-2jA" secondAttribute="trailing" constant="8" id="j8u-YK-vlr"/>
+                    <constraint firstItem="ZxH-rQ-lLD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="lgu-tK-hES"/>
+                    <constraint firstItem="B9Q-0E-2jA" firstAttribute="leading" secondItem="ZxH-rQ-lLD" secondAttribute="trailing" constant="8" id="oTd-1w-MDq"/>
+                    <constraint firstItem="B9Q-0E-2jA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="sC2-lm-Nty"/>
+                    <constraint firstAttribute="trailing" secondItem="jQB-NN-IfU" secondAttribute="trailing" constant="18" id="tRO-MQ-DjR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="setupimageView" destination="ZxH-rQ-lLD" id="e0j-KJ-Crg"/>
+                <outlet property="setupswitch" destination="jQB-NN-IfU" id="cfa-79-mcS"/>
+                <outlet property="titleLable" destination="B9Q-0E-2jA" id="Efe-4I-9kn"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
