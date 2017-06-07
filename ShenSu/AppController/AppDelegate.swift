@@ -82,7 +82,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 					}
 				}
 			} else {
-				self.removeLaunchScreenView()
+			
 			}
 		}
 
