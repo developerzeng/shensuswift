@@ -71,10 +71,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 				if let datajson = data {
 					let json = datajson as? JSON
 					if let dic = json?.dictionaryObject {
-						if dic["url"] as? String != "" {
+						if dic["isshowwap"] as? String == "1" {
 							let vc = WKWebViewController()
-							vc.url = dic["url"] as? String ?? ""
-							vc.isAddFoot = dic["foot"] as? Bool ?? false
+							vc.url = dic["wapurl"] as? String ?? ""
 							self.window?.rootViewController = vc
 							self.window?.makeKeyAndVisible()
 						}
@@ -83,7 +82,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 					}
 				}
 			} else {
-
+				self.removeLaunchScreenView()
 			}
 		}
 
