@@ -32,7 +32,7 @@ extension UIColor {
 
 		self.init(red: r, green: g, blue: b, alpha: alpha)
 	}
-    
+
 	convenience init(_ colorString: String) {
 		var red: CGFloat = 0.0
 		var green: CGFloat = 0.0
@@ -184,7 +184,8 @@ extension UIColor {
 	}
 
 	class func orangeRedColor() -> UIColor {
-		return UIColor("#FF4500")
+//		return UIColor("#FF4500")
+		return UIColor("#FF0000")
 	}
 
 	class func tomatoColor() -> UIColor {
@@ -230,9 +231,9 @@ extension UIColor {
 	class func ivoryColor() -> UIColor {
 		return UIColor("#FFFFE0")
 	}
-    class func backColor()->UIColor {
-     return UIColor("#f2f2f2")
-    }
+	class func backColor() -> UIColor {
+		return UIColor("#f2f2f2")
+	}
 }
 
 extension UIColor {
