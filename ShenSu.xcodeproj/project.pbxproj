@@ -355,7 +355,7 @@
 		6D08A9941ECAFF650096E7BE /* ChooseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChooseView.xib; sourceTree = "<group>"; };
 		6D08EADA1EE16DE800AD9965 /* UserRuleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRuleViewController.swift; sourceTree = "<group>"; };
 		6D08EADB1EE16DE900AD9965 /* UserRuleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserRuleViewController.xib; sourceTree = "<group>"; };
-		6D08EAE31EE52D6E00AD9965 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsViewController.swift; path = ../../News/ViewController/NewsViewController.swift; sourceTree = "<group>"; };
+		6D08EAE31EE52D6E00AD9965 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		6D08EAE51EE52E8D00AD9965 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		6D08EAE61EE52E8D00AD9965 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
 		6D08EAE91EE5306700AD9965 /* NewsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
@@ -709,6 +709,7 @@
 		6D08EAE01EE52D3300AD9965 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				6D08EAE31EE52D6E00AD9965 /* NewsViewController.swift */,
 				6D08EAEB1EE53D3800AD9965 /* NewsDetaViewController.swift */,
 				6D08EAEC1EE53D3800AD9965 /* NewsDetaViewController.xib */,
 			);
@@ -1267,7 +1268,6 @@
 		6DF6E7D41EC9AE48003F2D2F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				6D08EAE31EE52D6E00AD9965 /* NewsViewController.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";

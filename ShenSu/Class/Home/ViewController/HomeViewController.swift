@@ -17,13 +17,20 @@ class HomeViewController: BaseViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 //		self.automaticallyAdjustsScrollViewInsets = false
-		
+		self.setNavLeftButton(image: UIImage.init(named: "Categories")!)
+		self.leftButtonClicked = { btn in
+			if AppUserData.default.isLogin {
+				self.showMessage(message: "您已经登录了！")
+			} else {
+				self.showLoginViewController()
+			}
+		}
 		addcollectionView()
 		getLotteryData()
-        
+
 	}
 	func addcollectionView() {
-       
+
 		let layout = UICollectionViewFlowLayout()
 		layout.minimumLineSpacing = 5
 		layout.minimumInteritemSpacing = 5
@@ -59,33 +66,31 @@ class HomeViewController: BaseViewController {
 
 	}
 	func setBannarData() {
-		
-     let  banner = [
-        [
-        "AritleUrl": "http://wap.fcaimao.com/userTask/101LotteryRed.jhtml",
-        "ImgUrl": "http://client.fcaimao.com/images/adimg/2017/05/27/1495863328975.jpg"
-        ],
-        [
-        "AritleUrl": "http://touch.fcaimao.com/special/fucai3d/index.html",
-        "ImgUrl": "http://client.fcaimao.com/images/adimg/2017/05/18/1495097040051.jpg"
-        ],
-        [
-        "AritleUrl": "http://wap.fcaimao.com/userTask/extension.jhtml",
-        "ImgUrl": "http://client.fcaimao.com/images/adimg/2016/05/13/1463139669836.png"
-        ]
-        ]
-        var bannars = Array<String>()
-        banner.enumerated().forEach({ (index, json) in
-            let model = BannarModel()
-            _ = self.JsonMapToObject(JSON: json, toObject: model)
-            bannars.append(model.bannarUrl)
-            self.bannarArray.append(model)
-        })
-        self.homeHraderView.zpbannar.imagePaths = bannars
-        
-        
-        
-    }
+
+		let banner = [
+			[
+				"AritleUrl": "http://wap.fcaimao.com/userTask/101LotteryRed.jhtml",
+				"ImgUrl": "http://client.fcaimao.com/images/adimg/2017/05/27/1495863328975.jpg"
+			],
+			[
+				"AritleUrl": "http://touch.fcaimao.com/special/fucai3d/index.html",
+				"ImgUrl": "http://client.fcaimao.com/images/adimg/2017/05/18/1495097040051.jpg"
+			],
+			[
+				"AritleUrl": "http://wap.fcaimao.com/userTask/extension.jhtml",
+				"ImgUrl": "http://client.fcaimao.com/images/adimg/2016/05/13/1463139669836.png"
+			]
+		]
+		var bannars = Array<String>()
+		banner.enumerated().forEach({ (index, json) in
+			let model = BannarModel()
+			_ = self.JsonMapToObject(JSON: json, toObject: model)
+			bannars.append(model.bannarUrl)
+			self.bannarArray.append(model)
+		})
+		self.homeHraderView.zpbannar.imagePaths = bannars
+
+	}
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
 		// Dispose of any resources that can be recreated.
@@ -125,7 +130,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
 	func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
 		if kind == UICollectionElementKindSectionHeader && indexPath.section == 0 {
 			homeHraderView = (collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "homeHraderView", for: indexPath) as? HomeHeaderView)!
-            setBannarData()
+			setBannarData()
 		}
 		return homeHraderView
 	}

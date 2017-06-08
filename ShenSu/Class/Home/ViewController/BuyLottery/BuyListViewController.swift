@@ -40,35 +40,29 @@ class BuyListViewController: BaseViewController {
 
 		}
 		footerView.goBtnBlock = { [weak self] in
-			let alert = UIAlertController(title: nil, message: "抱歉，暂不支持互联网购彩，请前往附近彩票站购彩，是否保存选号记录?", preferredStyle: .alert)
-			let defa = UIAlertAction(title: "保存", style: .default, handler: { (action) in
+			
 				if AppUserData.default.isLogin {
-					if self?.lotteryArray.count != 0 {
-						AppUserData.default.saveModel = self?.lotteryArray
-						self?.showLoadingMessage(message: "保存中...")
-						DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
-							self?.showMessage(message: "保存成功")
-						})
-						DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
-							self?.hideLoadingMessage()
-							self?.lotteryArray.removeAll()
-							let vc = ChoossFinishViewController()
-							_ = self?.navigationController?.pushViewController(vc, animated: true)
-						})
-					} else {
-						self?.showMessage(message: "您暂未选择")
-					}
-				} else {
-					self?.showLoginViewController()
-				}
-
-			})
-			let cancal = UIAlertAction(title: "取消", style: .cancel, handler: { (action) in
-
-			})
-			alert.addAction(defa)
-			alert.addAction(cancal)
-			self?.present(alert, animated: true, completion: nil)
+                    if self?.lotteryArray.count != 0 {
+                        AppUserData.default.saveModel = self?.lotteryArray
+                        self?.showLoadingMessage(message: "保存中...")
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
+                            self?.showMessage(message: "保存成功")
+                        })
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
+                            self?.hideLoadingMessage()
+                            self?.lotteryArray.removeAll()
+                            let vc = CpMapViewController()
+                            _ = self?.navigationController?.pushViewController(vc, animated: true)
+                        })
+                    } else {
+                        self?.showMessage(message: "您暂未选择")
+                    }
+                }else{
+                self?.showLoginViewController()
+                }
+			
+			
+		
 
 		}
 		footerView <- [

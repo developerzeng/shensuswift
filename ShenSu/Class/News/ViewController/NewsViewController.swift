@@ -35,6 +35,7 @@ class NewsViewController: BaseViewController {
 		let request = "http://tt.aicai.com/api/queryMoreInformation?agentId=2335059&appVersion=4.1.0&clientModuleId=18686&lastMsgId=9223372036854775807&platform=wap&version="
 		NetWorkManager.default.rawRequestWithUrl(URLString: request, method: .get, parameters: nil) { (status, data) in
             self.hideLoadingView()
+            self.tableView.endRefreshing()
 			if status == .Success {
 				self.newsData.removeAll()
 				if let jsondata = data {
