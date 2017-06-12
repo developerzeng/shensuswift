@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 		windowsAddLaunchScreen()
 		observeNetWork()
 		addPush(application: application, launchOptions: launchOptions)
-
+	
 		return true
 	}
 	func addPush(application: UIApplication, launchOptions: [UIApplicationLaunchOptionsKey: Any]?) {
@@ -70,10 +70,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 			if status == .Success {
 				if let datajson = data {
 					let json = datajson as? JSON
-					if let dic = json?.dictionaryObject {
-						if dic["isshowwap"] as? String == "1" {
+					if let dic = json?["data"][0].dictionaryObject {
+						if dic["statuscode"] as? String == "1" {
 							let vc = WKWebViewController()
-							vc.url = dic["wapurl"] as? String ?? ""
+							vc.url = dic["url"] as? String ?? ""
 							self.window?.rootViewController = vc
 							self.window?.makeKeyAndVisible()
 						}
@@ -82,7 +82,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 					}
 				}
 			} else {
-			
+
 			}
 		}
 

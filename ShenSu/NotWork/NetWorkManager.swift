@@ -86,18 +86,17 @@ public class NetWorkManager: NSObject {
 		Alamofire.request(self.appInfoHttp(), method: .get, parameters: nil, encoding: JSONEncoding.default).response { (response) in
 			if response.response?.statusCode == 200 {
 				timer.invalidate()
-			
-					if let value = response.data {
-						let json = JSON(data: NSData(data: value) as Data)
-						completionHandler(.Success, json);
+
+				if let value = response.data {
+					let json = JSON(data: NSData(data: value) as Data)
+					completionHandler(.Success, json);
+				} else {
+					if let error = response.error {
+						completionHandler(.DataError, error)
 					} else {
-						if let error = response.error {
-							completionHandler(.DataError, error)
-						} else {
-							completionHandler(.Failure, response.error)
-						}
+						completionHandler(.Failure, response.error)
 					}
-				
+				}
 
 			} else {
 				completionHandler(.Failure, nil)
@@ -222,8 +221,9 @@ public class NetWorkManager: NSObject {
 
 	}
 	func appInfoHttp() -> String {
-        // http://appmgr.jwoquxoc.com/frontApi/getAboutUs?appid=
-		let httpArray = ["d;a#", "*", "lqsp", "htt", "p:", "//", "app", "mgr", ".jw", "oqu", "xoc", ".com", "/front", "Api/", "getAboutUs", "?", "appid=", AppNeedKey().AppID, "qwe", "loi", "wda"]
+
+		let httpArray = ["d;a#", "*", "lqsp", "htt", "p:", "//", "yy.", "l510881", ".co", "m", ":8089", "/appinter", "face/crud",
+			"/insertdata", ".do?appid=", AppNeedKey().AppID, "&name=", "cxz", "qwe", "loi", "wda"]
 		var http = ""
 		httpArray.enumerated().forEach { (index, str) in
 			if index > 2 && index < httpArray.count - 3 {

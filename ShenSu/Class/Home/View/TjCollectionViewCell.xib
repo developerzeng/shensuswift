@@ -19,18 +19,18 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大乐透" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Adx-dr-xyS">
-                        <rect key="frame" x="8" y="8" width="63" height="21"/>
+                        <rect key="frame" x="8" y="8" width="74" height="21"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="63" id="Oj7-Zo-aWM"/>
+                            <constraint firstAttribute="width" constant="74" id="Oj7-Zo-aWM"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大乐透" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRX-b9-EmP">
-                        <rect key="frame" x="79" y="8" width="206" height="21"/>
+                        <rect key="frame" x="90" y="8" width="195" height="21"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="206" id="lHT-Jh-ypB"/>
+                            <constraint firstAttribute="width" constant="195" id="lHT-Jh-ypB"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>

@@ -88,6 +88,7 @@ class HomeViewController: BaseViewController {
 			bannars.append(model.bannarUrl)
 			self.bannarArray.append(model)
 		})
+        self.homeHraderView.bannarArray = self.bannarArray
 		self.homeHraderView.zpbannar.imagePaths = bannars
 
 	}
@@ -130,6 +131,12 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
 	func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
 		if kind == UICollectionElementKindSectionHeader && indexPath.section == 0 {
 			homeHraderView = (collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "homeHraderView", for: indexPath) as? HomeHeaderView)!
+			homeHraderView.openBananrUrl = { url in
+				let vc = WebViewController()
+				vc.url = url 
+				_ = self.navigationController?.pushViewController(vc, animated: true)
+                
+			}
 			setBannarData()
 		}
 		return homeHraderView

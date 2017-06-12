@@ -17,6 +17,7 @@ class NewsDetaViewController: BaseViewController {
 	@IBOutlet weak var timeTitle: UILabel!
 	@IBOutlet weak var readLable: UILabel!
 	@IBOutlet weak var buyBtn: UIButton!
+    var lotteryTypeArray = Array<HomeLotteryModel>()
 	var newDeatModel: NewsDataModel? {
 		didSet {
             DispatchQueue.main.async {
@@ -36,6 +37,7 @@ class NewsDetaViewController: BaseViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
         self.setNavTitle(title: "详情")
+        getLotteryData()
         self.view.backgroundColor = UIColor.white
         buyBtn.backgroundColor = UIColor.orangeRedColor()
         subTitle.showsVerticalScrollIndicator = false
@@ -65,9 +67,28 @@ class NewsDetaViewController: BaseViewController {
 	}
 
 	@IBAction func buyBtnClick(_ sender: Any) {
-        self.tabBarController?.selectedIndex = 0
-      _ = self.navigationController?.popViewController(animated: false)
+        let rand =  arc4random() % UInt32(lotteryTypeArray.count - 1)
+        let  model = lotteryTypeArray[Int(rand)]
+        
+                let vc = BuyLottreyViewController()
+                vc.lotteryData = model.rule
+                vc.titleName = model.name
+                vc.url = model.url
+                _ = self.navigationController?.pushViewController(vc, animated: true)
+        
+        
 	}
+    func getLotteryData() {
+        let path = Bundle.main.path(forResource: "CaipiaoType", ofType: "geojson")
+        let dic = NSDictionary(contentsOfFile: path!)
+        let array = dic?["data"] as? Array<Any>
+        array?.enumerated().forEach({ (index, data) in
+            let model = HomeLotteryModel()
+            _ = self.JsonMapToObject(JSON: data, toObject: model)
+            lotteryTypeArray.append(model)
+        })
+        
+    }
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
 		// Dispose of any resources that can be recreated.
