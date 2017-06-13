@@ -41,6 +41,11 @@ class LotteryViewController: BaseViewController, UITableViewDelegate, UITableVie
             self.tableView.safeReload()
 			self.getopenCode()
 		}
+        self.setNavRightButton(image: UIImage.init(named: "seachbar")!)
+        self.rightButtonClicked = { btn in
+            let vc = SeachViewController()
+            _ = self.navigationController?.pushViewController(vc, animated: true)
+        }
 		// Do any additional setup after loading the view.
 	}
 
@@ -86,7 +91,7 @@ class LotteryViewController: BaseViewController, UITableViewDelegate, UITableVie
 			self.tableView.safeReload()
             self.tableView.endRefreshing()
 			self.hideLoadingView()
-			print(self.lotteryinfoArray)
+		
 
 		}
 

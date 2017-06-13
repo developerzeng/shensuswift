@@ -61,11 +61,11 @@
                     [weak.wkwebView goBack];
                 }
                 break;
-            case 2:
+            case 3:
                 [weak.wkwebView reload];
                 
                 break;
-            case 3 :
+            case 2 :
                 if ([weak.wkwebView canGoForward]){
                     [weak.wkwebView goForward];
                 }

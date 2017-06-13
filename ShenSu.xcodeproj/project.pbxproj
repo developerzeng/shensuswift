@@ -88,6 +88,9 @@
 		6D0BF9551EC30F2C00E68B4F /* TimeIntervalTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0BF94A1EC30F2C00E68B4F /* TimeIntervalTransform.swift */; };
 		6D0BF9571EC313A100E68B4F /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0BF9561EC313A100E68B4F /* Chameleon.framework */; };
 		6D0BF9591EC313A800E68B4F /* SwiftDate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0BF9581EC313A800E68B4F /* SwiftDate.framework */; };
+		6D106FFF1EEE473F00CE67BF /* SeachOpenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D106FFE1EEE473F00CE67BF /* SeachOpenViewController.swift */; };
+		6D1070011EEE7C6600CE67BF /* NotDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1070001EEE7C6600CE67BF /* NotDataView.swift */; };
+		6D1070031EEE7C8500CE67BF /* NotDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D1070021EEE7C8500CE67BF /* NotDataView.xib */; };
 		6D1E164A1EDEB07C00A45B02 /* LotteryDetaTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1E16491EDEB07C00A45B02 /* LotteryDetaTypeViewController.swift */; };
 		6D1E164C1EDEB2A000A45B02 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1E164B1EDEB2A000A45B02 /* BaseView.swift */; };
 		6D1E164E1EDEB36300A45B02 /* LotteryDetaHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1E164D1EDEB36300A45B02 /* LotteryDetaHeaderView.swift */; };
@@ -170,6 +173,7 @@
 		6DF35F3C1ED840AD00B87559 /* NSString+isEmpty.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DF35F3A1ED840AD00B87559 /* NSString+isEmpty.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6DF35F3D1ED840AD00B87559 /* NSString+isEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF35F3B1ED840AD00B87559 /* NSString+isEmpty.m */; };
 		6DF35F561ED920E200B87559 /* ObjectNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF35F551ED920E200B87559 /* ObjectNet.swift */; };
+		6DF6D7F91EEE390000EFFE45 /* SeachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6D7F81EEE390000EFFE45 /* SeachViewController.swift */; };
 		6DF6E7891EC41B88003F2D2F /* MJRefreshAutoFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DF6E75C1EC41B88003F2D2F /* MJRefreshAutoFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6DF6E78A1EC41B88003F2D2F /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6E75D1EC41B88003F2D2F /* MJRefreshAutoFooter.m */; };
 		6DF6E78B1EC41B88003F2D2F /* MJRefreshBackFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DF6E75E1EC41B88003F2D2F /* MJRefreshBackFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -384,6 +388,9 @@
 		6D0BF94A1EC30F2C00E68B4F /* TimeIntervalTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeIntervalTransform.swift; sourceTree = "<group>"; };
 		6D0BF9561EC313A100E68B4F /* Chameleon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Chameleon.framework; sourceTree = "<group>"; };
 		6D0BF9581EC313A800E68B4F /* SwiftDate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftDate.framework; sourceTree = "<group>"; };
+		6D106FFE1EEE473F00CE67BF /* SeachOpenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeachOpenViewController.swift; sourceTree = "<group>"; };
+		6D1070001EEE7C6600CE67BF /* NotDataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotDataView.swift; sourceTree = "<group>"; };
+		6D1070021EEE7C8500CE67BF /* NotDataView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotDataView.xib; sourceTree = "<group>"; };
 		6D1E16491EDEB07C00A45B02 /* LotteryDetaTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotteryDetaTypeViewController.swift; sourceTree = "<group>"; };
 		6D1E164B1EDEB2A000A45B02 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		6D1E164D1EDEB36300A45B02 /* LotteryDetaHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotteryDetaHeaderView.swift; sourceTree = "<group>"; };
@@ -479,6 +486,7 @@
 		6DF35F3B1ED840AD00B87559 /* NSString+isEmpty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+isEmpty.m"; sourceTree = "<group>"; };
 		6DF35F541ED91D7100B87559 /* Shensu-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Shensu-Bridging-Header.h"; sourceTree = "<group>"; };
 		6DF35F551ED920E200B87559 /* ObjectNet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectNet.swift; sourceTree = "<group>"; };
+		6DF6D7F81EEE390000EFFE45 /* SeachViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeachViewController.swift; sourceTree = "<group>"; };
 		6DF6E75C1EC41B88003F2D2F /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
 		6DF6E75D1EC41B88003F2D2F /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoFooter.m; sourceTree = "<group>"; };
 		6DF6E75E1EC41B88003F2D2F /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackFooter.h; sourceTree = "<group>"; };
@@ -949,6 +957,8 @@
 				6DF35EC31ED41C1000B87559 /* AppDelegate.swift */,
 				6DF35EC41ED41C1000B87559 /* MainTBViewController.swift */,
 				6DAAA1821EE79E930017C427 /* ViewController.swift */,
+				6D1070001EEE7C6600CE67BF /* NotDataView.swift */,
+				6D1070021EEE7C8500CE67BF /* NotDataView.xib */,
 			);
 			path = AppController;
 			sourceTree = "<group>";
@@ -1146,6 +1156,8 @@
 			children = (
 				6DF35EC71ED43F1100B87559 /* BuyLottery */,
 				6DF6E7CB1EC9AD52003F2D2F /* HomeViewController.swift */,
+				6DF6D7F81EEE390000EFFE45 /* SeachViewController.swift */,
+				6D106FFE1EEE473F00CE67BF /* SeachOpenViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1523,6 +1535,7 @@
 				6D04C2651EE01F240026842E /* UserBuyListTableViewCell.xib in Resources */,
 				6D08EAE81EE52E8D00AD9965 /* NewsTableViewCell.xib in Resources */,
 				6D1E166A1EDFEAB300A45B02 /* MycenterCollectionViewCell.xib in Resources */,
+				6D1070031EEE7C8500CE67BF /* NotDataView.xib in Resources */,
 				6D08EAEE1EE53D3800AD9965 /* NewsDetaViewController.xib in Resources */,
 				6D4D02AB1ECC568400DBAAE5 /* CaipiaoType.geojson in Resources */,
 				6D5536571EC1B98400B0E8E8 /* Main.storyboard in Resources */,
@@ -1632,12 +1645,14 @@
 				6D08EAE41EE52D6E00AD9965 /* NewsViewController.swift in Sources */,
 				6DAAA1641EE64E210017C427 /* SetupTableViewCell.swift in Sources */,
 				6D0BF9521EC30F2C00E68B4F /* TableViewController.swift in Sources */,
+				6DF6D7F91EEE390000EFFE45 /* SeachViewController.swift in Sources */,
 				6DF35ED91ED58DA300B87559 /* BuyViewTableViewCell.swift in Sources */,
 				6D04C3151EE13ED10026842E /* MASConstraintMaker.m in Sources */,
 				6D1E16561EDEC40400A45B02 /* LotteryJSModel.swift in Sources */,
 				6DF6E7E61ECACFF2003F2D2F /* LLCycleScrollViewCell.swift in Sources */,
 				6DF35ED61ED58A1200B87559 /* BuyViewHeaderView.swift in Sources */,
 				6D0BF9501EC30F2C00E68B4F /* NavViewController.swift in Sources */,
+				6D106FFF1EEE473F00CE67BF /* SeachOpenViewController.swift in Sources */,
 				6DF6E7CC1EC9AD52003F2D2F /* HomeViewController.swift in Sources */,
 				6D08EAF21EE547B300AD9965 /* NumberTransform.swift in Sources */,
 				6D0BF93E1EC3022C00E68B4F /* URLRouter.swift in Sources */,
@@ -1678,6 +1693,7 @@
 				6D08EADC1EE16DE900AD9965 /* UserRuleViewController.swift in Sources */,
 				6D08EAE71EE52E8D00AD9965 /* NewsTableViewCell.swift in Sources */,
 				6DF35F141ED81BF700B87559 /* LotteryDetaTableViewCell.swift in Sources */,
+				6D1070011EEE7C6600CE67BF /* NotDataView.swift in Sources */,
 				6D08EAF01EE540BA00AD9965 /* NewsDataModel.swift in Sources */,
 				6D1E16651EDFCD4000A45B02 /* UserHeaderCollectionReusableView.swift in Sources */,
 			);
@@ -1900,8 +1916,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mayacaipiaozzh.zzh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "168e7dde-a4a6-4be4-9107-248ed064117b";
-				PROVISIONING_PROFILE_SPECIFIER = "zhangzhenghuanituns上架";
+				PROVISIONING_PROFILE = "9492a79c-1975-4224-8fc0-c2a7a05eb7e5";
+				PROVISIONING_PROFILE_SPECIFIER = "玛雅彩票hoc";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shensu/Desktop/ShenSu/ShenSu/Class/OC/Shensu-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Shensu-swift.h";
 				SWIFT_VERSION = 3.0;
@@ -1933,8 +1949,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mayacaipiaozzh.zzh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "168e7dde-a4a6-4be4-9107-248ed064117b";
-				PROVISIONING_PROFILE_SPECIFIER = "zhangzhenghuanituns上架";
+				PROVISIONING_PROFILE = "9492a79c-1975-4224-8fc0-c2a7a05eb7e5";
+				PROVISIONING_PROFILE_SPECIFIER = "玛雅彩票hoc";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shensu/Desktop/ShenSu/ShenSu/Class/OC/Shensu-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Shensu-swift.h";
 				SWIFT_VERSION = 3.0;

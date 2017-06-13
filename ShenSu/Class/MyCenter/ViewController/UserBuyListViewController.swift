@@ -18,6 +18,16 @@ class UserBuyListViewController: BaseViewController {
 	var lotteryType: LotterSaveType = .lotterSaveTypeBuy
 	override func viewDidLoad() {
 		super.viewDidLoad()
+        self.setNavTitle(title: "分享")
+        self.rightButtonClicked = { btn in
+            let text = "彩票"
+            let url = URL(string: "http://itunes.apple.com/us/app/id1218691138")
+            let shareArray = [text, url!] as [Any]
+            let activityViewController = UIActivityViewController(activityItems: shareArray, applicationActivities: nil)
+            activityViewController.isModalInPopover = true
+            self.present(activityViewController, animated: true, completion: nil)
+            
+        }
 		if lotteryType == .lotterSaveTypeBuy {
 			self.setNavTitle(title: "选号记录")
 		} else {

@@ -115,6 +115,28 @@ class AppUserData: NSObject {
 			userDefaults.synchronize()
 		}
 	}
+    /// 彩票种类
+    var lotteryClass: Array<Dictionary<String,String>>? {
+        get {
+            let path = NSHomeDirectory()
+            let file = "\(path)/Library/Caches/lotteryClass.plist"
+            if (NSArray(contentsOfFile: file) != nil){
+            return NSArray(contentsOfFile: file) as? Array<Dictionary<String,String>>
+            }
+            return nil
+        }
+        set {
+         let path = NSHomeDirectory()
+         let file = "\(path)/Library/Caches/lotteryClass.plist"
+            let new:NSArray? = newValue as NSArray?
+            if  new?.write(toFile: file, atomically: true) == true {
+            debugPrint("写入成功")
+            }else {
+            debugPrint("写入失败")
+            }
+            
+        }
+    }
 	/// 下注存储数据
 	var saveModel: Array<LotteryListModel>? {
 		get {

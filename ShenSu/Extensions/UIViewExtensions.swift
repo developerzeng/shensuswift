@@ -158,7 +158,22 @@ extension UIImageView {
 	}
 }
 
+
 extension UITableView {
+    
+    public func addFugaiView(force:Bool){
+        if force {
+            let vc = NotDataView(frame: self.frame)
+            self.addSubview(vc)
+        }else{
+            for view in self.subviews {
+                if view.isKind(of: NotDataView.self) {
+                    view.removeFromSuperview()
+                }
+            }
+        }
+
+    }
 	public func removfootViewLine() {
 		self.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, w: self.width, h: 0.01))
 	}
@@ -172,6 +187,7 @@ extension UITableView {
 
 		}
 	}
+    
 }
 
 extension UICollectionView {

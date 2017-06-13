@@ -42,19 +42,19 @@
        
         
         self.goforward = [UIButton buttonWithType:UIButtonTypeCustom];
-        [self.goforward setImage:[UIImage imageNamed:@"upload"] forState:UIControlStateNormal];
+        [self.goforward setImage:[UIImage imageNamed:@"go"] forState:UIControlStateNormal];
         self.goforward.showsTouchWhenHighlighted = NO;
          self.goforward.tag = 2;
         [self.goforward setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
-         [self.goforward setTitle:@"刷新" forState:UIControlStateNormal];
+         [self.goforward setTitle:@"前进" forState:UIControlStateNormal];
         [self.goforward addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:self.goforward];
         self.goforward.imageEdgeInsets = UIEdgeInsetsMake(5,13,21,self.goforward.titleLabel.bounds.size.width);
           self.goforward.titleEdgeInsets = UIEdgeInsetsMake(71, - self.goforward.titleLabel.bounds.size.width-50, 0, 0);
         
         self.goreloadData = [UIButton buttonWithType:UIButtonTypeCustom];
-        [self.goreloadData setImage:[UIImage imageNamed:@"go"] forState:UIControlStateNormal];
-         [self.goreloadData setTitle:@"前进" forState:UIControlStateNormal];
+        [self.goreloadData setImage:[UIImage imageNamed:@"upload"] forState:UIControlStateNormal];
+         [self.goreloadData setTitle:@"刷新" forState:UIControlStateNormal];
         self.goreloadData.tag = 3;
         [self.goreloadData setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
         [self.goreloadData addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];

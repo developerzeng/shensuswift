@@ -14,14 +14,18 @@ class HomeViewController: BaseViewController {
 	var bannarArray = Array<BannarModel>()
 	var collectionView: UICollectionView!
 	var lotteryArray = Array<HomeLotteryModel>()
+ 
 	override func viewDidLoad() {
 		super.viewDidLoad()
 //		self.automaticallyAdjustsScrollViewInsets = false
 
 		addcollectionView()
 		getLotteryData()
+        
 
 	}
+
+
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewDidAppear(animated)
 		addsomecode()
@@ -31,7 +35,19 @@ class HomeViewController: BaseViewController {
 		let appName = infodic?["CFBundleName"] as? String
 		self.setNavTitle(title: appName ?? "", font: UIFont.init(name: "AmericanTypewriter-Bold", size: 20)!)
 		// Arial-BoldMT
-
+        self.setNavRightButton(image: UIImage.init(named: "seachbar")!)
+        self.rightButtonClicked = { btn in
+          let vc = SeachViewController()
+         _ = self.navigationController?.pushViewController(vc, animated: true)
+        }
+       self.setNavLeftButton(image: UIImage.init(named: "Categories")!)
+        self.leftButtonClicked = {btn in
+            if AppUserData.default.isLogin {
+            self.showMessage(message: "您已经登录了！")
+            }else{
+            self.showLoginViewController()
+            }
+        }
 	}
 	func addcollectionView() {
 
@@ -55,6 +71,11 @@ class HomeViewController: BaseViewController {
 		collectionView <- [
 			Edges(UIEdgeInsets(top: 0, left: 0, bottom: 49, right: 0))
 		]
+        collectionView.addRefreshingHeaderView { 
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: { 
+                self.collectionView.endRefreshing()
+            })
+        }
 
 	}
 	func getLotteryData() {

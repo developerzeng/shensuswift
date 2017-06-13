@@ -68,6 +68,8 @@ class MainViewController: UITabBarController, UITabBarControllerDelegate {
 			vc.tabBarItem.image = model.defaultImage?.withRenderingMode(.alwaysOriginal)
 			self.addChildViewController(nvc)
 		}
+        
+        
 	}
 
 	func initData() {
@@ -78,9 +80,17 @@ class MainViewController: UITabBarController, UITabBarControllerDelegate {
 		self.models.append(contentsOf: [model1, model2, model3, model4])
 	}
 
-	func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
 
-	}
+    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+        if let vc = viewController as? NavViewController , vc.topViewController != nil {
+            if vc.topViewController?.isKind(of: MyViewController.self) == true && !AppUserData.default.isLogin {
+                self.showLoginViewController()
+                return false
+            }
+        }
+        return true
+
+    }
 
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()

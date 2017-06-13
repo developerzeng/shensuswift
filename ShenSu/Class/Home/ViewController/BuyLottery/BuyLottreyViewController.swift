@@ -151,7 +151,7 @@ class BuyLottreyViewController: BaseViewController {
 		footerView = BuyLotteryFooterView()
 		self.view.addSubview(footerView)
 		footerView.clearBtnBlock = { [weak self] in
-			print("清除按钮")
+	
 			self?.removeSelected()
 		}
 		footerView.goBtnBlock = { [weak self] in
