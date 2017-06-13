@@ -18,7 +18,7 @@ class UserBuyListViewController: BaseViewController {
 	var lotteryType: LotterSaveType = .lotterSaveTypeBuy
 	override func viewDidLoad() {
 		super.viewDidLoad()
-        self.setNavTitle(title: "分享")
+        self.setNavRightButtonTitle(title: "分享")
         self.rightButtonClicked = { btn in
             let text = "彩票"
             let url = URL(string: "http://itunes.apple.com/us/app/id1218691138")
