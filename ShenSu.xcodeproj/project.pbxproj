@@ -1916,8 +1916,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jdssc.ssc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f25f61bc-829e-4595-8587-06f82b12e7f9";
-				PROVISIONING_PROFILE_SPECIFIER = "经典时时彩";
+				PROVISIONING_PROFILE = "b3d36fec-d543-43d5-b074-1929dedfba59";
+				PROVISIONING_PROFILE_SPECIFIER = "经典时时彩hoc";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shensu/Desktop/ShenSu/ShenSu/Class/OC/Shensu-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Shensu-swift.h";
 				SWIFT_VERSION = 3.0;
@@ -1949,8 +1949,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jdssc.ssc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f25f61bc-829e-4595-8587-06f82b12e7f9";
-				PROVISIONING_PROFILE_SPECIFIER = "经典时时彩";
+				PROVISIONING_PROFILE = "b3d36fec-d543-43d5-b074-1929dedfba59";
+				PROVISIONING_PROFILE_SPECIFIER = "经典时时彩hoc";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shensu/Desktop/ShenSu/ShenSu/Class/OC/Shensu-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Shensu-swift.h";
 				SWIFT_VERSION = 3.0;

@@ -55,6 +55,7 @@ typedef NS_ENUM(NSInteger, MANaviAnnotationType)
     self.mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     self.mapView.delegate = self;
     self.mapView.zoomLevel = 15;
+    self.mapView.showsUserLocation = YES;
     self.mapView.userTrackingMode = MAUserTrackingModeFollow;
     [self.view addSubview:self.mapView];
         [self.mapView showAnnotations:self.annotations edgePadding:UIEdgeInsetsMake(0, 0, 0, 0) animated:YES];
