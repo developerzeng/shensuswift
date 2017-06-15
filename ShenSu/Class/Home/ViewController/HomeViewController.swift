@@ -14,7 +14,11 @@ class HomeViewController: BaseViewController {
 	var bannarArray = Array<BannarModel>()
 	var collectionView: UICollectionView!
 	var lotteryArray = Array<HomeLotteryModel>()
- 
+    var headArray:Array<HomecellModel>{
+        let model = HomecellModel(imaegName: "推荐", title: "推荐号码")
+        let model1 = HomecellModel(imaegName: "热门", title: "热门彩种")
+    return [model,model1]
+    }
 	override func viewDidLoad() {
 		super.viewDidLoad()
 //		self.automaticallyAdjustsScrollViewInsets = false
@@ -66,6 +70,7 @@ class HomeViewController: BaseViewController {
 
 		collectionView.register(UINib.init(nibName: "HomeCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "HomeCollectionViewCell")
 		collectionView.register(UINib.init(nibName: "TjCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "TjCollectionViewCell")
+        collectionView.register(HomecellHeadCollectionReusableView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "cellhead")
 		self.view.addSubview(collectionView)
 
 		collectionView <- [
@@ -113,6 +118,7 @@ class HomeViewController: BaseViewController {
 			bannars.append(model.bannarUrl)
 			self.bannarArray.append(model)
 		})
+        self.homeHraderView.setModel(model: headArray[0])
 		self.homeHraderView.zpbannar.imagePaths = bannars
 
 	}
@@ -146,9 +152,9 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
 	}
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
 		if section == 0 {
-			return CGSize(width: self.view.width, height: 180)
+			return CGSize(width: self.view.width, height: 210)
 		} else {
-			return CGSize.zero
+			return CGSize(width: self.view.width, height: 30)
 		}
 
 	}
@@ -156,7 +162,11 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
 		if kind == UICollectionElementKindSectionHeader && indexPath.section == 0 {
 			homeHraderView = (collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "homeHraderView", for: indexPath) as? HomeHeaderView)!
 			setBannarData()
-		}
+        }else if kind == UICollectionElementKindSectionHeader {
+            let view = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "cellhead", for: indexPath) as? HomecellHeadCollectionReusableView
+            view?.setModel(model: headArray[1])
+            return view!
+        }
 		return homeHraderView
 	}
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

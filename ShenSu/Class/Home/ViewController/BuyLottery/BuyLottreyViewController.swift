@@ -29,6 +29,7 @@ class BuyLottreyViewController: BaseViewController {
 
 		}
 	}
+    var lotterydeta = LotteryDetaView()
 	var qishu: String = ""
 	var lotteryinfoArray = Array<LotteryModel>()
 	var url: String!
@@ -51,16 +52,30 @@ class BuyLottreyViewController: BaseViewController {
 		addBuyViewHeaderView()
 		addCollectionView()
 		setCPData()
-		self.setNavRightButtonTitle(title: "摇一摇")
+		self.setNavRightButtonTitle(title: "详细")
 		UIApplication.shared.applicationSupportsShakeToEdit = true
 		self.becomeFirstResponder()
 		self.rightButtonClicked = { [weak self] btn in
-			let button = btn as? UIButton
-			button?.isEnabled = false
-			DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
-				button?.isEnabled = true
-			})
-			self?.moveiphone()
+            let sender = btn as? UIButton
+            sender?.isSelected = !(sender?.isSelected)!
+            self?.lotterydeta.removeFromeSuperViewBlock = {
+            self?.lotterydeta.removeFromSuperview()
+            sender?.isSelected  = false
+            }
+            if sender?.isSelected == true {
+                self?.lotterydeta.frame = (self?.view.bounds)!
+                self?.view.addSubview((self?.lotterydeta)!)
+            }else{
+                self?.lotterydeta.removeFromSuperview()
+            }
+    
+            
+//			let button = btn as? UIButton
+//			button?.isEnabled = false
+//			DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
+//				button?.isEnabled = true
+//			})
+//			self?.moveiphone()
 		}
 	}
 	func addBuyViewHeaderView() {
