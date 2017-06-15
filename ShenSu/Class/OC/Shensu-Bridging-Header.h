@@ -11,3 +11,5 @@
 // 友盟
 #import "UMessage.h"
 #import "JPUSHService.h"
+#import <BmobSDK/Bmob.h>
+#import "DHMainViewController.h"

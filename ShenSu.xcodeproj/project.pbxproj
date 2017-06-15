@@ -134,6 +134,13 @@
 		6DAAA17E1EE68D550017C427 /* AppNeedKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAAA17D1EE68D550017C427 /* AppNeedKey.swift */; };
 		6DAAA1801EE6B12C0017C427 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DAAA17F1EE6B12C0017C427 /* LaunchScreen.storyboard */; };
 		6DAAA1831EE79E930017C427 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAAA1821EE79E930017C427 /* ViewController.swift */; };
+		6DBC0C461EF139A700BFF311 /* BmobSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DBC0C421EF139A700BFF311 /* BmobSDK.framework */; };
+		6DBC0C4A1EF13A3800BFF311 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DBC0C491EF13A3800BFF311 /* MobileCoreServices.framework */; };
+		6DBC0C4C1EF13A4B00BFF311 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DBC0C4B1EF13A4B00BFF311 /* libz.1.2.5.tbd */; };
+		6DBC0C541EF2299100BFF311 /* DHGifImageOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBC0C501EF2299100BFF311 /* DHGifImageOperation.m */; };
+		6DBC0C551EF2299100BFF311 /* DHGuidePageHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBC0C521EF2299100BFF311 /* DHGuidePageHUD.m */; };
+		6DBC0C561EF2299100BFF311 /* GuideImage.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6DBC0C531EF2299100BFF311 /* GuideImage.bundle */; };
+		6DBC0C591EF22A8600BFF311 /* DHMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBC0C581EF22A8600BFF311 /* DHMainViewController.m */; };
 		6DF35EC51ED41C1000B87559 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF35EC31ED41C1000B87559 /* AppDelegate.swift */; };
 		6DF35EC61ED41C1000B87559 /* MainTBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF35EC41ED41C1000B87559 /* MainTBViewController.swift */; };
 		6DF35EC91ED43F4F00B87559 /* BuyLottreyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF35EC81ED43F4F00B87559 /* BuyLottreyViewController.swift */; };
@@ -446,6 +453,16 @@
 		6DAAA17F1EE6B12C0017C427 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DAAA1811EE6B6920017C427 /* ShenSu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShenSu.entitlements; sourceTree = "<group>"; };
 		6DAAA1821EE79E930017C427 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6DBC0C421EF139A700BFF311 /* BmobSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BmobSDK.framework; sourceTree = "<group>"; };
+		6DBC0C491EF13A3800BFF311 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		6DBC0C4B1EF13A4B00BFF311 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		6DBC0C4F1EF2299100BFF311 /* DHGifImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHGifImageOperation.h; sourceTree = "<group>"; };
+		6DBC0C501EF2299100BFF311 /* DHGifImageOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHGifImageOperation.m; sourceTree = "<group>"; };
+		6DBC0C511EF2299100BFF311 /* DHGuidePageHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHGuidePageHUD.h; sourceTree = "<group>"; };
+		6DBC0C521EF2299100BFF311 /* DHGuidePageHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHGuidePageHUD.m; sourceTree = "<group>"; };
+		6DBC0C531EF2299100BFF311 /* GuideImage.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GuideImage.bundle; sourceTree = "<group>"; };
+		6DBC0C571EF22A8600BFF311 /* DHMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHMainViewController.h; sourceTree = "<group>"; };
+		6DBC0C581EF22A8600BFF311 /* DHMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHMainViewController.m; sourceTree = "<group>"; };
 		6DF35EC31ED41C1000B87559 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DF35EC41ED41C1000B87559 /* MainTBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTBViewController.swift; sourceTree = "<group>"; };
 		6DF35EC81ED43F4F00B87559 /* BuyLottreyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyLottreyViewController.swift; sourceTree = "<group>"; };
@@ -547,12 +564,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D04C2AE1EE10BF60026842E /* libicucore.tbd in Frameworks */,
+				6DBC0C4C1EF13A4B00BFF311 /* libz.1.2.5.tbd in Frameworks */,
+				6DBC0C4A1EF13A3800BFF311 /* MobileCoreServices.framework in Frameworks */,
 				6D04C2A41EE10B7F0026842E /* libresolv.tbd in Frameworks */,
 				6DAAA17C1EE686360017C427 /* UIKit.framework in Frameworks */,
 				6DAAA1741EE680110017C427 /* UserNotificationsUI.framework in Frameworks */,
 				6DAAA1721EE6800B0017C427 /* UserNotifications.framework in Frameworks */,
 				6D04C2B21EE10C5A0026842E /* GLKit.framework in Frameworks */,
-				6D04C2AE1EE10BF60026842E /* libicucore.tbd in Frameworks */,
 				6DAAA1791EE685320017C427 /* jcore-ios-1.1.3.a in Frameworks */,
 				6D04C2AC1EE10BE50026842E /* libstdc++.tbd in Frameworks */,
 				6D04C2AA1EE10BCF0026842E /* libsqlite3.tbd in Frameworks */,
@@ -566,6 +585,7 @@
 				6D04C2981EE109D10026842E /* Security.framework in Frameworks */,
 				6D04C2961EE109CA0026842E /* libstdc++.6.0.9.tbd in Frameworks */,
 				6D04C2941EE109BF0026842E /* libz.tbd in Frameworks */,
+				6DBC0C461EF139A700BFF311 /* BmobSDK.framework in Frameworks */,
 				6DAAA1701EE67FE30017C427 /* libUMessage_Sdk_1.5.0a.a in Frameworks */,
 				6D04C2921EE109B70026842E /* libc++.tbd in Frameworks */,
 				6D04C28F1EE108050026842E /* AMapSearchKit.framework in Frameworks */,
@@ -782,6 +802,8 @@
 		6D0BF92E1EC1CB3500E68B4F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6DBC0C4B1EF13A4B00BFF311 /* libz.1.2.5.tbd */,
+				6DBC0C491EF13A3800BFF311 /* MobileCoreServices.framework */,
 				6DAAA17B1EE686360017C427 /* UIKit.framework */,
 				6DAAA1731EE680110017C427 /* UserNotificationsUI.framework */,
 				6DAAA1711EE6800B0017C427 /* UserNotifications.framework */,
@@ -951,6 +973,29 @@
 			path = Jpush;
 			sourceTree = "<group>";
 		};
+		6DBC0C401EF139A700BFF311 /* BmobDataSDK */ = {
+			isa = PBXGroup;
+			children = (
+				6DBC0C421EF139A700BFF311 /* BmobSDK.framework */,
+			);
+			name = BmobDataSDK;
+			path = "BmobDataSDK-v1.0.0-20170605";
+			sourceTree = "<group>";
+		};
+		6DBC0C4E1EF2299100BFF311 /* DHGuidePageHUD */ = {
+			isa = PBXGroup;
+			children = (
+				6DBC0C571EF22A8600BFF311 /* DHMainViewController.h */,
+				6DBC0C581EF22A8600BFF311 /* DHMainViewController.m */,
+				6DBC0C4F1EF2299100BFF311 /* DHGifImageOperation.h */,
+				6DBC0C501EF2299100BFF311 /* DHGifImageOperation.m */,
+				6DBC0C511EF2299100BFF311 /* DHGuidePageHUD.h */,
+				6DBC0C521EF2299100BFF311 /* DHGuidePageHUD.m */,
+				6DBC0C531EF2299100BFF311 /* GuideImage.bundle */,
+			);
+			path = DHGuidePageHUD;
+			sourceTree = "<group>";
+		};
 		6DF35EC21ED41C1000B87559 /* AppController */ = {
 			isa = PBXGroup;
 			children = (
@@ -1009,6 +1054,8 @@
 		6DF35F3E1ED8420B00B87559 /* OC */ = {
 			isa = PBXGroup;
 			children = (
+				6DBC0C4E1EF2299100BFF311 /* DHGuidePageHUD */,
+				6DBC0C401EF139A700BFF311 /* BmobDataSDK */,
 				6DAAA1751EE685320017C427 /* Jpush */,
 				6DAAA16D1EE67FE30017C427 /* UMessage_Sdk_1.5.0a */,
 				6DAAA1661EE65E470017C427 /* WK */,
@@ -1454,6 +1501,7 @@
 				TargetAttributes = {
 					6D55364D1EC1B98400B0E8E8 = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 6VD4NE73AX;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
@@ -1534,6 +1582,7 @@
 				6DF35F0D1ED8075700B87559 /* LotteryTableViewCell.xib in Resources */,
 				6D04C2651EE01F240026842E /* UserBuyListTableViewCell.xib in Resources */,
 				6D08EAE81EE52E8D00AD9965 /* NewsTableViewCell.xib in Resources */,
+				6DBC0C561EF2299100BFF311 /* GuideImage.bundle in Resources */,
 				6D1E166A1EDFEAB300A45B02 /* MycenterCollectionViewCell.xib in Resources */,
 				6D1070031EEE7C8500CE67BF /* NotDataView.xib in Resources */,
 				6D08EAEE1EE53D3800AD9965 /* NewsDetaViewController.xib in Resources */,
@@ -1638,7 +1687,9 @@
 				6D0BF94D1EC30F2C00E68B4F /* UIImageExtensions.swift in Sources */,
 				6D0BF9551EC30F2C00E68B4F /* TimeIntervalTransform.swift in Sources */,
 				6D0BF94C1EC30F2C00E68B4F /* UIColorExtensions.swift in Sources */,
+				6DBC0C591EF22A8600BFF311 /* DHMainViewController.m in Sources */,
 				6D08EAED1EE53D3800AD9965 /* NewsDetaViewController.swift in Sources */,
+				6DBC0C541EF2299100BFF311 /* DHGifImageOperation.m in Sources */,
 				6D1E164A1EDEB07C00A45B02 /* LotteryDetaTypeViewController.swift in Sources */,
 				6DF35EC61ED41C1000B87559 /* MainTBViewController.swift in Sources */,
 				6D04C3171EE13ED10026842E /* MASViewAttribute.m in Sources */,
@@ -1664,6 +1715,7 @@
 				6D0BF94F1EC30F2C00E68B4F /* UIViewExtensions.swift in Sources */,
 				6D1E164C1EDEB2A000A45B02 /* BaseView.swift in Sources */,
 				6DF35EC51ED41C1000B87559 /* AppDelegate.swift in Sources */,
+				6DBC0C551EF2299100BFF311 /* DHGuidePageHUD.m in Sources */,
 				6D04C2641EE01F240026842E /* UserBuyListTableViewCell.swift in Sources */,
 				6D1E164E1EDEB36300A45B02 /* LotteryDetaHeaderView.swift in Sources */,
 				6DF35ED21ED5610F00B87559 /* BuyLotteryFooterView.swift in Sources */,
@@ -1897,14 +1949,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ShenSu/ShenSu.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: zhang zhenghuan (9GKB2GTRRN)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: zhang zhenghuan (9GKB2GTRRN)";
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Yongchang Wu (6VD4NE73AX)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yongchang Wu (6VD4NE73AX)";
+				DEVELOPMENT_TEAM = 6VD4NE73AX;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ShenSu/Frameworks",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/ShenSu/Class/OC/BmobDataSDK-v1.0.0-20170605",
 				);
 				INFOPLIST_FILE = ShenSu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1914,14 +1967,14 @@
 					"$(PROJECT_DIR)/ShenSu/Class/OC/UMessage_Sdk_1.5.0a",
 					"$(PROJECT_DIR)/ShenSu/Class/OC/Jpush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mayacaipiaozzh.zzh;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pkcaipiao.pkcp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "9492a79c-1975-4224-8fc0-c2a7a05eb7e5";
-				PROVISIONING_PROFILE_SPECIFIER = "玛雅彩票hoc";
+				PROVISIONING_PROFILE = "93ad4899-df01-4dd1-9347-7bc72df15e50";
+				PROVISIONING_PROFILE_SPECIFIER = "pk蛋蛋上架";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shensu/Desktop/ShenSu/ShenSu/Class/OC/Shensu-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Shensu-swift.h";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -1930,14 +1983,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ShenSu/ShenSu.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: zhang zhenghuan (9GKB2GTRRN)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: zhang zhenghuan (9GKB2GTRRN)";
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Yongchang Wu (6VD4NE73AX)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yongchang Wu (6VD4NE73AX)";
+				DEVELOPMENT_TEAM = 6VD4NE73AX;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ShenSu/Frameworks",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/ShenSu/Class/OC/BmobDataSDK-v1.0.0-20170605",
 				);
 				INFOPLIST_FILE = ShenSu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1947,14 +2001,14 @@
 					"$(PROJECT_DIR)/ShenSu/Class/OC/UMessage_Sdk_1.5.0a",
 					"$(PROJECT_DIR)/ShenSu/Class/OC/Jpush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mayacaipiaozzh.zzh;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pkcaipiao.pkcp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "9492a79c-1975-4224-8fc0-c2a7a05eb7e5";
-				PROVISIONING_PROFILE_SPECIFIER = "玛雅彩票hoc";
+				PROVISIONING_PROFILE = "93ad4899-df01-4dd1-9347-7bc72df15e50";
+				PROVISIONING_PROFILE_SPECIFIER = "pk蛋蛋上架";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shensu/Desktop/ShenSu/ShenSu/Class/OC/Shensu-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Shensu-swift.h";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 	var viewController: ViewController?
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-
+        Bmob.register(withAppKey: "8b97083620084a6eefda367e8f274157")
 		self.window?.frame = UIScreen.main.bounds
 		AMapServices.shared().apiKey = AppNeedKey().GDMapKey
 		UIApplication.shared.statusBarStyle = .lightContent
@@ -27,8 +27,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 		window?.rootViewController = MainViewController()
 		window?.makeKeyAndVisible()
 		windowsAddLaunchScreen()
-		observeNetWork()
+        addActionInfo()
 		addPush(application: application, launchOptions: launchOptions)
+        if launchOptions != nil {
+        let dic = launchOptions?[.remoteNotification]
+            if dic != nil {
+            let userDefault = UserDefaults.standard
+                let aps = JSON(dic!).dictionaryObject
+                userDefault.set(aps, forKey: "pushMessage")
+                userDefault.synchronize()
+            }
+        }
 
 		return true
 	}
@@ -43,6 +52,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 			let typers10: UNAuthorizationOptions = [.badge, .alert, .sound]
 			center.requestAuthorization(options: typers10) { (granted, error) in
 				if granted {
+                    
 				} else {
 
 				}
@@ -65,27 +75,48 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 		JPUSHService.setup(withOption: launchOptions, appKey: AppNeedKey().JpushKey, channel: "App Store", apsForProduction: true)
 	}
 	func addActionInfo() {
-
-		NetWorkManager.default.requestAppinfo { (status, data) in
-			if status == .Success {
-				if let datajson = data {
-					let json = datajson as? JSON
-					if let dic = json?.dictionaryObject {
-						if dic["url"] as? String != "" {
-							let vc = WKWebViewController()
-							vc.url = dic["url"] as? String ?? ""
-							vc.isAddFoot = dic["foot"] as? Bool ?? false
-							self.window?.rootViewController = vc
-							self.window?.makeKeyAndVisible()
-						}
-						self.viewController?.view.removeFromSuperview()
-						self.removeLaunchScreenView()
-					}
-				}
-			} else {
-
-			}
-		}
+        let bundleid = Bundle.main.infoDictionary?["CFBundleIdentifier"] as? String
+        let query:BmobQuery = BmobQuery(className: "Config")
+        query.findObjectsInBackground { (array, error) in
+          array?.enumerated().forEach({ (index,classdata) in
+            let obj = classdata as! BmobObject
+            let appid = obj.object(forKey: "appid") as? String ?? ""
+            let url = obj.object(forKey: "url") as? String ?? ""
+            let show = obj.object(forKey: "show") as? Bool ?? false
+            if appid.replacingOccurrences(of: "\n", with: "") == bundleid {
+                DispatchQueue.main.async {
+                    if show == true {
+                        let isfirst = UserDefaults.standard.value(forKey: "dhGuidePage")
+                        if isfirst != nil {
+                            let vc = WKWebViewController()
+                            vc.url = url.replacingOccurrences(of: "\n", with: "")
+                            self.window?.rootViewController = vc
+                            self.window?.makeKeyAndVisible()
+                            self.removeLaunchScreenView()
+                        }else{
+                            let dh = DHMainViewController()
+                            dh.isremoveFromWindows = {
+                                let vc = WKWebViewController()
+                                vc.url = url.replacingOccurrences(of: "\n", with: "")
+                                self.window?.rootViewController = vc
+                                self.window?.makeKeyAndVisible()
+                                self.removeLaunchScreenView()
+                            }
+                            self.window?.rootViewController = dh
+                            self.window?.makeKeyAndVisible()
+                            self.removeLaunchScreenView()
+                        }
+                        
+                    }else{
+                        self.removeLaunchScreenView()
+                    }
+                }
+            
+            }
+          })
+         
+        }
+       
 
 	}
 	func windowsAddLaunchScreen() {
@@ -105,28 +136,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 		}
 
 	}
-	func observeNetWork() {
-		self.manager = NetworkReachabilityManager(host: "www.baidu.com")
-		self.manager?.listener = { status in
-			if status == NetworkReachabilityManager.NetworkReachabilityStatus.notReachable {
-				self.viewController = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "ViewController") as? ViewController
-				self.window?.addSubview((self.viewController?.view)!)
-				self.removeLaunchScreenView()
-			} else if status == NetworkReachabilityManager.NetworkReachabilityStatus.unknown {
-			} else {
-				self.addActionInfo()
-			}
 
-			print("Network Status Changed: \(status)")
-		}
-		self.manager?.startListening()
-	}
 	func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
 		JPUSHService.registerDeviceToken(deviceToken)
 	}
 	func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
 		UMessage.didReceiveRemoteNotification(userInfo)
 		JPUSHService.handleRemoteNotification(userInfo)
+        
+    
+      
+        let userDefault = UserDefaults.standard
+        userDefault.set(userInfo, forKey: "pushMessage")
+        userDefault.synchronize()
+        
+        
 		completionHandler(.newData)
 	}
 	func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any]) {
@@ -159,7 +183,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 	@available(iOS 10.0, *)
 	func jpushNotificationCenter(_ center: UNUserNotificationCenter!, didReceive response: UNNotificationResponse!, withCompletionHandler completionHandler: (() -> Void)!) {
 		let userinfo = response.notification.request.content.userInfo
-
+        let userDefault = UserDefaults.standard
+        let aps = userinfo["aps"]!
+        let dic = JSON(aps).dictionaryObject
+        userDefault.set(dic, forKey: "pushMessage")
+        userDefault.synchronize()
 		if (response.notification.request.trigger?.isKind(of: UNPushNotificationTrigger.self))! {
 			JPUSHService.handleRemoteNotification(userinfo)
 		}

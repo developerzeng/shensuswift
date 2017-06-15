@@ -19,9 +19,35 @@
 @end
 
 @implementation WKWebViewController
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
 
+
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
+    NSDictionary * dic = [defaults valueForKey:@"pushMessage"];
+    if (dic){
+       dispatch_async(dispatch_get_main_queue(), ^{
+           UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"消息" message:dic[@"alert"] preferredStyle:UIAlertControllerStyleAlert];
+           UIAlertAction * sure = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+               
+           }];
+           [alert addAction:sure];
+           [self presentViewController:alert animated:true completion:nil];
+           
+           [self showMessageWithMessage:dic[@"alert"]];
+       });
+ 
+           [defaults removeObjectForKey:@"pushMessage"];
+    }
+    
+    
+    
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     self.wkwebView = [[WKWebView alloc] init];
     [self.wkwebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.url]]];

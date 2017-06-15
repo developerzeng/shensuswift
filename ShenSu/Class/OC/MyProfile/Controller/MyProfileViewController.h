@@ -10,5 +10,5 @@
 @interface MyProfileViewController : UIViewController
 
 @property(strong,nonatomic) UITableView * MyProfileTableView;
-@property(strong,nonatomic)  NSArray * TitleArray ;
+@property(strong,nonatomic)  NSArray<NSArray *> * TitleArray ;
 @end
