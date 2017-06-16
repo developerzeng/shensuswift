@@ -13,7 +13,8 @@ class HomeLotteryModel: NSObject, Mappable {
 	var url: String!
 	var rule: Array<ruleModel>!
     var caipiaoid: String!
-    var  subTitle: String = ""
+    var subTitle: String = ""
+    var talk:String = ""
 	override init() {
 
 	}
@@ -28,6 +29,7 @@ class HomeLotteryModel: NSObject, Mappable {
 		rule <- map["rule"]
         caipiaoid <- map["caipiaoid"]
         subTitle <- map["subTitle"]
+        talk <- map["talk"]
 	}
 
 }

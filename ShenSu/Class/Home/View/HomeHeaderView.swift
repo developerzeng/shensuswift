@@ -16,6 +16,7 @@ class HomeHeaderView: UICollectionReusableView {
     var homcellHead: HomecellHeadCollectionReusableView!
 	override init(frame: CGRect) {
 		super.init(frame: frame)
+
 		addBannar()
 		addScrollerView()
         addHeadView()

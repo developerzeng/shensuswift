@@ -63,6 +63,7 @@ class HomeViewController: BaseViewController {
 		collectionView.backgroundColor = UIColor.backColor()
 		collectionView.delegate = self
 		collectionView.dataSource = self
+        collectionView.addbackViewImage()
 		collectionView.showsVerticalScrollIndicator = false
 		collectionView.showsHorizontalScrollIndicator = false
 		collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
@@ -143,9 +144,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
 		if lotteryArray.count > indexPath.row && indexPath.section > 0 {
 			let model = lotteryArray[indexPath.row]
 			let vc = BuyLottreyViewController()
-			vc.lotteryData = model.rule
-			vc.titleName = model.name
-			vc.url = model.url
+            vc.lotteryInfoModel = model
 			_ = self.navigationController?.pushViewController(vc, animated: true)
 		}
 
@@ -203,6 +202,13 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
 			if lotteryArray.count > indexPath.row {
 				cell?.setModel(model: lotteryArray[indexPath.row])
 			}
+            if indexPath.row < 4 {
+            cell?.backgroundColor = UIColor.orangeRedColor()
+            }else if indexPath.row < 8 {
+            cell?.backgroundColor = UIColor.seaGreenColor()
+            }else{
+            cell?.backgroundColor = UIColor.royalBlueColor()
+            }
 			return cell!
 
 		}

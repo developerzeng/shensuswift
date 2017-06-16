@@ -33,12 +33,22 @@ class BuyLottreyViewController: BaseViewController {
 	var qishu: String = ""
 	var lotteryinfoArray = Array<LotteryModel>()
 	var url: String!
+    var caipiaoid: String!
 	var isChoose: Bool = false
 	var titleName: String? {
 		didSet {
 			self.setNavTitle(title: titleName!)
 		}
 	}
+    var lotteryInfoModel: HomeLotteryModel!{
+        didSet{
+        self.url = lotteryInfoModel.url
+        self.caipiaoid = lotteryInfoModel.caipiaoid
+        self.titleName = lotteryInfoModel.name
+        self.lotteryData = lotteryInfoModel.rule
+        }
+     
+    }
 	var buyListModels = Array<LotteryListModel>()
 	var buyNumber: String = ""
 	var buyViewHeaderView: BuyViewHeaderView!
@@ -61,6 +71,26 @@ class BuyLottreyViewController: BaseViewController {
             self?.lotterydeta.removeFromeSuperViewBlock = {
             self?.lotterydeta.removeFromSuperview()
             sender?.isSelected  = false
+            }
+            self?.lotterydeta.selectRowBlock = {index in
+                self?.lotterydeta.removeFromSuperview()
+                sender?.isSelected  = false
+                switch index.row {
+                case 0:
+                    let vc = UserBuyListViewController()
+                    vc.lotteryType = .lotterSaveTypeBuy
+                    _ = self?.navigationController?.pushViewController(vc, animated: true)
+                case 1:
+                    let vc = LotteryRuleViewController()
+                    vc.talk = self?.lotteryInfoModel.talk
+                    _ = self?.navigationController?.pushViewController(vc, animated: true)
+                default:
+                    let model = LotteryJSModel()
+                    model.caipiaoid = (self?.caipiaoid)!
+                    let vc = LotteryDetaViewController()
+                    vc.lotterModel = model
+                    _ = self?.navigationController?.pushViewController(vc, animated: true)
+                }
             }
             if sender?.isSelected == true {
                 self?.lotterydeta.frame = (self?.view.bounds)!

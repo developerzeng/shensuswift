@@ -21,7 +21,7 @@ class HomecellHeadCollectionReusableView: UICollectionReusableView {
         self.addSubview(headImage)
         headTitl = UILabel()
         headTitl.font = UIFont.systemFont(ofSize: 14)
-        headTitl.textColor = UIColor.lightGray
+        headTitl.textColor = UIColor.clear
         self.addSubview(headTitl)
         
         headImage <- [

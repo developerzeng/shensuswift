@@ -13,12 +13,21 @@ class LotteryDetaView: UIControl {
      return CGFloat(M_PI * angle / 180)
     }
     var removeFromeSuperViewBlock:(()->())?
+    var selectRowBlock:((IndexPath)->())?
     var tableViewBackView = UIView()
+    var tableView:UITableView!
+    var titleArray:Array<String>{
+     return ["选号记录","规则说明","开奖记录"]
+    }
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = UIColor(rgb: 0x00000, alpha: 0.3)
         tableViewBackView.backgroundColor = UIColor.white
         self.addSubview(tableViewBackView)
+        tableView = UITableView(frame: CGRect.zero, style: .plain)
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableViewBackView.addSubview(tableView)
       
     }
     func animationtableViewBackView(){
@@ -54,6 +63,9 @@ class LotteryDetaView: UIControl {
             Height(150),
             Width(self.frame.width/4 + 20)
         ]
+        tableView <- [
+        Edges(UIEdgeInsets(top: 10, left: 0, bottom: 0, right: 0))
+        ]
        animationtableViewBackView()
     }
     func createLayerWithView(view : UIView){
@@ -72,8 +84,7 @@ class LotteryDetaView: UIControl {
         bezierPath.addLine(to: point2)
         bezierPath.addLine(to: point3)
         bezierPath.addLine(to: point4)
-        bezierPath.addArc(withCenter: CGPoint(x:point5.x - 2,y:point5.y - 2), radius: 4.0, startAngle: CGFloat(M_PI), endAngle:  CGFloat(M_PI_2) * 3, clockwise: true)
-//        bezierPath.addLine(to: point5)
+        bezierPath.addLine(to: point5)
         bezierPath.addLine(to: point6)
         bezierPath.addLine(to: point7)
         bezierPath.close()
@@ -89,5 +100,29 @@ class LotteryDetaView: UIControl {
         // Drawing code
     }
     */
+
+}
+extension LotteryDetaView: UITableViewDelegate,UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCell(withIdentifier: "cell")
+        if cell == nil {
+        cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cell")
+        }
+        cell?.textLabel?.font = UIFont.systemFont(ofSize: 12)
+        cell?.textLabel?.text = titleArray[indexPath.row]
+        return cell!
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       self.selectRowBlock?(indexPath)
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return CGFloat(140/3)
+    }
 
 }

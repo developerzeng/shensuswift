@@ -68,25 +68,24 @@ class NumberView: UIView {
 		super.init(frame: frame)
 		for i in 0..<number {
 			let lable = UILabel()
-			lable.backgroundColor = UIColor.white
+			lable.textColor = UIColor.white
 			lable.layer.cornerRadius = 12.5
 			if type == LotteryType.DLT {
 				if i < 6 {
-					lable.layer.borderColor = UIColor.orangeRedColor().cgColor
+					lable.backgroundColor = UIColor.orangeRedColor()
 				} else {
-					lable.layer.borderColor = UIColor.midnightBlueColor().cgColor
+					lable.backgroundColor = UIColor.midnightBlueColor()
 				}
 			} else if type == LotteryType.SSQ {
 				if i < 6 {
-					lable.layer.borderColor = UIColor.orangeRedColor().cgColor
+					lable.backgroundColor = UIColor.orangeRedColor()
 				} else {
-					lable.layer.borderColor = UIColor.midnightBlueColor().cgColor
+					lable.backgroundColor = UIColor.midnightBlueColor()
 				}
 			} else {
-				lable.layer.borderColor = UIColor.orangeRedColor().cgColor
+				lable.backgroundColor = UIColor.orangeRedColor()
 			}
 
-			lable.layer.borderWidth = 1
 			lable.clipsToBounds = true
 			// lable.layer.masksToBounds = true
 			lable.font = UIFont.systemFont(ofSize: 12)

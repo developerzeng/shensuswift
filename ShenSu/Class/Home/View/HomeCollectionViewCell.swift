@@ -10,6 +10,7 @@ import UIKit
 
 class HomeCollectionViewCell: UICollectionViewCell {
 	func setModel(model: HomeLotteryModel) {
+        
 		lotteryImage.image = UIImage.init(named: model.name)
 		lotteryLable.text = model.name
 		lotterySubLable.text = model.subTitle
@@ -19,8 +20,9 @@ class HomeCollectionViewCell: UICollectionViewCell {
 	@IBOutlet weak var lotteryImage: UIImageView!
 	override func awakeFromNib() {
 		super.awakeFromNib()
+        lotteryLable.textColor = UIColor.white
+        lotterySubLable.textColor = UIColor.white
 		self.layer.cornerRadius = 4
-		self.backgroundColor = UIColor.white
 		// Initialization code
 	}
 

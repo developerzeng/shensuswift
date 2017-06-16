@@ -53,6 +53,7 @@ class TjCollectionViewCell: UICollectionViewCell {
 	override func awakeFromNib() {
 		super.awakeFromNib()
 		let rantype = type
+        buyBtn.layer.cornerRadius = 4
 		switch rantype {
 		case .DLT:
 			lotterType.text = "大乐透"
@@ -62,7 +63,7 @@ class TjCollectionViewCell: UICollectionViewCell {
 			lotterType.text = "重庆时时彩"
 
 		}
-		self.contentView.backgroundColor = UIColor.white
+		self.contentView.backgroundColor = UIColor.clear
 		numberView = NumberView()
 		numberView.type = rantype
 		numberBackView.addSubview(numberView)

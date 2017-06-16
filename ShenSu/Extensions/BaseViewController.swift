@@ -434,6 +434,7 @@ public class BaseViewController: UIViewController {
 	public override func loadView() {
 		super.loadView()
 		self.setTransparentNavBar(flag: false)
+     
 	}
 
 	override public func viewDidLoad() {
@@ -441,8 +442,7 @@ public class BaseViewController: UIViewController {
 
 		self.setDefaultNavBar()
 		self.view.backgroundColor = UIColor(rgb: 0xf2f2f2)
-//		let gobackImage = MaterialIcon.arrowBack?.resizableImageWithCapInsets(UIEdgeInsetsMake(0, 30, 0, 0))
-//		UIBarButtonItem.appearance().setBackButtonBackgroundImage(gobackImage, forState: .Normal, barMetrics: .Default)
+
 	}
 
 	func onRecieveMessage(notif: NSNotification) {
