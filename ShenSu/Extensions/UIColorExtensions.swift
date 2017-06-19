@@ -240,4 +240,9 @@ extension UIColor {
 	static func random() -> UIColor {
 		return UIColor(red: CGFloat(drand48()), green: CGFloat(drand48()), blue: CGFloat(drand48()), alpha: 1.0)
 	}
+    static func randomColorWithrgb() -> UIColor {
+        let random = arc4random_uniform(10)
+        let colors = ["#ff0000","#28ff28","#f75000","#b7ff4a","#ffe153","#ad5a5a","#6fb7b77","#484891","#009393","#4f4f4f","#ff9797"]
+       return UIColor(colors[Int(random)])
+    }
 }

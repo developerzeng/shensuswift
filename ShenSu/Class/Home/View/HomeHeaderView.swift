@@ -13,10 +13,13 @@ class HomeHeaderView: UICollectionReusableView {
 	var zpbannar: LLCycleScrollView!
 	var bannarArray = Array<BannarModel>()
 	var chooseView: ChooseView!
+    var homcellHead: HomecellHeadCollectionReusableView!
 	override init(frame: CGRect) {
 		super.init(frame: frame)
+
 		addBannar()
 		addScrollerView()
+        addHeadView()
 	}
 
 	required init?(coder aDecoder: NSCoder) {
@@ -29,7 +32,21 @@ class HomeHeaderView: UICollectionReusableView {
 	 // Drawing code
 	 }
 	 */
-	func addScrollerView() {
+    func addHeadView(){
+    homcellHead = HomecellHeadCollectionReusableView()
+    self.addSubview(homcellHead)
+        homcellHead <- [
+            Top(5).to(chooseView, .bottom),
+            Left(0).to(self),
+            Right(0).to(self),
+            Bottom(0).to(self)
+            // Bottom(10).to(self)
+        ]
+    }
+    func setModel(model:HomecellModel ){
+        homcellHead.setModel(model: model)
+    }
+    func addScrollerView() {
 		chooseView = ChooseView()
 		self.addSubview(chooseView)
 		chooseView <- [

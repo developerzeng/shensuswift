@@ -1013,6 +1013,8 @@
 			children = (
 				6DF35EC81ED43F4F00B87559 /* BuyLottreyViewController.swift */,
 				6DF35EF61ED6D15D00B87559 /* BuyListViewController.swift */,
+				6DBC0C5E1EF38E7E00BFF311 /* LotteryRuleViewController.swift */,
+				6DBC0C5F1EF38E7E00BFF311 /* LotteryRuleViewController.xib */,
 			);
 			path = BuyLottery;
 			sourceTree = "<group>";
@@ -1029,6 +1031,7 @@
 				6DF35EF81ED6D7A100B87559 /* BuyListTableViewCell.swift */,
 				6DF35EF91ED6D7A100B87559 /* BuyListTableViewCell.xib */,
 				6DF35EFE1ED7C12000B87559 /* BuyListFootView.swift */,
+				6DBC0C5C1EF28D9E00BFF311 /* LotteryDetaView.swift */,
 			);
 			path = BuyLotteryV;
 			sourceTree = "<group>";
@@ -1221,6 +1224,7 @@
 				6D4D02A11ECC2F3D00DBAAE5 /* NumberView.swift */,
 				6D4D02A51ECC550E00DBAAE5 /* HomeCollectionViewCell.swift */,
 				6D4D02A61ECC550E00DBAAE5 /* HomeCollectionViewCell.xib */,
+				6DBC0C5A1EF285EE00BFF311 /* HomecellHeadCollectionReusableView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1560,6 +1564,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DBC0C611EF38E7F00BFF311 /* LotteryRuleViewController.xib in Resources */,
 				6DAAA15F1EE56D930017C427 /* AboutUsViewController.xib in Resources */,
 				6D1E16661EDFCD4000A45B02 /* UserHeaderCollectionReusableView.xib in Resources */,
 				6DF35F151ED81BF700B87559 /* LotteryDetaTableViewCell.xib in Resources */,
@@ -1694,6 +1699,7 @@
 				6DF35EC61ED41C1000B87559 /* MainTBViewController.swift in Sources */,
 				6D04C3171EE13ED10026842E /* MASViewAttribute.m in Sources */,
 				6D08EAE41EE52D6E00AD9965 /* NewsViewController.swift in Sources */,
+				6DBC0C601EF38E7E00BFF311 /* LotteryRuleViewController.swift in Sources */,
 				6DAAA1641EE64E210017C427 /* SetupTableViewCell.swift in Sources */,
 				6D0BF9521EC30F2C00E68B4F /* TableViewController.swift in Sources */,
 				6DF6D7F91EEE390000EFFE45 /* SeachViewController.swift in Sources */,
@@ -1704,6 +1710,7 @@
 				6DF35ED61ED58A1200B87559 /* BuyViewHeaderView.swift in Sources */,
 				6D0BF9501EC30F2C00E68B4F /* NavViewController.swift in Sources */,
 				6D106FFF1EEE473F00CE67BF /* SeachOpenViewController.swift in Sources */,
+				6DBC0C5D1EF28D9E00BFF311 /* LotteryDetaView.swift in Sources */,
 				6DF6E7CC1EC9AD52003F2D2F /* HomeViewController.swift in Sources */,
 				6D08EAF21EE547B300AD9965 /* NumberTransform.swift in Sources */,
 				6D0BF93E1EC3022C00E68B4F /* URLRouter.swift in Sources */,
@@ -1741,6 +1748,7 @@
 				6D04C3161EE13ED10026842E /* MASLayoutConstraint.m in Sources */,
 				6DF35ED41ED586DA00B87559 /* LotteryModel.swift in Sources */,
 				6D4D02AD1ECC56BC00DBAAE5 /* HomeLotteryModel.swift in Sources */,
+				6DBC0C5B1EF285EE00BFF311 /* HomecellHeadCollectionReusableView.swift in Sources */,
 				6D0BF93C1EC1CBF300E68B4F /* NetWorkManager.swift in Sources */,
 				6D08EADC1EE16DE900AD9965 /* UserRuleViewController.swift in Sources */,
 				6D08EAE71EE52E8D00AD9965 /* NewsTableViewCell.swift in Sources */,

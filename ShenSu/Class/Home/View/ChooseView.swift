@@ -106,6 +106,7 @@ class ChooseView: UIView {
 		super.init(coder: aDecoder)
 		contentView = loadViewFromNib()
 		addSubview(contentView)
+  
 
 	}
 	// 加载xib
