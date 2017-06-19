@@ -63,7 +63,6 @@ class HomeViewController: BaseViewController {
 		collectionView.backgroundColor = UIColor.backColor()
 		collectionView.delegate = self
 		collectionView.dataSource = self
-        collectionView.addbackViewImage()
 		collectionView.showsVerticalScrollIndicator = false
 		collectionView.showsHorizontalScrollIndicator = false
 		collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
@@ -75,7 +74,7 @@ class HomeViewController: BaseViewController {
 		self.view.addSubview(collectionView)
 
 		collectionView <- [
-			Edges(UIEdgeInsets(top: 0, left: 0, bottom: 49, right: 0))
+			Edges(UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0))
 		]
         collectionView.addRefreshingHeaderView { 
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: { 

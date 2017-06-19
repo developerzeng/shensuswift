@@ -83,7 +83,7 @@ class MyViewController: BaseViewController {
 extension MyViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-		return CGSize(width: (collectionView.width - 4 * spacefloat) / 3, height: 116)
+		return CGSize(width: collectionView.width , height: 48)
 	}
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
 		return CGSize(width: self.view.width, height: self.view.width * 1200 / 1920)

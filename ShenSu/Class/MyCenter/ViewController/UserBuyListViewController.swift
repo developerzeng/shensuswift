@@ -55,7 +55,11 @@ class UserBuyListViewController: BaseViewController {
 				dataArray = AppUserData.default.homesaveModel!
 			}
 		}
-
+        if dataArray.count == 0 {
+        tableView.addFugaiView(force: true)
+        }else{
+        tableView.addFugaiView(force: false)
+        }
 		tableView.safeReload()
 	}
 	override func didReceiveMemoryWarning() {

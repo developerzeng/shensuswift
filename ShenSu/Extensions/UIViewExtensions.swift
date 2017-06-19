@@ -160,11 +160,7 @@ extension UIImageView {
 
 
 extension UITableView {
-    public func addbackViewImage(){
-        let backimage = UIImageView()
-        backimage.image = UIImage(named: "VCBackImage")
-        self.backgroundView = backimage
-    }
+ 
     public func addFugaiView(force:Bool){
         if force {
             let vc = NotDataView(frame: self.frame)
@@ -195,11 +191,7 @@ extension UITableView {
 }
 
 extension UICollectionView {
-    public func addbackViewImage(){
-    let backimage = UIImageView()
-        backimage.image = UIImage(named: "VCBackImage")
-    self.backgroundView = backimage
-    }
+
 	public func safeReload() {
 		if Thread.current.isMainThread {
 			self.reloadData()
