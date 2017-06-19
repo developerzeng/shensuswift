@@ -22,6 +22,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(deviceOrientationDidChange) name:UIDeviceOrientationDidChangeNotification object:nil];
+    
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     self.wkwebView = [[WKWebView alloc] init];
     [self.wkwebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.url]]];
@@ -42,17 +45,14 @@
 
 }
 -(void)addFoot{
-    self.lable = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 30)];
-    self.lable.center = self.view.center;
-    self.lable.font  = [UIFont systemFontOfSize:14];
-    self.lable.textAlignment = NSTextAlignmentCenter;
-    self.lable.textColor = [UIColor grayColor];
-    [self.view addSubview: self.lable];
-    
-    
-    _footview = [[WebViewXib alloc]initWithFrame:CGRectMake(0, self.view.frame.size.height - 49, self.view.frame.size.width, 49)];
+    _footview = [[WebViewXib alloc] init];
     [self.view addSubview:_footview];
-    
+    [_footview mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(self.view.mas_left);
+        make.right.mas_equalTo(self.view.mas_right);
+        make.bottom.mas_equalTo(self.view.mas_bottom);
+        make.height.offset(49);
+    }];
     __weak __typeof (self) weak = self;
     _footview.WebViewBlock = ^(NSInteger tag){
         switch (tag) {
@@ -70,7 +70,9 @@
                     [weak.wkwebView goForward];
                 }
             default:
-                [weak.wkwebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:weak.url]]];
+                if (weak.wkwebView.backForwardList.backList.count != 0){
+                    [weak.wkwebView goToBackForwardListItem:weak.wkwebView.backForwardList.backList.firstObject];
+                }
                 break;
         }
     };
@@ -190,6 +192,65 @@
     
 
 }
+
+
+// 如果需要横屏的时候，一定要重写这个方法并返回NO
+- (BOOL)prefersStatusBarHidden
+{
+    return NO;
+}
+
+// 支持设备自动旋转
+- (BOOL)shouldAutorotate
+{
+    return YES;
+}
+
+// 支持横屏显示
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
+{
+    // 如果该界面需要支持横竖屏切换
+    return UIInterfaceOrientationMaskLandscapeRight | UIInterfaceOrientationMaskPortrait|UIInterfaceOrientationMaskLandscapeLeft;
+    // 如果该界面仅支持横屏
+    // return UIInterfaceOrientationMaskLandscapeRight；
+}
+
+- (void)deviceOrientationDidChange
+{
+    NSLog(@"deviceOrientationDidChange:%ld",(long)[UIDevice currentDevice].orientation);
+    if([UIDevice currentDevice].orientation == UIDeviceOrientationPortrait) {
+        [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationPortrait];
+        if (_isAddFoot) {
+            [self.wkwebView mas_remakeConstraints:^(MASConstraintMaker *make) {
+                make.edges.mas_equalTo(UIEdgeInsetsMake(0, 0, 49, 0));
+            }];
+            [self addFoot];
+        }else{
+            [self.wkwebView mas_remakeConstraints:^(MASConstraintMaker *make) {
+                make.edges.mas_equalTo(UIEdgeInsetsMake(20, 0, 0, 0));
+            }];
+        }
+        _footview.hidden = NO;
+    } else if ([UIDevice currentDevice].orientation == UIDeviceOrientationLandscapeLeft) {
+        [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationLandscapeRight];
+        [self.wkwebView mas_remakeConstraints:^(MASConstraintMaker *make) {
+            make.edges.mas_equalTo(UIEdgeInsetsMake(0, 0, 0, 0));
+        }];
+        _footview.hidden = YES;
+        
+        //   [self orientationChange:YES];
+    } else if ([UIDevice currentDevice].orientation == UIDeviceOrientationLandscapeRight){
+        [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationLandscapeLeft];
+        [self.wkwebView mas_remakeConstraints:^(MASConstraintMaker *make) {
+            make.edges.mas_equalTo(UIEdgeInsetsMake(0, 0, 0, 0));
+        }];
+        _footview.hidden = YES;
+        
+    }
+    
+}
+
+
 /*
 #pragma mark - Navigation
 

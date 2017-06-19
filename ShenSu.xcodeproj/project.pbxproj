@@ -1913,8 +1913,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ShenSu/ShenSu.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: zhang zhenghuan (9GKB2GTRRN)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: zhang zhenghuan (9GKB2GTRRN)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Lin min (8VRA49V3DS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Lin min (8VRA49V3DS)";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1930,10 +1930,10 @@
 					"$(PROJECT_DIR)/ShenSu/Class/OC/UMessage_Sdk_1.5.0a",
 					"$(PROJECT_DIR)/ShenSu/Class/OC/Jpush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mayacaipiaozzh.zzh;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mayacaipiao.mycp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "9492a79c-1975-4224-8fc0-c2a7a05eb7e5";
-				PROVISIONING_PROFILE_SPECIFIER = "玛雅彩票hoc";
+				PROVISIONING_PROFILE = "1dd32a8c-e67f-4a98-a27e-e4406c8a7190";
+				PROVISIONING_PROFILE_SPECIFIER = "mayacaipiao上架";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shensu/Desktop/ShenSu/ShenSu/Class/OC/Shensu-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Shensu-swift.h";
 				SWIFT_VERSION = 3.0;
@@ -1946,8 +1946,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ShenSu/ShenSu.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: zhang zhenghuan (9GKB2GTRRN)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: zhang zhenghuan (9GKB2GTRRN)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Lin min (8VRA49V3DS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Lin min (8VRA49V3DS)";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1963,10 +1963,10 @@
 					"$(PROJECT_DIR)/ShenSu/Class/OC/UMessage_Sdk_1.5.0a",
 					"$(PROJECT_DIR)/ShenSu/Class/OC/Jpush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mayacaipiaozzh.zzh;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mayacaipiao.mycp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "9492a79c-1975-4224-8fc0-c2a7a05eb7e5";
-				PROVISIONING_PROFILE_SPECIFIER = "玛雅彩票hoc";
+				PROVISIONING_PROFILE = "1dd32a8c-e67f-4a98-a27e-e4406c8a7190";
+				PROVISIONING_PROFILE_SPECIFIER = "mayacaipiao上架";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shensu/Desktop/ShenSu/ShenSu/Class/OC/Shensu-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Shensu-swift.h";
 				SWIFT_VERSION = 3.0;
