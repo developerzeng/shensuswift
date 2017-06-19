@@ -63,7 +63,7 @@ class TjCollectionViewCell: UICollectionViewCell {
 			lotterType.text = "重庆时时彩"
 
 		}
-		self.contentView.backgroundColor = UIColor.clear
+		self.contentView.backgroundColor = UIColor.white
 		numberView = NumberView()
 		numberView.type = rantype
 		numberBackView.addSubview(numberView)
