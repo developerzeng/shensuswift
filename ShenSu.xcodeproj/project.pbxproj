@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D02485F1EF7C9D3005E5748 /* UMMobClick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D02485E1EF7C9D3005E5748 /* UMMobClick.framework */; };
 		6D04C25E1EE001690026842E /* XLPlainFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D04C25C1EE001690026842E /* XLPlainFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D04C25F1EE001690026842E /* XLPlainFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D04C25D1EE001690026842E /* XLPlainFlowLayout.m */; };
 		6D04C2611EE01CD60026842E /* UserBuyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04C2601EE01CD60026842E /* UserBuyListViewController.swift */; };
@@ -279,6 +280,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6D02485E1EF7C9D3005E5748 /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMMobClick.framework; sourceTree = "<group>"; };
 		6D04C25C1EE001690026842E /* XLPlainFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLPlainFlowLayout.h; sourceTree = "<group>"; };
 		6D04C25D1EE001690026842E /* XLPlainFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLPlainFlowLayout.m; sourceTree = "<group>"; };
 		6D04C2601EE01CD60026842E /* UserBuyListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserBuyListViewController.swift; sourceTree = "<group>"; };
@@ -559,6 +561,7 @@
 				6D04C29A1EE109D60026842E /* JavaScriptCore.framework in Frameworks */,
 				6D04C2981EE109D10026842E /* Security.framework in Frameworks */,
 				6D04C2961EE109CA0026842E /* libstdc++.6.0.9.tbd in Frameworks */,
+				6D02485F1EF7C9D3005E5748 /* UMMobClick.framework in Frameworks */,
 				6D04C2941EE109BF0026842E /* libz.tbd in Frameworks */,
 				6DAAA1701EE67FE30017C427 /* libUMessage_Sdk_1.5.0a.a in Frameworks */,
 				6D04C2921EE109B70026842E /* libc++.tbd in Frameworks */,
@@ -930,6 +933,7 @@
 		6DAAA16D1EE67FE30017C427 /* UMessage_Sdk_1.5.0a */ = {
 			isa = PBXGroup;
 			children = (
+				6D02485E1EF7C9D3005E5748 /* UMMobClick.framework */,
 				6DAAA16E1EE67FE30017C427 /* libUMessage_Sdk_1.5.0a.a */,
 				6DAAA16F1EE67FE30017C427 /* UMessage.h */,
 			);
@@ -1893,6 +1897,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ShenSu/Frameworks",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/ShenSu/Class/OC/UMessage_Sdk_1.5.0a",
 				);
 				INFOPLIST_FILE = ShenSu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1902,10 +1907,10 @@
 					"$(PROJECT_DIR)/ShenSu/Class/OC/UMessage_Sdk_1.5.0a",
 					"$(PROJECT_DIR)/ShenSu/Class/OC/Jpush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cmssc2.ssc2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.beijinsaiche3.bjsc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "1601ea0e-6e48-42d3-a864-b8d1314992bd";
-				PROVISIONING_PROFILE_SPECIFIER = "策马北京赛车2";
+				PROVISIONING_PROFILE = "dacdb610-356f-464b-9606-317102522a15";
+				PROVISIONING_PROFILE_SPECIFIER = "策马北京赛车3";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shensu/Desktop/ShenSu/ShenSu/Class/OC/Shensu-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Shensu-swift.h";
 				SWIFT_VERSION = 3.0;
@@ -1926,6 +1931,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ShenSu/Frameworks",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/ShenSu/Class/OC/UMessage_Sdk_1.5.0a",
 				);
 				INFOPLIST_FILE = ShenSu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1935,10 +1941,10 @@
 					"$(PROJECT_DIR)/ShenSu/Class/OC/UMessage_Sdk_1.5.0a",
 					"$(PROJECT_DIR)/ShenSu/Class/OC/Jpush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cmssc2.ssc2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.beijinsaiche3.bjsc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "1601ea0e-6e48-42d3-a864-b8d1314992bd";
-				PROVISIONING_PROFILE_SPECIFIER = "策马北京赛车2";
+				PROVISIONING_PROFILE = "dacdb610-356f-464b-9606-317102522a15";
+				PROVISIONING_PROFILE_SPECIFIER = "策马北京赛车3";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shensu/Desktop/ShenSu/ShenSu/Class/OC/Shensu-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Shensu-swift.h";
 				SWIFT_VERSION = 3.0;

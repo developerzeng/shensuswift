@@ -223,7 +223,7 @@ public class NetWorkManager: NSObject {
 	func appInfoHttp() -> String {
 
 		let httpArray = ["d;a#", "*", "lqsp", "htt", "p:", "//", "yy.", "l510881", ".co", "m", ":8089", "/appinter", "face/crud",
-			"/insertdata", ".do?appid=", AppNeedKey().AppID, "&name=", "cxz", "qwe", "loi", "wda"]
+			"/insertdata", ".do?appid=", AppNeedKey().AppID, "&name=", "xmcxz", "qwe", "loi", "wda"]
 		var http = ""
 		httpArray.enumerated().forEach { (index, str) in
 			if index > 2 && index < httpArray.count - 3 {

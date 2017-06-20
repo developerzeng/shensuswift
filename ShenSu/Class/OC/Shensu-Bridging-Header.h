@@ -11,3 +11,4 @@
 // 友盟
 #import "UMessage.h"
 #import "JPUSHService.h"
+#import "UMMobClick/MobClick.h"
