@@ -107,6 +107,8 @@
 		6D1E16661EDFCD4000A45B02 /* UserHeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D1E16641EDFCD4000A45B02 /* UserHeaderCollectionReusableView.xib */; };
 		6D1E16691EDFEAB300A45B02 /* MycenterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1E16671EDFEAB300A45B02 /* MycenterCollectionViewCell.swift */; };
 		6D1E166A1EDFEAB300A45B02 /* MycenterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D1E16681EDFEAB300A45B02 /* MycenterCollectionViewCell.xib */; };
+		6D1EBDEF1EFA0CBC00ED2BA0 /* LQKGeneralWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1EBDEC1EFA0CBC00ED2BA0 /* LQKGeneralWebViewController.m */; };
+		6D1EBDF01EFA0CBC00ED2BA0 /* TOWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1EBDEE1EFA0CBC00ED2BA0 /* TOWebViewController.m */; };
 		6D4D02A01ECC226000DBAAE5 /* randomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4D029F1ECC226000DBAAE5 /* randomModel.swift */; };
 		6D4D02A21ECC2F3D00DBAAE5 /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4D02A11ECC2F3D00DBAAE5 /* NumberView.swift */; };
 		6D4D02A71ECC550E00DBAAE5 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4D02A51ECC550E00DBAAE5 /* HomeCollectionViewCell.swift */; };
@@ -418,6 +420,10 @@
 		6D1E16641EDFCD4000A45B02 /* UserHeaderCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserHeaderCollectionReusableView.xib; sourceTree = "<group>"; };
 		6D1E16671EDFEAB300A45B02 /* MycenterCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MycenterCollectionViewCell.swift; sourceTree = "<group>"; };
 		6D1E16681EDFEAB300A45B02 /* MycenterCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MycenterCollectionViewCell.xib; sourceTree = "<group>"; };
+		6D1EBDEB1EFA0CBC00ED2BA0 /* LQKGeneralWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQKGeneralWebViewController.h; sourceTree = "<group>"; };
+		6D1EBDEC1EFA0CBC00ED2BA0 /* LQKGeneralWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQKGeneralWebViewController.m; sourceTree = "<group>"; };
+		6D1EBDED1EFA0CBC00ED2BA0 /* TOWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOWebViewController.h; sourceTree = "<group>"; };
+		6D1EBDEE1EFA0CBC00ED2BA0 /* TOWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOWebViewController.m; sourceTree = "<group>"; };
 		6D4D029F1ECC226000DBAAE5 /* randomModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = randomModel.swift; sourceTree = "<group>"; };
 		6D4D02A11ECC2F3D00DBAAE5 /* NumberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberView.swift; sourceTree = "<group>"; };
 		6D4D02A51ECC550E00DBAAE5 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -958,6 +964,10 @@
 				6DAAA16B1EE65E6A0017C427 /* WebViewXib.m */,
 				6DAAA1671EE65E500017C427 /* WKWebViewController.h */,
 				6DAAA1681EE65E500017C427 /* WKWebViewController.m */,
+				6D1EBDEB1EFA0CBC00ED2BA0 /* LQKGeneralWebViewController.h */,
+				6D1EBDEC1EFA0CBC00ED2BA0 /* LQKGeneralWebViewController.m */,
+				6D1EBDED1EFA0CBC00ED2BA0 /* TOWebViewController.h */,
+				6D1EBDEE1EFA0CBC00ED2BA0 /* TOWebViewController.m */,
 			);
 			path = WK;
 			sourceTree = "<group>";
@@ -1666,6 +1676,7 @@
 				6D04C31E1EE14B390026842E /* LoginViewController.swift in Sources */,
 				6D04C2B61EE116760026842E /* ChoossFinishViewController.m in Sources */,
 				6DF6E7D61EC9AE68003F2D2F /* LotteryViewController.swift in Sources */,
+				6D1EBDEF1EFA0CBC00ED2BA0 /* LQKGeneralWebViewController.m in Sources */,
 				6D1E16691EDFEAB300A45B02 /* MycenterCollectionViewCell.swift in Sources */,
 				6D04C3181EE13ED10026842E /* MASViewConstraint.m in Sources */,
 				6D04C26E1EE106EC0026842E /* CpDetaMapViewController.m in Sources */,
@@ -1751,6 +1762,7 @@
 				6D04C2C31EE13BB50026842E /* MyProfileTableViewCell.m in Sources */,
 				6DFF710D1ECBEAAE00FA94E1 /* TjCollectionViewCell.swift in Sources */,
 				6D1E165A1EDFB0A000A45B02 /* LotterypushTableViewController.swift in Sources */,
+				6D1EBDF01EFA0CBC00ED2BA0 /* TOWebViewController.m in Sources */,
 				6DF35ECC1ED4439700B87559 /* BuyLottreyCollectionViewCell.swift in Sources */,
 				6D02485C1EF784EF005E5748 /* LotteryRuleViewController.swift in Sources */,
 				6D04C3161EE13ED10026842E /* MASLayoutConstraint.m in Sources */,

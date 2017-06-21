@@ -7,7 +7,7 @@
 #import "ChoossFinishViewController.h"
 #import "MyProfileViewController.h"
 #import "WKWebViewController.h"
-
+#import "LQKGeneralWebViewController.h"
 // 友盟
 #import "UMessage.h"
 #import "JPUSHService.h"

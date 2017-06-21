@@ -88,16 +88,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
                     if show == true {
                         let isfirst = UserDefaults.standard.value(forKey: "dhGuidePage")
                         if isfirst != nil {
-                            let vc = WKWebViewController()
-                            vc.url = url.replacingOccurrences(of: "\n", with: "")
+                            let vc = LQKGeneralWebViewController()
+                            vc.url = URL(string:url.replacingOccurrences(of: "\n", with: ""))
                             self.window?.rootViewController = vc
                             self.window?.makeKeyAndVisible()
                             self.removeLaunchScreenView()
                         }else{
                             let dh = DHMainViewController()
                             dh.isremoveFromWindows = {
-                                let vc = WKWebViewController()
-                                vc.url = url.replacingOccurrences(of: "\n", with: "")
+                                let vc = LQKGeneralWebViewController()
+                                vc.url = URL(string:url.replacingOccurrences(of: "\n", with: ""))
                                 self.window?.rootViewController = vc
                                 self.window?.makeKeyAndVisible()
                                 self.removeLaunchScreenView()
