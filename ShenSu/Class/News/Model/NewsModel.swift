@@ -10,7 +10,7 @@ import UIKit
 import ObjectMapper
 import SwiftyJSON
 class NewsModel: NSObject, Mappable {
-	var author: String = ""
+	var author: String = "彩票公告"
 	var clickCount: String = ""
 	var clubName: String = ""
 	var content: String = ""
@@ -42,7 +42,7 @@ class NewsModel: NSObject, Mappable {
 		clickCount <- map["clickCount"]
 		clubName <- map["clubName"]
 		content <- map["content"]
-		createTime <- map["createTime"]
+		createTime <- map["addtime"]
 		goodFlag <- map["goodFlag"]
 		hotFlag <- map["hotFlag"]
 		icon <- map["icon"]
@@ -55,7 +55,7 @@ class NewsModel: NSObject, Mappable {
 		replyCount <- map["replyCount"]
 		scoreLevel <- map["scoreLevel"]
 		style <- map["style"]
-		timeForShow <- map["timeForShow"]
+		timeForShow <- map["view"]
 		title <- map["title"]
 		topFlag <- map["topFlag"]
 

@@ -48,7 +48,7 @@ class MainViewController: UITabBarController, UITabBarControllerDelegate {
 			case 1:
 				vc = LotteryViewController()
 			case 2:
-				vc = NewsViewController()
+				vc = SliderNewsViewController()
 			case 3:
 				vc = MyViewController()
 			default:

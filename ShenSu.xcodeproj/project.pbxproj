@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D0248631EF8BF29005E5748 /* WJItemsControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0248621EF8BF29005E5748 /* WJItemsControlView.m */; };
+		6D0248651EF8BFA5005E5748 /* SliderNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0248641EF8BFA5005E5748 /* SliderNewsViewController.swift */; };
 		6D04C25E1EE001690026842E /* XLPlainFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D04C25C1EE001690026842E /* XLPlainFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D04C25F1EE001690026842E /* XLPlainFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D04C25D1EE001690026842E /* XLPlainFlowLayout.m */; };
 		6D04C2611EE01CD60026842E /* UserBuyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04C2601EE01CD60026842E /* UserBuyListViewController.swift */; };
@@ -286,6 +288,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6D0248611EF8BF29005E5748 /* WJItemsControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJItemsControlView.h; sourceTree = "<group>"; };
+		6D0248621EF8BF29005E5748 /* WJItemsControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJItemsControlView.m; sourceTree = "<group>"; };
+		6D0248641EF8BFA5005E5748 /* SliderNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderNewsViewController.swift; sourceTree = "<group>"; };
 		6D04C25C1EE001690026842E /* XLPlainFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLPlainFlowLayout.h; sourceTree = "<group>"; };
 		6D04C25D1EE001690026842E /* XLPlainFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLPlainFlowLayout.m; sourceTree = "<group>"; };
 		6D04C2601EE01CD60026842E /* UserBuyListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserBuyListViewController.swift; sourceTree = "<group>"; };
@@ -363,7 +368,7 @@
 		6D08A9941ECAFF650096E7BE /* ChooseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChooseView.xib; sourceTree = "<group>"; };
 		6D08EADA1EE16DE800AD9965 /* UserRuleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRuleViewController.swift; sourceTree = "<group>"; };
 		6D08EADB1EE16DE900AD9965 /* UserRuleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserRuleViewController.xib; sourceTree = "<group>"; };
-		6D08EAE31EE52D6E00AD9965 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsViewController.swift; path = ../../News/ViewController/NewsViewController.swift; sourceTree = "<group>"; };
+		6D08EAE31EE52D6E00AD9965 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		6D08EAE51EE52E8D00AD9965 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		6D08EAE61EE52E8D00AD9965 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
 		6D08EAE91EE5306700AD9965 /* NewsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
@@ -625,6 +630,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D0248601EF8BF29005E5748 /* WJSegment */ = {
+			isa = PBXGroup;
+			children = (
+				6D0248611EF8BF29005E5748 /* WJItemsControlView.h */,
+				6D0248621EF8BF29005E5748 /* WJItemsControlView.m */,
+			);
+			path = WJSegment;
+			sourceTree = "<group>";
+		};
 		6D04C25B1EE001690026842E /* XLPlainFlowLayout */ = {
 			isa = PBXGroup;
 			children = (
@@ -725,6 +739,8 @@
 		6D08EAE01EE52D3300AD9965 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				6D08EAE31EE52D6E00AD9965 /* NewsViewController.swift */,
+				6D0248641EF8BFA5005E5748 /* SliderNewsViewController.swift */,
 				6D08EAEB1EE53D3800AD9965 /* NewsDetaViewController.swift */,
 				6D08EAEC1EE53D3800AD9965 /* NewsDetaViewController.xib */,
 			);
@@ -1020,6 +1036,7 @@
 		6DF35F3E1ED8420B00B87559 /* OC */ = {
 			isa = PBXGroup;
 			children = (
+				6D0248601EF8BF29005E5748 /* WJSegment */,
 				6DAAA1751EE685320017C427 /* Jpush */,
 				6DAAA16D1EE67FE30017C427 /* UMessage_Sdk_1.5.0a */,
 				6DAAA1661EE65E470017C427 /* WK */,
@@ -1291,7 +1308,6 @@
 		6DF6E7D41EC9AE48003F2D2F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				6D08EAE31EE52D6E00AD9965 /* NewsViewController.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1656,6 +1672,7 @@
 				6DF35EC61ED41C1000B87559 /* MainTBViewController.swift in Sources */,
 				6D04C3171EE13ED10026842E /* MASViewAttribute.m in Sources */,
 				6D08EAE41EE52D6E00AD9965 /* NewsViewController.swift in Sources */,
+				6D0248631EF8BF29005E5748 /* WJItemsControlView.m in Sources */,
 				6DBC0C601EF38E7E00BFF311 /* LotteryRuleViewController.swift in Sources */,
 				6DAAA1641EE64E210017C427 /* SetupTableViewCell.swift in Sources */,
 				6D0BF9521EC30F2C00E68B4F /* TableViewController.swift in Sources */,
@@ -1677,6 +1694,7 @@
 				6D04C3191EE13ED10026842E /* NSArray+MASAdditions.m in Sources */,
 				6D04C31B1EE13ED10026842E /* View+MASAdditions.m in Sources */,
 				6D0BF94F1EC30F2C00E68B4F /* UIViewExtensions.swift in Sources */,
+				6D0248651EF8BFA5005E5748 /* SliderNewsViewController.swift in Sources */,
 				6D1E164C1EDEB2A000A45B02 /* BaseView.swift in Sources */,
 				6DF35EC51ED41C1000B87559 /* AppDelegate.swift in Sources */,
 				6D04C2641EE01F240026842E /* UserBuyListTableViewCell.swift in Sources */,

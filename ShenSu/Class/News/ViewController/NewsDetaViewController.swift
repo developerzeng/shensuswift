@@ -18,14 +18,15 @@ class NewsDetaViewController: BaseViewController {
     @IBOutlet weak var readLable: UILabel!
     @IBOutlet weak var buyBtn: UIButton!
     var lotteryTypeArray = Array<HomeLotteryModel>()
-    var newDeatModel: NewsDataModel? {
+    
+    var newDeatModel: NewsModel! {
         didSet {
             DispatchQueue.main.async {
-                self.titleLable.text = self.newDeatModel?.expertReplayDetail.title
-                let attr = try? NSMutableAttributedString.init(data: (self.newDeatModel?.expertReplayDetail.content.data(using: .unicode))!, options: [NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType], documentAttributes: nil)
+                self.titleLable.text = self.newDeatModel.title
+                let attr = try? NSMutableAttributedString.init(data: (self.newDeatModel.content.data(using: .unicode))!, options: [NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType], documentAttributes: nil)
                 self.subTitle.attributedText = attr
-                self.timeTitle.text = "\(self.newDeatModel?.expertReplayDetail.author ?? "") \(self.newDeatModel?.expertReplayDetail.createTime ?? "")"
-                self.readLable.text = "已有\(self.newDeatModel?.expertReplayDetail.clickCount ?? 0)看过"
+                self.timeTitle.text = "\(self.newDeatModel.author ) \(self.newDeatModel.createTime )"
+                self.readLable.text = "已有\(self.newDeatModel.timeForShow)看过"
             }
             
         }
@@ -42,29 +43,30 @@ class NewsDetaViewController: BaseViewController {
         buyBtn.backgroundColor = UIColor.orangeRedColor()
         subTitle.showsVerticalScrollIndicator = false
         subTitle.showsHorizontalScrollIndicator = false
-        getNewsData()
+       // getNewsData()
         // Do any additional setup after loading the view.
     }
-    func getNewsData() {
-        self.showLoadingView()
-        let request = "http://tt.aicai.com/api/expert/replay/detail/\(agentId)?agentId=\(agentId)&appVersion=4.1.0&platform=wap&version="
-        NetWorkManager.default.rawRequestWithUrl(URLString: request, method: .get, parameters: nil) { (status, data) in
-            self.hideLoadingView()
-            if status == .Success {
-                if let jsondata = data {
-                    let json = jsondata as? JSON
-                    if let snsMsgList = json?.object {
-                        
-                        let model = NewsDataModel()
-                        _ = self.JsonMapToObject(JSON: snsMsgList, toObject: model)
-                        self.newDeatModel = model
-                    }
-                }
-            } else {
-                self.showMessage(message: "数据加载失败")
-            }
-        }
-    }
+//    func getNewsData() {
+//        self.showLoadingView()
+//        let request = "http://tt.aicai.com/api/expert/replay/detail/\(agentId)?agentId=\(agentId)&appVersion=4.1.0&platform=wap&version="
+//        
+//        NetWorkManager.default.rawRequestWithUrl(URLString: request, method: .get, parameters: nil) { (status, data) in
+//            self.hideLoadingView()
+//            if status == .Success {
+//                if let jsondata = data {
+//                    let json = jsondata as? JSON
+//                    if let snsMsgList = json?.object {
+//                        
+//                        let model = NewsDataModel()
+//                        _ = self.JsonMapToObject(JSON: snsMsgList, toObject: model)
+//                        self.newDeatModel = model
+//                    }
+//                }
+//            } else {
+//                self.showMessage(message: "数据加载失败")
+//            }
+//        }
+//    }
     
     @IBAction func buyBtnClick(_ sender: Any) {
         let rand =  arc4random() % UInt32(lotteryTypeArray.count - 1)
