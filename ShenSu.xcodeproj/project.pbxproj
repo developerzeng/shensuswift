@@ -120,6 +120,11 @@
 		6D7442361EC41A4C00884950 /* OCUnits.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D7442261EC41A4C00884950 /* OCUnits.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D7442391EC41A4C00884950 /* OCUnits.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D7442241EC41A4C00884950 /* OCUnits.framework */; };
 		6D74423A1EC41A4C00884950 /* OCUnits.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D7442241EC41A4C00884950 /* OCUnits.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6D8C743C1EFA5BEE00DD8815 /* HomeMeanViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8C743B1EFA5BEE00DD8815 /* HomeMeanViewCell.swift */; };
+		6D8C74411EFA80B100DD8815 /* AVCaptureSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8C743E1EFA80B100DD8815 /* AVCaptureSessionManager.swift */; };
+		6D8C74421EFA80B100DD8815 /* UIImage+ZZYQRCodeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8C743F1EFA80B100DD8815 /* UIImage+ZZYQRCodeImage.swift */; };
+		6D8C74431EFA80B100DD8815 /* ZZYQRCode.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6D8C74401EFA80B100DD8815 /* ZZYQRCode.bundle */; };
+		6D8C74451EFA81C700DD8815 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8C74441EFA81C700DD8815 /* ScanViewController.swift */; };
 		6DAAA15E1EE56D930017C427 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAAA15C1EE56D930017C427 /* AboutUsViewController.swift */; };
 		6DAAA15F1EE56D930017C427 /* AboutUsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DAAA15D1EE56D930017C427 /* AboutUsViewController.xib */; };
 		6DAAA1611EE64BA20017C427 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAAA1601EE64BA20017C427 /* SetupViewController.swift */; };
@@ -434,6 +439,11 @@
 		6D74422C1EC41A4C00884950 /* OCUnitsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCUnitsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D7442331EC41A4C00884950 /* OCUnitsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCUnitsTests.m; sourceTree = "<group>"; };
 		6D7442351EC41A4C00884950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D8C743B1EFA5BEE00DD8815 /* HomeMeanViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeMeanViewCell.swift; sourceTree = "<group>"; };
+		6D8C743E1EFA80B100DD8815 /* AVCaptureSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVCaptureSessionManager.swift; sourceTree = "<group>"; };
+		6D8C743F1EFA80B100DD8815 /* UIImage+ZZYQRCodeImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+ZZYQRCodeImage.swift"; sourceTree = "<group>"; };
+		6D8C74401EFA80B100DD8815 /* ZZYQRCode.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZZYQRCode.bundle; sourceTree = "<group>"; };
+		6D8C74441EFA81C700DD8815 /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		6DAAA15C1EE56D930017C427 /* AboutUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		6DAAA15D1EE56D930017C427 /* AboutUsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutUsViewController.xib; sourceTree = "<group>"; };
 		6DAAA1601EE64BA20017C427 /* SetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
@@ -776,6 +786,7 @@
 		6D0BF9241EC1BC2700E68B4F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6D8C743D1EFA80B100DD8815 /* ZZYQRCodeSwift */,
 				6D04C2871EE108050026842E /* MAMapKit.framework */,
 				6D04C2881EE108050026842E /* AMap.bundle */,
 				6D04C2891EE108050026842E /* AMapLocationKit.framework */,
@@ -943,6 +954,16 @@
 				6D7442351EC41A4C00884950 /* Info.plist */,
 			);
 			path = OCUnitsTests;
+			sourceTree = "<group>";
+		};
+		6D8C743D1EFA80B100DD8815 /* ZZYQRCodeSwift */ = {
+			isa = PBXGroup;
+			children = (
+				6D8C743E1EFA80B100DD8815 /* AVCaptureSessionManager.swift */,
+				6D8C743F1EFA80B100DD8815 /* UIImage+ZZYQRCodeImage.swift */,
+				6D8C74401EFA80B100DD8815 /* ZZYQRCode.bundle */,
+			);
+			path = ZZYQRCodeSwift;
 			sourceTree = "<group>";
 		};
 		6DAAA1661EE65E470017C427 /* WK */ = {
@@ -1186,6 +1207,7 @@
 				6DF6E7CB1EC9AD52003F2D2F /* HomeViewController.swift */,
 				6DF6D7F81EEE390000EFFE45 /* SeachViewController.swift */,
 				6D106FFE1EEE473F00CE67BF /* SeachOpenViewController.swift */,
+				6D8C74441EFA81C700DD8815 /* ScanViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1203,6 +1225,7 @@
 				6D4D02A51ECC550E00DBAAE5 /* HomeCollectionViewCell.swift */,
 				6D4D02A61ECC550E00DBAAE5 /* HomeCollectionViewCell.xib */,
 				6DBC0C5A1EF285EE00BFF311 /* HomecellHeadCollectionReusableView.swift */,
+				6D8C743B1EFA5BEE00DD8815 /* HomeMeanViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1482,6 +1505,7 @@
 				TargetAttributes = {
 					6D55364D1EC1B98400B0E8E8 = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 8VRA49V3DS;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
@@ -1543,6 +1567,7 @@
 				6DBC0C611EF38E7F00BFF311 /* LotteryRuleViewController.xib in Resources */,
 				6DAAA15F1EE56D930017C427 /* AboutUsViewController.xib in Resources */,
 				6D1E16661EDFCD4000A45B02 /* UserHeaderCollectionReusableView.xib in Resources */,
+				6D8C74431EFA80B100DD8815 /* ZZYQRCode.bundle in Resources */,
 				6DF35F151ED81BF700B87559 /* LotteryDetaTableViewCell.xib in Resources */,
 				6DF35EDA1ED58DA300B87559 /* BuyViewTableViewCell.xib in Resources */,
 				6DF35EFB1ED6D7A100B87559 /* BuyListTableViewCell.xib in Resources */,
@@ -1640,6 +1665,7 @@
 				6D08A9911ECAF8B80096E7BE /* HomeHeaderView.swift in Sources */,
 				6D04C3131EE13ED10026842E /* MASCompositeConstraint.m in Sources */,
 				6D04C2611EE01CD60026842E /* UserBuyListViewController.swift in Sources */,
+				6D8C743C1EFA5BEE00DD8815 /* HomeMeanViewCell.swift in Sources */,
 				6DAAA15E1EE56D930017C427 /* AboutUsViewController.swift in Sources */,
 				6D08EAEA1EE5306700AD9965 /* NewsModel.swift in Sources */,
 				6DF35EF71ED6D15D00B87559 /* BuyListViewController.swift in Sources */,
@@ -1709,8 +1735,10 @@
 				6D04C3141EE13ED10026842E /* MASConstraint.m in Sources */,
 				6DF6E7EA1ECACFF2003F2D2F /* LLViewExtensions.swift in Sources */,
 				6DF6E7E51ECACFF2003F2D2F /* LLCycleScrollView.swift in Sources */,
+				6D8C74411EFA80B100DD8815 /* AVCaptureSessionManager.swift in Sources */,
 				6DF35F0F1ED80D4A00B87559 /* LotteryNumberView.swift in Sources */,
 				6D04C31C1EE13ED10026842E /* ViewController+MASAdditions.m in Sources */,
+				6D8C74421EFA80B100DD8815 /* UIImage+ZZYQRCodeImage.swift in Sources */,
 				6D04C31A1EE13ED10026842E /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				6D04C2701EE106EC0026842E /* CpTableViewCell.m in Sources */,
 				6DAAA1611EE64BA20017C427 /* SetupViewController.swift in Sources */,
@@ -1722,6 +1750,7 @@
 				6D04C3161EE13ED10026842E /* MASLayoutConstraint.m in Sources */,
 				6DF35ED41ED586DA00B87559 /* LotteryModel.swift in Sources */,
 				6D4D02AD1ECC56BC00DBAAE5 /* HomeLotteryModel.swift in Sources */,
+				6D8C74451EFA81C700DD8815 /* ScanViewController.swift in Sources */,
 				6DBC0C5B1EF285EE00BFF311 /* HomecellHeadCollectionReusableView.swift in Sources */,
 				6D0BF93C1EC1CBF300E68B4F /* NetWorkManager.swift in Sources */,
 				6D08EADC1EE16DE900AD9965 /* UserRuleViewController.swift in Sources */,
@@ -1933,7 +1962,7 @@
 				CODE_SIGN_ENTITLEMENTS = ShenSu/ShenSu.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Lin min (8VRA49V3DS)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Lin min (8VRA49V3DS)";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 8VRA49V3DS;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1948,10 +1977,10 @@
 					"$(PROJECT_DIR)/ShenSu/Class/OC/UMessage_Sdk_1.5.0a",
 					"$(PROJECT_DIR)/ShenSu/Class/OC/Jpush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mayacaipiao.mycp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lmbeijinsaiche.bjsc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "1dd32a8c-e67f-4a98-a27e-e4406c8a7190";
-				PROVISIONING_PROFILE_SPECIFIER = "mayacaipiao上架";
+				PROVISIONING_PROFILE = "8e1325c4-ef6e-459b-a929-de308d9db182";
+				PROVISIONING_PROFILE_SPECIFIER = "lm北京赛车";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shensu/Desktop/ShenSu/ShenSu/Class/OC/Shensu-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Shensu-swift.h";
 				SWIFT_VERSION = 3.0;
@@ -1966,7 +1995,7 @@
 				CODE_SIGN_ENTITLEMENTS = ShenSu/ShenSu.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Lin min (8VRA49V3DS)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Lin min (8VRA49V3DS)";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 8VRA49V3DS;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1981,10 +2010,10 @@
 					"$(PROJECT_DIR)/ShenSu/Class/OC/UMessage_Sdk_1.5.0a",
 					"$(PROJECT_DIR)/ShenSu/Class/OC/Jpush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mayacaipiao.mycp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lmbeijinsaiche.bjsc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "1dd32a8c-e67f-4a98-a27e-e4406c8a7190";
-				PROVISIONING_PROFILE_SPECIFIER = "mayacaipiao上架";
+				PROVISIONING_PROFILE = "8e1325c4-ef6e-459b-a929-de308d9db182";
+				PROVISIONING_PROFILE_SPECIFIER = "lm北京赛车";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shensu/Desktop/ShenSu/ShenSu/Class/OC/Shensu-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Shensu-swift.h";
 				SWIFT_VERSION = 3.0;

@@ -70,6 +70,7 @@ class HomeViewController: BaseViewController {
 
 		collectionView.register(UINib.init(nibName: "HomeCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "HomeCollectionViewCell")
 		collectionView.register(UINib.init(nibName: "TjCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "TjCollectionViewCell")
+        collectionView.register(HomeMeanViewCell.self, forCellWithReuseIdentifier: "HomeMean")
         collectionView.register(HomecellHeadCollectionReusableView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "cellhead")
 		self.view.addSubview(collectionView)
 
@@ -118,7 +119,6 @@ class HomeViewController: BaseViewController {
 			bannars.append(model.bannarUrl)
 			self.bannarArray.append(model)
 		})
-        self.homeHraderView.setModel(model: headArray[0])
 		self.homeHraderView.zpbannar.imagePaths = bannars
 
 	}
@@ -150,7 +150,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
 	}
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
 		if section == 0 {
-			return CGSize(width: self.view.width, height: 210)
+			return CGSize(width: self.view.width, height: 180)
 		} else {
 			return CGSize(width: self.view.width, height: 30)
 		}
@@ -160,17 +160,19 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
 		if kind == UICollectionElementKindSectionHeader && indexPath.section == 0 {
 			homeHraderView = (collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "homeHraderView", for: indexPath) as? HomeHeaderView)!
 			setBannarData()
-        }else if kind == UICollectionElementKindSectionHeader {
+        }else if kind == UICollectionElementKindSectionHeader  {
             let view = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "cellhead", for: indexPath) as? HomecellHeadCollectionReusableView
-            view?.setModel(model: headArray[1])
+            view?.setModel(model: headArray[indexPath.section - 1])
             return view!
         }
 		return homeHraderView
 	}
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 		switch indexPath.section {
-		case 0:
+		case 1:
 			return CGSize(width: self.collectionView.width, height: 68)
+        case 0:
+            return CGSize(width: self.collectionView.width, height: 80)
 		default:
 			let width = (self.view.width - 15) / 2
 			return CGSize(width: width, height: 80)
@@ -178,25 +180,27 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
 	}
 
 	func numberOfSections(in collectionView: UICollectionView) -> Int {
-		return 2
+		return 3
 	}
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 		switch section {
 		case 0:
 			return 1
+        case 1:
+            return 1
 		default:
 			return lotteryArray.count
 		}
 	}
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-		if indexPath.section == 0 {
+		if indexPath.section == 1 {
 			let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TjCollectionViewCell", for: indexPath) as? TjCollectionViewCell
 			cell?.homesaveBtnBlock = {
 				self.showMessage(message: "保存成功")
 			}
 
 			return cell!
-		} else {
+		} else if indexPath.section == 2 {
 			let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCollectionViewCell", for: indexPath) as? HomeCollectionViewCell
 			if lotteryArray.count > indexPath.row {
 				cell?.setModel(model: lotteryArray[indexPath.row])
@@ -210,7 +214,34 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             }
 			return cell!
 
-		}
+        }else {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeMean", for: indexPath) as? HomeMeanViewCell
+            cell?.homeMeanBlock = { inx in
+                switch inx {
+                case 1001:
+                    let vc = CpMapViewController()
+                    _ = self.navigationController?.pushViewController(vc, animated: true)
+                case 1002:
+                    AVCaptureSessionManager.checkAuthorizationStatusForCamera(grant: {
+                        let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "scanViewController")
+                        self.navigationController?.pushViewController(controller, animated: true)
+                    }){
+                        let action = UIAlertAction(title: "确定", style: UIAlertActionStyle.default, handler: { (action) in
+                            let url = URL(string: UIApplicationOpenSettingsURLString)
+                            UIApplication.shared.openURL(url!)
+                        })
+                        let con = UIAlertController(title: "权限未开启", message: "您未开启相机权限，点击确定跳转至系统设置开启", preferredStyle: UIAlertControllerStyle.alert)
+                        con.addAction(action)
+                        self.present(con, animated: true, completion: nil)
+                    }
+                default:
+                    let vc = SliderNewsViewController()
+                    _ = self.navigationController?.pushViewController(vc, animated: true)
+                }
+            }
+        return cell!
+        
+        }
 
 	}
 }
