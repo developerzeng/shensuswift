@@ -17,6 +17,7 @@ class LotteryDetaTableViewCell: UITableViewCell {
         } else {
             array = model.number.components(separatedBy: " ")
         }
+        lotterNumberView.caipiaoId = model.caipiaoid
         lotterNumberView.numberArray = array
 		lotterNumberView.numberBackColor = isfirst == true ? UIColor.orangeRedColor() : UIColor.white
 		lotterNumberView.numberTextColor = isfirst == true ? UIColor.white : UIColor.orangeRedColor()

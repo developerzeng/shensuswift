@@ -110,6 +110,7 @@ extension MyViewController: UICollectionViewDelegate, UICollectionViewDataSource
 					self.showLoginViewController()
 				}
 			}
+            userHeader?.reloadModel()
 			return userHeader!
 		}
 		return UICollectionReusableView()

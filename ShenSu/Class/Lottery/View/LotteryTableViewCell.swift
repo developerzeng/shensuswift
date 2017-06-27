@@ -18,6 +18,7 @@ class LotteryTableViewCell: UITableViewCell {
 		} else {
 			array = model.number.components(separatedBy: " ")
 		}
+        lotterNumberView.caipiaoId = model.caipiaoid
 		lotterNumberView.numberArray = array
 
 	}

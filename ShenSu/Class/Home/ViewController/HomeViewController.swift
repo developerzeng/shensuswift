@@ -17,7 +17,7 @@ class HomeViewController: BaseViewController {
     var headArray:Array<HomecellModel>{
         let model = HomecellModel(imaegName: "推荐", title: "推荐号码")
         let model1 = HomecellModel(imaegName: "热门", title: "热门彩种")
-    return [model,model1]
+    return [model1,model]
     }
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -140,7 +140,7 @@ class HomeViewController: BaseViewController {
 }
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-		if lotteryArray.count > indexPath.row && indexPath.section > 0 {
+		if lotteryArray.count > indexPath.row && indexPath.section > 0 && indexPath.section < 2 {
 			let model = lotteryArray[indexPath.row]
 			let vc = BuyLottreyViewController()
             vc.lotteryInfoModel = model
@@ -170,12 +170,12 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 		switch indexPath.section {
 		case 1:
-			return CGSize(width: self.collectionView.width, height: 68)
+            let width = (self.view.width - 15) / 2
+            return CGSize(width: width, height: 80)
         case 0:
-            return CGSize(width: self.collectionView.width, height: 80)
+            return CGSize(width: self.collectionView.width, height: 68)
 		default:
-			let width = (self.view.width - 15) / 2
-			return CGSize(width: width, height: 80)
+			return CGSize(width: self.collectionView.width, height: 80)
 		}
 	}
 
@@ -187,31 +187,25 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
 		case 0:
 			return 1
         case 1:
-            return 1
+            return lotteryArray.count
 		default:
-			return lotteryArray.count
+            return 1
 		}
 	}
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-		if indexPath.section == 1 {
+		if indexPath.section == 2 {
 			let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TjCollectionViewCell", for: indexPath) as? TjCollectionViewCell
 			cell?.homesaveBtnBlock = {
 				self.showMessage(message: "保存成功")
 			}
 
 			return cell!
-		} else if indexPath.section == 2 {
+		} else if indexPath.section == 1 {
 			let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCollectionViewCell", for: indexPath) as? HomeCollectionViewCell
 			if lotteryArray.count > indexPath.row {
 				cell?.setModel(model: lotteryArray[indexPath.row])
 			}
-            if indexPath.row < 4 {
-            cell?.backgroundColor = UIColor.orangeRedColor()
-            }else if indexPath.row < 8 {
-            cell?.backgroundColor = UIColor.seaGreenColor()
-            }else{
-            cell?.backgroundColor = UIColor.royalBlueColor()
-            }
+
 			return cell!
 
         }else {
