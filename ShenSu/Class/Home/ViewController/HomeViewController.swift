@@ -234,6 +234,9 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
                         con.addAction(action)
                         self.present(con, animated: true, completion: nil)
                     }
+                case 1004:
+                    let vc = ZstViewController()
+                    _ = self.navigationController?.pushViewController(vc, animated: true)
                 default:
                     let vc = SliderNewsViewController()
                     _ = self.navigationController?.pushViewController(vc, animated: true)
