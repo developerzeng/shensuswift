@@ -16,6 +16,7 @@ class NewsViewController: BaseViewController {
     var didSelectedRowBlock:((NewsModel)->())?
 	override func viewDidLoad() {
 		super.viewDidLoad()
+       
 		tableView = UITableView(frame: CGRect.zero, style: .grouped)
 		tableView.delegate = self
 		tableView.dataSource = self

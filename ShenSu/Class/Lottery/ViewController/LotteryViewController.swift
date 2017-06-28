@@ -54,9 +54,10 @@ class LotteryViewController: BaseViewController, UITableViewDelegate, UITableVie
 		tableView.showsVerticalScrollIndicator = false
 		tableView.delegate = self
 		tableView.dataSource = self
+        tableView.backgroundColor = self.view.backgroundColor
 		self.view.addSubview(tableView)
 		tableView <- [
-			Edges(UIEdgeInsets(top: 40, left: 0, bottom: 0, right: 0))
+			Edges(UIEdgeInsets(top: 40, left: 5, bottom: 0, right: 5))
 		]
 		getLotteryData()
 		getopenCode()
@@ -171,6 +172,12 @@ class LotteryViewController: BaseViewController, UITableViewDelegate, UITableVie
 		return 80
 	}
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+     
+    return 1
+        
+	}
+	func numberOfSections(in tableView: UITableView) -> Int {
+		
         switch cpType {
         case .allCp:
             return lotteryinfoArray.count
@@ -179,10 +186,6 @@ class LotteryViewController: BaseViewController, UITableViewDelegate, UITableVie
         default:
             return dipingArray.count
         }
-    
-	}
-	func numberOfSections(in tableView: UITableView) -> Int {
-		return 1
 	}
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		var cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? LotteryTableViewCell
@@ -192,18 +195,18 @@ class LotteryViewController: BaseViewController, UITableViewDelegate, UITableVie
 		cell?.selectionStyle = .none
         switch cpType {
         case .allCp:
-            if lotteryinfoArray.count > indexPath.row {
-                cell?.setModel(model: lotteryinfoArray[indexPath.row])
+            if lotteryinfoArray.count > indexPath.section {
+                cell?.setModel(model: lotteryinfoArray[indexPath.section])
             }
 
         case .gpCp:
-            if gaopingArray.count > indexPath.row {
-                cell?.setModel(model: gaopingArray[indexPath.row])
+            if gaopingArray.count > indexPath.section {
+                cell?.setModel(model: gaopingArray[indexPath.section])
             }
             
         default:
-            if dipingArray.count > indexPath.row {
-                cell?.setModel(model: dipingArray[indexPath.row])
+            if dipingArray.count > indexPath.section {
+                cell?.setModel(model: dipingArray[indexPath.section])
             }
         }
 		
@@ -212,23 +215,23 @@ class LotteryViewController: BaseViewController, UITableViewDelegate, UITableVie
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch cpType {
         case .allCp:
-            if lotteryinfoArray.count > indexPath.row {
-                let model = lotteryinfoArray[indexPath.row]
+            if lotteryinfoArray.count > indexPath.section {
+                let model = lotteryinfoArray[indexPath.section]
                 let vc = LotteryDetaViewController()
                 vc.lotterModel = model
                 _ = self.navigationController?.pushViewController(vc, animated: true)
             }
             
         case .gpCp:
-            if gaopingArray.count > indexPath.row {
-                let model = gaopingArray[indexPath.row]
+            if gaopingArray.count > indexPath.section {
+                let model = gaopingArray[indexPath.section]
                 let vc = LotteryDetaViewController()
                 vc.lotterModel = model
                 _ = self.navigationController?.pushViewController(vc, animated: true)
             }
         default:
-          		if dipingArray.count > indexPath.row {
-                    let model = dipingArray[indexPath.row]
+          		if dipingArray.count > indexPath.section {
+                    let model = dipingArray[indexPath.section]
                     let vc = LotteryDetaViewController()
                     vc.lotterModel = model
                     _ = self.navigationController?.pushViewController(vc, animated: true)

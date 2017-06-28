@@ -23,11 +23,17 @@ class LotteryTableViewCell: UITableViewCell {
 
 	}
 	@IBOutlet weak var lotteryView: UIView!
+    @IBOutlet weak var backView: UIView!
 	@IBOutlet weak var lotteryOpen: UILabel!
 	@IBOutlet weak var lotteryLable: UILabel!
 	var lotterNumberView = LotteryNumberView()
 	override func awakeFromNib() {
 		super.awakeFromNib()
+        backView.backgroundColor = UIColor.blueVioletColor()
+        
+//        self.contentView.layer.cornerRadius = 8
+        self.layer.cornerRadius = 4
+        self.layer.masksToBounds = true
 		lotterNumberView.isspace = true
 		lotteryView.addSubview(lotterNumberView)
 		lotterNumberView <- [
@@ -41,5 +47,7 @@ class LotteryTableViewCell: UITableViewCell {
 
 		// Configure the view for the selected state
 	}
-
+       
+    
+    
 }

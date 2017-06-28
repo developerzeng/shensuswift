@@ -10,6 +10,10 @@ import UIKit
 import EasyPeasy
 class TjCollectionViewCell: UICollectionViewCell {
 
+    @IBAction func xuanhaoBtnClick(_ sender: Any) {
+        self.xuanhaoBtnBlock?()
+    }
+    var xuanhaoBtnBlock:(()->())?
 	@IBOutlet weak var buyBtn: UIButton!
 	@IBOutlet weak var numberBackView: UIView!
 	@IBOutlet weak var changBtn: UIButton!

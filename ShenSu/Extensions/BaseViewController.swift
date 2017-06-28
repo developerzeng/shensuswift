@@ -430,7 +430,7 @@ extension UIViewController {
 public class BaseViewController: UIViewController {
 
 	var resume = false
-
+    
 	public override func loadView() {
 		super.loadView()
 		self.setTransparentNavBar(flag: false)
@@ -439,7 +439,7 @@ public class BaseViewController: UIViewController {
 
 	override public func viewDidLoad() {
 		super.viewDidLoad()
-
+        self.edgesForExtendedLayout = UIRectEdge(rawValue: 0)
 		self.setDefaultNavBar()
 		self.view.backgroundColor = UIColor(rgb: 0xf2f2f2)
 

@@ -33,6 +33,7 @@ class NumberView: UIView {
      刷新数据
      */
     func reloadView() {
+        reloadData()
         for i in 0..<lableArray.count {
             let lable = lableArray[i]
             if numberArray.count > i {
@@ -41,6 +42,19 @@ class NumberView: UIView {
             trainanimation(lable: lable)
         }
         
+    }
+    func reloadData(){
+    
+        let random = randomModel.default
+        switch type {
+        case LotteryType.DLT:
+            numberArray = random.setRandomfrom(fromNumber: 1, toNumber: 34, red: 5, bluefrom: 1, toBlue: 15, blue: 2)!
+        case LotteryType.SSQ:
+            numberArray = random.setRandomfrom(fromNumber: 1, toNumber: 34, red: 6, bluefrom: 1, toBlue: 15, blue: 1)!
+        default:
+            numberArray = random.setRandomfrom(fromNumber: 1, toNumber: 10, red: 5)!
+        }
+
     }
     func trainanimation(lable: UILabel) {
         
@@ -52,41 +66,33 @@ class NumberView: UIView {
         lable.layer.add(animation, forKey: "animationTransform")
         
     }
-    var numberArray: Array<String> {
-        let random = randomModel.default
-        switch type {
-        case LotteryType.DLT:
-            return random.setRandomfrom(fromNumber: 1, toNumber: 34, red: 5, bluefrom: 1, toBlue: 15, blue: 2)!
-        case LotteryType.SSQ:
-            return random.setRandomfrom(fromNumber: 1, toNumber: 34, red: 6, bluefrom: 1, toBlue: 15, blue: 1)!
-        default:
-            return random.setRandomfrom(fromNumber: 1, toNumber: 10, red: 5)!
-        }
-    }
+    var numberArray = Array<String>()
+        
     var lableArray = Array<UILabel>()
     override init(frame: CGRect) {
         super.init(frame: frame)
+        reloadData()
         for i in 0..<number {
             let lable = UILabel()
-            lable.backgroundColor = UIColor.white
-            lable.layer.cornerRadius = 12.5
+            lable.textColor = UIColor.white
+            lable.layer.cornerRadius = 15
             if type == LotteryType.DLT {
                 if i < 6 {
-                    lable.layer.borderColor = UIColor.orangeRedColor().cgColor
+                    lable.backgroundColor = UIColor.orangeRedColor()
                 } else {
-                    lable.layer.borderColor = UIColor.midnightBlueColor().cgColor
+                    lable.backgroundColor = UIColor.midnightBlueColor()
                 }
             } else if type == LotteryType.SSQ {
                 if i < 6 {
-                    lable.layer.borderColor = UIColor.orangeRedColor().cgColor
+                    lable.backgroundColor = UIColor.orangeRedColor()
                 } else {
-                    lable.layer.borderColor = UIColor.midnightBlueColor().cgColor
+                    lable.backgroundColor = UIColor.midnightBlueColor()
                 }
             } else {
-                lable.layer.borderColor = UIColor.orangeRedColor().cgColor
+                lable.backgroundColor = UIColor.orangeRedColor()
             }
             
-            lable.layer.borderWidth = 1
+
             lable.clipsToBounds = true
             // lable.layer.masksToBounds = true
             lable.font = UIFont.systemFont(ofSize: 12)
@@ -102,29 +108,29 @@ class NumberView: UIView {
     }
     override func layoutSubviews() {
         super.layoutSubviews()
-        let space = (self.width - 25.0 * CGFloat(numberArray.count)) / CGFloat(numberArray.count)
+        let space = (self.width - 30.0 * CGFloat(numberArray.count + 1)) / CGFloat(numberArray.count)
         for i in 0..<lableArray.count {
             let lable = lableArray[i]
             if i == 0 {
                 lable <- [
                     CenterY(0).to(self),
-                    Left(0).to(self, .left).when { i == 0 },
+                    Left(space).to(self, .left),
                     Right(space).to(lableArray[i + 1], .left),
-                    Size(CGSize(width: 25, height: 25))
+                    Size(CGSize(width: 30.0, height: 30.0))
                 ]
             } else if i == lableArray.count - 1 {
                 lable <- [
                     CenterY(0).to(self),
                     Left(space).to(lableArray[i - 1], .right),
                     // Right(5).to(self, .right).when { i == self.lableArray.count - 1 },
-                    Size(CGSize(width: 25, height: 25))
+                    Size(CGSize(width: 30.0, height: 30.0))
                 ]
             } else {
                 lable <- [
                     CenterY(0).to(self),
                     Left(space).to(lableArray[i - 1], .right),
                     Right(space).to(lableArray[i + 1], .left).when { i != self.lableArray.count - 1 },
-                    Size(CGSize(width: 25, height: 25))
+                    Size(CGSize(width: 30.0, height: 30.0))
                 ]
                 
             }
