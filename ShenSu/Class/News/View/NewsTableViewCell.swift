@@ -30,9 +30,9 @@ class NewsTableViewCell: UITableViewCell {
        
     }
 	func setModel(model: NewsModel) {
-	
+        let attr = try? NSMutableAttributedString.init(data: (model.content.data(using: .unicode))!, options: [NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType], documentAttributes: nil)
 		newsTitle.text = model.title
-		newsSubtitle.text = model.content
+		newsSubtitle.attributedText = attr
 		timeLabel.text = "\(model.author) \(model.timeForShow)"
 	}
 

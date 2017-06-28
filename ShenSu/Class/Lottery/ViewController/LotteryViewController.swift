@@ -9,22 +9,55 @@
 import UIKit
 import EasyPeasy
 import SwiftyJSON
+enum CpType:UInt {
+    case allCp
+    case gpCp
+    case dpCp
+}
 class LotteryViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
 	var tableView: UITableView!
 	var lotteryArray = Array<HomeLotteryModel>()
 	var lotteryinfoArray = Array<LotteryJSModel>()
+    var cpType:CpType = .allCp
+    var gaopingArray:Array<LotteryJSModel> {
+       let array = ["73","82","93","90","75","69","83","115","94"]
+       var gpA = Array<LotteryJSModel>()
+       lotteryinfoArray.enumerated().forEach { (index,model) in
+        array.enumerated().forEach({ (_,cpid) in
+            if model.caipiaoid == cpid {
+            gpA.append(model)
+            }
+        })
+        }
+        return gpA
+    }
+    var dipingArray:Array<LotteryJSModel>{
+        let array = ["11","14","12"]
+        var gpA = Array<LotteryJSModel>()
+        lotteryinfoArray.enumerated().forEach { (index,model) in
+            array.enumerated().forEach({ (_,cpid) in
+                if model.caipiaoid == cpid {
+                    gpA.append(model)
+                }
+            })
+        }
+        return gpA
+    
+    }
+    var   segment : UISegmentedControl!
 	override func viewDidLoad() {
 		super.viewDidLoad()
-
+        addScrollView()
 		tableView = UITableView(frame: CGRect.zero, style: .plain)
 		tableView.removfootViewLine()
 		tableView.showsVerticalScrollIndicator = false
 		tableView.showsVerticalScrollIndicator = false
 		tableView.delegate = self
 		tableView.dataSource = self
+        tableView.backgroundColor = self.view.backgroundColor
 		self.view.addSubview(tableView)
 		tableView <- [
-			Edges(UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0))
+			Edges(UIEdgeInsets(top: 40, left: 5, bottom: 0, right: 5))
 		]
 		getLotteryData()
 		getopenCode()
@@ -48,7 +81,29 @@ class LotteryViewController: BaseViewController, UITableViewDelegate, UITableVie
         }
 		// Do any additional setup after loading the view.
 	}
-
+    func addScrollView(){
+      segment = UISegmentedControl(items: ["全部","高频","低频"])
+      segment.frame = CGRect(x: 0, y: 0, w: self.view.width, h: 40)
+      segment.tintColor = UIColor.blueVioletColor()
+      segment.selectedSegmentIndex = 0
+      segment.backgroundColor = UIColor.white
+      segment.addTarget(self, action: #selector(segmentClick), for: .valueChanged)
+      self.view.addSubview(segment)
+    }
+    func segmentClick(sender:UISegmentedControl){
+        switch sender.selectedSegmentIndex {
+        case 0:
+            cpType = .allCp
+            tableView.safeReload()
+        case 1:
+            cpType = .gpCp
+            tableView.safeReload()
+        default:
+            cpType = .dpCp
+            tableView.safeReload()
+            
+        }
+    }
 	func requestopenCode(model: HomeLotteryModel, group: DispatchGroup) {
 
 		let url = "http://api.jisuapi.com/caipiao/history?appkey=3afdff18fac4efeb&&caipiaoid=\(model.caipiaoid!)&&num=1"
@@ -117,10 +172,20 @@ class LotteryViewController: BaseViewController, UITableViewDelegate, UITableVie
 		return 80
 	}
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return lotteryinfoArray.count
+     
+    return 1
+        
 	}
 	func numberOfSections(in tableView: UITableView) -> Int {
-		return 1
+		
+        switch cpType {
+        case .allCp:
+            return lotteryinfoArray.count
+        case .gpCp:
+            return gaopingArray.count
+        default:
+            return dipingArray.count
+        }
 	}
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		var cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? LotteryTableViewCell
@@ -128,19 +193,52 @@ class LotteryViewController: BaseViewController, UITableViewDelegate, UITableVie
 			cell = Bundle.main.loadNibNamed("LotteryTableViewCell", owner: self, options: nil)?.first as? LotteryTableViewCell
 		}
 		cell?.selectionStyle = .none
-		if lotteryinfoArray.count > indexPath.row {
-			cell?.setModel(model: lotteryinfoArray[indexPath.row])
-		}
+        switch cpType {
+        case .allCp:
+            if lotteryinfoArray.count > indexPath.section {
+                cell?.setModel(model: lotteryinfoArray[indexPath.section])
+            }
 
+        case .gpCp:
+            if gaopingArray.count > indexPath.section {
+                cell?.setModel(model: gaopingArray[indexPath.section])
+            }
+            
+        default:
+            if dipingArray.count > indexPath.section {
+                cell?.setModel(model: dipingArray[indexPath.section])
+            }
+        }
+		
 		return cell!
 	}
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-		if lotteryinfoArray.count > indexPath.row {
-			let model = lotteryinfoArray[indexPath.row]
-			let vc = LotteryDetaViewController()
-			vc.lotterModel = model
-			_ = self.navigationController?.pushViewController(vc, animated: true)
-		}
+        switch cpType {
+        case .allCp:
+            if lotteryinfoArray.count > indexPath.section {
+                let model = lotteryinfoArray[indexPath.section]
+                let vc = LotteryDetaViewController()
+                vc.lotterModel = model
+                _ = self.navigationController?.pushViewController(vc, animated: true)
+            }
+            
+        case .gpCp:
+            if gaopingArray.count > indexPath.section {
+                let model = gaopingArray[indexPath.section]
+                let vc = LotteryDetaViewController()
+                vc.lotterModel = model
+                _ = self.navigationController?.pushViewController(vc, animated: true)
+            }
+        default:
+          		if dipingArray.count > indexPath.section {
+                    let model = dipingArray[indexPath.section]
+                    let vc = LotteryDetaViewController()
+                    vc.lotterModel = model
+                    _ = self.navigationController?.pushViewController(vc, animated: true)
+            }
+        }
+        
+
 	}
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()

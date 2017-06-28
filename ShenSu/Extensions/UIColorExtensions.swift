@@ -116,7 +116,7 @@ extension UIColor {
 	}
 	/// 紫罗兰色
 	class func blueVioletColor() -> UIColor {
-		return UIColor("#8A2BE2")
+		return UIColor(rgb: 0x8A2BE2, alpha: 0.7)
 	}
 
 	class func darkVioletColor() -> UIColor {
@@ -185,7 +185,7 @@ extension UIColor {
 
 	class func orangeRedColor() -> UIColor {
 //		return UIColor("#FF4500")
-		return UIColor("#FF0000")
+		return UIColor(rgb: 0xFF0000, alpha: 0.9)
 	}
 
 	class func tomatoColor() -> UIColor {
@@ -242,7 +242,7 @@ extension UIColor {
 	}
     static func randomColorWithrgb() -> UIColor {
         let random = arc4random_uniform(10)
-        let colors = ["#ff0000","#28ff28","#f75000","#b7ff4a","#ffe153","#ad5a5a","#6fb7b77","#484891","#009393","#4f4f4f","#ff9797"]
-       return UIColor(colors[Int(random)])
+        let colors = [0xff0000,0x28ff28,0xf75000,0xb7ff4a,0xffe153,0xad5a5a,0x6fb7b77,0x484891,0x009393,0x4f4f4f,0xff9797]
+       return UIColor(rgb: UInt32(colors[Int(random)]), alpha: 0.8)
     }
 }

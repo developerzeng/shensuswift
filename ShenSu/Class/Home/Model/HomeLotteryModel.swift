@@ -15,6 +15,17 @@ class HomeLotteryModel: NSObject, Mappable {
     var caipiaoid: String!
     var subTitle: String = ""
     var talk:String = ""
+    var ishot:Bool {
+    let array = ["73","82","93","90","75","69","83","115","94"]
+        for cpid in array {
+            if cpid == caipiaoid {
+            return true
+            }else{
+            
+            }
+        }
+        return false
+    }
 	override init() {
 
 	}

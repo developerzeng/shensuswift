@@ -163,8 +163,14 @@ extension UITableView {
  
     public func addFugaiView(force:Bool){
         if force {
-            let vc = NotDataView(frame: self.frame)
+            let vc = NotDataView(frame: self.bounds)
             self.addSubview(vc)
+            vc.translatesAutoresizingMaskIntoConstraints = false
+            let constraints = NSLayoutConstraint.constraints(withVisualFormat: "H:|[view1]|", options: [], metrics: nil, views: ["view1":vc]) + NSLayoutConstraint.constraints(withVisualFormat: "V:|[view1]|", options: [], metrics: nil, views: ["view1":vc])
+            let constraints1 = NSLayoutConstraint(item: vc, attribute: .width, relatedBy: .equal, toItem: self, attribute: .width, multiplier: 1, constant: 0)
+            let constraints2 = NSLayoutConstraint(item: vc, attribute: .height, relatedBy: .equal, toItem: self, attribute: .height, multiplier: 1, constant: 0)
+            NSLayoutConstraint.activate(constraints)
+            NSLayoutConstraint.activate([constraints1,constraints2])
         }else{
             for view in self.subviews {
                 if view.isKind(of: NotDataView.self) {

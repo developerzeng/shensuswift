@@ -19,7 +19,7 @@ class HomeHeaderView: UICollectionReusableView {
 
 		addBannar()
 		addScrollerView()
-        addHeadView()
+      //  addHeadView()
 	}
 
 	required init?(coder aDecoder: NSCoder) {
@@ -32,17 +32,7 @@ class HomeHeaderView: UICollectionReusableView {
 	 // Drawing code
 	 }
 	 */
-    func addHeadView(){
-    homcellHead = HomecellHeadCollectionReusableView()
-    self.addSubview(homcellHead)
-        homcellHead <- [
-            Top(5).to(chooseView, .bottom),
-            Left(0).to(self),
-            Right(0).to(self),
-            Bottom(0).to(self)
-            // Bottom(10).to(self)
-        ]
-    }
+  
     func setModel(model:HomecellModel ){
         homcellHead.setModel(model: model)
     }
@@ -53,8 +43,8 @@ class HomeHeaderView: UICollectionReusableView {
 			Top(-5).to(zpbannar, .bottom),
 			Left(0).to(self),
 			Right(0).to(self),
-			Height(30)
-			// Bottom(10).to(self)
+			Height(30),
+            Bottom(10).to(self)
 		]
 	}
 

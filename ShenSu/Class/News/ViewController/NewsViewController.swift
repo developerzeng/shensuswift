@@ -11,12 +11,16 @@ import EasyPeasy
 import SwiftyJSON
 class NewsViewController: BaseViewController {
 	var tableView: UITableView!
+    var titleName:String!
 	var newsData = Array<NewsModel>()
+    var didSelectedRowBlock:((NewsModel)->())?
 	override func viewDidLoad() {
 		super.viewDidLoad()
+       
 		tableView = UITableView(frame: CGRect.zero, style: .grouped)
 		tableView.delegate = self
 		tableView.dataSource = self
+        tableView.scrollsToTop = true
 		tableView.showsVerticalScrollIndicator = false
 		tableView.showsHorizontalScrollIndicator = false
 		tableView.removfootViewLine()
@@ -32,14 +36,15 @@ class NewsViewController: BaseViewController {
 	}
 	func getNewsData() {
         self.showLoadingView()
-		let request = "http://tt.aicai.com/api/queryMoreInformation?agentId=2335059&appVersion=4.1.0&clientModuleId=18686&lastMsgId=9223372036854775807&platform=wap&version="
-		NetWorkManager.default.rawRequestWithUrl(URLString: request, method: .get, parameters: nil) { (status, data) in
+		let request = "http://www.fondfell.com/superDao/caipiao/index.php/Api/News/getNewList"
+		NetWorkManager.default.rawRequestWithUrl(URLString: request, method: .post, parameters: ["path":titleName]) { (status, data) in
             self.hideLoadingView()
+            self.tableView.endRefreshing()
 			if status == .Success {
 				self.newsData.removeAll()
 				if let jsondata = data {
 					let json = jsondata as? JSON
-					if let snsMsgList = json?["snsMsgList"].arrayObject {
+					if let snsMsgList = json?["result"].arrayObject {
 						snsMsgList.enumerated().forEach({ (index, modeldata) in
 							let model = NewsModel()
 							_ = self.JsonMapToObject(JSON: modeldata, toObject: model)
@@ -102,9 +107,10 @@ extension NewsViewController: UITableViewDelegate, UITableViewDataSource {
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		if newsData.count > indexPath.section {
 			let model = newsData[indexPath.section]
-			let vc = NewsDetaViewController()
-			vc.agentId = model.oid
-			_ = self.navigationController?.pushViewController(vc, animated: true)
+//			let vc = NewsDetaViewController()
+//			vc.agentId = model.oid
+//			_ = self.navigationController?.pushViewController(vc, animated: true)
+            self.didSelectedRowBlock?(model)
 		}
 	}
 }

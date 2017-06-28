@@ -45,7 +45,7 @@ class MyViewController: BaseViewController {
 		collectionView.backgroundColor = UIColor.backColor()
 		self.view.addSubview(collectionView)
 		collectionView <- [
-			Edges(UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0))
+			Edges(UIEdgeInsets(top: -64, left: 0, bottom: 0, right: 0))
 		]
 		// Do any additional setup after loading the view.
 	}
@@ -110,6 +110,7 @@ extension MyViewController: UICollectionViewDelegate, UICollectionViewDataSource
 					self.showLoginViewController()
 				}
 			}
+            userHeader?.reloadModel()
 			return userHeader!
 		}
 		return UICollectionReusableView()
