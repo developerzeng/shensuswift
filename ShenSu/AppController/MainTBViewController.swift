@@ -22,6 +22,7 @@ class MainViewController: UITabBarController, UITabBarControllerDelegate {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+        self.tabBar.backgroundColor = UIColor.white
 		self.delegate = self
 		initData()
 		setup()
@@ -46,10 +47,10 @@ class MainViewController: UITabBarController, UITabBarControllerDelegate {
 			case 0:
 				vc = HomeViewController()
 			case 1:
-				vc = LotteryViewController()
-//			case 2:
-//				vc = SliderNewsViewController()
+				vc = ZstViewController()
 			case 2:
+				vc = SliderNewsViewController()
+			case 3:
 				vc = MyViewController()
 			default:
 				vc = UIViewController()
@@ -75,9 +76,9 @@ class MainViewController: UITabBarController, UITabBarControllerDelegate {
 	func initData() {
 		let model1 = MainViewModel(title: "首页", selectImage: UIImage(named: "sehome"), defaultImage: UIImage(named: "homei"))
 		let model2 = MainViewModel(title: "彩票", selectImage: UIImage(named: "selottery"), defaultImage: UIImage(named: "lottery"))
-//		let model3 = MainViewModel(title: "资讯", selectImage: UIImage(named: "sezixun"), defaultImage: UIImage(named: "zixun"))
+		let model3 = MainViewModel(title: "分析", selectImage: UIImage(named: "sezixun"), defaultImage: UIImage(named: "zixun"))
 		let model4 = MainViewModel(title: "我的", selectImage: UIImage(named: "semy"), defaultImage: UIImage(named: "my"))
-		self.models.append(contentsOf: [model1, model2,/* model3,*/ model4])
+		self.models.append(contentsOf: [model1,  model2 ,  model3, model4])
 	}
 
 
