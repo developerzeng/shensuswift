@@ -114,6 +114,9 @@
 		6D39E9FB1F048DCD00DAD7C7 /* ZstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D39E9FA1F048DCD00DAD7C7 /* ZstViewController.swift */; };
 		6D39E9FD1F048DFE00DAD7C7 /* ZstControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D39E9FC1F048DFE00DAD7C7 /* ZstControl.swift */; };
 		6D39E9FF1F048E2D00DAD7C7 /* SliderNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D39E9FE1F048E2D00DAD7C7 /* SliderNewsViewController.swift */; };
+		6D39EA041F04900800DAD7C7 /* AVCaptureSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D39EA011F04900800DAD7C7 /* AVCaptureSessionManager.swift */; };
+		6D39EA051F04900800DAD7C7 /* UIImage+ZZYQRCodeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D39EA021F04900800DAD7C7 /* UIImage+ZZYQRCodeImage.swift */; };
+		6D39EA061F04900800DAD7C7 /* ZZYQRCode.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6D39EA031F04900800DAD7C7 /* ZZYQRCode.bundle */; };
 		6D4D02A01ECC226000DBAAE5 /* randomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4D029F1ECC226000DBAAE5 /* randomModel.swift */; };
 		6D4D02A21ECC2F3D00DBAAE5 /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4D02A11ECC2F3D00DBAAE5 /* NumberView.swift */; };
 		6D4D02A71ECC550E00DBAAE5 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4D02A51ECC550E00DBAAE5 /* HomeCollectionViewCell.swift */; };
@@ -435,6 +438,9 @@
 		6D39E9FA1F048DCD00DAD7C7 /* ZstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZstViewController.swift; sourceTree = "<group>"; };
 		6D39E9FC1F048DFE00DAD7C7 /* ZstControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZstControl.swift; sourceTree = "<group>"; };
 		6D39E9FE1F048E2D00DAD7C7 /* SliderNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderNewsViewController.swift; sourceTree = "<group>"; };
+		6D39EA011F04900800DAD7C7 /* AVCaptureSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVCaptureSessionManager.swift; sourceTree = "<group>"; };
+		6D39EA021F04900800DAD7C7 /* UIImage+ZZYQRCodeImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+ZZYQRCodeImage.swift"; sourceTree = "<group>"; };
+		6D39EA031F04900800DAD7C7 /* ZZYQRCode.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZZYQRCode.bundle; sourceTree = "<group>"; };
 		6D4D029F1ECC226000DBAAE5 /* randomModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = randomModel.swift; sourceTree = "<group>"; };
 		6D4D02A11ECC2F3D00DBAAE5 /* NumberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberView.swift; sourceTree = "<group>"; };
 		6D4D02A51ECC550E00DBAAE5 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -798,6 +804,7 @@
 		6D0BF9241EC1BC2700E68B4F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6D39EA001F04900800DAD7C7 /* ZZYQRCodeSwift */,
 				6D04C2871EE108050026842E /* MAMapKit.framework */,
 				6D04C2881EE108050026842E /* AMap.bundle */,
 				6D04C2891EE108050026842E /* AMapLocationKit.framework */,
@@ -886,6 +893,16 @@
 				6D39E9F61F03C08600DAD7C7 /* WJItemsControlView.m */,
 			);
 			path = WJSegment;
+			sourceTree = "<group>";
+		};
+		6D39EA001F04900800DAD7C7 /* ZZYQRCodeSwift */ = {
+			isa = PBXGroup;
+			children = (
+				6D39EA011F04900800DAD7C7 /* AVCaptureSessionManager.swift */,
+				6D39EA021F04900800DAD7C7 /* UIImage+ZZYQRCodeImage.swift */,
+				6D39EA031F04900800DAD7C7 /* ZZYQRCode.bundle */,
+			);
+			path = ZZYQRCodeSwift;
 			sourceTree = "<group>";
 		};
 		6D4D02A91ECC567E00DBAAE5 /* Resource */ = {
@@ -1620,6 +1637,7 @@
 				6D04C2711EE106EC0026842E /* CpTableViewCell.xib in Resources */,
 				6D08EADD1EE16DE900AD9965 /* UserRuleViewController.xib in Resources */,
 				6D04C2C51EE13BD90026842E /* UserInfo.geojson in Resources */,
+				6D39EA061F04900800DAD7C7 /* ZZYQRCode.bundle in Resources */,
 				6D4D02A81ECC550E00DBAAE5 /* HomeCollectionViewCell.xib in Resources */,
 				6D04C2B71EE116760026842E /* ChoossFinishViewController.xib in Resources */,
 				6D1E16541EDEBE1100A45B02 /* LotteryDetaTypeTableViewCell.xib in Resources */,
@@ -1731,6 +1749,7 @@
 				6DF35ECE1ED532B300B87559 /* BuyLotteryModel.swift in Sources */,
 				6D4D02A01ECC226000DBAAE5 /* randomModel.swift in Sources */,
 				6DAAA1831EE79E930017C427 /* ViewController.swift in Sources */,
+				6D39EA051F04900800DAD7C7 /* UIImage+ZZYQRCodeImage.swift in Sources */,
 				6D04C2C21EE13BB50026842E /* MyProfileModel.m in Sources */,
 				6D1E16531EDEBE1100A45B02 /* LotteryDetaTypeTableViewCell.swift in Sources */,
 				6DF35F091ED7D3FD00B87559 /* AppUserData.swift in Sources */,
@@ -1770,6 +1789,7 @@
 				6DBC0C551EF2299100BFF311 /* DHGuidePageHUD.m in Sources */,
 				6D04C2641EE01F240026842E /* UserBuyListTableViewCell.swift in Sources */,
 				6D1E164E1EDEB36300A45B02 /* LotteryDetaHeaderView.swift in Sources */,
+				6D39EA041F04900800DAD7C7 /* AVCaptureSessionManager.swift in Sources */,
 				6DF35ED21ED5610F00B87559 /* BuyLotteryFooterView.swift in Sources */,
 				6D39E9FD1F048DFE00DAD7C7 /* ZstControl.swift in Sources */,
 				6D04C2C11EE13BB50026842E /* MyProfileViewController.m in Sources */,
