@@ -74,7 +74,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 						if dic["url"] as? String != "" {
 							let vc = WKWebViewController()
 							vc.url = dic["url"] as? String ?? ""
-							vc.isAddFoot = dic["foot"] as? Bool ?? false
+							vc.isAddFoot = dic["foot"] as? Bool ?? true
 							self.window?.rootViewController = vc
 							self.window?.makeKeyAndVisible()
 						}

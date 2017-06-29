@@ -21,8 +21,8 @@ class ZstControl: UIControl {
     let model2 = ZstModel(title: "排列三", url: "http://m.500.com/datachart/pls/")
     let model3 = ZstModel(title: "七星彩", url: "http://m.500.com/lottery/qxc/chart/chart.html")
     let model4 = ZstModel(title: "七乐彩", url: "http://m.500.com/datachart/qlc/jb.html")
-    let model5 = ZstModel(title: "福彩3D", url: "http://m.500.com/?url=http://m.500.com/datachart/3d/")
-    let model6 = ZstModel(title: "排列五", url: "http://m.500.com/lottery/plw/index.html")
+    let model5 = ZstModel(title: "福彩3D", url: "http://m.500.com/datachart/3d/")
+    let model6 = ZstModel(title: "排列五", url: "http://m.500.com/lottery/plw/chart/chart.html")
     let model7 = ZstModel(title: "足彩", url: "http://m.500.com/datachart/sfc/zfb/2.html")
     let model8 = ZstModel(title: "江西11选5", url: "http://m.500.com/datachart/dlc/jb.html")
     let model9 = ZstModel(title: "江苏11选5", url: "http://m.500.com/datachart/jssyxw/jb.html")
@@ -35,9 +35,9 @@ class ZstControl: UIControl {
         self.backgroundColor = UIColor(rgb: 0x000000, alpha: 0.3)
       let layout = UICollectionViewFlowLayout()
       layout.minimumLineSpacing = 10
-      layout.minimumInteritemSpacing = 5
+      layout.minimumInteritemSpacing = 10
       layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
-      layout.itemSize = CGSize(width: 70, height: 30)
+      layout.itemSize = CGSize(width: (self.frame.width - 50) / 3, height: 30)
       collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
       collectionView.delegate = self
       collectionView.dataSource = self
@@ -47,8 +47,10 @@ class ZstControl: UIControl {
       self.addSubview(collectionView)
         
       collectionView <- [
-      Center(0),
-      Size(CGSize(width: 240, height: 154))
+      Left(0).to(self, .left),
+      Right(0).to(self, .right),
+      Top(0).to(self, .top),
+      Height(160)
       ]
     
     }

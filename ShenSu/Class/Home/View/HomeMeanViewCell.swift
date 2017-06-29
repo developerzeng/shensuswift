@@ -34,7 +34,7 @@ class HomeMeanViewCell: UICollectionViewCell {
         smBtn.addTarget(self, action: #selector(cpShopClick), for: .touchUpInside)
         self.contentView.addSubview(smBtn)
         zxBtn = UIButton(type: .custom)
-        zxBtn.setTitle("资讯", for: .normal)
+        zxBtn.setTitle("开奖", for: .normal)
         zxBtn.tag = 1003
         zxBtn.titleLabel?.font = UIFont.systemFont(ofSize: 14)
         zxBtn.setImage(UIImage.init(named: "资讯"), for: .normal)

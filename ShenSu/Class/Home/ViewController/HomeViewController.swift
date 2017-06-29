@@ -254,7 +254,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
                     let vc = ZstViewController()
                     _ = self.navigationController?.pushViewController(vc, animated: true)
                 default:
-                    let vc = SliderNewsViewController()
+                    let vc = LotteryViewController()
                     _ = self.navigationController?.pushViewController(vc, animated: true)
                 }
             }
