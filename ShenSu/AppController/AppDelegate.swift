@@ -17,9 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 	var launchScreen: UIImageView?
 	var manager: NetworkReachabilityManager?
 	var viewController: ViewController?
-
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         Bmob.register(withAppKey: "8b97083620084a6eefda367e8f274157")
+        observeNetWork()
 		self.window?.frame = UIScreen.main.bounds
 		AMapServices.shared().apiKey = AppNeedKey().GDMapKey
 		UIApplication.shared.statusBarStyle = .lightContent
@@ -27,7 +27,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 		window?.rootViewController = MainViewController()
 		window?.makeKeyAndVisible()
 		windowsAddLaunchScreen()
-        addActionInfo()
 		addPush(application: application, launchOptions: launchOptions)
         if launchOptions != nil {
         let dic = launchOptions?[.remoteNotification]
@@ -136,7 +135,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 		}
 
 	}
-
+    func observeNetWork() {
+        self.manager = NetworkReachabilityManager(host: "www.baidu.com")
+        self.manager?.listener = { status in
+            if status == NetworkReachabilityManager.NetworkReachabilityStatus.notReachable {
+            } else if status == NetworkReachabilityManager.NetworkReachabilityStatus.unknown {
+            } else {
+                self.addActionInfo()
+            }
+            
+            print("Network Status Changed: \(status)")
+        }
+        self.manager?.startListening()
+    }
 	func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
 		JPUSHService.registerDeviceToken(deviceToken)
 	}
