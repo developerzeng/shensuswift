@@ -9,6 +9,7 @@
 import UIKit
 import SwiftyJSON
 import EasyPeasy
+import AVFoundation
 class HomeViewController: BaseViewController {
     var homeHraderView: HomeHeaderView!
     var bannarArray = Array<BannarModel>()

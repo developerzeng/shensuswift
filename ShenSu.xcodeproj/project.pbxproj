@@ -109,6 +109,11 @@
 		6D1E166A1EDFEAB300A45B02 /* MycenterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D1E16681EDFEAB300A45B02 /* MycenterCollectionViewCell.xib */; };
 		6D1EBDEF1EFA0CBC00ED2BA0 /* LQKGeneralWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1EBDEC1EFA0CBC00ED2BA0 /* LQKGeneralWebViewController.m */; };
 		6D1EBDF01EFA0CBC00ED2BA0 /* TOWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1EBDEE1EFA0CBC00ED2BA0 /* TOWebViewController.m */; };
+		6D39E9F71F03C08600DAD7C7 /* WJItemsControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D39E9F61F03C08600DAD7C7 /* WJItemsControlView.m */; };
+		6D39E9F91F03C0C800DAD7C7 /* HomeMeanViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D39E9F81F03C0C800DAD7C7 /* HomeMeanViewCell.swift */; };
+		6D39E9FB1F048DCD00DAD7C7 /* ZstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D39E9FA1F048DCD00DAD7C7 /* ZstViewController.swift */; };
+		6D39E9FD1F048DFE00DAD7C7 /* ZstControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D39E9FC1F048DFE00DAD7C7 /* ZstControl.swift */; };
+		6D39E9FF1F048E2D00DAD7C7 /* SliderNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D39E9FE1F048E2D00DAD7C7 /* SliderNewsViewController.swift */; };
 		6D4D02A01ECC226000DBAAE5 /* randomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4D029F1ECC226000DBAAE5 /* randomModel.swift */; };
 		6D4D02A21ECC2F3D00DBAAE5 /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4D02A11ECC2F3D00DBAAE5 /* NumberView.swift */; };
 		6D4D02A71ECC550E00DBAAE5 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4D02A51ECC550E00DBAAE5 /* HomeCollectionViewCell.swift */; };
@@ -424,6 +429,12 @@
 		6D1EBDEC1EFA0CBC00ED2BA0 /* LQKGeneralWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQKGeneralWebViewController.m; sourceTree = "<group>"; };
 		6D1EBDED1EFA0CBC00ED2BA0 /* TOWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOWebViewController.h; sourceTree = "<group>"; };
 		6D1EBDEE1EFA0CBC00ED2BA0 /* TOWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOWebViewController.m; sourceTree = "<group>"; };
+		6D39E9F51F03C08600DAD7C7 /* WJItemsControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJItemsControlView.h; sourceTree = "<group>"; };
+		6D39E9F61F03C08600DAD7C7 /* WJItemsControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJItemsControlView.m; sourceTree = "<group>"; };
+		6D39E9F81F03C0C800DAD7C7 /* HomeMeanViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeMeanViewCell.swift; sourceTree = "<group>"; };
+		6D39E9FA1F048DCD00DAD7C7 /* ZstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZstViewController.swift; sourceTree = "<group>"; };
+		6D39E9FC1F048DFE00DAD7C7 /* ZstControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZstControl.swift; sourceTree = "<group>"; };
+		6D39E9FE1F048E2D00DAD7C7 /* SliderNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderNewsViewController.swift; sourceTree = "<group>"; };
 		6D4D029F1ECC226000DBAAE5 /* randomModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = randomModel.swift; sourceTree = "<group>"; };
 		6D4D02A11ECC2F3D00DBAAE5 /* NumberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberView.swift; sourceTree = "<group>"; };
 		6D4D02A51ECC550E00DBAAE5 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -751,6 +762,7 @@
 		6D08EAE01EE52D3300AD9965 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				6D39E9FE1F048E2D00DAD7C7 /* SliderNewsViewController.swift */,
 				6D08EAEB1EE53D3800AD9965 /* NewsDetaViewController.swift */,
 				6D08EAEC1EE53D3800AD9965 /* NewsDetaViewController.xib */,
 			);
@@ -865,6 +877,15 @@
 				6D1E164B1EDEB2A000A45B02 /* BaseView.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6D39E9F41F03C08600DAD7C7 /* WJSegment */ = {
+			isa = PBXGroup;
+			children = (
+				6D39E9F51F03C08600DAD7C7 /* WJItemsControlView.h */,
+				6D39E9F61F03C08600DAD7C7 /* WJItemsControlView.m */,
+			);
+			path = WJSegment;
 			sourceTree = "<group>";
 		};
 		6D4D02A91ECC567E00DBAAE5 /* Resource */ = {
@@ -1075,6 +1096,7 @@
 		6DF35F3E1ED8420B00B87559 /* OC */ = {
 			isa = PBXGroup;
 			children = (
+				6D39E9F41F03C08600DAD7C7 /* WJSegment */,
 				6DBC0C4E1EF2299100BFF311 /* DHGuidePageHUD */,
 				6DBC0C401EF139A700BFF311 /* BmobDataSDK */,
 				6DAAA1751EE685320017C427 /* Jpush */,
@@ -1226,6 +1248,7 @@
 				6DF6E7CB1EC9AD52003F2D2F /* HomeViewController.swift */,
 				6DF6D7F81EEE390000EFFE45 /* SeachViewController.swift */,
 				6D106FFE1EEE473F00CE67BF /* SeachOpenViewController.swift */,
+				6D39E9FA1F048DCD00DAD7C7 /* ZstViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1243,6 +1266,8 @@
 				6D4D02A51ECC550E00DBAAE5 /* HomeCollectionViewCell.swift */,
 				6D4D02A61ECC550E00DBAAE5 /* HomeCollectionViewCell.xib */,
 				6D0248561EF7844E005E5748 /* HomecellHeadCollectionReusableView.swift */,
+				6D39E9F81F03C0C800DAD7C7 /* HomeMeanViewCell.swift */,
+				6D39E9FC1F048DFE00DAD7C7 /* ZstControl.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1701,6 +1726,7 @@
 				6D0BF9531EC30F2C00E68B4F /* TableViewBaseCell.swift in Sources */,
 				6D0BF94B1EC30F2C00E68B4F /* FoundationExtensions.swift in Sources */,
 				6DF35EC91ED43F4F00B87559 /* BuyLottreyViewController.swift in Sources */,
+				6D39E9F91F03C0C800DAD7C7 /* HomeMeanViewCell.swift in Sources */,
 				6D04C26F1EE106EC0026842E /* CpMapViewController.m in Sources */,
 				6DF35ECE1ED532B300B87559 /* BuyLotteryModel.swift in Sources */,
 				6D4D02A01ECC226000DBAAE5 /* randomModel.swift in Sources */,
@@ -1716,6 +1742,7 @@
 				6DBC0C541EF2299100BFF311 /* DHGifImageOperation.m in Sources */,
 				6D1E164A1EDEB07C00A45B02 /* LotteryDetaTypeViewController.swift in Sources */,
 				6DF35EC61ED41C1000B87559 /* MainTBViewController.swift in Sources */,
+				6D39E9FF1F048E2D00DAD7C7 /* SliderNewsViewController.swift in Sources */,
 				6D04C3171EE13ED10026842E /* MASViewAttribute.m in Sources */,
 				6D08EAE41EE52D6E00AD9965 /* NewsViewController.swift in Sources */,
 				6DAAA1641EE64E210017C427 /* SetupTableViewCell.swift in Sources */,
@@ -1744,6 +1771,7 @@
 				6D04C2641EE01F240026842E /* UserBuyListTableViewCell.swift in Sources */,
 				6D1E164E1EDEB36300A45B02 /* LotteryDetaHeaderView.swift in Sources */,
 				6DF35ED21ED5610F00B87559 /* BuyLotteryFooterView.swift in Sources */,
+				6D39E9FD1F048DFE00DAD7C7 /* ZstControl.swift in Sources */,
 				6D04C2C11EE13BB50026842E /* MyProfileViewController.m in Sources */,
 				6DF6E7E81ECACFF2003F2D2F /* LLPillPageControl.swift in Sources */,
 				6DAAA1691EE65E500017C427 /* WKWebViewController.m in Sources */,
@@ -1768,6 +1796,7 @@
 				6D04C3161EE13ED10026842E /* MASLayoutConstraint.m in Sources */,
 				6DF35ED41ED586DA00B87559 /* LotteryModel.swift in Sources */,
 				6D4D02AD1ECC56BC00DBAAE5 /* HomeLotteryModel.swift in Sources */,
+				6D39E9FB1F048DCD00DAD7C7 /* ZstViewController.swift in Sources */,
 				6D0248591EF784BA005E5748 /* LotteryDetaView.swift in Sources */,
 				6D0BF93C1EC1CBF300E68B4F /* NetWorkManager.swift in Sources */,
 				6D08EADC1EE16DE900AD9965 /* UserRuleViewController.swift in Sources */,
@@ -1775,6 +1804,7 @@
 				6DF35F141ED81BF700B87559 /* LotteryDetaTableViewCell.swift in Sources */,
 				6D1070011EEE7C6600CE67BF /* NotDataView.swift in Sources */,
 				6D08EAF01EE540BA00AD9965 /* NewsDataModel.swift in Sources */,
+				6D39E9F71F03C08600DAD7C7 /* WJItemsControlView.m in Sources */,
 				6D1E16651EDFCD4000A45B02 /* UserHeaderCollectionReusableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
