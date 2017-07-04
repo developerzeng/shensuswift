@@ -96,9 +96,7 @@ class ChooseView: UIView {
 	}
 
 	override func layoutSubviews() {
-		contentView.frame = CGRect(x: 20, y: 0, w: frame.width - 40, h: frame.height)
-		contentView.layer.cornerRadius = frame.height / 2
-		contentView.layer.masksToBounds = true
+		contentView.frame = CGRect(x: 0, y: 0, w: frame.width , h: frame.height)
 
 	}
 	// 初始化时将xib中的view添加进来

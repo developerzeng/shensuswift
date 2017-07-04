@@ -1985,10 +1985,10 @@
 					"$(PROJECT_DIR)/ShenSu/Class/OC/UMessage_Sdk_1.5.0a",
 					"$(PROJECT_DIR)/ShenSu/Class/OC/Jpush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xhcpcp.cpcp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xhcp5.cp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "d3ff6186-eca0-4b85-b877-5d2e20c9cee9";
-				PROVISIONING_PROFILE_SPECIFIER = "xhCP4上架";
+				PROVISIONING_PROFILE = "0ff96071-9b57-4e7b-a28b-30b427ae0039";
+				PROVISIONING_PROFILE_SPECIFIER = "xhcp5上架";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shensu/Desktop/ShenSu/ShenSu/Class/OC/Shensu-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Shensu-swift.h";
 				SWIFT_VERSION = 3.0;
@@ -2018,10 +2018,10 @@
 					"$(PROJECT_DIR)/ShenSu/Class/OC/UMessage_Sdk_1.5.0a",
 					"$(PROJECT_DIR)/ShenSu/Class/OC/Jpush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xhcpcp.cpcp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xhcp5.cp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "d3ff6186-eca0-4b85-b877-5d2e20c9cee9";
-				PROVISIONING_PROFILE_SPECIFIER = "xhCP4上架";
+				PROVISIONING_PROFILE = "0ff96071-9b57-4e7b-a28b-30b427ae0039";
+				PROVISIONING_PROFILE_SPECIFIER = "xhcp5上架";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shensu/Desktop/ShenSu/ShenSu/Class/OC/Shensu-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Shensu-swift.h";
 				SWIFT_VERSION = 3.0;

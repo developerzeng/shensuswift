@@ -257,7 +257,7 @@
 选四之四中二：投注的4个号码，只要有2个号码与开奖号码前4个号码其中2码相同且顺序一致，视为中奖。 
 选四之四中三：投注的4个号码，只要有3个号码与开奖号码前4个号码其中3码相同且顺序一致，视为中奖。 </string>
 			<key>subTitle</key>
-			<string>每10分支开奖</string>
+			<string>每10分钟开奖</string>
 			<key>caipiaoid</key>
 			<string>82</string>
 			<key>rule</key>

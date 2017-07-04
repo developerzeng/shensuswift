@@ -47,9 +47,9 @@ class MainViewController: UITabBarController, UITabBarControllerDelegate {
 			case 0:
 				vc = HomeViewController()
 			case 1:
-				vc = ZstViewController()
+				vc = LotteryViewController()
 			case 2:
-				vc = SliderNewsViewController()
+				vc = ZstViewController()
 			case 3:
 				vc = MyViewController()
 			default:

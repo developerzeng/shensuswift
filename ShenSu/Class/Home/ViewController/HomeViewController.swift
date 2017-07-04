@@ -162,14 +162,14 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             setBannarData()
         }else if kind == UICollectionElementKindSectionHeader  {
             let view = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "cellhead", for: indexPath) as? HomecellHeadCollectionReusableView
-            view?.setModel(model: headArray[indexPath.section - 1])
+            view?.setModel(model: headArray[indexPath.section])
             return view!
         }
         return homeHraderView
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         switch indexPath.section {
-        case 1:
+        case 2:
             return CGSize(width: self.collectionView.width, height: 123)
         case 0:
             return CGSize(width: self.collectionView.width, height: 80)
@@ -180,20 +180,20 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 3
+        return 2
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch section {
         case 0:
             return 1
-        case 1:
-            return 1
+//        case 1:
+//            return 1
         default:
             return lotteryArray.count
         }
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if indexPath.section == 1 {
+        if indexPath.section == 2 {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TjCollectionViewCell", for: indexPath) as? TjCollectionViewCell
             cell?.homesaveBtnBlock = {
                 self.showMessage(message: "保存成功")
@@ -222,7 +222,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             }
             
             return cell!
-        } else if indexPath.section == 2 {
+        } else if indexPath.section == 1 {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCollectionViewCell", for: indexPath) as? HomeCollectionViewCell
             if lotteryArray.count > indexPath.row {
                 cell?.setModel(model: lotteryArray[indexPath.row])
