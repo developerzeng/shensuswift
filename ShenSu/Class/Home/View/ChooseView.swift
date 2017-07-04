@@ -87,11 +87,12 @@ class ChooseView: UIView {
                     
                 })
             })
+            RunLoop.current.add(timer, forMode: .commonModes)
+            self.titleLable.textColor = UIColor.orangeRedColor()
         } else {
             // Fallback on earlier versions
         }
-		RunLoop.current.add(timer, forMode: .commonModes)
-		self.titleLable.textColor = UIColor.orangeRedColor()
+
 
 	}
 
