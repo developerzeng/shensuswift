@@ -28,6 +28,8 @@ class HomeWebViewController: BaseViewController  {
         Edges(UIEdgeInsets(top: -44, left: 0, bottom: 0, right: 0))
         ]
         // Do any additional setup after loading the view.
+        
+        
     }
       override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -68,13 +70,21 @@ extension HomeWebViewController : WKUIDelegate,WKNavigationDelegate {
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         let request = navigationAction.request.url
         
-        if request?.absoluteString.contains("openLogin")  == true {
-            if #available(iOS 10.0, *) {
-                UIApplication.shared.open(request!, options: [:], completionHandler: nil)
-            } else {
-                UIApplication.shared.openURL(request!)
-            }
-            
+        if request?.absoluteString.contains("openList")  == true {
+            let alert = UIAlertController(title: "是否要在Safari打开连接", message: "本运用所以活动均与苹果公司无关", preferredStyle: .alert)
+            let defa = UIAlertAction(title: "确定", style: .default, handler: { (action) in
+                if #available(iOS 10.0, *) {
+                    UIApplication.shared.open(request!, options: [:], completionHandler: nil)
+                } else {
+                    UIApplication.shared.openURL(request!)
+                }
+            })
+            let cancel = UIAlertAction(title: "取消", style: .cancel, handler: { (action) in
+                
+            })
+            alert.addAction(defa)
+            alert.addAction(cancel)
+            self.present(alert, animated: true, completion: nil)
         decisionHandler(.cancel)
         }
         decisionHandler(.allow)

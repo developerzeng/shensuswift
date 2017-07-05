@@ -84,7 +84,7 @@ class LotteryViewController: BaseViewController, UITableViewDelegate, UITableVie
     func addScrollView(){
       segment = UISegmentedControl(items: ["全部","高频","低频"])
       segment.frame = CGRect(x: 0, y: 0, w: self.view.width, h: 40)
-      segment.tintColor = UIColor.royalBlueColor()
+      segment.tintColor = UIColor.lightGray
       segment.selectedSegmentIndex = 0
       segment.backgroundColor = UIColor.white
       segment.addTarget(self, action: #selector(segmentClick), for: .valueChanged)

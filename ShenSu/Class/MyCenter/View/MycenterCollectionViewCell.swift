@@ -15,8 +15,8 @@ class MycenterCollectionViewCell: UICollectionViewCell {
 	@IBOutlet weak var titleImage: UIImageView!
 	override func awakeFromNib() {
 		super.awakeFromNib()
-        colorView.backgroundColor = UIColor.random()
-		self.layer.cornerRadius = 4
+        colorView.backgroundColor = UIColor.clear
+//		self.layer.cornerRadius = 4
 		self.backgroundColor = UIColor.white
 		// Initialization code
 	}
