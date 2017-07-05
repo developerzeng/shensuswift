@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D01ACC61F0B74B5005DD0C7 /* LotteryInfo.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 6D01ACC51F0B74B5005DD0C7 /* LotteryInfo.geojson */; };
+		6D01ACCB1F0B7C5C005DD0C7 /* NewLotteryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D01ACCA1F0B7C5C005DD0C7 /* NewLotteryModel.swift */; };
+		6D01ACCD1F0B7D40005DD0C7 /* NewHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D01ACCC1F0B7D40005DD0C7 /* NewHomeViewController.swift */; };
+		6D01ACCF1F0B830D005DD0C7 /* HomeWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D01ACCE1F0B830D005DD0C7 /* HomeWebViewController.swift */; };
 		6D0248631EF8BF29005E5748 /* WJItemsControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0248621EF8BF29005E5748 /* WJItemsControlView.m */; };
 		6D0248651EF8BFA5005E5748 /* SliderNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0248641EF8BFA5005E5748 /* SliderNewsViewController.swift */; };
+		6D045E2C1F0BA004007775DD /* LQKGeneralWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D045E291F0BA004007775DD /* LQKGeneralWebViewController.m */; };
+		6D045E2D1F0BA004007775DD /* TOWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D045E2B1F0BA004007775DD /* TOWebViewController.m */; };
 		6D04C25E1EE001690026842E /* XLPlainFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D04C25C1EE001690026842E /* XLPlainFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D04C25F1EE001690026842E /* XLPlainFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D04C25D1EE001690026842E /* XLPlainFlowLayout.m */; };
 		6D04C2611EE01CD60026842E /* UserBuyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04C2601EE01CD60026842E /* UserBuyListViewController.swift */; };
@@ -18,15 +24,15 @@
 		6D04C26F1EE106EC0026842E /* CpMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D04C26A1EE106EC0026842E /* CpMapViewController.m */; };
 		6D04C2701EE106EC0026842E /* CpTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D04C26C1EE106EC0026842E /* CpTableViewCell.m */; };
 		6D04C2711EE106EC0026842E /* CpTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D04C26D1EE106EC0026842E /* CpTableViewCell.xib */; };
-		6D04C28C1EE108050026842E /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C2871EE108050026842E /* MAMapKit.framework */; };
+		6D04C28C1EE108050026842E /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C2871EE108050026842E /* MAMapKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6D04C28D1EE108050026842E /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6D04C2881EE108050026842E /* AMap.bundle */; };
-		6D04C28E1EE108050026842E /* AMapLocationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C2891EE108050026842E /* AMapLocationKit.framework */; };
-		6D04C28F1EE108050026842E /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C28A1EE108050026842E /* AMapSearchKit.framework */; };
-		6D04C2901EE108050026842E /* AMapFoundationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C28B1EE108050026842E /* AMapFoundationKit.framework */; };
+		6D04C28E1EE108050026842E /* AMapLocationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C2891EE108050026842E /* AMapLocationKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6D04C28F1EE108050026842E /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C28A1EE108050026842E /* AMapSearchKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6D04C2901EE108050026842E /* AMapFoundationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C28B1EE108050026842E /* AMapFoundationKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6D04C2921EE109B70026842E /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C2911EE109B70026842E /* libc++.tbd */; };
 		6D04C2941EE109BF0026842E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C2931EE109BF0026842E /* libz.tbd */; };
 		6D04C2961EE109CA0026842E /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C2951EE109CA0026842E /* libstdc++.6.0.9.tbd */; };
-		6D04C2981EE109D10026842E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C2971EE109D10026842E /* Security.framework */; };
+		6D04C2981EE109D10026842E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C2971EE109D10026842E /* Security.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6D04C29A1EE109D60026842E /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C2991EE109D60026842E /* JavaScriptCore.framework */; };
 		6D04C29C1EE109DE0026842E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C29B1EE109DE0026842E /* SystemConfiguration.framework */; };
 		6D04C29E1EE109E70026842E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C29D1EE109E70026842E /* CoreLocation.framework */; };
@@ -38,7 +44,7 @@
 		6D04C2AA1EE10BCF0026842E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C2A91EE10BCF0026842E /* libsqlite3.tbd */; };
 		6D04C2AC1EE10BE50026842E /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C2AB1EE10BE50026842E /* libstdc++.tbd */; };
 		6D04C2AE1EE10BF60026842E /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C2AD1EE10BF60026842E /* libicucore.tbd */; };
-		6D04C2B01EE10C110026842E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C2AF1EE10C110026842E /* MapKit.framework */; };
+		6D04C2B01EE10C110026842E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C2AF1EE10C110026842E /* MapKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6D04C2B21EE10C5A0026842E /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C2B11EE10C5A0026842E /* GLKit.framework */; };
 		6D04C2B61EE116760026842E /* ChoossFinishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D04C2B41EE116760026842E /* ChoossFinishViewController.m */; };
 		6D04C2B71EE116760026842E /* ChoossFinishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D04C2B51EE116760026842E /* ChoossFinishViewController.xib */; };
@@ -58,7 +64,7 @@
 		6D04C31C1EE13ED10026842E /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D04C3121EE13ED10026842E /* ViewController+MASAdditions.m */; };
 		6D04C31E1EE14B390026842E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04C31D1EE14B390026842E /* LoginViewController.swift */; };
 		6D04C3201EE14B540026842E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04C31F1EE14B540026842E /* RegisterViewController.swift */; };
-		6D08A98B1ECADA850096E7BE /* EasyPeasy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D08A98A1ECADA850096E7BE /* EasyPeasy.framework */; };
+		6D08A98B1ECADA850096E7BE /* EasyPeasy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D08A98A1ECADA850096E7BE /* EasyPeasy.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6D08A9911ECAF8B80096E7BE /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D08A9901ECAF8B80096E7BE /* HomeHeaderView.swift */; };
 		6D08A9931ECAFF3D0096E7BE /* ChooseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D08A9921ECAFF3D0096E7BE /* ChooseView.swift */; };
 		6D08A9951ECAFF650096E7BE /* ChooseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D08A9941ECAFF650096E7BE /* ChooseView.xib */; };
@@ -72,10 +78,10 @@
 		6D08EAEE1EE53D3800AD9965 /* NewsDetaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D08EAEC1EE53D3800AD9965 /* NewsDetaViewController.xib */; };
 		6D08EAF01EE540BA00AD9965 /* NewsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D08EAEF1EE540BA00AD9965 /* NewsDataModel.swift */; };
 		6D08EAF21EE547B300AD9965 /* NumberTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D08EAF11EE547B300AD9965 /* NumberTransform.swift */; };
-		6D0BF9271EC1C11900E68B4F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0BF9251EC1C11900E68B4F /* Alamofire.framework */; };
-		6D0BF9281EC1C11900E68B4F /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0BF9261EC1C11900E68B4F /* SwiftyJSON.framework */; };
-		6D0BF9321EC1CB3600E68B4F /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0BF92F1EC1CB3600E68B4F /* Kingfisher.framework */; };
-		6D0BF9381EC1CB4A00E68B4F /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0BF9371EC1CB4A00E68B4F /* ObjectMapper.framework */; };
+		6D0BF9271EC1C11900E68B4F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0BF9251EC1C11900E68B4F /* Alamofire.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6D0BF9281EC1C11900E68B4F /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0BF9261EC1C11900E68B4F /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6D0BF9321EC1CB3600E68B4F /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0BF92F1EC1CB3600E68B4F /* Kingfisher.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6D0BF9381EC1CB4A00E68B4F /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0BF9371EC1CB4A00E68B4F /* ObjectMapper.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6D0BF93C1EC1CBF300E68B4F /* NetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0BF93B1EC1CBF300E68B4F /* NetWorkManager.swift */; };
 		6D0BF93E1EC3022C00E68B4F /* URLRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0BF93D1EC3022C00E68B4F /* URLRouter.swift */; };
 		6D0BF94B1EC30F2C00E68B4F /* FoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0BF9401EC30F2C00E68B4F /* FoundationExtensions.swift */; };
@@ -88,8 +94,8 @@
 		6D0BF9521EC30F2C00E68B4F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0BF9471EC30F2C00E68B4F /* TableViewController.swift */; };
 		6D0BF9531EC30F2C00E68B4F /* TableViewBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0BF9481EC30F2C00E68B4F /* TableViewBaseCell.swift */; };
 		6D0BF9551EC30F2C00E68B4F /* TimeIntervalTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0BF94A1EC30F2C00E68B4F /* TimeIntervalTransform.swift */; };
-		6D0BF9571EC313A100E68B4F /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0BF9561EC313A100E68B4F /* Chameleon.framework */; };
-		6D0BF9591EC313A800E68B4F /* SwiftDate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0BF9581EC313A800E68B4F /* SwiftDate.framework */; };
+		6D0BF9571EC313A100E68B4F /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0BF9561EC313A100E68B4F /* Chameleon.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6D0BF9591EC313A800E68B4F /* SwiftDate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0BF9581EC313A800E68B4F /* SwiftDate.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6D106FFF1EEE473F00CE67BF /* SeachOpenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D106FFE1EEE473F00CE67BF /* SeachOpenViewController.swift */; };
 		6D1070011EEE7C6600CE67BF /* NotDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1070001EEE7C6600CE67BF /* NotDataView.swift */; };
 		6D1070031EEE7C8500CE67BF /* NotDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D1070021EEE7C8500CE67BF /* NotDataView.xib */; };
@@ -135,8 +141,8 @@
 		6DAAA1691EE65E500017C427 /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAAA1681EE65E500017C427 /* WKWebViewController.m */; };
 		6DAAA16C1EE65E6A0017C427 /* WebViewXib.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAAA16B1EE65E6A0017C427 /* WebViewXib.m */; };
 		6DAAA1701EE67FE30017C427 /* libUMessage_Sdk_1.5.0a.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAAA16E1EE67FE30017C427 /* libUMessage_Sdk_1.5.0a.a */; };
-		6DAAA1721EE6800B0017C427 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAAA1711EE6800B0017C427 /* UserNotifications.framework */; };
-		6DAAA1741EE680110017C427 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAAA1731EE680110017C427 /* UserNotificationsUI.framework */; };
+		6DAAA1721EE6800B0017C427 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAAA1711EE6800B0017C427 /* UserNotifications.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6DAAA1741EE680110017C427 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAAA1731EE680110017C427 /* UserNotificationsUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6DAAA1791EE685320017C427 /* jcore-ios-1.1.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAAA1761EE685320017C427 /* jcore-ios-1.1.3.a */; };
 		6DAAA17A1EE685320017C427 /* jpush-ios-3.0.5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAAA1771EE685320017C427 /* jpush-ios-3.0.5.a */; };
 		6DAAA17C1EE686360017C427 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAAA17B1EE686360017C427 /* UIKit.framework */; };
@@ -295,9 +301,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6D01ACC51F0B74B5005DD0C7 /* LotteryInfo.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LotteryInfo.geojson; sourceTree = "<group>"; };
+		6D01ACCA1F0B7C5C005DD0C7 /* NewLotteryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewLotteryModel.swift; sourceTree = "<group>"; };
+		6D01ACCC1F0B7D40005DD0C7 /* NewHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewHomeViewController.swift; sourceTree = "<group>"; };
+		6D01ACCE1F0B830D005DD0C7 /* HomeWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWebViewController.swift; sourceTree = "<group>"; };
 		6D0248611EF8BF29005E5748 /* WJItemsControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJItemsControlView.h; sourceTree = "<group>"; };
 		6D0248621EF8BF29005E5748 /* WJItemsControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJItemsControlView.m; sourceTree = "<group>"; };
 		6D0248641EF8BFA5005E5748 /* SliderNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderNewsViewController.swift; sourceTree = "<group>"; };
+		6D045E281F0BA004007775DD /* LQKGeneralWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQKGeneralWebViewController.h; sourceTree = "<group>"; };
+		6D045E291F0BA004007775DD /* LQKGeneralWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQKGeneralWebViewController.m; sourceTree = "<group>"; };
+		6D045E2A1F0BA004007775DD /* TOWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOWebViewController.h; sourceTree = "<group>"; };
+		6D045E2B1F0BA004007775DD /* TOWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOWebViewController.m; sourceTree = "<group>"; };
 		6D04C25C1EE001690026842E /* XLPlainFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLPlainFlowLayout.h; sourceTree = "<group>"; };
 		6D04C25D1EE001690026842E /* XLPlainFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLPlainFlowLayout.m; sourceTree = "<group>"; };
 		6D04C2601EE01CD60026842E /* UserBuyListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserBuyListViewController.swift; sourceTree = "<group>"; };
@@ -875,6 +889,7 @@
 			children = (
 				6D04C2C41EE13BD90026842E /* UserInfo.geojson */,
 				6D4D02AA1ECC568400DBAAE5 /* CaipiaoType.geojson */,
+				6D01ACC51F0B74B5005DD0C7 /* LotteryInfo.geojson */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -977,6 +992,10 @@
 				6DAAA16B1EE65E6A0017C427 /* WebViewXib.m */,
 				6DAAA1671EE65E500017C427 /* WKWebViewController.h */,
 				6DAAA1681EE65E500017C427 /* WKWebViewController.m */,
+				6D045E281F0BA004007775DD /* LQKGeneralWebViewController.h */,
+				6D045E291F0BA004007775DD /* LQKGeneralWebViewController.m */,
+				6D045E2A1F0BA004007775DD /* TOWebViewController.h */,
+				6D045E2B1F0BA004007775DD /* TOWebViewController.m */,
 			);
 			path = WK;
 			sourceTree = "<group>";
@@ -1213,6 +1232,8 @@
 				6DF6D7F81EEE390000EFFE45 /* SeachViewController.swift */,
 				6D106FFE1EEE473F00CE67BF /* SeachOpenViewController.swift */,
 				6D8C74441EFA81C700DD8815 /* ScanViewController.swift */,
+				6D01ACCC1F0B7D40005DD0C7 /* NewHomeViewController.swift */,
+				6D01ACCE1F0B830D005DD0C7 /* HomeWebViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1244,6 +1265,7 @@
 				6DF35ECD1ED532B300B87559 /* BuyLotteryModel.swift */,
 				6DF35ED31ED586DA00B87559 /* LotteryModel.swift */,
 				6DF35EFC1ED6DB9F00B87559 /* LotteryListModel.swift */,
+				6D01ACCA1F0B7C5C005DD0C7 /* NewLotteryModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1511,7 +1533,7 @@
 				TargetAttributes = {
 					6D55364D1EC1B98400B0E8E8 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = W68GG87S92;
+						DevelopmentTeam = 9GKB2GTRRN;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
@@ -1599,6 +1621,7 @@
 				6D08EAEE1EE53D3800AD9965 /* NewsDetaViewController.xib in Resources */,
 				6D4D02AB1ECC568400DBAAE5 /* CaipiaoType.geojson in Resources */,
 				6D5536571EC1B98400B0E8E8 /* Main.storyboard in Resources */,
+				6D01ACC61F0B74B5005DD0C7 /* LotteryInfo.geojson in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1676,9 +1699,12 @@
 				6D08EAEA1EE5306700AD9965 /* NewsModel.swift in Sources */,
 				6DF35EF71ED6D15D00B87559 /* BuyListViewController.swift in Sources */,
 				6DF35F561ED920E200B87559 /* ObjectNet.swift in Sources */,
+				6D045E2C1F0BA004007775DD /* LQKGeneralWebViewController.m in Sources */,
 				6DF35F0C1ED8075700B87559 /* LotteryTableViewCell.swift in Sources */,
 				6DF35EFD1ED6DB9F00B87559 /* LotteryListModel.swift in Sources */,
+				6D045E2D1F0BA004007775DD /* TOWebViewController.m in Sources */,
 				6D04C3201EE14B540026842E /* RegisterViewController.swift in Sources */,
+				6D01ACCB1F0B7C5C005DD0C7 /* NewLotteryModel.swift in Sources */,
 				6D0BF94E1EC30F2C00E68B4F /* UIScreenExtensions.swift in Sources */,
 				6DF6E7E91ECACFF2003F2D2F /* LLSnakePageControl.swift in Sources */,
 				6D0BF9511EC30F2C00E68B4F /* BaseViewController.swift in Sources */,
@@ -1720,6 +1746,7 @@
 				6DBC0C5D1EF28D9E00BFF311 /* LotteryDetaView.swift in Sources */,
 				6DF6E7CC1EC9AD52003F2D2F /* HomeViewController.swift in Sources */,
 				6D08EAF21EE547B300AD9965 /* NumberTransform.swift in Sources */,
+				6D01ACCD1F0B7D40005DD0C7 /* NewHomeViewController.swift in Sources */,
 				6D0BF93E1EC3022C00E68B4F /* URLRouter.swift in Sources */,
 				6DF35EFA1ED6D7A100B87559 /* BuyListTableViewCell.swift in Sources */,
 				6DF35ED01ED53ABD00B87559 /* BuyLotteryHeardCollectionReusableView.swift in Sources */,
@@ -1766,6 +1793,7 @@
 				6D1070011EEE7C6600CE67BF /* NotDataView.swift in Sources */,
 				6D3A86271F00AE4D00FBFF22 /* ZstViewController.swift in Sources */,
 				6D08EAF01EE540BA00AD9965 /* NewsDataModel.swift in Sources */,
+				6D01ACCF1F0B830D005DD0C7 /* HomeWebViewController.swift in Sources */,
 				6D1E16651EDFCD4000A45B02 /* UserHeaderCollectionReusableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1968,9 +1996,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ShenSu/ShenSu.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Min Wen (W68GG87S92)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Min Wen (W68GG87S92)";
-				DEVELOPMENT_TEAM = W68GG87S92;
+				CODE_SIGN_IDENTITY = "iPhone Developer: zhang zhenghuan (CKAKRAYEVB)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: zhang zhenghuan (CKAKRAYEVB)";
+				DEVELOPMENT_TEAM = 9GKB2GTRRN;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1985,10 +2013,10 @@
 					"$(PROJECT_DIR)/ShenSu/Class/OC/UMessage_Sdk_1.5.0a",
 					"$(PROJECT_DIR)/ShenSu/Class/OC/Jpush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xhcp5.cp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mayacaipiaozzh.zzh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0ff96071-9b57-4e7b-a28b-30b427ae0039";
-				PROVISIONING_PROFILE_SPECIFIER = "xhcp5上架";
+				PROVISIONING_PROFILE = "159ed865-25a0-4c2a-a19e-c99a46f71092";
+				PROVISIONING_PROFILE_SPECIFIER = "测试测试";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shensu/Desktop/ShenSu/ShenSu/Class/OC/Shensu-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Shensu-swift.h";
 				SWIFT_VERSION = 3.0;
@@ -2001,9 +2029,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ShenSu/ShenSu.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Min Wen (W68GG87S92)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Min Wen (W68GG87S92)";
-				DEVELOPMENT_TEAM = W68GG87S92;
+				CODE_SIGN_IDENTITY = "iPhone Developer: zhang zhenghuan (CKAKRAYEVB)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: zhang zhenghuan (CKAKRAYEVB)";
+				DEVELOPMENT_TEAM = 9GKB2GTRRN;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2018,10 +2046,10 @@
 					"$(PROJECT_DIR)/ShenSu/Class/OC/UMessage_Sdk_1.5.0a",
 					"$(PROJECT_DIR)/ShenSu/Class/OC/Jpush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xhcp5.cp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mayacaipiaozzh.zzh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0ff96071-9b57-4e7b-a28b-30b427ae0039";
-				PROVISIONING_PROFILE_SPECIFIER = "xhcp5上架";
+				PROVISIONING_PROFILE = "159ed865-25a0-4c2a-a19e-c99a46f71092";
+				PROVISIONING_PROFILE_SPECIFIER = "测试测试";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shensu/Desktop/ShenSu/ShenSu/Class/OC/Shensu-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Shensu-swift.h";
 				SWIFT_VERSION = 3.0;

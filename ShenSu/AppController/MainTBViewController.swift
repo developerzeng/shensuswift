@@ -45,7 +45,7 @@ class MainViewController: UITabBarController, UITabBarControllerDelegate {
 			let vc: UIViewController
 			switch index {
 			case 0:
-				vc = HomeViewController()
+				vc = NewHomeViewController()
 			case 1:
 				vc = LotteryViewController()
 			case 2:

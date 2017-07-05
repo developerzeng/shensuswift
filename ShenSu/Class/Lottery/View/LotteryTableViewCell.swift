@@ -29,7 +29,7 @@ class LotteryTableViewCell: UITableViewCell {
 	var lotterNumberView = LotteryNumberView()
 	override func awakeFromNib() {
 		super.awakeFromNib()
-        backView.backgroundColor = UIColor.blueVioletColor()
+        backView.backgroundColor = UIColor.royalBlueColor()
         
 //        self.contentView.layer.cornerRadius = 8
         self.layer.cornerRadius = 4

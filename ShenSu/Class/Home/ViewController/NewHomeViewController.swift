@@ -9,11 +9,11 @@
 import UIKit
 import SwiftyJSON
 import EasyPeasy
-class HomeViewController: BaseViewController {
+class NewHomeViewController: BaseViewController {
     var homeHraderView: HomeHeaderView!
     var bannarArray = Array<BannarModel>()
     var collectionView: UICollectionView!
-    var lotteryArray = Array<HomeLotteryModel>()
+    var lotteryArray = Array<NewLotteryModel>()
     var headArray:Array<HomecellModel>{
         let model = HomecellModel(imaegName: "推荐", title: "推荐号码")
         let model1 = HomecellModel(imaegName: "热门", title: "热门彩种")
@@ -26,7 +26,7 @@ class HomeViewController: BaseViewController {
         addcollectionView()
         getLotteryData()
         
-      
+        
         
     }
     
@@ -45,14 +45,14 @@ class HomeViewController: BaseViewController {
             let vc = SeachViewController()
             _ = self.navigationController?.pushViewController(vc, animated: true)
         }
-//        self.setNavLeftButton(image: UIImage.init(named: "Categories")!)
-//        self.leftButtonClicked = {btn in
-//            if AppUserData.default.isLogin {
-//                self.showMessage(message: "您已经登录了！")
-//            }else{
-//                self.showLoginViewController()
-//            }
-//        }
+        //        self.setNavLeftButton(image: UIImage.init(named: "Categories")!)
+        //        self.leftButtonClicked = {btn in
+        //            if AppUserData.default.isLogin {
+        //                self.showMessage(message: "您已经登录了！")
+        //            }else{
+        //                self.showLoginViewController()
+        //            }
+        //        }
     }
     func addcollectionView() {
         
@@ -84,11 +84,11 @@ class HomeViewController: BaseViewController {
         
     }
     func getLotteryData() {
-        let path = Bundle.main.path(forResource: "CaipiaoType", ofType: "geojson")
+        let path = Bundle.main.path(forResource: "LotteryInfo", ofType: "geojson")
         let dic = NSDictionary(contentsOfFile: path!)
         let array = dic?["data"] as? Array<Any>
         array?.enumerated().forEach({ (index, data) in
-            let model = HomeLotteryModel()
+            let model = NewLotteryModel()
             _ = self.JsonMapToObject(JSON: data, toObject: model)
             lotteryArray.append(model)
         })
@@ -137,12 +137,13 @@ class HomeViewController: BaseViewController {
      */
     
 }
-extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension NewHomeViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if lotteryArray.count > indexPath.row && indexPath.section > 0 {
             let model = lotteryArray[indexPath.row]
-            let vc = BuyLottreyViewController()
-            vc.lotteryInfoModel = model
+            let vc = HomeWebViewController()
+            vc.titleName = model.lot_name
+            vc.url = model.lot_url
             _ = self.navigationController?.pushViewController(vc, animated: true)
         }
         
@@ -185,8 +186,8 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         switch section {
         case 0:
             return 1
-//        case 1:
-//            return 1
+            //        case 1:
+        //            return 1
         default:
             return lotteryArray.count
         }
@@ -200,17 +201,17 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             cell?.xuanhaoBtnBlock = {
                 let alert = UIAlertController(title: nil, message: "是否打开Safari购彩?", preferredStyle: .alert)
                 let defa = UIAlertAction(title: "确定", style: .default, handler: { (action) in
-                        
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
-                                if #available(iOS 10.0, *) {
-                                    UIApplication.shared.open(URL(string:"http://m.59cp88.com/index/home")!, options: [:], completionHandler: { (finish) in
-                                       
-                                    })
-                                } else {
-                                    UIApplication.shared.openURL(URL(string:"http://m.59cp88.com/index/home")!)
-                                }
+                    
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
+                        if #available(iOS 10.0, *) {
+                            UIApplication.shared.open(URL(string:"http://m.59cp88.com/index/home")!, options: [:], completionHandler: { (finish) in
+                                
                             })
-
+                        } else {
+                            UIApplication.shared.openURL(URL(string:"http://m.59cp88.com/index/home")!)
+                        }
+                    })
+                    
                 })
                 let cancal = UIAlertAction(title: "取消", style: .cancel, handler: { (action) in
                     
@@ -224,9 +225,9 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         } else if indexPath.section == 1 {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCollectionViewCell", for: indexPath) as? HomeCollectionViewCell
             if lotteryArray.count > indexPath.row {
-                cell?.setModel(model: lotteryArray[indexPath.row])
+                cell?.setNewModel(model: lotteryArray[indexPath.row])
             }
-           
+            
             return cell!
             
         }else {
