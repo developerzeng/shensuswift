@@ -111,7 +111,7 @@ extension UIViewController {
 		let button = UIButton()
 		button.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
 		button.name = "left"
-        button.adjustsImageWhenHighlighted = false
+		button.adjustsImageWhenHighlighted = false
 		button.setImage(image, for: .normal)
 		button.setImage(highlight, for: .highlighted)
 		button.addTarget(self, action: #selector(self.onTapHandler(sender:)), for: .touchUpInside)
@@ -162,7 +162,22 @@ extension UIViewController {
 		label?.text = title
 		label?.textColor = _color
 		label?.frame.size = size
-		label?.font = UIFont.systemFont(ofSize: 20)
+		label?.font = UIFont.init(name: "AmericanTypewriter-Bold", size: 20)
+		self.navigationItem.titleView = label
+	}
+	public func setNavTitle(title: String, color: UIColor? = nil, font: UIFont) {
+		let _color = color ?? UIColor.white
+		let attrs: [String: AnyObject] = [NSForegroundColorAttributeName: _color, NSFontAttributeName: UIFont.systemFont(ofSize: 20)]
+		let size = NSString(string: title).boundingRect(with: CGSize(width: CGFloat.greatestFiniteMagnitude, height: 30), options: [], attributes: attrs, context: NSStringDrawingContext()).size
+		var label = self.navigationItem.titleView as? UILabel
+		if label == nil {
+			label = UILabel()
+		}
+
+		label?.text = title
+		label?.textColor = _color
+		label?.frame.size = size
+		label?.font = font
 		self.navigationItem.titleView = label
 	}
 
@@ -415,19 +430,19 @@ extension UIViewController {
 public class BaseViewController: UIViewController {
 
 	var resume = false
-
+    
 	public override func loadView() {
 		super.loadView()
 		self.setTransparentNavBar(flag: false)
+     
 	}
 
 	override public func viewDidLoad() {
 		super.viewDidLoad()
-
+        self.edgesForExtendedLayout = UIRectEdge(rawValue: 0)
 		self.setDefaultNavBar()
 		self.view.backgroundColor = UIColor(rgb: 0xf2f2f2)
-//		let gobackImage = MaterialIcon.arrowBack?.resizableImageWithCapInsets(UIEdgeInsetsMake(0, 30, 0, 0))
-//		UIBarButtonItem.appearance().setBackButtonBackgroundImage(gobackImage, forState: .Normal, barMetrics: .Default)
+
 	}
 
 	func onRecieveMessage(notif: NSNotification) {

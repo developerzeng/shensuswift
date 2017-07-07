@@ -10,9 +10,11 @@ import UIKit
 import EasyPeasy
 class LotteryNumberView: UIView {
 	var isspace: Bool = false
+    var caipiaoId:String = ""
 	var numberBackColor: UIColor = UIColor.orangeRedColor() {
 		didSet {
 			lableArray.enumerated().forEach { (index, data) in
+
 				let lable = data as? UILabel
 				lable?.backgroundColor = numberBackColor
 			}
@@ -52,6 +54,12 @@ class LotteryNumberView: UIView {
 			numberLable.layer.masksToBounds = true
 			self.addSubview(numberLable)
 			lableArray.append(numberLable)
+            
+            if caipiaoId == "11" && index > 4 {
+            numberLable.backgroundColor = UIColor.blueVioletColor()
+            }else if caipiaoId == "14" && index > 5 {
+            numberLable.backgroundColor = UIColor.blueVioletColor()
+            }
 		}
 
 	}

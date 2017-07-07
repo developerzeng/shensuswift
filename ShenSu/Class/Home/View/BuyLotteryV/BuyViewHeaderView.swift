@@ -63,14 +63,7 @@ extension BuyViewHeaderView: UITableViewDataSource, UITableViewDelegate {
 		if lotteryinfoArray.count > indexPath.row {
 			cell?.setModel(model: lotteryinfoArray[indexPath.row])
 		}
-		if indexPath.row % 2 == 0 {
-			cell?.backgroundColor = UIColor.white
-		} else {
-			cell?.backgroundColor = UIColor.orangeRedColor()
-            cell?.qishu.textColor = UIColor.white
-            cell?.numberLable.textColor = UIColor.white
-            cell?.timeLable.textColor = UIColor.white
-		}
+        cell?.backgroundColor = UIColor.white
 		cell?.selectionStyle = .none
 		return cell!
 	}

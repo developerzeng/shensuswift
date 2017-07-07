@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6D02485F1EF7C9D3005E5748 /* UMMobClick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D02485E1EF7C9D3005E5748 /* UMMobClick.framework */; };
+		6D01ACC61F0B74B5005DD0C7 /* LotteryInfo.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 6D01ACC51F0B74B5005DD0C7 /* LotteryInfo.geojson */; };
+		6D01ACCB1F0B7C5C005DD0C7 /* NewLotteryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D01ACCA1F0B7C5C005DD0C7 /* NewLotteryModel.swift */; };
+		6D01ACCD1F0B7D40005DD0C7 /* NewHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D01ACCC1F0B7D40005DD0C7 /* NewHomeViewController.swift */; };
+		6D01ACCF1F0B830D005DD0C7 /* HomeWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D01ACCE1F0B830D005DD0C7 /* HomeWebViewController.swift */; };
+		6D0248631EF8BF29005E5748 /* WJItemsControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0248621EF8BF29005E5748 /* WJItemsControlView.m */; };
+		6D0248651EF8BFA5005E5748 /* SliderNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0248641EF8BFA5005E5748 /* SliderNewsViewController.swift */; };
+		6D045E2C1F0BA004007775DD /* LQKGeneralWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D045E291F0BA004007775DD /* LQKGeneralWebViewController.m */; };
+		6D045E2D1F0BA004007775DD /* TOWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D045E2B1F0BA004007775DD /* TOWebViewController.m */; };
 		6D04C25E1EE001690026842E /* XLPlainFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D04C25C1EE001690026842E /* XLPlainFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D04C25F1EE001690026842E /* XLPlainFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D04C25D1EE001690026842E /* XLPlainFlowLayout.m */; };
 		6D04C2611EE01CD60026842E /* UserBuyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04C2601EE01CD60026842E /* UserBuyListViewController.swift */; };
@@ -17,15 +24,15 @@
 		6D04C26F1EE106EC0026842E /* CpMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D04C26A1EE106EC0026842E /* CpMapViewController.m */; };
 		6D04C2701EE106EC0026842E /* CpTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D04C26C1EE106EC0026842E /* CpTableViewCell.m */; };
 		6D04C2711EE106EC0026842E /* CpTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D04C26D1EE106EC0026842E /* CpTableViewCell.xib */; };
-		6D04C28C1EE108050026842E /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C2871EE108050026842E /* MAMapKit.framework */; };
+		6D04C28C1EE108050026842E /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C2871EE108050026842E /* MAMapKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6D04C28D1EE108050026842E /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6D04C2881EE108050026842E /* AMap.bundle */; };
-		6D04C28E1EE108050026842E /* AMapLocationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C2891EE108050026842E /* AMapLocationKit.framework */; };
-		6D04C28F1EE108050026842E /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C28A1EE108050026842E /* AMapSearchKit.framework */; };
-		6D04C2901EE108050026842E /* AMapFoundationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C28B1EE108050026842E /* AMapFoundationKit.framework */; };
+		6D04C28E1EE108050026842E /* AMapLocationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C2891EE108050026842E /* AMapLocationKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6D04C28F1EE108050026842E /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C28A1EE108050026842E /* AMapSearchKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6D04C2901EE108050026842E /* AMapFoundationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C28B1EE108050026842E /* AMapFoundationKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6D04C2921EE109B70026842E /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C2911EE109B70026842E /* libc++.tbd */; };
 		6D04C2941EE109BF0026842E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C2931EE109BF0026842E /* libz.tbd */; };
 		6D04C2961EE109CA0026842E /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C2951EE109CA0026842E /* libstdc++.6.0.9.tbd */; };
-		6D04C2981EE109D10026842E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C2971EE109D10026842E /* Security.framework */; };
+		6D04C2981EE109D10026842E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C2971EE109D10026842E /* Security.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6D04C29A1EE109D60026842E /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C2991EE109D60026842E /* JavaScriptCore.framework */; };
 		6D04C29C1EE109DE0026842E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C29B1EE109DE0026842E /* SystemConfiguration.framework */; };
 		6D04C29E1EE109E70026842E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C29D1EE109E70026842E /* CoreLocation.framework */; };
@@ -37,7 +44,7 @@
 		6D04C2AA1EE10BCF0026842E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C2A91EE10BCF0026842E /* libsqlite3.tbd */; };
 		6D04C2AC1EE10BE50026842E /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C2AB1EE10BE50026842E /* libstdc++.tbd */; };
 		6D04C2AE1EE10BF60026842E /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C2AD1EE10BF60026842E /* libicucore.tbd */; };
-		6D04C2B01EE10C110026842E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C2AF1EE10C110026842E /* MapKit.framework */; };
+		6D04C2B01EE10C110026842E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C2AF1EE10C110026842E /* MapKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6D04C2B21EE10C5A0026842E /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D04C2B11EE10C5A0026842E /* GLKit.framework */; };
 		6D04C2B61EE116760026842E /* ChoossFinishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D04C2B41EE116760026842E /* ChoossFinishViewController.m */; };
 		6D04C2B71EE116760026842E /* ChoossFinishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D04C2B51EE116760026842E /* ChoossFinishViewController.xib */; };
@@ -57,7 +64,7 @@
 		6D04C31C1EE13ED10026842E /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D04C3121EE13ED10026842E /* ViewController+MASAdditions.m */; };
 		6D04C31E1EE14B390026842E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04C31D1EE14B390026842E /* LoginViewController.swift */; };
 		6D04C3201EE14B540026842E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04C31F1EE14B540026842E /* RegisterViewController.swift */; };
-		6D08A98B1ECADA850096E7BE /* EasyPeasy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D08A98A1ECADA850096E7BE /* EasyPeasy.framework */; };
+		6D08A98B1ECADA850096E7BE /* EasyPeasy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D08A98A1ECADA850096E7BE /* EasyPeasy.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6D08A9911ECAF8B80096E7BE /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D08A9901ECAF8B80096E7BE /* HomeHeaderView.swift */; };
 		6D08A9931ECAFF3D0096E7BE /* ChooseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D08A9921ECAFF3D0096E7BE /* ChooseView.swift */; };
 		6D08A9951ECAFF650096E7BE /* ChooseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D08A9941ECAFF650096E7BE /* ChooseView.xib */; };
@@ -71,10 +78,10 @@
 		6D08EAEE1EE53D3800AD9965 /* NewsDetaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D08EAEC1EE53D3800AD9965 /* NewsDetaViewController.xib */; };
 		6D08EAF01EE540BA00AD9965 /* NewsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D08EAEF1EE540BA00AD9965 /* NewsDataModel.swift */; };
 		6D08EAF21EE547B300AD9965 /* NumberTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D08EAF11EE547B300AD9965 /* NumberTransform.swift */; };
-		6D0BF9271EC1C11900E68B4F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0BF9251EC1C11900E68B4F /* Alamofire.framework */; };
-		6D0BF9281EC1C11900E68B4F /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0BF9261EC1C11900E68B4F /* SwiftyJSON.framework */; };
-		6D0BF9321EC1CB3600E68B4F /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0BF92F1EC1CB3600E68B4F /* Kingfisher.framework */; };
-		6D0BF9381EC1CB4A00E68B4F /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0BF9371EC1CB4A00E68B4F /* ObjectMapper.framework */; };
+		6D0BF9271EC1C11900E68B4F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0BF9251EC1C11900E68B4F /* Alamofire.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6D0BF9281EC1C11900E68B4F /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0BF9261EC1C11900E68B4F /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6D0BF9321EC1CB3600E68B4F /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0BF92F1EC1CB3600E68B4F /* Kingfisher.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6D0BF9381EC1CB4A00E68B4F /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0BF9371EC1CB4A00E68B4F /* ObjectMapper.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6D0BF93C1EC1CBF300E68B4F /* NetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0BF93B1EC1CBF300E68B4F /* NetWorkManager.swift */; };
 		6D0BF93E1EC3022C00E68B4F /* URLRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0BF93D1EC3022C00E68B4F /* URLRouter.swift */; };
 		6D0BF94B1EC30F2C00E68B4F /* FoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0BF9401EC30F2C00E68B4F /* FoundationExtensions.swift */; };
@@ -87,8 +94,11 @@
 		6D0BF9521EC30F2C00E68B4F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0BF9471EC30F2C00E68B4F /* TableViewController.swift */; };
 		6D0BF9531EC30F2C00E68B4F /* TableViewBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0BF9481EC30F2C00E68B4F /* TableViewBaseCell.swift */; };
 		6D0BF9551EC30F2C00E68B4F /* TimeIntervalTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0BF94A1EC30F2C00E68B4F /* TimeIntervalTransform.swift */; };
-		6D0BF9571EC313A100E68B4F /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0BF9561EC313A100E68B4F /* Chameleon.framework */; };
-		6D0BF9591EC313A800E68B4F /* SwiftDate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0BF9581EC313A800E68B4F /* SwiftDate.framework */; };
+		6D0BF9571EC313A100E68B4F /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0BF9561EC313A100E68B4F /* Chameleon.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6D0BF9591EC313A800E68B4F /* SwiftDate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0BF9581EC313A800E68B4F /* SwiftDate.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6D106FFF1EEE473F00CE67BF /* SeachOpenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D106FFE1EEE473F00CE67BF /* SeachOpenViewController.swift */; };
+		6D1070011EEE7C6600CE67BF /* NotDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1070001EEE7C6600CE67BF /* NotDataView.swift */; };
+		6D1070031EEE7C8500CE67BF /* NotDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D1070021EEE7C8500CE67BF /* NotDataView.xib */; };
 		6D1E164A1EDEB07C00A45B02 /* LotteryDetaTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1E16491EDEB07C00A45B02 /* LotteryDetaTypeViewController.swift */; };
 		6D1E164C1EDEB2A000A45B02 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1E164B1EDEB2A000A45B02 /* BaseView.swift */; };
 		6D1E164E1EDEB36300A45B02 /* LotteryDetaHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1E164D1EDEB36300A45B02 /* LotteryDetaHeaderView.swift */; };
@@ -101,6 +111,8 @@
 		6D1E16661EDFCD4000A45B02 /* UserHeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D1E16641EDFCD4000A45B02 /* UserHeaderCollectionReusableView.xib */; };
 		6D1E16691EDFEAB300A45B02 /* MycenterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1E16671EDFEAB300A45B02 /* MycenterCollectionViewCell.swift */; };
 		6D1E166A1EDFEAB300A45B02 /* MycenterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D1E16681EDFEAB300A45B02 /* MycenterCollectionViewCell.xib */; };
+		6D3A86271F00AE4D00FBFF22 /* ZstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A86261F00AE4D00FBFF22 /* ZstViewController.swift */; };
+		6D3A86291F00B10100FBFF22 /* ZstControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A86281F00B10100FBFF22 /* ZstControl.swift */; };
 		6D4D02A01ECC226000DBAAE5 /* randomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4D029F1ECC226000DBAAE5 /* randomModel.swift */; };
 		6D4D02A21ECC2F3D00DBAAE5 /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4D02A11ECC2F3D00DBAAE5 /* NumberView.swift */; };
 		6D4D02A71ECC550E00DBAAE5 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4D02A51ECC550E00DBAAE5 /* HomeCollectionViewCell.swift */; };
@@ -116,6 +128,11 @@
 		6D7442361EC41A4C00884950 /* OCUnits.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D7442261EC41A4C00884950 /* OCUnits.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D7442391EC41A4C00884950 /* OCUnits.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D7442241EC41A4C00884950 /* OCUnits.framework */; };
 		6D74423A1EC41A4C00884950 /* OCUnits.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D7442241EC41A4C00884950 /* OCUnits.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6D8C743C1EFA5BEE00DD8815 /* HomeMeanViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8C743B1EFA5BEE00DD8815 /* HomeMeanViewCell.swift */; };
+		6D8C74411EFA80B100DD8815 /* AVCaptureSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8C743E1EFA80B100DD8815 /* AVCaptureSessionManager.swift */; };
+		6D8C74421EFA80B100DD8815 /* UIImage+ZZYQRCodeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8C743F1EFA80B100DD8815 /* UIImage+ZZYQRCodeImage.swift */; };
+		6D8C74431EFA80B100DD8815 /* ZZYQRCode.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6D8C74401EFA80B100DD8815 /* ZZYQRCode.bundle */; };
+		6D8C74451EFA81C700DD8815 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8C74441EFA81C700DD8815 /* ScanViewController.swift */; };
 		6DAAA15E1EE56D930017C427 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAAA15C1EE56D930017C427 /* AboutUsViewController.swift */; };
 		6DAAA15F1EE56D930017C427 /* AboutUsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DAAA15D1EE56D930017C427 /* AboutUsViewController.xib */; };
 		6DAAA1611EE64BA20017C427 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAAA1601EE64BA20017C427 /* SetupViewController.swift */; };
@@ -124,15 +141,27 @@
 		6DAAA1691EE65E500017C427 /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAAA1681EE65E500017C427 /* WKWebViewController.m */; };
 		6DAAA16C1EE65E6A0017C427 /* WebViewXib.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAAA16B1EE65E6A0017C427 /* WebViewXib.m */; };
 		6DAAA1701EE67FE30017C427 /* libUMessage_Sdk_1.5.0a.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAAA16E1EE67FE30017C427 /* libUMessage_Sdk_1.5.0a.a */; };
-		6DAAA1721EE6800B0017C427 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAAA1711EE6800B0017C427 /* UserNotifications.framework */; };
-		6DAAA1741EE680110017C427 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAAA1731EE680110017C427 /* UserNotificationsUI.framework */; };
+		6DAAA1721EE6800B0017C427 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAAA1711EE6800B0017C427 /* UserNotifications.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6DAAA1741EE680110017C427 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAAA1731EE680110017C427 /* UserNotificationsUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6DAAA1791EE685320017C427 /* jcore-ios-1.1.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAAA1761EE685320017C427 /* jcore-ios-1.1.3.a */; };
 		6DAAA17A1EE685320017C427 /* jpush-ios-3.0.5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAAA1771EE685320017C427 /* jpush-ios-3.0.5.a */; };
 		6DAAA17C1EE686360017C427 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAAA17B1EE686360017C427 /* UIKit.framework */; };
 		6DAAA17E1EE68D550017C427 /* AppNeedKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAAA17D1EE68D550017C427 /* AppNeedKey.swift */; };
 		6DAAA1801EE6B12C0017C427 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DAAA17F1EE6B12C0017C427 /* LaunchScreen.storyboard */; };
 		6DAAA1831EE79E930017C427 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAAA1821EE79E930017C427 /* ViewController.swift */; };
-		6DAAA1851EE92D200017C427 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAAA1841EE92D200017C427 /* WebViewController.swift */; };
+		6DBC0C5B1EF285EE00BFF311 /* HomecellHeadCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBC0C5A1EF285EE00BFF311 /* HomecellHeadCollectionReusableView.swift */; };
+		6DBC0C5D1EF28D9E00BFF311 /* LotteryDetaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBC0C5C1EF28D9E00BFF311 /* LotteryDetaView.swift */; };
+		6DBC0C601EF38E7E00BFF311 /* LotteryRuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBC0C5E1EF38E7E00BFF311 /* LotteryRuleViewController.swift */; };
+		6DBC0C611EF38E7F00BFF311 /* LotteryRuleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DBC0C5F1EF38E7E00BFF311 /* LotteryRuleViewController.xib */; };
+		6DEAF9291F0E1D2800680F41 /* NaddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEAF9281F0E1D2800680F41 /* NaddViewController.swift */; };
+		6DEAF92C1F0E1E7600680F41 /* NaddHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEAF92B1F0E1E7600680F41 /* NaddHeadView.swift */; };
+		6DEAF92E1F0E277400680F41 /* NaddNews.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 6DEAF92D1F0E277400680F41 /* NaddNews.geojson */; };
+		6DEAF9321F0E28D300680F41 /* NaddModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEAF9311F0E28D300680F41 /* NaddModel.swift */; };
+		6DEAF9351F0E2A6500680F41 /* NaddTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEAF9331F0E2A6500680F41 /* NaddTableViewCell.swift */; };
+		6DEAF9361F0E2A6500680F41 /* NaddTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DEAF9341F0E2A6500680F41 /* NaddTableViewCell.xib */; };
+		6DEAF9381F0E38A600680F41 /* NaddSectionHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEAF9371F0E38A600680F41 /* NaddSectionHeadView.swift */; };
+		6DEAF93B1F0E3FDC00680F41 /* NaddZJTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEAF9391F0E3FDC00680F41 /* NaddZJTableViewCell.swift */; };
+		6DEAF93C1F0E3FDC00680F41 /* NaddZJTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DEAF93A1F0E3FDC00680F41 /* NaddZJTableViewCell.xib */; };
 		6DF35EC51ED41C1000B87559 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF35EC31ED41C1000B87559 /* AppDelegate.swift */; };
 		6DF35EC61ED41C1000B87559 /* MainTBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF35EC41ED41C1000B87559 /* MainTBViewController.swift */; };
 		6DF35EC91ED43F4F00B87559 /* BuyLottreyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF35EC81ED43F4F00B87559 /* BuyLottreyViewController.swift */; };
@@ -172,6 +201,7 @@
 		6DF35F3C1ED840AD00B87559 /* NSString+isEmpty.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DF35F3A1ED840AD00B87559 /* NSString+isEmpty.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6DF35F3D1ED840AD00B87559 /* NSString+isEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF35F3B1ED840AD00B87559 /* NSString+isEmpty.m */; };
 		6DF35F561ED920E200B87559 /* ObjectNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF35F551ED920E200B87559 /* ObjectNet.swift */; };
+		6DF6D7F91EEE390000EFFE45 /* SeachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6D7F81EEE390000EFFE45 /* SeachViewController.swift */; };
 		6DF6E7891EC41B88003F2D2F /* MJRefreshAutoFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DF6E75C1EC41B88003F2D2F /* MJRefreshAutoFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6DF6E78A1EC41B88003F2D2F /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6E75D1EC41B88003F2D2F /* MJRefreshAutoFooter.m */; };
 		6DF6E78B1EC41B88003F2D2F /* MJRefreshBackFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DF6E75E1EC41B88003F2D2F /* MJRefreshBackFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -280,7 +310,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6D02485E1EF7C9D3005E5748 /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMMobClick.framework; sourceTree = "<group>"; };
+		6D01ACC51F0B74B5005DD0C7 /* LotteryInfo.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LotteryInfo.geojson; sourceTree = "<group>"; };
+		6D01ACCA1F0B7C5C005DD0C7 /* NewLotteryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewLotteryModel.swift; sourceTree = "<group>"; };
+		6D01ACCC1F0B7D40005DD0C7 /* NewHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewHomeViewController.swift; sourceTree = "<group>"; };
+		6D01ACCE1F0B830D005DD0C7 /* HomeWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWebViewController.swift; sourceTree = "<group>"; };
+		6D0248611EF8BF29005E5748 /* WJItemsControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJItemsControlView.h; sourceTree = "<group>"; };
+		6D0248621EF8BF29005E5748 /* WJItemsControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJItemsControlView.m; sourceTree = "<group>"; };
+		6D0248641EF8BFA5005E5748 /* SliderNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderNewsViewController.swift; sourceTree = "<group>"; };
+		6D045E281F0BA004007775DD /* LQKGeneralWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQKGeneralWebViewController.h; sourceTree = "<group>"; };
+		6D045E291F0BA004007775DD /* LQKGeneralWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQKGeneralWebViewController.m; sourceTree = "<group>"; };
+		6D045E2A1F0BA004007775DD /* TOWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOWebViewController.h; sourceTree = "<group>"; };
+		6D045E2B1F0BA004007775DD /* TOWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOWebViewController.m; sourceTree = "<group>"; };
 		6D04C25C1EE001690026842E /* XLPlainFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLPlainFlowLayout.h; sourceTree = "<group>"; };
 		6D04C25D1EE001690026842E /* XLPlainFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLPlainFlowLayout.m; sourceTree = "<group>"; };
 		6D04C2601EE01CD60026842E /* UserBuyListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserBuyListViewController.swift; sourceTree = "<group>"; };
@@ -387,6 +427,9 @@
 		6D0BF94A1EC30F2C00E68B4F /* TimeIntervalTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeIntervalTransform.swift; sourceTree = "<group>"; };
 		6D0BF9561EC313A100E68B4F /* Chameleon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Chameleon.framework; sourceTree = "<group>"; };
 		6D0BF9581EC313A800E68B4F /* SwiftDate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftDate.framework; sourceTree = "<group>"; };
+		6D106FFE1EEE473F00CE67BF /* SeachOpenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeachOpenViewController.swift; sourceTree = "<group>"; };
+		6D1070001EEE7C6600CE67BF /* NotDataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotDataView.swift; sourceTree = "<group>"; };
+		6D1070021EEE7C8500CE67BF /* NotDataView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotDataView.xib; sourceTree = "<group>"; };
 		6D1E16491EDEB07C00A45B02 /* LotteryDetaTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotteryDetaTypeViewController.swift; sourceTree = "<group>"; };
 		6D1E164B1EDEB2A000A45B02 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		6D1E164D1EDEB36300A45B02 /* LotteryDetaHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotteryDetaHeaderView.swift; sourceTree = "<group>"; };
@@ -399,6 +442,8 @@
 		6D1E16641EDFCD4000A45B02 /* UserHeaderCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserHeaderCollectionReusableView.xib; sourceTree = "<group>"; };
 		6D1E16671EDFEAB300A45B02 /* MycenterCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MycenterCollectionViewCell.swift; sourceTree = "<group>"; };
 		6D1E16681EDFEAB300A45B02 /* MycenterCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MycenterCollectionViewCell.xib; sourceTree = "<group>"; };
+		6D3A86261F00AE4D00FBFF22 /* ZstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZstViewController.swift; sourceTree = "<group>"; };
+		6D3A86281F00B10100FBFF22 /* ZstControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZstControl.swift; sourceTree = "<group>"; };
 		6D4D029F1ECC226000DBAAE5 /* randomModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = randomModel.swift; sourceTree = "<group>"; };
 		6D4D02A11ECC2F3D00DBAAE5 /* NumberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberView.swift; sourceTree = "<group>"; };
 		6D4D02A51ECC550E00DBAAE5 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -421,6 +466,11 @@
 		6D74422C1EC41A4C00884950 /* OCUnitsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCUnitsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D7442331EC41A4C00884950 /* OCUnitsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCUnitsTests.m; sourceTree = "<group>"; };
 		6D7442351EC41A4C00884950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D8C743B1EFA5BEE00DD8815 /* HomeMeanViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeMeanViewCell.swift; sourceTree = "<group>"; };
+		6D8C743E1EFA80B100DD8815 /* AVCaptureSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVCaptureSessionManager.swift; sourceTree = "<group>"; };
+		6D8C743F1EFA80B100DD8815 /* UIImage+ZZYQRCodeImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+ZZYQRCodeImage.swift"; sourceTree = "<group>"; };
+		6D8C74401EFA80B100DD8815 /* ZZYQRCode.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZZYQRCode.bundle; sourceTree = "<group>"; };
+		6D8C74441EFA81C700DD8815 /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		6DAAA15C1EE56D930017C427 /* AboutUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		6DAAA15D1EE56D930017C427 /* AboutUsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutUsViewController.xib; sourceTree = "<group>"; };
 		6DAAA1601EE64BA20017C427 /* SetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
@@ -442,7 +492,19 @@
 		6DAAA17F1EE6B12C0017C427 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DAAA1811EE6B6920017C427 /* ShenSu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShenSu.entitlements; sourceTree = "<group>"; };
 		6DAAA1821EE79E930017C427 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6DAAA1841EE92D200017C427 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		6DBC0C5A1EF285EE00BFF311 /* HomecellHeadCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomecellHeadCollectionReusableView.swift; sourceTree = "<group>"; };
+		6DBC0C5C1EF28D9E00BFF311 /* LotteryDetaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotteryDetaView.swift; sourceTree = "<group>"; };
+		6DBC0C5E1EF38E7E00BFF311 /* LotteryRuleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotteryRuleViewController.swift; sourceTree = "<group>"; };
+		6DBC0C5F1EF38E7E00BFF311 /* LotteryRuleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LotteryRuleViewController.xib; sourceTree = "<group>"; };
+		6DEAF9281F0E1D2800680F41 /* NaddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaddViewController.swift; sourceTree = "<group>"; };
+		6DEAF92B1F0E1E7600680F41 /* NaddHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaddHeadView.swift; sourceTree = "<group>"; };
+		6DEAF92D1F0E277400680F41 /* NaddNews.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NaddNews.geojson; sourceTree = "<group>"; };
+		6DEAF9311F0E28D300680F41 /* NaddModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaddModel.swift; sourceTree = "<group>"; };
+		6DEAF9331F0E2A6500680F41 /* NaddTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaddTableViewCell.swift; sourceTree = "<group>"; };
+		6DEAF9341F0E2A6500680F41 /* NaddTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NaddTableViewCell.xib; sourceTree = "<group>"; };
+		6DEAF9371F0E38A600680F41 /* NaddSectionHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaddSectionHeadView.swift; sourceTree = "<group>"; };
+		6DEAF9391F0E3FDC00680F41 /* NaddZJTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaddZJTableViewCell.swift; sourceTree = "<group>"; };
+		6DEAF93A1F0E3FDC00680F41 /* NaddZJTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NaddZJTableViewCell.xib; sourceTree = "<group>"; };
 		6DF35EC31ED41C1000B87559 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DF35EC41ED41C1000B87559 /* MainTBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTBViewController.swift; sourceTree = "<group>"; };
 		6DF35EC81ED43F4F00B87559 /* BuyLottreyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyLottreyViewController.swift; sourceTree = "<group>"; };
@@ -483,6 +545,7 @@
 		6DF35F3B1ED840AD00B87559 /* NSString+isEmpty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+isEmpty.m"; sourceTree = "<group>"; };
 		6DF35F541ED91D7100B87559 /* Shensu-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Shensu-Bridging-Header.h"; sourceTree = "<group>"; };
 		6DF35F551ED920E200B87559 /* ObjectNet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectNet.swift; sourceTree = "<group>"; };
+		6DF6D7F81EEE390000EFFE45 /* SeachViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeachViewController.swift; sourceTree = "<group>"; };
 		6DF6E75C1EC41B88003F2D2F /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
 		6DF6E75D1EC41B88003F2D2F /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoFooter.m; sourceTree = "<group>"; };
 		6DF6E75E1EC41B88003F2D2F /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackFooter.h; sourceTree = "<group>"; };
@@ -561,7 +624,6 @@
 				6D04C29A1EE109D60026842E /* JavaScriptCore.framework in Frameworks */,
 				6D04C2981EE109D10026842E /* Security.framework in Frameworks */,
 				6D04C2961EE109CA0026842E /* libstdc++.6.0.9.tbd in Frameworks */,
-				6D02485F1EF7C9D3005E5748 /* UMMobClick.framework in Frameworks */,
 				6D04C2941EE109BF0026842E /* libz.tbd in Frameworks */,
 				6DAAA1701EE67FE30017C427 /* libUMessage_Sdk_1.5.0a.a in Frameworks */,
 				6D04C2921EE109B70026842E /* libc++.tbd in Frameworks */,
@@ -614,6 +676,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D0248601EF8BF29005E5748 /* WJSegment */ = {
+			isa = PBXGroup;
+			children = (
+				6D0248611EF8BF29005E5748 /* WJItemsControlView.h */,
+				6D0248621EF8BF29005E5748 /* WJItemsControlView.m */,
+			);
+			path = WJSegment;
+			sourceTree = "<group>";
+		};
 		6D04C25B1EE001690026842E /* XLPlainFlowLayout */ = {
 			isa = PBXGroup;
 			children = (
@@ -714,7 +785,9 @@
 		6D08EAE01EE52D3300AD9965 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				6DEAF9221F0E1C8900680F41 /* Nadd */,
 				6D08EAE31EE52D6E00AD9965 /* NewsViewController.swift */,
+				6D0248641EF8BFA5005E5748 /* SliderNewsViewController.swift */,
 				6D08EAEB1EE53D3800AD9965 /* NewsDetaViewController.swift */,
 				6D08EAEC1EE53D3800AD9965 /* NewsDetaViewController.xib */,
 			);
@@ -724,6 +797,7 @@
 		6D08EAE11EE52D3F00AD9965 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6DEAF92A1F0E1E6100680F41 /* Nadd */,
 				6D08EAE51EE52E8D00AD9965 /* NewsTableViewCell.swift */,
 				6D08EAE61EE52E8D00AD9965 /* NewsTableViewCell.xib */,
 			);
@@ -735,6 +809,7 @@
 			children = (
 				6D08EAE91EE5306700AD9965 /* NewsModel.swift */,
 				6D08EAEF1EE540BA00AD9965 /* NewsDataModel.swift */,
+				6DEAF9311F0E28D300680F41 /* NaddModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -750,6 +825,7 @@
 		6D0BF9241EC1BC2700E68B4F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6D8C743D1EFA80B100DD8815 /* ZZYQRCodeSwift */,
 				6D04C2871EE108050026842E /* MAMapKit.framework */,
 				6D04C2881EE108050026842E /* AMap.bundle */,
 				6D04C2891EE108050026842E /* AMapLocationKit.framework */,
@@ -834,6 +910,8 @@
 			children = (
 				6D04C2C41EE13BD90026842E /* UserInfo.geojson */,
 				6D4D02AA1ECC568400DBAAE5 /* CaipiaoType.geojson */,
+				6D01ACC51F0B74B5005DD0C7 /* LotteryInfo.geojson */,
+				6DEAF92D1F0E277400680F41 /* NaddNews.geojson */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -919,6 +997,16 @@
 			path = OCUnitsTests;
 			sourceTree = "<group>";
 		};
+		6D8C743D1EFA80B100DD8815 /* ZZYQRCodeSwift */ = {
+			isa = PBXGroup;
+			children = (
+				6D8C743E1EFA80B100DD8815 /* AVCaptureSessionManager.swift */,
+				6D8C743F1EFA80B100DD8815 /* UIImage+ZZYQRCodeImage.swift */,
+				6D8C74401EFA80B100DD8815 /* ZZYQRCode.bundle */,
+			);
+			path = ZZYQRCodeSwift;
+			sourceTree = "<group>";
+		};
 		6DAAA1661EE65E470017C427 /* WK */ = {
 			isa = PBXGroup;
 			children = (
@@ -926,6 +1014,10 @@
 				6DAAA16B1EE65E6A0017C427 /* WebViewXib.m */,
 				6DAAA1671EE65E500017C427 /* WKWebViewController.h */,
 				6DAAA1681EE65E500017C427 /* WKWebViewController.m */,
+				6D045E281F0BA004007775DD /* LQKGeneralWebViewController.h */,
+				6D045E291F0BA004007775DD /* LQKGeneralWebViewController.m */,
+				6D045E2A1F0BA004007775DD /* TOWebViewController.h */,
+				6D045E2B1F0BA004007775DD /* TOWebViewController.m */,
 			);
 			path = WK;
 			sourceTree = "<group>";
@@ -933,7 +1025,6 @@
 		6DAAA16D1EE67FE30017C427 /* UMessage_Sdk_1.5.0a */ = {
 			isa = PBXGroup;
 			children = (
-				6D02485E1EF7C9D3005E5748 /* UMMobClick.framework */,
 				6DAAA16E1EE67FE30017C427 /* libUMessage_Sdk_1.5.0a.a */,
 				6DAAA16F1EE67FE30017C427 /* UMessage.h */,
 			);
@@ -950,12 +1041,35 @@
 			path = Jpush;
 			sourceTree = "<group>";
 		};
+		6DEAF9221F0E1C8900680F41 /* Nadd */ = {
+			isa = PBXGroup;
+			children = (
+				6DEAF9281F0E1D2800680F41 /* NaddViewController.swift */,
+			);
+			path = Nadd;
+			sourceTree = "<group>";
+		};
+		6DEAF92A1F0E1E6100680F41 /* Nadd */ = {
+			isa = PBXGroup;
+			children = (
+				6DEAF92B1F0E1E7600680F41 /* NaddHeadView.swift */,
+				6DEAF9331F0E2A6500680F41 /* NaddTableViewCell.swift */,
+				6DEAF9341F0E2A6500680F41 /* NaddTableViewCell.xib */,
+				6DEAF9371F0E38A600680F41 /* NaddSectionHeadView.swift */,
+				6DEAF9391F0E3FDC00680F41 /* NaddZJTableViewCell.swift */,
+				6DEAF93A1F0E3FDC00680F41 /* NaddZJTableViewCell.xib */,
+			);
+			path = Nadd;
+			sourceTree = "<group>";
+		};
 		6DF35EC21ED41C1000B87559 /* AppController */ = {
 			isa = PBXGroup;
 			children = (
 				6DF35EC31ED41C1000B87559 /* AppDelegate.swift */,
 				6DF35EC41ED41C1000B87559 /* MainTBViewController.swift */,
 				6DAAA1821EE79E930017C427 /* ViewController.swift */,
+				6D1070001EEE7C6600CE67BF /* NotDataView.swift */,
+				6D1070021EEE7C8500CE67BF /* NotDataView.xib */,
 			);
 			path = AppController;
 			sourceTree = "<group>";
@@ -965,6 +1079,8 @@
 			children = (
 				6DF35EC81ED43F4F00B87559 /* BuyLottreyViewController.swift */,
 				6DF35EF61ED6D15D00B87559 /* BuyListViewController.swift */,
+				6DBC0C5E1EF38E7E00BFF311 /* LotteryRuleViewController.swift */,
+				6DBC0C5F1EF38E7E00BFF311 /* LotteryRuleViewController.xib */,
 			);
 			path = BuyLottery;
 			sourceTree = "<group>";
@@ -981,6 +1097,7 @@
 				6DF35EF81ED6D7A100B87559 /* BuyListTableViewCell.swift */,
 				6DF35EF91ED6D7A100B87559 /* BuyListTableViewCell.xib */,
 				6DF35EFE1ED7C12000B87559 /* BuyListFootView.swift */,
+				6DBC0C5C1EF28D9E00BFF311 /* LotteryDetaView.swift */,
 			);
 			path = BuyLotteryV;
 			sourceTree = "<group>";
@@ -1006,6 +1123,7 @@
 		6DF35F3E1ED8420B00B87559 /* OC */ = {
 			isa = PBXGroup;
 			children = (
+				6D0248601EF8BF29005E5748 /* WJSegment */,
 				6DAAA1751EE685320017C427 /* Jpush */,
 				6DAAA16D1EE67FE30017C427 /* UMessage_Sdk_1.5.0a */,
 				6DAAA1661EE65E470017C427 /* WK */,
@@ -1153,7 +1271,12 @@
 			children = (
 				6DF35EC71ED43F1100B87559 /* BuyLottery */,
 				6DF6E7CB1EC9AD52003F2D2F /* HomeViewController.swift */,
-				6DAAA1841EE92D200017C427 /* WebViewController.swift */,
+				6D3A86261F00AE4D00FBFF22 /* ZstViewController.swift */,
+				6DF6D7F81EEE390000EFFE45 /* SeachViewController.swift */,
+				6D106FFE1EEE473F00CE67BF /* SeachOpenViewController.swift */,
+				6D8C74441EFA81C700DD8815 /* ScanViewController.swift */,
+				6D01ACCC1F0B7D40005DD0C7 /* NewHomeViewController.swift */,
+				6D01ACCE1F0B830D005DD0C7 /* HomeWebViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1170,6 +1293,9 @@
 				6D4D02A11ECC2F3D00DBAAE5 /* NumberView.swift */,
 				6D4D02A51ECC550E00DBAAE5 /* HomeCollectionViewCell.swift */,
 				6D4D02A61ECC550E00DBAAE5 /* HomeCollectionViewCell.xib */,
+				6DBC0C5A1EF285EE00BFF311 /* HomecellHeadCollectionReusableView.swift */,
+				6D8C743B1EFA5BEE00DD8815 /* HomeMeanViewCell.swift */,
+				6D3A86281F00B10100FBFF22 /* ZstControl.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1182,6 +1308,7 @@
 				6DF35ECD1ED532B300B87559 /* BuyLotteryModel.swift */,
 				6DF35ED31ED586DA00B87559 /* LotteryModel.swift */,
 				6DF35EFC1ED6DB9F00B87559 /* LotteryListModel.swift */,
+				6D01ACCA1F0B7C5C005DD0C7 /* NewLotteryModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1449,6 +1576,7 @@
 				TargetAttributes = {
 					6D55364D1EC1B98400B0E8E8 = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = F6KGR6KCTH;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
@@ -1507,8 +1635,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DEAF9361F0E2A6500680F41 /* NaddTableViewCell.xib in Resources */,
+				6DBC0C611EF38E7F00BFF311 /* LotteryRuleViewController.xib in Resources */,
 				6DAAA15F1EE56D930017C427 /* AboutUsViewController.xib in Resources */,
 				6D1E16661EDFCD4000A45B02 /* UserHeaderCollectionReusableView.xib in Resources */,
+				6D8C74431EFA80B100DD8815 /* ZZYQRCode.bundle in Resources */,
 				6DF35F151ED81BF700B87559 /* LotteryDetaTableViewCell.xib in Resources */,
 				6DF35EDA1ED58DA300B87559 /* BuyViewTableViewCell.xib in Resources */,
 				6DF35EFB1ED6D7A100B87559 /* BuyListTableViewCell.xib in Resources */,
@@ -1517,6 +1648,7 @@
 				6DAAA1801EE6B12C0017C427 /* LaunchScreen.storyboard in Resources */,
 				6DFF710E1ECBEAAE00FA94E1 /* TjCollectionViewCell.xib in Resources */,
 				6D08A9951ECAFF650096E7BE /* ChooseView.xib in Resources */,
+				6DEAF92E1F0E277400680F41 /* NaddNews.geojson in Resources */,
 				6D04C2711EE106EC0026842E /* CpTableViewCell.xib in Resources */,
 				6D08EADD1EE16DE900AD9965 /* UserRuleViewController.xib in Resources */,
 				6D04C2C51EE13BD90026842E /* UserInfo.geojson in Resources */,
@@ -1530,9 +1662,12 @@
 				6D04C2651EE01F240026842E /* UserBuyListTableViewCell.xib in Resources */,
 				6D08EAE81EE52E8D00AD9965 /* NewsTableViewCell.xib in Resources */,
 				6D1E166A1EDFEAB300A45B02 /* MycenterCollectionViewCell.xib in Resources */,
+				6D1070031EEE7C8500CE67BF /* NotDataView.xib in Resources */,
 				6D08EAEE1EE53D3800AD9965 /* NewsDetaViewController.xib in Resources */,
+				6DEAF93C1F0E3FDC00680F41 /* NaddZJTableViewCell.xib in Resources */,
 				6D4D02AB1ECC568400DBAAE5 /* CaipiaoType.geojson in Resources */,
 				6D5536571EC1B98400B0E8E8 /* Main.storyboard in Resources */,
+				6D01ACC61F0B74B5005DD0C7 /* LotteryInfo.geojson in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1605,13 +1740,17 @@
 				6D08A9911ECAF8B80096E7BE /* HomeHeaderView.swift in Sources */,
 				6D04C3131EE13ED10026842E /* MASCompositeConstraint.m in Sources */,
 				6D04C2611EE01CD60026842E /* UserBuyListViewController.swift in Sources */,
+				6D8C743C1EFA5BEE00DD8815 /* HomeMeanViewCell.swift in Sources */,
 				6DAAA15E1EE56D930017C427 /* AboutUsViewController.swift in Sources */,
 				6D08EAEA1EE5306700AD9965 /* NewsModel.swift in Sources */,
 				6DF35EF71ED6D15D00B87559 /* BuyListViewController.swift in Sources */,
 				6DF35F561ED920E200B87559 /* ObjectNet.swift in Sources */,
+				6D045E2C1F0BA004007775DD /* LQKGeneralWebViewController.m in Sources */,
 				6DF35F0C1ED8075700B87559 /* LotteryTableViewCell.swift in Sources */,
 				6DF35EFD1ED6DB9F00B87559 /* LotteryListModel.swift in Sources */,
+				6D045E2D1F0BA004007775DD /* TOWebViewController.m in Sources */,
 				6D04C3201EE14B540026842E /* RegisterViewController.swift in Sources */,
+				6D01ACCB1F0B7C5C005DD0C7 /* NewLotteryModel.swift in Sources */,
 				6D0BF94E1EC30F2C00E68B4F /* UIScreenExtensions.swift in Sources */,
 				6DF6E7E91ECACFF2003F2D2F /* LLSnakePageControl.swift in Sources */,
 				6D0BF9511EC30F2C00E68B4F /* BaseViewController.swift in Sources */,
@@ -1623,7 +1762,7 @@
 				6D0BF94B1EC30F2C00E68B4F /* FoundationExtensions.swift in Sources */,
 				6DF35EC91ED43F4F00B87559 /* BuyLottreyViewController.swift in Sources */,
 				6D04C26F1EE106EC0026842E /* CpMapViewController.m in Sources */,
-				6DAAA1851EE92D200017C427 /* WebViewController.swift in Sources */,
+				6D3A86291F00B10100FBFF22 /* ZstControl.swift in Sources */,
 				6DF35ECE1ED532B300B87559 /* BuyLotteryModel.swift in Sources */,
 				6D4D02A01ECC226000DBAAE5 /* randomModel.swift in Sources */,
 				6DAAA1831EE79E930017C427 /* ViewController.swift in Sources */,
@@ -1632,22 +1771,30 @@
 				6DF35F091ED7D3FD00B87559 /* AppUserData.swift in Sources */,
 				6D0BF94D1EC30F2C00E68B4F /* UIImageExtensions.swift in Sources */,
 				6D0BF9551EC30F2C00E68B4F /* TimeIntervalTransform.swift in Sources */,
+				6DEAF9291F0E1D2800680F41 /* NaddViewController.swift in Sources */,
 				6D0BF94C1EC30F2C00E68B4F /* UIColorExtensions.swift in Sources */,
 				6D08EAED1EE53D3800AD9965 /* NewsDetaViewController.swift in Sources */,
 				6D1E164A1EDEB07C00A45B02 /* LotteryDetaTypeViewController.swift in Sources */,
 				6DF35EC61ED41C1000B87559 /* MainTBViewController.swift in Sources */,
 				6D04C3171EE13ED10026842E /* MASViewAttribute.m in Sources */,
 				6D08EAE41EE52D6E00AD9965 /* NewsViewController.swift in Sources */,
+				6D0248631EF8BF29005E5748 /* WJItemsControlView.m in Sources */,
+				6DBC0C601EF38E7E00BFF311 /* LotteryRuleViewController.swift in Sources */,
 				6DAAA1641EE64E210017C427 /* SetupTableViewCell.swift in Sources */,
 				6D0BF9521EC30F2C00E68B4F /* TableViewController.swift in Sources */,
+				6DF6D7F91EEE390000EFFE45 /* SeachViewController.swift in Sources */,
 				6DF35ED91ED58DA300B87559 /* BuyViewTableViewCell.swift in Sources */,
 				6D04C3151EE13ED10026842E /* MASConstraintMaker.m in Sources */,
 				6D1E16561EDEC40400A45B02 /* LotteryJSModel.swift in Sources */,
 				6DF6E7E61ECACFF2003F2D2F /* LLCycleScrollViewCell.swift in Sources */,
+				6DEAF9381F0E38A600680F41 /* NaddSectionHeadView.swift in Sources */,
 				6DF35ED61ED58A1200B87559 /* BuyViewHeaderView.swift in Sources */,
 				6D0BF9501EC30F2C00E68B4F /* NavViewController.swift in Sources */,
+				6D106FFF1EEE473F00CE67BF /* SeachOpenViewController.swift in Sources */,
+				6DBC0C5D1EF28D9E00BFF311 /* LotteryDetaView.swift in Sources */,
 				6DF6E7CC1EC9AD52003F2D2F /* HomeViewController.swift in Sources */,
 				6D08EAF21EE547B300AD9965 /* NumberTransform.swift in Sources */,
+				6D01ACCD1F0B7D40005DD0C7 /* NewHomeViewController.swift in Sources */,
 				6D0BF93E1EC3022C00E68B4F /* URLRouter.swift in Sources */,
 				6DF35EFA1ED6D7A100B87559 /* BuyListTableViewCell.swift in Sources */,
 				6DF35ED01ED53ABD00B87559 /* BuyLotteryHeardCollectionReusableView.swift in Sources */,
@@ -1655,6 +1802,8 @@
 				6D04C3191EE13ED10026842E /* NSArray+MASAdditions.m in Sources */,
 				6D04C31B1EE13ED10026842E /* View+MASAdditions.m in Sources */,
 				6D0BF94F1EC30F2C00E68B4F /* UIViewExtensions.swift in Sources */,
+				6DEAF93B1F0E3FDC00680F41 /* NaddZJTableViewCell.swift in Sources */,
+				6D0248651EF8BFA5005E5748 /* SliderNewsViewController.swift in Sources */,
 				6D1E164C1EDEB2A000A45B02 /* BaseView.swift in Sources */,
 				6DF35EC51ED41C1000B87559 /* AppDelegate.swift in Sources */,
 				6D04C2641EE01F240026842E /* UserBuyListTableViewCell.swift in Sources */,
@@ -1669,11 +1818,15 @@
 				6D04C3141EE13ED10026842E /* MASConstraint.m in Sources */,
 				6DF6E7EA1ECACFF2003F2D2F /* LLViewExtensions.swift in Sources */,
 				6DF6E7E51ECACFF2003F2D2F /* LLCycleScrollView.swift in Sources */,
+				6D8C74411EFA80B100DD8815 /* AVCaptureSessionManager.swift in Sources */,
 				6DF35F0F1ED80D4A00B87559 /* LotteryNumberView.swift in Sources */,
 				6D04C31C1EE13ED10026842E /* ViewController+MASAdditions.m in Sources */,
+				6D8C74421EFA80B100DD8815 /* UIImage+ZZYQRCodeImage.swift in Sources */,
 				6D04C31A1EE13ED10026842E /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				6D04C2701EE106EC0026842E /* CpTableViewCell.m in Sources */,
+				6DEAF92C1F0E1E7600680F41 /* NaddHeadView.swift in Sources */,
 				6DAAA1611EE64BA20017C427 /* SetupViewController.swift in Sources */,
+				6DEAF9321F0E28D300680F41 /* NaddModel.swift in Sources */,
 				6DF35F111ED8169B00B87559 /* LotteryDetaViewController.swift in Sources */,
 				6D04C2C31EE13BB50026842E /* MyProfileTableViewCell.m in Sources */,
 				6DFF710D1ECBEAAE00FA94E1 /* TjCollectionViewCell.swift in Sources */,
@@ -1682,11 +1835,17 @@
 				6D04C3161EE13ED10026842E /* MASLayoutConstraint.m in Sources */,
 				6DF35ED41ED586DA00B87559 /* LotteryModel.swift in Sources */,
 				6D4D02AD1ECC56BC00DBAAE5 /* HomeLotteryModel.swift in Sources */,
+				6D8C74451EFA81C700DD8815 /* ScanViewController.swift in Sources */,
+				6DBC0C5B1EF285EE00BFF311 /* HomecellHeadCollectionReusableView.swift in Sources */,
 				6D0BF93C1EC1CBF300E68B4F /* NetWorkManager.swift in Sources */,
 				6D08EADC1EE16DE900AD9965 /* UserRuleViewController.swift in Sources */,
 				6D08EAE71EE52E8D00AD9965 /* NewsTableViewCell.swift in Sources */,
 				6DF35F141ED81BF700B87559 /* LotteryDetaTableViewCell.swift in Sources */,
+				6D1070011EEE7C6600CE67BF /* NotDataView.swift in Sources */,
+				6D3A86271F00AE4D00FBFF22 /* ZstViewController.swift in Sources */,
+				6DEAF9351F0E2A6500680F41 /* NaddTableViewCell.swift in Sources */,
 				6D08EAF01EE540BA00AD9965 /* NewsDataModel.swift in Sources */,
+				6D01ACCF1F0B830D005DD0C7 /* HomeWebViewController.swift in Sources */,
 				6D1E16651EDFCD4000A45B02 /* UserHeaderCollectionReusableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1889,15 +2048,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ShenSu/ShenSu.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Jia Wu (2U3UY42KZA)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jia Wu (2U3UY42KZA)";
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Jongru Huang (F6KGR6KCTH)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jongru Huang (F6KGR6KCTH)";
+				DEVELOPMENT_TEAM = F6KGR6KCTH;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ShenSu/Frameworks",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/ShenSu/Class/OC/UMessage_Sdk_1.5.0a",
 				);
 				INFOPLIST_FILE = ShenSu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1907,10 +2065,10 @@
 					"$(PROJECT_DIR)/ShenSu/Class/OC/UMessage_Sdk_1.5.0a",
 					"$(PROJECT_DIR)/ShenSu/Class/OC/Jpush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.beijinsaiche3.bjsc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xhmycpz.my;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "dacdb610-356f-464b-9606-317102522a15";
-				PROVISIONING_PROFILE_SPECIFIER = "策马北京赛车3";
+				PROVISIONING_PROFILE = "2c36ac06-8473-42a1-88fd-95e15f417e2b";
+				PROVISIONING_PROFILE_SPECIFIER = xhmycpz;
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shensu/Desktop/ShenSu/ShenSu/Class/OC/Shensu-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Shensu-swift.h";
 				SWIFT_VERSION = 3.0;
@@ -1923,15 +2081,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ShenSu/ShenSu.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Jia Wu (2U3UY42KZA)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jia Wu (2U3UY42KZA)";
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Jongru Huang (F6KGR6KCTH)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jongru Huang (F6KGR6KCTH)";
+				DEVELOPMENT_TEAM = F6KGR6KCTH;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ShenSu/Frameworks",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/ShenSu/Class/OC/UMessage_Sdk_1.5.0a",
 				);
 				INFOPLIST_FILE = ShenSu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1941,10 +2098,10 @@
 					"$(PROJECT_DIR)/ShenSu/Class/OC/UMessage_Sdk_1.5.0a",
 					"$(PROJECT_DIR)/ShenSu/Class/OC/Jpush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.beijinsaiche3.bjsc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xhmycpz.my;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "dacdb610-356f-464b-9606-317102522a15";
-				PROVISIONING_PROFILE_SPECIFIER = "策马北京赛车3";
+				PROVISIONING_PROFILE = "2c36ac06-8473-42a1-88fd-95e15f417e2b";
+				PROVISIONING_PROFILE_SPECIFIER = xhmycpz;
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shensu/Desktop/ShenSu/ShenSu/Class/OC/Shensu-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Shensu-swift.h";
 				SWIFT_VERSION = 3.0;

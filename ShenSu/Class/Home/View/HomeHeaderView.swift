@@ -13,11 +13,13 @@ class HomeHeaderView: UICollectionReusableView {
 	var zpbannar: LLCycleScrollView!
 	var bannarArray = Array<BannarModel>()
 	var chooseView: ChooseView!
-	var openBananrUrl: ((String) -> ())?
+    var homcellHead: HomecellHeadCollectionReusableView!
 	override init(frame: CGRect) {
 		super.init(frame: frame)
+
 		addBannar()
 		addScrollerView()
+      //  addHeadView()
 	}
 
 	required init?(coder aDecoder: NSCoder) {
@@ -30,15 +32,19 @@ class HomeHeaderView: UICollectionReusableView {
 	 // Drawing code
 	 }
 	 */
-	func addScrollerView() {
+  
+    func setModel(model:HomecellModel ){
+        homcellHead.setModel(model: model)
+    }
+    func addScrollerView() {
 		chooseView = ChooseView()
 		self.addSubview(chooseView)
 		chooseView <- [
 			Top(-5).to(zpbannar, .bottom),
 			Left(0).to(self),
 			Right(0).to(self),
-			Height(30)
-			// Bottom(10).to(self)
+			Height(30),
+            Bottom(10).to(self)
 		]
 	}
 
@@ -46,12 +52,16 @@ class HomeHeaderView: UICollectionReusableView {
 		zpbannar = LLCycleScrollView.llCycleScrollViewWithFrame(CGRect(x: 0, y: 0, w: self.width, h: 140))
 		zpbannar.lldidSelectItemAtIndex = { index in
 			if self.bannarArray.count > index {
-				self.openBananrUrl?("\(self.bannarArray[index].openUrl)")
 
+                if #available(iOS 10.0, *) {
+                    UIApplication.shared.open(URL(string: "\(self.bannarArray[index].openUrl)")!, options: [:], completionHandler: nil)
+                } else {
+                    // Fallback on earlier versions
+                }
 			}
 		}
 		zpbannar.titleBackgroundColor = UIColor.clear
-		zpbannar.imageViewContentMode = .scaleToFill
+        zpbannar.imageViewContentMode = .scaleToFill
 		zpbannar.customPageControlStyle = .pill
 		zpbannar.customPageControlInActiveTintColor = UIColor.red
 		// 下边约束

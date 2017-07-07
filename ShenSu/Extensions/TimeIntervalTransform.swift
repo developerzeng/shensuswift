@@ -17,7 +17,7 @@ public class TimeIntervalTransform: TransformType {
 
 	public func transformFromJSON(_ value: Any?) -> Date? {
 		if let timeInt = value as? Double {
-			return Date(timeIntervalSince1970: TimeInterval(timeInt ))
+			return Date(timeIntervalSince1970: TimeInterval(timeInt / 1000 ))
 		}
 
 		if let timeStr = value as? String {

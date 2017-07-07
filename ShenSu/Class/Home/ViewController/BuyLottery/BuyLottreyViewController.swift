@@ -29,15 +29,26 @@ class BuyLottreyViewController: BaseViewController {
 
 		}
 	}
+    var lotterydeta = LotteryDetaView()
 	var qishu: String = ""
 	var lotteryinfoArray = Array<LotteryModel>()
 	var url: String!
+    var caipiaoid: String!
 	var isChoose: Bool = false
 	var titleName: String? {
 		didSet {
 			self.setNavTitle(title: titleName!)
 		}
 	}
+    var lotteryInfoModel: HomeLotteryModel!{
+        didSet{
+        self.url = lotteryInfoModel.url
+        self.caipiaoid = lotteryInfoModel.caipiaoid
+        self.titleName = lotteryInfoModel.name
+        self.lotteryData = lotteryInfoModel.rule
+        }
+     
+    }
 	var buyListModels = Array<LotteryListModel>()
 	var buyNumber: String = ""
 	var buyViewHeaderView: BuyViewHeaderView!
@@ -51,16 +62,50 @@ class BuyLottreyViewController: BaseViewController {
 		addBuyViewHeaderView()
 		addCollectionView()
 		setCPData()
-		self.setNavRightButtonTitle(title: "摇一摇")
+		self.setNavRightButtonTitle(title: "详细")
 		UIApplication.shared.applicationSupportsShakeToEdit = true
 		self.becomeFirstResponder()
 		self.rightButtonClicked = { [weak self] btn in
-			let button = btn as? UIButton
-			button?.isEnabled = false
-			DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
-				button?.isEnabled = true
-			})
-			self?.moveiphone()
+            let sender = btn as? UIButton
+            sender?.isSelected = !(sender?.isSelected)!
+            self?.lotterydeta.removeFromeSuperViewBlock = {
+            self?.lotterydeta.removeFromSuperview()
+            sender?.isSelected  = false
+            }
+            self?.lotterydeta.selectRowBlock = {index in
+                self?.lotterydeta.removeFromSuperview()
+                sender?.isSelected  = false
+                switch index.row {
+                case 0:
+                    let vc = UserBuyListViewController()
+                    vc.lotteryType = .lotterSaveTypeBuy
+                    _ = self?.navigationController?.pushViewController(vc, animated: true)
+                case 1:
+                    let vc = LotteryRuleViewController()
+                    vc.talk = self?.lotteryInfoModel.talk
+                    _ = self?.navigationController?.pushViewController(vc, animated: true)
+                default:
+                    let model = LotteryJSModel()
+                    model.caipiaoid = (self?.caipiaoid)!
+                    let vc = LotteryDetaViewController()
+                    vc.lotterModel = model
+                    _ = self?.navigationController?.pushViewController(vc, animated: true)
+                }
+            }
+            if sender?.isSelected == true {
+                self?.lotterydeta.frame = (self?.view.bounds)!
+                self?.view.addSubview((self?.lotterydeta)!)
+            }else{
+                self?.lotterydeta.removeFromSuperview()
+            }
+    
+            
+//			let button = btn as? UIButton
+//			button?.isEnabled = false
+//			DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
+//				button?.isEnabled = true
+//			})
+//			self?.moveiphone()
 		}
 	}
 	func addBuyViewHeaderView() {
@@ -151,7 +196,7 @@ class BuyLottreyViewController: BaseViewController {
 		footerView = BuyLotteryFooterView()
 		self.view.addSubview(footerView)
 		footerView.clearBtnBlock = { [weak self] in
-			print("清除按钮")
+	
 			self?.removeSelected()
 		}
 		footerView.goBtnBlock = { [weak self] in

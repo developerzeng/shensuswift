@@ -9,12 +9,14 @@
 import UIKit
 
 class MycenterCollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak var colorView: UIView!
 
 	@IBOutlet weak var titleLable: UILabel!
 	@IBOutlet weak var titleImage: UIImageView!
 	override func awakeFromNib() {
 		super.awakeFromNib()
-
+        colorView.backgroundColor = UIColor.clear
+//		self.layer.cornerRadius = 4
 		self.backgroundColor = UIColor.white
 		// Initialization code
 	}

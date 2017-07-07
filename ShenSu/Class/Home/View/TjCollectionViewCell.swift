@@ -10,6 +10,10 @@ import UIKit
 import EasyPeasy
 class TjCollectionViewCell: UICollectionViewCell {
 
+    @IBAction func xuanhaoBtnClick(_ sender: Any) {
+        self.xuanhaoBtnBlock?()
+    }
+    var xuanhaoBtnBlock:(()->())?
 	@IBOutlet weak var buyBtn: UIButton!
 	@IBOutlet weak var numberBackView: UIView!
 	@IBOutlet weak var changBtn: UIButton!
@@ -53,6 +57,7 @@ class TjCollectionViewCell: UICollectionViewCell {
 	override func awakeFromNib() {
 		super.awakeFromNib()
 		let rantype = type
+        buyBtn.layer.cornerRadius = 4
 		switch rantype {
 		case .DLT:
 			lotterType.text = "大乐透"

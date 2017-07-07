@@ -11,4 +11,5 @@
 @interface WKWebViewController : UIViewController
 @property(copy,nonatomic) NSString * url;
 @property(nonatomic,assign) BOOL isAddFoot;
+@property(nonatomic,assign) BOOL isupdate;
 @end

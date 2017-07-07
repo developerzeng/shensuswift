@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -388,9 +388,74 @@
             </objects>
             <point key="canvasLocation" x="2133.5999999999999" y="139.880059970015"/>
         </scene>
+        <!--scan(扫描)-->
+        <scene sceneID="q3I-Lf-8Zs">
+            <objects>
+                <viewController storyboardIdentifier="scanViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iy7-4t-TPa" customClass="ScanViewController" customModule="ShenSu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zt6-JY-Fmr"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hbk-2Z-Hya"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f5e-4l-y3m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sJ2-5W-GRD">
+                                <rect key="frame" x="88" y="234" width="200" height="200"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrcode_border" translatesAutoresizingMaskIntoConstraints="NO" id="eCb-n2-MbD">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrcode_scanline_qrcode" translatesAutoresizingMaskIntoConstraints="NO" id="BXg-sz-7az">
+                                        <rect key="frame" x="0.0" y="-170" width="200" height="170"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="170" id="Tsb-4T-Efy"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="eCb-n2-MbD" firstAttribute="top" secondItem="sJ2-5W-GRD" secondAttribute="top" id="AcC-Y9-tPA"/>
+                                    <constraint firstItem="BXg-sz-7az" firstAttribute="leading" secondItem="sJ2-5W-GRD" secondAttribute="leading" id="FJT-HK-tAu"/>
+                                    <constraint firstAttribute="height" constant="200" id="IdK-uL-wLE"/>
+                                    <constraint firstAttribute="bottom" secondItem="eCb-n2-MbD" secondAttribute="bottom" id="NeH-d5-Fbu"/>
+                                    <constraint firstAttribute="trailing" secondItem="eCb-n2-MbD" secondAttribute="trailing" id="VJ2-hF-5zJ"/>
+                                    <constraint firstAttribute="top" secondItem="BXg-sz-7az" secondAttribute="top" constant="170" id="heS-zg-K1T"/>
+                                    <constraint firstAttribute="trailing" secondItem="BXg-sz-7az" secondAttribute="trailing" id="juL-EJ-pwi"/>
+                                    <constraint firstAttribute="width" constant="200" id="qF9-cX-wip"/>
+                                    <constraint firstItem="eCb-n2-MbD" firstAttribute="leading" secondItem="sJ2-5W-GRD" secondAttribute="leading" id="qPn-O0-tn7"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d32-wx-ZvC">
+                                <rect key="frame" x="141" y="464" width="92" height="34"/>
+                                <state key="normal" title="打开闪光灯"/>
+                                <connections>
+                                    <action selector="changeState:" destination="iy7-4t-TPa" eventType="touchUpInside" id="TCP-kU-DlU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="sJ2-5W-GRD" secondAttribute="centerY" id="6mf-o8-ZMg"/>
+                            <constraint firstItem="d32-wx-ZvC" firstAttribute="top" secondItem="sJ2-5W-GRD" secondAttribute="bottom" constant="30" id="7dd-EA-7pj"/>
+                            <constraint firstAttribute="centerX" secondItem="sJ2-5W-GRD" secondAttribute="centerX" id="Sai-om-Xim"/>
+                            <constraint firstItem="d32-wx-ZvC" firstAttribute="centerX" secondItem="f5e-4l-y3m" secondAttribute="centerX" id="XGC-us-DiR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="scan(扫描)" id="qKn-iZ-eOS"/>
+                    <connections>
+                        <outlet property="scanTop" destination="heS-zg-K1T" id="av8-IX-IGM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w0F-ZH-26J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1751" y="823"/>
+        </scene>
     </scenes>
     <resources>
         <image name="network" width="391" height="240"/>
         <image name="open" width="36" height="22"/>
+        <image name="qrcode_border" width="51" height="50"/>
+        <image name="qrcode_scanline_qrcode" width="16" height="16"/>
     </resources>
 </document>

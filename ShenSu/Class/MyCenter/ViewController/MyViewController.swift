@@ -45,7 +45,7 @@ class MyViewController: BaseViewController {
 		collectionView.backgroundColor = UIColor.backColor()
 		self.view.addSubview(collectionView)
 		collectionView <- [
-			Edges(UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0))
+			Edges(UIEdgeInsets(top: -64, left: 0, bottom: 0, right: 0))
 		]
 		// Do any additional setup after loading the view.
 	}
@@ -83,7 +83,7 @@ class MyViewController: BaseViewController {
 extension MyViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-		return CGSize(width: collectionView.width, height: 50)
+		return CGSize(width: collectionView.width , height: 48)
 	}
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
 		return CGSize(width: self.view.width, height: self.view.width * 1200 / 1920)
@@ -110,6 +110,7 @@ extension MyViewController: UICollectionViewDelegate, UICollectionViewDataSource
 					self.showLoginViewController()
 				}
 			}
+            userHeader?.reloadModel()
 			return userHeader!
 		}
 		return UICollectionReusableView()

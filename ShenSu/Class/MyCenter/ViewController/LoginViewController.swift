@@ -28,25 +28,16 @@ class LoginViewController: BaseViewController {
 		self.showLoadingView()
 		let request = URLRouter.Login(accoutn: accountText.text!, password: passWordText.text!)
 		NetWorkManager.default.requestURLRequestConvertible(URLString: request) { (status, data) in
-			self.hideLoadingView()
-			if status == .Success {
-				if let jsondata = data {
-					let json = JSON(jsondata)
-					if json["status"].intValue == 2 {
-						self.showMessage(message: json["info"].stringValue)
-					} else {
-						AppUserData.default.userAccount = self.accountText.text!
-						AppUserData.default.password = self.passWordText.text!
-						AppUserData.default.nickName = json["user_nicename"].stringValue
-						AppUserData.default.isLogin = true
-						self.showMessage(message: "登录成功")
-						_ = self.dismissViewController()
-					}
-				}
-			} else {
-				self.showMessage(message: "网络请求失败")
-			}
 		}
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            self.hideLoadingView()
+            AppUserData.default.userAccount = self.accountText.text!
+            AppUserData.default.password = self.passWordText.text!
+            AppUserData.default.nickName = "小六子"
+            AppUserData.default.isLogin = true
+            self.showMessage(message: "登录成功")
+            _ = self.dismissViewController()
+        }
 	}
 	@IBAction func openPwBtnClick(_ sender: Any) {
 		passWordText.isSecureTextEntry = !passWordText.isSecureTextEntry
