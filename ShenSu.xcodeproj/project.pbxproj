@@ -2027,8 +2027,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ShenSu/ShenSu.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Yongchang Wu (6VD4NE73AX)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yongchang Wu (6VD4NE73AX)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yongchang Wu (84DPNQH88W)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yongchang Wu (84DPNQH88W)";
 				DEVELOPMENT_TEAM = 6VD4NE73AX;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2047,8 +2047,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pkcaipiao.pkcp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "93ad4899-df01-4dd1-9347-7bc72df15e50";
-				PROVISIONING_PROFILE_SPECIFIER = "pk蛋蛋上架";
+				PROVISIONING_PROFILE = "618a9c77-de60-4b75-9989-dcf3c3cb6e7c";
+				PROVISIONING_PROFILE_SPECIFIER = "pc蛋蛋测试";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shensu/Desktop/ShenSu/ShenSu/Class/OC/Shensu-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Shensu-swift.h";
 				SWIFT_VERSION = 3.0;
@@ -2061,8 +2061,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ShenSu/ShenSu.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Yongchang Wu (6VD4NE73AX)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yongchang Wu (6VD4NE73AX)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yongchang Wu (84DPNQH88W)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yongchang Wu (84DPNQH88W)";
 				DEVELOPMENT_TEAM = 6VD4NE73AX;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2081,8 +2081,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pkcaipiao.pkcp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "93ad4899-df01-4dd1-9347-7bc72df15e50";
-				PROVISIONING_PROFILE_SPECIFIER = "pk蛋蛋上架";
+				PROVISIONING_PROFILE = "618a9c77-de60-4b75-9989-dcf3c3cb6e7c";
+				PROVISIONING_PROFILE_SPECIFIER = "pc蛋蛋测试";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shensu/Desktop/ShenSu/ShenSu/Class/OC/Shensu-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Shensu-swift.h";
 				SWIFT_VERSION = 3.0;
