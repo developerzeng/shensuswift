@@ -113,4 +113,5 @@ extension NewsViewController: UITableViewDelegate, UITableViewDataSource {
             self.didSelectedRowBlock?(model)
 		}
 	}
+    
 }

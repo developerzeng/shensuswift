@@ -153,6 +153,15 @@
 		6DBC0C5D1EF28D9E00BFF311 /* LotteryDetaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBC0C5C1EF28D9E00BFF311 /* LotteryDetaView.swift */; };
 		6DBC0C601EF38E7E00BFF311 /* LotteryRuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBC0C5E1EF38E7E00BFF311 /* LotteryRuleViewController.swift */; };
 		6DBC0C611EF38E7F00BFF311 /* LotteryRuleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DBC0C5F1EF38E7E00BFF311 /* LotteryRuleViewController.xib */; };
+		6DEAF9291F0E1D2800680F41 /* NaddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEAF9281F0E1D2800680F41 /* NaddViewController.swift */; };
+		6DEAF92C1F0E1E7600680F41 /* NaddHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEAF92B1F0E1E7600680F41 /* NaddHeadView.swift */; };
+		6DEAF92E1F0E277400680F41 /* NaddNews.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 6DEAF92D1F0E277400680F41 /* NaddNews.geojson */; };
+		6DEAF9321F0E28D300680F41 /* NaddModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEAF9311F0E28D300680F41 /* NaddModel.swift */; };
+		6DEAF9351F0E2A6500680F41 /* NaddTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEAF9331F0E2A6500680F41 /* NaddTableViewCell.swift */; };
+		6DEAF9361F0E2A6500680F41 /* NaddTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DEAF9341F0E2A6500680F41 /* NaddTableViewCell.xib */; };
+		6DEAF9381F0E38A600680F41 /* NaddSectionHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEAF9371F0E38A600680F41 /* NaddSectionHeadView.swift */; };
+		6DEAF93B1F0E3FDC00680F41 /* NaddZJTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEAF9391F0E3FDC00680F41 /* NaddZJTableViewCell.swift */; };
+		6DEAF93C1F0E3FDC00680F41 /* NaddZJTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DEAF93A1F0E3FDC00680F41 /* NaddZJTableViewCell.xib */; };
 		6DF35EC51ED41C1000B87559 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF35EC31ED41C1000B87559 /* AppDelegate.swift */; };
 		6DF35EC61ED41C1000B87559 /* MainTBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF35EC41ED41C1000B87559 /* MainTBViewController.swift */; };
 		6DF35EC91ED43F4F00B87559 /* BuyLottreyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF35EC81ED43F4F00B87559 /* BuyLottreyViewController.swift */; };
@@ -487,6 +496,15 @@
 		6DBC0C5C1EF28D9E00BFF311 /* LotteryDetaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotteryDetaView.swift; sourceTree = "<group>"; };
 		6DBC0C5E1EF38E7E00BFF311 /* LotteryRuleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotteryRuleViewController.swift; sourceTree = "<group>"; };
 		6DBC0C5F1EF38E7E00BFF311 /* LotteryRuleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LotteryRuleViewController.xib; sourceTree = "<group>"; };
+		6DEAF9281F0E1D2800680F41 /* NaddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaddViewController.swift; sourceTree = "<group>"; };
+		6DEAF92B1F0E1E7600680F41 /* NaddHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaddHeadView.swift; sourceTree = "<group>"; };
+		6DEAF92D1F0E277400680F41 /* NaddNews.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NaddNews.geojson; sourceTree = "<group>"; };
+		6DEAF9311F0E28D300680F41 /* NaddModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaddModel.swift; sourceTree = "<group>"; };
+		6DEAF9331F0E2A6500680F41 /* NaddTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaddTableViewCell.swift; sourceTree = "<group>"; };
+		6DEAF9341F0E2A6500680F41 /* NaddTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NaddTableViewCell.xib; sourceTree = "<group>"; };
+		6DEAF9371F0E38A600680F41 /* NaddSectionHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaddSectionHeadView.swift; sourceTree = "<group>"; };
+		6DEAF9391F0E3FDC00680F41 /* NaddZJTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaddZJTableViewCell.swift; sourceTree = "<group>"; };
+		6DEAF93A1F0E3FDC00680F41 /* NaddZJTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NaddZJTableViewCell.xib; sourceTree = "<group>"; };
 		6DF35EC31ED41C1000B87559 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DF35EC41ED41C1000B87559 /* MainTBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTBViewController.swift; sourceTree = "<group>"; };
 		6DF35EC81ED43F4F00B87559 /* BuyLottreyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyLottreyViewController.swift; sourceTree = "<group>"; };
@@ -767,6 +785,7 @@
 		6D08EAE01EE52D3300AD9965 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				6DEAF9221F0E1C8900680F41 /* Nadd */,
 				6D08EAE31EE52D6E00AD9965 /* NewsViewController.swift */,
 				6D0248641EF8BFA5005E5748 /* SliderNewsViewController.swift */,
 				6D08EAEB1EE53D3800AD9965 /* NewsDetaViewController.swift */,
@@ -778,6 +797,7 @@
 		6D08EAE11EE52D3F00AD9965 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6DEAF92A1F0E1E6100680F41 /* Nadd */,
 				6D08EAE51EE52E8D00AD9965 /* NewsTableViewCell.swift */,
 				6D08EAE61EE52E8D00AD9965 /* NewsTableViewCell.xib */,
 			);
@@ -789,6 +809,7 @@
 			children = (
 				6D08EAE91EE5306700AD9965 /* NewsModel.swift */,
 				6D08EAEF1EE540BA00AD9965 /* NewsDataModel.swift */,
+				6DEAF9311F0E28D300680F41 /* NaddModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -890,6 +911,7 @@
 				6D04C2C41EE13BD90026842E /* UserInfo.geojson */,
 				6D4D02AA1ECC568400DBAAE5 /* CaipiaoType.geojson */,
 				6D01ACC51F0B74B5005DD0C7 /* LotteryInfo.geojson */,
+				6DEAF92D1F0E277400680F41 /* NaddNews.geojson */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -1017,6 +1039,27 @@
 				6DAAA1781EE685320017C427 /* JPUSHService.h */,
 			);
 			path = Jpush;
+			sourceTree = "<group>";
+		};
+		6DEAF9221F0E1C8900680F41 /* Nadd */ = {
+			isa = PBXGroup;
+			children = (
+				6DEAF9281F0E1D2800680F41 /* NaddViewController.swift */,
+			);
+			path = Nadd;
+			sourceTree = "<group>";
+		};
+		6DEAF92A1F0E1E6100680F41 /* Nadd */ = {
+			isa = PBXGroup;
+			children = (
+				6DEAF92B1F0E1E7600680F41 /* NaddHeadView.swift */,
+				6DEAF9331F0E2A6500680F41 /* NaddTableViewCell.swift */,
+				6DEAF9341F0E2A6500680F41 /* NaddTableViewCell.xib */,
+				6DEAF9371F0E38A600680F41 /* NaddSectionHeadView.swift */,
+				6DEAF9391F0E3FDC00680F41 /* NaddZJTableViewCell.swift */,
+				6DEAF93A1F0E3FDC00680F41 /* NaddZJTableViewCell.xib */,
+			);
+			path = Nadd;
 			sourceTree = "<group>";
 		};
 		6DF35EC21ED41C1000B87559 /* AppController */ = {
@@ -1533,7 +1576,7 @@
 				TargetAttributes = {
 					6D55364D1EC1B98400B0E8E8 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = YNZ7J45D99;
+						DevelopmentTeam = F6KGR6KCTH;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
@@ -1592,6 +1635,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DEAF9361F0E2A6500680F41 /* NaddTableViewCell.xib in Resources */,
 				6DBC0C611EF38E7F00BFF311 /* LotteryRuleViewController.xib in Resources */,
 				6DAAA15F1EE56D930017C427 /* AboutUsViewController.xib in Resources */,
 				6D1E16661EDFCD4000A45B02 /* UserHeaderCollectionReusableView.xib in Resources */,
@@ -1604,6 +1648,7 @@
 				6DAAA1801EE6B12C0017C427 /* LaunchScreen.storyboard in Resources */,
 				6DFF710E1ECBEAAE00FA94E1 /* TjCollectionViewCell.xib in Resources */,
 				6D08A9951ECAFF650096E7BE /* ChooseView.xib in Resources */,
+				6DEAF92E1F0E277400680F41 /* NaddNews.geojson in Resources */,
 				6D04C2711EE106EC0026842E /* CpTableViewCell.xib in Resources */,
 				6D08EADD1EE16DE900AD9965 /* UserRuleViewController.xib in Resources */,
 				6D04C2C51EE13BD90026842E /* UserInfo.geojson in Resources */,
@@ -1619,6 +1664,7 @@
 				6D1E166A1EDFEAB300A45B02 /* MycenterCollectionViewCell.xib in Resources */,
 				6D1070031EEE7C8500CE67BF /* NotDataView.xib in Resources */,
 				6D08EAEE1EE53D3800AD9965 /* NewsDetaViewController.xib in Resources */,
+				6DEAF93C1F0E3FDC00680F41 /* NaddZJTableViewCell.xib in Resources */,
 				6D4D02AB1ECC568400DBAAE5 /* CaipiaoType.geojson in Resources */,
 				6D5536571EC1B98400B0E8E8 /* Main.storyboard in Resources */,
 				6D01ACC61F0B74B5005DD0C7 /* LotteryInfo.geojson in Resources */,
@@ -1725,6 +1771,7 @@
 				6DF35F091ED7D3FD00B87559 /* AppUserData.swift in Sources */,
 				6D0BF94D1EC30F2C00E68B4F /* UIImageExtensions.swift in Sources */,
 				6D0BF9551EC30F2C00E68B4F /* TimeIntervalTransform.swift in Sources */,
+				6DEAF9291F0E1D2800680F41 /* NaddViewController.swift in Sources */,
 				6D0BF94C1EC30F2C00E68B4F /* UIColorExtensions.swift in Sources */,
 				6D08EAED1EE53D3800AD9965 /* NewsDetaViewController.swift in Sources */,
 				6D1E164A1EDEB07C00A45B02 /* LotteryDetaTypeViewController.swift in Sources */,
@@ -1740,6 +1787,7 @@
 				6D04C3151EE13ED10026842E /* MASConstraintMaker.m in Sources */,
 				6D1E16561EDEC40400A45B02 /* LotteryJSModel.swift in Sources */,
 				6DF6E7E61ECACFF2003F2D2F /* LLCycleScrollViewCell.swift in Sources */,
+				6DEAF9381F0E38A600680F41 /* NaddSectionHeadView.swift in Sources */,
 				6DF35ED61ED58A1200B87559 /* BuyViewHeaderView.swift in Sources */,
 				6D0BF9501EC30F2C00E68B4F /* NavViewController.swift in Sources */,
 				6D106FFF1EEE473F00CE67BF /* SeachOpenViewController.swift in Sources */,
@@ -1754,6 +1802,7 @@
 				6D04C3191EE13ED10026842E /* NSArray+MASAdditions.m in Sources */,
 				6D04C31B1EE13ED10026842E /* View+MASAdditions.m in Sources */,
 				6D0BF94F1EC30F2C00E68B4F /* UIViewExtensions.swift in Sources */,
+				6DEAF93B1F0E3FDC00680F41 /* NaddZJTableViewCell.swift in Sources */,
 				6D0248651EF8BFA5005E5748 /* SliderNewsViewController.swift in Sources */,
 				6D1E164C1EDEB2A000A45B02 /* BaseView.swift in Sources */,
 				6DF35EC51ED41C1000B87559 /* AppDelegate.swift in Sources */,
@@ -1775,7 +1824,9 @@
 				6D8C74421EFA80B100DD8815 /* UIImage+ZZYQRCodeImage.swift in Sources */,
 				6D04C31A1EE13ED10026842E /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				6D04C2701EE106EC0026842E /* CpTableViewCell.m in Sources */,
+				6DEAF92C1F0E1E7600680F41 /* NaddHeadView.swift in Sources */,
 				6DAAA1611EE64BA20017C427 /* SetupViewController.swift in Sources */,
+				6DEAF9321F0E28D300680F41 /* NaddModel.swift in Sources */,
 				6DF35F111ED8169B00B87559 /* LotteryDetaViewController.swift in Sources */,
 				6D04C2C31EE13BB50026842E /* MyProfileTableViewCell.m in Sources */,
 				6DFF710D1ECBEAAE00FA94E1 /* TjCollectionViewCell.swift in Sources */,
@@ -1792,6 +1843,7 @@
 				6DF35F141ED81BF700B87559 /* LotteryDetaTableViewCell.swift in Sources */,
 				6D1070011EEE7C6600CE67BF /* NotDataView.swift in Sources */,
 				6D3A86271F00AE4D00FBFF22 /* ZstViewController.swift in Sources */,
+				6DEAF9351F0E2A6500680F41 /* NaddTableViewCell.swift in Sources */,
 				6D08EAF01EE540BA00AD9965 /* NewsDataModel.swift in Sources */,
 				6D01ACCF1F0B830D005DD0C7 /* HomeWebViewController.swift in Sources */,
 				6D1E16651EDFCD4000A45B02 /* UserHeaderCollectionReusableView.swift in Sources */,
@@ -1996,9 +2048,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ShenSu/ShenSu.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Shuang Wu (YNZ7J45D99)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shuang Wu (YNZ7J45D99)";
-				DEVELOPMENT_TEAM = YNZ7J45D99;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Jongru Huang (F6KGR6KCTH)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jongru Huang (F6KGR6KCTH)";
+				DEVELOPMENT_TEAM = F6KGR6KCTH;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2013,10 +2065,10 @@
 					"$(PROJECT_DIR)/ShenSu/Class/OC/UMessage_Sdk_1.5.0a",
 					"$(PROJECT_DIR)/ShenSu/Class/OC/Jpush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xhmycp.my;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xhmycpz.my;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "76865e51-b6a6-47bb-8b50-22441a14be50";
-				PROVISIONING_PROFILE_SPECIFIER = xhmycp;
+				PROVISIONING_PROFILE = "2c36ac06-8473-42a1-88fd-95e15f417e2b";
+				PROVISIONING_PROFILE_SPECIFIER = xhmycpz;
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shensu/Desktop/ShenSu/ShenSu/Class/OC/Shensu-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Shensu-swift.h";
 				SWIFT_VERSION = 3.0;
@@ -2029,9 +2081,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ShenSu/ShenSu.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Shuang Wu (YNZ7J45D99)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shuang Wu (YNZ7J45D99)";
-				DEVELOPMENT_TEAM = YNZ7J45D99;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Jongru Huang (F6KGR6KCTH)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jongru Huang (F6KGR6KCTH)";
+				DEVELOPMENT_TEAM = F6KGR6KCTH;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2046,10 +2098,10 @@
 					"$(PROJECT_DIR)/ShenSu/Class/OC/UMessage_Sdk_1.5.0a",
 					"$(PROJECT_DIR)/ShenSu/Class/OC/Jpush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xhmycp.my;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xhmycpz.my;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "76865e51-b6a6-47bb-8b50-22441a14be50";
-				PROVISIONING_PROFILE_SPECIFIER = xhmycp;
+				PROVISIONING_PROFILE = "2c36ac06-8473-42a1-88fd-95e15f417e2b";
+				PROVISIONING_PROFILE_SPECIFIER = xhmycpz;
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shensu/Desktop/ShenSu/ShenSu/Class/OC/Shensu-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Shensu-swift.h";
 				SWIFT_VERSION = 3.0;

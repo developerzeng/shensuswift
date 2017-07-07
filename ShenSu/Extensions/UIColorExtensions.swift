@@ -184,7 +184,7 @@ extension UIColor {
 	}
 
 	class func orangeRedColor() -> UIColor {
-		return UIColor(rgb: 0xFF4500, alpha: 0.9)
+		return UIColor(rgb: 0xFF4500, alpha: 1)
 //		return UIColor(rgb: 0xFF0000, alpha: 0.9)
         
 	}
