@@ -42,12 +42,7 @@
 
 }
 -(void)addFoot{
-    self.lable = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 30)];
-    self.lable.center = self.view.center;
-    self.lable.font  = [UIFont systemFontOfSize:14];
-    self.lable.textAlignment = NSTextAlignmentCenter;
-    self.lable.textColor = [UIColor grayColor];
-    [self.view addSubview: self.lable];
+
     
     
     _footview = [[WebViewXib alloc]initWithFrame:CGRectMake(0, self.view.frame.size.height - 49, self.view.frame.size.width, 49)];
@@ -114,27 +109,7 @@
     return nil;
 }
 
--(void)useProgressView
-{
-    [self.wkwebView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew context:nil];
-    
-}
--(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context
-{
-    
-    if ( [keyPath isEqualToString:@"estimatedProgress"]){
-        double leng = [[change objectForKey:NSKeyValueChangeNewKey] doubleValue];
-        NSString * str = [NSString stringWithFormat:@"%.2f",leng*100];
-        str = [str stringByAppendingString:@"%"];
-        self.lable.text = [NSString stringWithFormat:@"正在初始化配置信息%@",str];
-        if ([[change objectForKey:NSKeyValueChangeNewKey] doubleValue] == 1) {
-            [UIView animateWithDuration:1 animations:^{
-                [self.lable setAlpha:0];
-            }];
-            
-        }
-    }
-}
+
 - (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler{
     UIAlertController * alert = [UIAlertController alertControllerWithTitle:nil message:message preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction * defa = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
@@ -161,13 +136,7 @@
 
 
 
--(void)dealloc
-{
-    if (self.wkwebView.observationInfo){
-     [self.wkwebView removeObserver:self forKeyPath:@"estimatedProgress"];
-    }
-   
-}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

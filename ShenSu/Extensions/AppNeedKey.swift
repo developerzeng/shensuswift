@@ -9,9 +9,9 @@
 import UIKit
 
 class AppNeedKey: NSObject {
-	var UMkey = "beedc8afde46a8693afe4d3c"
-	var JpushKey = "beedc8afde46a8693afe4d3c"
-	var GDMapKey = "f7fe7808aa502b1da953d111b1882c25"
-	var AppID = "1247075698"
+	var UMkey = "595caaaa75ca35036b001618"
+	var JpushKey = "77d7caa9dc68b0a93f74254a"
+	var GDMapKey = "f9548e2eaf56fae59da351f248a353db"
+	var AppID = "1256947948"
 
 }

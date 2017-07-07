@@ -162,6 +162,7 @@
 		6DEAF9381F0E38A600680F41 /* NaddSectionHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEAF9371F0E38A600680F41 /* NaddSectionHeadView.swift */; };
 		6DEAF93B1F0E3FDC00680F41 /* NaddZJTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEAF9391F0E3FDC00680F41 /* NaddZJTableViewCell.swift */; };
 		6DEAF93C1F0E3FDC00680F41 /* NaddZJTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DEAF93A1F0E3FDC00680F41 /* NaddZJTableViewCell.xib */; };
+		6DEAF9401F0F3F2E00680F41 /* UMMobClick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEAF93F1F0F3F2E00680F41 /* UMMobClick.framework */; };
 		6DF35EC51ED41C1000B87559 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF35EC31ED41C1000B87559 /* AppDelegate.swift */; };
 		6DF35EC61ED41C1000B87559 /* MainTBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF35EC41ED41C1000B87559 /* MainTBViewController.swift */; };
 		6DF35EC91ED43F4F00B87559 /* BuyLottreyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF35EC81ED43F4F00B87559 /* BuyLottreyViewController.swift */; };
@@ -505,6 +506,7 @@
 		6DEAF9371F0E38A600680F41 /* NaddSectionHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaddSectionHeadView.swift; sourceTree = "<group>"; };
 		6DEAF9391F0E3FDC00680F41 /* NaddZJTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaddZJTableViewCell.swift; sourceTree = "<group>"; };
 		6DEAF93A1F0E3FDC00680F41 /* NaddZJTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NaddZJTableViewCell.xib; sourceTree = "<group>"; };
+		6DEAF93F1F0F3F2E00680F41 /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMMobClick.framework; sourceTree = "<group>"; };
 		6DF35EC31ED41C1000B87559 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DF35EC41ED41C1000B87559 /* MainTBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTBViewController.swift; sourceTree = "<group>"; };
 		6DF35EC81ED43F4F00B87559 /* BuyLottreyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyLottreyViewController.swift; sourceTree = "<group>"; };
@@ -624,6 +626,7 @@
 				6D04C29A1EE109D60026842E /* JavaScriptCore.framework in Frameworks */,
 				6D04C2981EE109D10026842E /* Security.framework in Frameworks */,
 				6D04C2961EE109CA0026842E /* libstdc++.6.0.9.tbd in Frameworks */,
+				6DEAF9401F0F3F2E00680F41 /* UMMobClick.framework in Frameworks */,
 				6D04C2941EE109BF0026842E /* libz.tbd in Frameworks */,
 				6DAAA1701EE67FE30017C427 /* libUMessage_Sdk_1.5.0a.a in Frameworks */,
 				6D04C2921EE109B70026842E /* libc++.tbd in Frameworks */,
@@ -1025,6 +1028,7 @@
 		6DAAA16D1EE67FE30017C427 /* UMessage_Sdk_1.5.0a */ = {
 			isa = PBXGroup;
 			children = (
+				6DEAF93F1F0F3F2E00680F41 /* UMMobClick.framework */,
 				6DAAA16E1EE67FE30017C427 /* libUMessage_Sdk_1.5.0a.a */,
 				6DAAA16F1EE67FE30017C427 /* UMessage.h */,
 			);
@@ -1576,7 +1580,7 @@
 				TargetAttributes = {
 					6D55364D1EC1B98400B0E8E8 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = F6KGR6KCTH;
+						DevelopmentTeam = YH549Q8B5F;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
@@ -2048,14 +2052,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ShenSu/ShenSu.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Jongru Huang (F6KGR6KCTH)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jongru Huang (F6KGR6KCTH)";
-				DEVELOPMENT_TEAM = F6KGR6KCTH;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Juan Zhang (YH549Q8B5F)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Juan Zhang (YH549Q8B5F)";
+				DEVELOPMENT_TEAM = YH549Q8B5F;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ShenSu/Frameworks",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/ShenSu/Class/OC/UMessage_Sdk_1.5.0a",
 				);
 				INFOPLIST_FILE = ShenSu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -2065,10 +2070,10 @@
 					"$(PROJECT_DIR)/ShenSu/Class/OC/UMessage_Sdk_1.5.0a",
 					"$(PROJECT_DIR)/ShenSu/Class/OC/Jpush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xhmycpz.my;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CMpcdd.pcdd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "2c36ac06-8473-42a1-88fd-95e15f417e2b";
-				PROVISIONING_PROFILE_SPECIFIER = xhmycpz;
+				PROVISIONING_PROFILE = "9dd8755c-a9bb-42cc-9e76-1672a691a39e";
+				PROVISIONING_PROFILE_SPECIFIER = CMpcdd;
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shensu/Desktop/ShenSu/ShenSu/Class/OC/Shensu-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Shensu-swift.h";
 				SWIFT_VERSION = 3.0;
@@ -2081,14 +2086,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ShenSu/ShenSu.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Jongru Huang (F6KGR6KCTH)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jongru Huang (F6KGR6KCTH)";
-				DEVELOPMENT_TEAM = F6KGR6KCTH;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Juan Zhang (YH549Q8B5F)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Juan Zhang (YH549Q8B5F)";
+				DEVELOPMENT_TEAM = YH549Q8B5F;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ShenSu/Frameworks",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/ShenSu/Class/OC/UMessage_Sdk_1.5.0a",
 				);
 				INFOPLIST_FILE = ShenSu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -2098,10 +2104,10 @@
 					"$(PROJECT_DIR)/ShenSu/Class/OC/UMessage_Sdk_1.5.0a",
 					"$(PROJECT_DIR)/ShenSu/Class/OC/Jpush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xhmycpz.my;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CMpcdd.pcdd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "2c36ac06-8473-42a1-88fd-95e15f417e2b";
-				PROVISIONING_PROFILE_SPECIFIER = xhmycpz;
+				PROVISIONING_PROFILE = "9dd8755c-a9bb-42cc-9e76-1672a691a39e";
+				PROVISIONING_PROFILE_SPECIFIER = CMpcdd;
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shensu/Desktop/ShenSu/ShenSu/Class/OC/Shensu-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Shensu-swift.h";
 				SWIFT_VERSION = 3.0;

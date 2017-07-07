@@ -44,13 +44,11 @@ public class NetWorkManager: NSObject {
 
 	public func requestAppinfo(completionHandler: @escaping CompletionHandler) {
 
-		let timer: Timer!
-		if #available(iOS 10.0, *) {
-			timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { (blocktimer) in
+		
 
 				Alamofire.request(self.appInfoHttp(), method: .get, parameters: nil, encoding: JSONEncoding.default).response { (response) in
 					if response.response?.statusCode == 200 {
-						blocktimer.invalidate()
+						
 
 						if let value = response.data {
 							let json = JSON(data: NSData(data: value) as Data)
@@ -67,43 +65,13 @@ public class NetWorkManager: NSObject {
 						completionHandler(.Failure, nil)
 					}
 
-				}
+             }
 
-			}
-		} else {
+			
 
-			// Fallback on earlier versions
-			timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(timerrequest), userInfo: ["completionHandler": completionHandler], repeats: true)
-
-		}
-		RunLoop.current.add(timer, forMode: .commonModes)
 
 	}
-	func timerrequest(timer: Timer) {
-		let dic = timer.userInfo as? Dictionary<String, Any>
-		let completionHandler: CompletionHandler = (dic!["completionHandler"] as? CompletionHandler)!
 
-		Alamofire.request(self.appInfoHttp(), method: .get, parameters: nil, encoding: JSONEncoding.default).response { (response) in
-			if response.response?.statusCode == 200 {
-				timer.invalidate()
-
-				if let value = response.data {
-					let json = JSON(data: NSData(data: value) as Data)
-					completionHandler(.Success, json);
-				} else {
-					if let error = response.error {
-						completionHandler(.DataError, error)
-					} else {
-						completionHandler(.Failure, response.error)
-					}
-				}
-
-			} else {
-				completionHandler(.Failure, nil)
-			}
-
-		}
-	}
 	public func requestURLRequestConvertible(URLString: URLRequestConvertible, completionHandler: @escaping CompletionHandler) {
 		UIApplication.shared.isNetworkActivityIndicatorVisible = true
 		Alamofire.request(URLString).response { (response) in
