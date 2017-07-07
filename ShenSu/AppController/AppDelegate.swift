@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 	var manager: NetworkReachabilityManager?
 	var viewController: ViewController?
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        Bmob.register(withAppKey: "8b97083620084a6eefda367e8f274157")
+        Bmob.register(withAppKey: "a4da0bcecaa6f88d832cb31b8bacea4e")
         observeNetWork()
 		self.window?.frame = UIScreen.main.bounds
 		AMapServices.shared().apiKey = AppNeedKey().GDMapKey

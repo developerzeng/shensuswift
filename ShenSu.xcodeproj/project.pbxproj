@@ -155,6 +155,7 @@
 		6DBC0C551EF2299100BFF311 /* DHGuidePageHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBC0C521EF2299100BFF311 /* DHGuidePageHUD.m */; };
 		6DBC0C561EF2299100BFF311 /* GuideImage.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6DBC0C531EF2299100BFF311 /* GuideImage.bundle */; };
 		6DBC0C591EF22A8600BFF311 /* DHMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBC0C581EF22A8600BFF311 /* DHMainViewController.m */; };
+		6DEAF93E1F0F2D4000680F41 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEAF93D1F0F2D4000680F41 /* ScanViewController.swift */; };
 		6DF35EC51ED41C1000B87559 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF35EC31ED41C1000B87559 /* AppDelegate.swift */; };
 		6DF35EC61ED41C1000B87559 /* MainTBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF35EC41ED41C1000B87559 /* MainTBViewController.swift */; };
 		6DF35EC91ED43F4F00B87559 /* BuyLottreyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF35EC81ED43F4F00B87559 /* BuyLottreyViewController.swift */; };
@@ -494,6 +495,7 @@
 		6DBC0C531EF2299100BFF311 /* GuideImage.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GuideImage.bundle; sourceTree = "<group>"; };
 		6DBC0C571EF22A8600BFF311 /* DHMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHMainViewController.h; sourceTree = "<group>"; };
 		6DBC0C581EF22A8600BFF311 /* DHMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHMainViewController.m; sourceTree = "<group>"; };
+		6DEAF93D1F0F2D4000680F41 /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		6DF35EC31ED41C1000B87559 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DF35EC41ED41C1000B87559 /* MainTBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTBViewController.swift; sourceTree = "<group>"; };
 		6DF35EC81ED43F4F00B87559 /* BuyLottreyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyLottreyViewController.swift; sourceTree = "<group>"; };
@@ -1266,6 +1268,7 @@
 				6DF6D7F81EEE390000EFFE45 /* SeachViewController.swift */,
 				6D106FFE1EEE473F00CE67BF /* SeachOpenViewController.swift */,
 				6D39E9FA1F048DCD00DAD7C7 /* ZstViewController.swift */,
+				6DEAF93D1F0F2D4000680F41 /* ScanViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1565,7 +1568,7 @@
 				TargetAttributes = {
 					6D55364D1EC1B98400B0E8E8 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = 6VD4NE73AX;
+						DevelopmentTeam = WTYS9M6U9N;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
@@ -1724,6 +1727,7 @@
 				6D04C3181EE13ED10026842E /* MASViewConstraint.m in Sources */,
 				6D04C26E1EE106EC0026842E /* CpDetaMapViewController.m in Sources */,
 				6DF6E7EE1ECAD2BA003F2D2F /* BannarModel.swift in Sources */,
+				6DEAF93E1F0F2D4000680F41 /* ScanViewController.swift in Sources */,
 				6D08A9911ECAF8B80096E7BE /* HomeHeaderView.swift in Sources */,
 				6D04C3131EE13ED10026842E /* MASCompositeConstraint.m in Sources */,
 				6D04C2611EE01CD60026842E /* UserBuyListViewController.swift in Sources */,
@@ -2027,9 +2031,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ShenSu/ShenSu.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Yongchang Wu (84DPNQH88W)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yongchang Wu (84DPNQH88W)";
-				DEVELOPMENT_TEAM = 6VD4NE73AX;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Yunlong Li (WTYS9M6U9N)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yunlong Li (WTYS9M6U9N)";
+				DEVELOPMENT_TEAM = WTYS9M6U9N;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2045,10 +2049,10 @@
 					"$(PROJECT_DIR)/ShenSu/Class/OC/UMessage_Sdk_1.5.0a",
 					"$(PROJECT_DIR)/ShenSu/Class/OC/Jpush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pkcaipiao.pkcp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xmbjsc.xmbjsc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "618a9c77-de60-4b75-9989-dcf3c3cb6e7c";
-				PROVISIONING_PROFILE_SPECIFIER = "pc蛋蛋测试";
+				PROVISIONING_PROFILE = "a8c82792-7975-4197-9e3e-a8f36a704385";
+				PROVISIONING_PROFILE_SPECIFIER = xmbjsc;
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shensu/Desktop/ShenSu/ShenSu/Class/OC/Shensu-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Shensu-swift.h";
 				SWIFT_VERSION = 3.0;
@@ -2061,9 +2065,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ShenSu/ShenSu.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Yongchang Wu (84DPNQH88W)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yongchang Wu (84DPNQH88W)";
-				DEVELOPMENT_TEAM = 6VD4NE73AX;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Yunlong Li (WTYS9M6U9N)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yunlong Li (WTYS9M6U9N)";
+				DEVELOPMENT_TEAM = WTYS9M6U9N;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2079,10 +2083,10 @@
 					"$(PROJECT_DIR)/ShenSu/Class/OC/UMessage_Sdk_1.5.0a",
 					"$(PROJECT_DIR)/ShenSu/Class/OC/Jpush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pkcaipiao.pkcp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xmbjsc.xmbjsc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "618a9c77-de60-4b75-9989-dcf3c3cb6e7c";
-				PROVISIONING_PROFILE_SPECIFIER = "pc蛋蛋测试";
+				PROVISIONING_PROFILE = "a8c82792-7975-4197-9e3e-a8f36a704385";
+				PROVISIONING_PROFILE_SPECIFIER = xmbjsc;
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shensu/Desktop/ShenSu/ShenSu/Class/OC/Shensu-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Shensu-swift.h";
 				SWIFT_VERSION = 3.0;
