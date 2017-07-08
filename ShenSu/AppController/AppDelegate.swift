@@ -40,7 +40,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         um?.channelId = "App Strore"
         MobClick.start(withConfigure: um)
         
-        
+        UMessage.start(withAppkey: AppNeedKey().UMkey, launchOptions: launchOptions)
+        UMessage.registerForRemoteNotifications()
+        if #available(iOS 10.0, *) {
+            let center = UNUserNotificationCenter.current()
+            
+            center.delegate = self
+            
+            let typers10: UNAuthorizationOptions = [.badge, .alert, .sound]
+            center.requestAuthorization(options: typers10) { (granted, error) in
+                if granted {
+                } else {
+                    
+                }
+            }
+        } else {
+            // Fallback on earlier versions
+        }
         
         let entity = JPUSHRegisterEntity()
         if #available(iOS 10.0, *) {
