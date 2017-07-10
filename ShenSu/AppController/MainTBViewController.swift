@@ -45,7 +45,7 @@ class MainViewController: UITabBarController, UITabBarControllerDelegate {
 			let vc: UIViewController
 			switch index {
 			case 0:
-				vc = SSHomeViewController()
+				vc = SSNewHomeViewController()
 			case 1:
 				vc = SSLotteryViewController()
 			case 2:

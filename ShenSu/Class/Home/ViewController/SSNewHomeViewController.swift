@@ -9,7 +9,7 @@
 import UIKit
 import SwiftyJSON
 import EasyPeasy
-class NewSSHomeViewController: BaseViewController {
+class SSNewHomeViewController: BaseViewController {
     var homeHraderView: SSHomeHeaderView!
     var bannarArray = Array<SSBannarModel>()
     var collectionView: UICollectionView!
@@ -137,7 +137,7 @@ class NewSSHomeViewController: BaseViewController {
      */
     
 }
-extension NewSSHomeViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension SSNewHomeViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if lotteryArray.count > indexPath.row && indexPath.section > 0 {
             let model = lotteryArray[indexPath.row]

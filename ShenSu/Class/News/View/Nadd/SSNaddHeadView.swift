@@ -29,11 +29,12 @@ class SSNaddHeadView: UIView {
         zpbannar = LLCycleScrollView.llCycleScrollViewWithFrame(CGRect(x: 0, y: 0, w: self.width, h: 140))
         zpbannar.lldidSelectItemAtIndex = { index in
             if self.bannarArray.count > index {
-                
-                if #available(iOS 10.0, *) {
-                    UIApplication.shared.open(URL(string: "\(self.bannarArray[index].openUrl)")!, options: [:], completionHandler: nil)
-                } else {
-                    // Fallback on earlier versions
+                if self.bannarArray[index].openUrl != "" {
+                    if #available(iOS 10.0, *) {
+                        UIApplication.shared.open(URL(string: "\(self.bannarArray[index].openUrl)")!, options: [:], completionHandler: nil)
+                    } else {
+                        // Fallback on earlier versions
+                    }
                 }
             }
         }
