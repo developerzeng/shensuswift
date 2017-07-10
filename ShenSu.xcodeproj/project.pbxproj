@@ -155,6 +155,7 @@
 		6DBC0C551EF2299100BFF311 /* DHGuidePageHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBC0C521EF2299100BFF311 /* DHGuidePageHUD.m */; };
 		6DBC0C561EF2299100BFF311 /* GuideImage.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6DBC0C531EF2299100BFF311 /* GuideImage.bundle */; };
 		6DBC0C591EF22A8600BFF311 /* DHMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBC0C581EF22A8600BFF311 /* DHMainViewController.m */; };
+		6DDB8BD61F1358FC0051CE32 /* NSObject+NSDate_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDB8BD51F1358FC0051CE32 /* NSObject+NSDate_Extension.m */; };
 		6DEAF93E1F0F2D4000680F41 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEAF93D1F0F2D4000680F41 /* ScanViewController.swift */; };
 		6DF35EC51ED41C1000B87559 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF35EC31ED41C1000B87559 /* AppDelegate.swift */; };
 		6DF35EC61ED41C1000B87559 /* MainTBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF35EC41ED41C1000B87559 /* MainTBViewController.swift */; };
@@ -495,6 +496,8 @@
 		6DBC0C531EF2299100BFF311 /* GuideImage.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GuideImage.bundle; sourceTree = "<group>"; };
 		6DBC0C571EF22A8600BFF311 /* DHMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHMainViewController.h; sourceTree = "<group>"; };
 		6DBC0C581EF22A8600BFF311 /* DHMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHMainViewController.m; sourceTree = "<group>"; };
+		6DDB8BD41F1358FC0051CE32 /* NSObject+NSDate_Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+NSDate_Extension.h"; sourceTree = "<group>"; };
+		6DDB8BD51F1358FC0051CE32 /* NSObject+NSDate_Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NSDate_Extension.m"; sourceTree = "<group>"; };
 		6DEAF93D1F0F2D4000680F41 /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		6DF35EC31ED41C1000B87559 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DF35EC41ED41C1000B87559 /* MainTBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTBViewController.swift; sourceTree = "<group>"; };
@@ -1125,6 +1128,8 @@
 				6D04C2B81EE13BB50026842E /* MyProfile */,
 				6D04C2661EE106EC0026842E /* CPViewController */,
 				6DF35F541ED91D7100B87559 /* Shensu-Bridging-Header.h */,
+				6DDB8BD41F1358FC0051CE32 /* NSObject+NSDate_Extension.h */,
+				6DDB8BD51F1358FC0051CE32 /* NSObject+NSDate_Extension.m */,
 			);
 			path = OC;
 			sourceTree = "<group>";
@@ -1568,7 +1573,7 @@
 				TargetAttributes = {
 					6D55364D1EC1B98400B0E8E8 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = WTYS9M6U9N;
+						DevelopmentTeam = 6VD4NE73AX;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
@@ -1739,6 +1744,7 @@
 				6DF35EFD1ED6DB9F00B87559 /* LotteryListModel.swift in Sources */,
 				6D04C3201EE14B540026842E /* RegisterViewController.swift in Sources */,
 				6D0BF94E1EC30F2C00E68B4F /* UIScreenExtensions.swift in Sources */,
+				6DDB8BD61F1358FC0051CE32 /* NSObject+NSDate_Extension.m in Sources */,
 				6DF6E7E91ECACFF2003F2D2F /* LLSnakePageControl.swift in Sources */,
 				6D0BF9511EC30F2C00E68B4F /* BaseViewController.swift in Sources */,
 				6DF6E7D81EC9AE79003F2D2F /* MyViewController.swift in Sources */,
@@ -2031,9 +2037,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ShenSu/ShenSu.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Yunlong Li (WTYS9M6U9N)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yunlong Li (WTYS9M6U9N)";
-				DEVELOPMENT_TEAM = WTYS9M6U9N;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Yongchang Wu (6VD4NE73AX)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yongchang Wu (6VD4NE73AX)";
+				DEVELOPMENT_TEAM = 6VD4NE73AX;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2049,10 +2055,10 @@
 					"$(PROJECT_DIR)/ShenSu/Class/OC/UMessage_Sdk_1.5.0a",
 					"$(PROJECT_DIR)/ShenSu/Class/OC/Jpush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xmbjsc.xmbjsc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pkcaipiao.pkcp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a8c82792-7975-4197-9e3e-a8f36a704385";
-				PROVISIONING_PROFILE_SPECIFIER = xmbjsc;
+				PROVISIONING_PROFILE = "93ad4899-df01-4dd1-9347-7bc72df15e50";
+				PROVISIONING_PROFILE_SPECIFIER = "pk蛋蛋上架";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shensu/Desktop/ShenSu/ShenSu/Class/OC/Shensu-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Shensu-swift.h";
 				SWIFT_VERSION = 3.0;
@@ -2065,9 +2071,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ShenSu/ShenSu.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Yunlong Li (WTYS9M6U9N)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yunlong Li (WTYS9M6U9N)";
-				DEVELOPMENT_TEAM = WTYS9M6U9N;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Yongchang Wu (6VD4NE73AX)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yongchang Wu (6VD4NE73AX)";
+				DEVELOPMENT_TEAM = 6VD4NE73AX;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2083,10 +2089,10 @@
 					"$(PROJECT_DIR)/ShenSu/Class/OC/UMessage_Sdk_1.5.0a",
 					"$(PROJECT_DIR)/ShenSu/Class/OC/Jpush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xmbjsc.xmbjsc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pkcaipiao.pkcp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a8c82792-7975-4197-9e3e-a8f36a704385";
-				PROVISIONING_PROFILE_SPECIFIER = xmbjsc;
+				PROVISIONING_PROFILE = "93ad4899-df01-4dd1-9347-7bc72df15e50";
+				PROVISIONING_PROFILE_SPECIFIER = "pk蛋蛋上架";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shensu/Desktop/ShenSu/ShenSu/Class/OC/Shensu-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Shensu-swift.h";
 				SWIFT_VERSION = 3.0;
