@@ -56,7 +56,7 @@
 		6D04C31C1EE13ED10026842E /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D04C3121EE13ED10026842E /* ViewController+MASAdditions.m */; };
 		6D04C31E1EE14B390026842E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04C31D1EE14B390026842E /* LoginViewController.swift */; };
 		6D04C3201EE14B540026842E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04C31F1EE14B540026842E /* RegisterViewController.swift */; };
-		6D08A98B1ECADA850096E7BE /* EasyPeasy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D08A98A1ECADA850096E7BE /* EasyPeasy.framework */; };
+		6D08A98B1ECADA850096E7BE /* EasyPeasy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D08A98A1ECADA850096E7BE /* EasyPeasy.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6D08A9911ECAF8B80096E7BE /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D08A9901ECAF8B80096E7BE /* HomeHeaderView.swift */; };
 		6D08A9931ECAFF3D0096E7BE /* ChooseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D08A9921ECAFF3D0096E7BE /* ChooseView.swift */; };
 		6D08A9951ECAFF650096E7BE /* ChooseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D08A9941ECAFF650096E7BE /* ChooseView.xib */; };
@@ -70,10 +70,10 @@
 		6D08EAEE1EE53D3800AD9965 /* NewsDetaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D08EAEC1EE53D3800AD9965 /* NewsDetaViewController.xib */; };
 		6D08EAF01EE540BA00AD9965 /* NewsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D08EAEF1EE540BA00AD9965 /* NewsDataModel.swift */; };
 		6D08EAF21EE547B300AD9965 /* NumberTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D08EAF11EE547B300AD9965 /* NumberTransform.swift */; };
-		6D0BF9271EC1C11900E68B4F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0BF9251EC1C11900E68B4F /* Alamofire.framework */; };
-		6D0BF9281EC1C11900E68B4F /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0BF9261EC1C11900E68B4F /* SwiftyJSON.framework */; };
-		6D0BF9321EC1CB3600E68B4F /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0BF92F1EC1CB3600E68B4F /* Kingfisher.framework */; };
-		6D0BF9381EC1CB4A00E68B4F /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0BF9371EC1CB4A00E68B4F /* ObjectMapper.framework */; };
+		6D0BF9271EC1C11900E68B4F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0BF9251EC1C11900E68B4F /* Alamofire.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6D0BF9281EC1C11900E68B4F /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0BF9261EC1C11900E68B4F /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6D0BF9321EC1CB3600E68B4F /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0BF92F1EC1CB3600E68B4F /* Kingfisher.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6D0BF9381EC1CB4A00E68B4F /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0BF9371EC1CB4A00E68B4F /* ObjectMapper.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6D0BF93C1EC1CBF300E68B4F /* NetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0BF93B1EC1CBF300E68B4F /* NetWorkManager.swift */; };
 		6D0BF93E1EC3022C00E68B4F /* URLRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0BF93D1EC3022C00E68B4F /* URLRouter.swift */; };
 		6D0BF94B1EC30F2C00E68B4F /* FoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0BF9401EC30F2C00E68B4F /* FoundationExtensions.swift */; };
@@ -86,8 +86,8 @@
 		6D0BF9521EC30F2C00E68B4F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0BF9471EC30F2C00E68B4F /* TableViewController.swift */; };
 		6D0BF9531EC30F2C00E68B4F /* TableViewBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0BF9481EC30F2C00E68B4F /* TableViewBaseCell.swift */; };
 		6D0BF9551EC30F2C00E68B4F /* TimeIntervalTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0BF94A1EC30F2C00E68B4F /* TimeIntervalTransform.swift */; };
-		6D0BF9571EC313A100E68B4F /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0BF9561EC313A100E68B4F /* Chameleon.framework */; };
-		6D0BF9591EC313A800E68B4F /* SwiftDate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0BF9581EC313A800E68B4F /* SwiftDate.framework */; };
+		6D0BF9571EC313A100E68B4F /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0BF9561EC313A100E68B4F /* Chameleon.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6D0BF9591EC313A800E68B4F /* SwiftDate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0BF9581EC313A800E68B4F /* SwiftDate.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6D106FFF1EEE473F00CE67BF /* SeachOpenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D106FFE1EEE473F00CE67BF /* SeachOpenViewController.swift */; };
 		6D1070011EEE7C6600CE67BF /* NotDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1070001EEE7C6600CE67BF /* NotDataView.swift */; };
 		6D1070031EEE7C8500CE67BF /* NotDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D1070021EEE7C8500CE67BF /* NotDataView.xib */; };
@@ -127,7 +127,7 @@
 		6DAAA16C1EE65E6A0017C427 /* WebViewXib.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAAA16B1EE65E6A0017C427 /* WebViewXib.m */; };
 		6DAAA1701EE67FE30017C427 /* libUMessage_Sdk_1.5.0a.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAAA16E1EE67FE30017C427 /* libUMessage_Sdk_1.5.0a.a */; };
 		6DAAA1721EE6800B0017C427 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAAA1711EE6800B0017C427 /* UserNotifications.framework */; };
-		6DAAA1741EE680110017C427 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAAA1731EE680110017C427 /* UserNotificationsUI.framework */; };
+		6DAAA1741EE680110017C427 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAAA1731EE680110017C427 /* UserNotificationsUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6DAAA1791EE685320017C427 /* jcore-ios-1.1.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAAA1761EE685320017C427 /* jcore-ios-1.1.3.a */; };
 		6DAAA17A1EE685320017C427 /* jpush-ios-3.0.5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAAA1771EE685320017C427 /* jpush-ios-3.0.5.a */; };
 		6DAAA17C1EE686360017C427 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAAA17B1EE686360017C427 /* UIKit.framework */; };
