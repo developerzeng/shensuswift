@@ -45,13 +45,13 @@ class MainViewController: UITabBarController, UITabBarControllerDelegate {
 			let vc: UIViewController
 			switch index {
 			case 0:
-				vc = NewHomeViewController()
+				vc = SSHomeViewController()
 			case 1:
-				vc = LotteryViewController()
+				vc = SSLotteryViewController()
 			case 2:
-				vc = NaddViewController()
+				vc = SSNaddViewController()
 			case 3:
-				vc = MyViewController()
+				vc = SSMyViewController()
 			default:
 				vc = UIViewController()
 			}
@@ -84,7 +84,7 @@ class MainViewController: UITabBarController, UITabBarControllerDelegate {
 
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
         if let vc = viewController as? NavViewController , vc.topViewController != nil {
-            if vc.topViewController?.isKind(of: MyViewController.self) == true && !AppUserData.default.isLogin {
+            if vc.topViewController?.isKind(of: SSMyViewController.self) == true && !AppUserData.default.isLogin {
                 self.showLoginViewController()
                 return false
             }

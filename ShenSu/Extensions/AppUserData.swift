@@ -138,21 +138,21 @@ class AppUserData: NSObject {
         }
     }
 	/// 下注存储数据
-	var saveModel: Array<LotteryListModel>? {
+	var saveModel: Array<SSLotteryListModel>? {
 		get {
 			let path = NSHomeDirectory()
 			let file = "\(path)/Library/Caches/lotteryMoldes"
 			if NSKeyedUnarchiver.unarchiveObject(withFile: file) != nil {
-				return NSKeyedUnarchiver.unarchiveObject(withFile: file) as? Array<LotteryListModel>
+				return NSKeyedUnarchiver.unarchiveObject(withFile: file) as? Array<SSLotteryListModel>
 			}
 			return nil
 		}
 		set {
 			let path = NSHomeDirectory()
 			let file = "\(path)/Library/Caches/lotteryMoldes"
-			var oldArray = Array<LotteryListModel>()
+			var oldArray = Array<SSLotteryListModel>()
 			if NSKeyedUnarchiver.unarchiveObject(withFile: file) != nil {
-				oldArray = NSKeyedUnarchiver.unarchiveObject(withFile: file) as! Array<LotteryListModel>
+				oldArray = NSKeyedUnarchiver.unarchiveObject(withFile: file) as! Array<SSLotteryListModel>
 			}
 			if oldArray.count == 0 {
 				NSKeyedArchiver.archiveRootObject(newValue!, toFile: file)
@@ -163,21 +163,21 @@ class AppUserData: NSObject {
 		}
 	}
 	/// 首页收藏数据
-	var homesaveModel: Array<LotteryListModel>? {
+	var homesaveModel: Array<SSLotteryListModel>? {
 		get {
 			let path = NSHomeDirectory()
 			let file = "\(path)/Library/Caches/homelotteryMoldes"
 			if NSKeyedUnarchiver.unarchiveObject(withFile: file) != nil {
-				return NSKeyedUnarchiver.unarchiveObject(withFile: file) as? Array<LotteryListModel>
+				return NSKeyedUnarchiver.unarchiveObject(withFile: file) as? Array<SSLotteryListModel>
 			}
 			return nil
 		}
 		set {
 			let path = NSHomeDirectory()
 			let file = "\(path)/Library/Caches/homelotteryMoldes"
-			var oldArray = Array<LotteryListModel>()
+			var oldArray = Array<SSLotteryListModel>()
 			if NSKeyedUnarchiver.unarchiveObject(withFile: file) != nil {
-				oldArray = NSKeyedUnarchiver.unarchiveObject(withFile: file) as! Array<LotteryListModel>
+				oldArray = NSKeyedUnarchiver.unarchiveObject(withFile: file) as! Array<SSLotteryListModel>
 			}
 			if oldArray.count == 0 {
 				NSKeyedArchiver.archiveRootObject(newValue!, toFile: file)

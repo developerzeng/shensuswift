@@ -57,7 +57,7 @@
         <!--Login View Controller-->
         <scene sceneID="dBi-JB-DFr">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kDo-kf-GqI" customClass="LoginViewController" customModule="ShenSu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kDo-kf-GqI" customClass="SSLoginViewController" customModule="ShenSu" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Qi5-Mk-CLr"/>
                         <viewControllerLayoutGuide type="bottom" id="VSn-6y-UfY"/>
@@ -223,7 +223,7 @@
         <!--Register View Controller-->
         <scene sceneID="pNC-KP-HtP">
             <objects>
-                <viewController storyboardIdentifier="RegisterViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EtR-QW-jNP" customClass="RegisterViewController" customModule="ShenSu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegisterViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EtR-QW-jNP" customClass="SSRegisterViewController" customModule="ShenSu" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CG4-rE-orG"/>
                         <viewControllerLayoutGuide type="bottom" id="xkq-Mc-9p4"/>
@@ -391,7 +391,7 @@
         <!--scan(扫描)-->
         <scene sceneID="q3I-Lf-8Zs">
             <objects>
-                <viewController storyboardIdentifier="scanViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iy7-4t-TPa" customClass="ScanViewController" customModule="ShenSu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="scanViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iy7-4t-TPa" customClass="SSScanViewController" customModule="ShenSu" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zt6-JY-Fmr"/>
                         <viewControllerLayoutGuide type="bottom" id="Hbk-2Z-Hya"/>
