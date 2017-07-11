@@ -20,7 +20,7 @@
     [self setNavLeftButtonWithImage:[UIImage imageNamed:@"Go_Back"] highlight:[UIImage imageNamed:@"Go_Back"]];
     __weak __typeof (self) weak = self;
     [self setLeftButtonClicked:^(id btn) {
-        [weak.navigationController popToViewControllerWithViewClass:[BuyLottreyViewController class]];
+        [weak.navigationController popToViewControllerWithViewClass:[PfBuyLottreyViewController class]];
     }];
     [self setNavTitleWithTitle:@"保存成功" color:nil];
 
@@ -33,7 +33,7 @@
 }
 - (IBAction)goBtnClick:(id)sender {
 
-    [self.navigationController popToViewControllerWithViewClass:[BuyLottreyViewController class]];
+    [self.navigationController popToViewControllerWithViewClass:[PfBuyLottreyViewController class]];
 }
 
 - (void)didReceiveMemoryWarning {

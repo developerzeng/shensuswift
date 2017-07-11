@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  PfLoginViewController.swift
 //  ShenSu
 //
 //  Created by shensu on 17/6/2.
@@ -58,7 +58,7 @@ class LoginViewController: BaseViewController {
 			self.dismissViewController()
 		}
 		self.rightButtonClicked = { btn in
-			let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "RegisterViewController")
+			let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "PfRegisterViewController")
 			_ = self.navigationController?.pushViewController(vc, animated: true)
 		}
 		self.setNavBarWithColor(naviColor: UIColor.white, force: false)

@@ -1,5 +1,5 @@
 //
-//  RegisterViewController.swift
+//  PfRegisterViewController.swift
 //  ShenSu
 //
 //  Created by shensu on 17/6/2.
@@ -11,7 +11,7 @@ import SwiftyJSON
 class RegisterViewController: BaseViewController {
 
     @IBAction func userRuleClick(_ sender: Any) {
-        let vc = UserRuleViewController()
+        let vc = PfUserRuleViewController()
         _ = self.navigationController?.pushViewController(vc, animated: true)
     }
     @IBOutlet weak var userRule: UIButton!

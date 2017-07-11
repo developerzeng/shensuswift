@@ -45,13 +45,13 @@ class MainViewController: UITabBarController, UITabBarControllerDelegate {
 			let vc: UIViewController
 			switch index {
 			case 0:
-				vc = HomeViewController()
+				vc = PfHomeViewController()
 			case 1:
-				vc = ZstViewController()
+				vc = PfLotteryViewController()
 			case 2:
-				vc = SliderNewsViewController()
+				vc = PfZstViewController()
 			case 3:
-				vc = MyViewController()
+				vc = PfMyViewController()
 			default:
 				vc = UIViewController()
 			}
@@ -75,8 +75,8 @@ class MainViewController: UITabBarController, UITabBarControllerDelegate {
 
 	func initData() {
 		let model1 = MainViewModel(title: "首页", selectImage: UIImage(named: "sehome"), defaultImage: UIImage(named: "homei"))
-		let model2 = MainViewModel(title: "彩票", selectImage: UIImage(named: "selottery"), defaultImage: UIImage(named: "lottery"))
-		let model3 = MainViewModel(title: "分析", selectImage: UIImage(named: "sezixun"), defaultImage: UIImage(named: "zixun"))
+		let model2 = MainViewModel(title: "开奖", selectImage: UIImage(named: "selottery"), defaultImage: UIImage(named: "lottery"))
+		let model3 = MainViewModel(title: "走势", selectImage: UIImage(named: "sezixun"), defaultImage: UIImage(named: "zixun"))
 		let model4 = MainViewModel(title: "我的", selectImage: UIImage(named: "semy"), defaultImage: UIImage(named: "my"))
 		self.models.append(contentsOf: [model1,  model2 ,  model3, model4])
 	}
@@ -84,7 +84,7 @@ class MainViewController: UITabBarController, UITabBarControllerDelegate {
 
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
         if let vc = viewController as? NavViewController , vc.topViewController != nil {
-            if vc.topViewController?.isKind(of: MyViewController.self) == true && !AppUserData.default.isLogin {
+            if vc.topViewController?.isKind(of: PfMyViewController.self) == true && !AppUserData.default.isLogin {
                 self.showLoginViewController()
                 return false
             }

@@ -1,5 +1,5 @@
 //
-//  ScanViewController.swift
+//  PfScanViewController.swift
 //  ZZYQRCodeSwift
 //
 //  Created by 张泽宇 on 2017/5/24.
