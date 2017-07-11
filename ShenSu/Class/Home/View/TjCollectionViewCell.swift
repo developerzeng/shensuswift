@@ -49,7 +49,7 @@ class TjCollectionViewCell: UICollectionViewCell {
 		model.addtime = Date().toFormatDateString(format: "YYYY-MM-DD hh:mm")
 		AppUserData.default.homesaveModel = [model]
 		self.homesaveBtnBlock?()
-
+        
 	}
 	@IBAction func changBtnClikc(_ sender: Any) {
 		numberView.reloadView()
@@ -67,6 +67,7 @@ class TjCollectionViewCell: UICollectionViewCell {
 			lotterType.text = "重庆时时彩"
 
 		}
+        buyBtn.setTitle("立即下注", for: .normal)
 		self.contentView.backgroundColor = UIColor.white
 		numberView = NumberView()
 		numberView.type = rantype
