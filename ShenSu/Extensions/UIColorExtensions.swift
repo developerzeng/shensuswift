@@ -182,6 +182,9 @@ extension UIColor {
 	class func steelBlueColor() -> UIColor {
 		return UIColor("#4682B4")
 	}
+    class func 	DeepSkyBlue()-> UIColor {
+    return  UIColor("#00BFFF")
+    }
 
 	class func orangeRedColor() -> UIColor {
 		return UIColor(rgb: 0xFF4500, alpha: 1)

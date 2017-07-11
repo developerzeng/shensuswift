@@ -56,9 +56,9 @@ class LotterySSNumberView: UIView {
 			lableArray.append(numberLable)
             
             if caipiaoId == "11" && index > 4 {
-            numberLable.backgroundColor = UIColor.blueVioletColor()
+            numberLable.backgroundColor = UIColor.DeepSkyBlue()
             }else if caipiaoId == "14" && index > 5 {
-            numberLable.backgroundColor = UIColor.blueVioletColor()
+            numberLable.backgroundColor = UIColor.DeepSkyBlue()
             }
 		}
 

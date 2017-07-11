@@ -14,6 +14,7 @@ class SSNewHomeViewController: BaseViewController {
     var bannarArray = Array<SSBannarModel>()
     var collectionView: UICollectionView!
     var lotteryArray = Array<NewSSLotteryModel>()
+    var oldlotteryArray = Array<SSHomeSSLotteryModel>()
     var headArray:Array<HomecellModel>{
         let model = HomecellModel(imaegName: "推荐", title: "推荐号码")
         let model1 = HomecellModel(imaegName: "热门", title: "热门彩种")
@@ -92,6 +93,18 @@ class SSNewHomeViewController: BaseViewController {
             _ = self.JsonMapToObject(JSON: data, toObject: model)
             lotteryArray.append(model)
         })
+        
+        let opath = Bundle.main.path(forResource: "CaipiaoType", ofType: "geojson")
+        let odic = NSDictionary(contentsOfFile: opath!)
+        let oarray = odic?["data"] as? Array<Any>
+        oarray?.enumerated().forEach({ (index, data) in
+            let model = SSHomeSSLotteryModel()
+            _ = self.JsonMapToObject(JSON: data, toObject: model)
+            oldlotteryArray.append(model)
+        })
+        
+        
+        
         self.collectionView.safeReload()
         
     }
@@ -140,19 +153,48 @@ class SSNewHomeViewController: BaseViewController {
 extension SSNewHomeViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if lotteryArray.count > indexPath.row && indexPath.section > 0 {
-            let model = lotteryArray[indexPath.row]
-            let vc = SSHomeWebViewController()
-            vc.titleName = model.lot_name
-            vc.url = model.lot_url
-            _ = self.navigationController?.pushViewController(vc, animated: true)
+            if [1,2,3,4,5,6,11].contains(indexPath.row) {
+                let model: SSHomeSSLotteryModel!
+                switch indexPath.row {
+                case 1:
+                   model = oldlotteryArray[8]
+                case 2:
+                    model = oldlotteryArray[9]
+                case 3:
+                    model = oldlotteryArray[9]
+                case 4:
+                    model = oldlotteryArray[6]
+                case 5:
+                    model = oldlotteryArray[0]
+                case 6:
+                    model = oldlotteryArray[3]
+                case 11:
+                    model = oldlotteryArray[11]
+                default:
+                   model =  oldlotteryArray[indexPath.row]
+                }
+                    let vc = SSBuyLottreyViewController()
+                    vc.lotteryInfoModel = model
+                    _ = self.navigationController?.pushViewController(vc, animated: true)
+                
+            }else{
+                let model = lotteryArray[indexPath.row]
+                let vc = SSHomeWebViewController()
+                vc.titleName = model.lot_name
+                vc.url = model.lot_url
+                _ = self.navigationController?.pushViewController(vc, animated: true)
+            
+            }
         }
         
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         if section == 0 {
             return CGSize(width: self.view.width, height: 180)
-        } else {
+        } else if section == 2 {
             return CGSize(width: self.view.width, height: 40)
+        } else {
+            return CGSize(width: self.view.width, height: 10)
         }
         
     }
@@ -160,16 +202,16 @@ extension SSNewHomeViewController: UICollectionViewDelegate, UICollectionViewDat
         if kind == UICollectionElementKindSectionHeader && indexPath.section == 0 {
             homeHraderView = (collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "homeHraderView", for: indexPath) as? SSHomeHeaderView)!
             setBannarData()
-        }else if kind == UICollectionElementKindSectionHeader  {
+        }else if kind == UICollectionElementKindSectionHeader && indexPath.section == 2  {
             let view = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "cellhead", for: indexPath) as? SSHomecellHeadCollectionReusableView
-            view?.setModel(model: headArray[indexPath.section])
+            view?.setModel(model: headArray[1])
             return view!
         }
         return homeHraderView
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         switch indexPath.section {
-        case 2:
+        case 1:
             return CGSize(width: self.collectionView.width, height: 123)
         case 0:
             return CGSize(width: self.collectionView.width, height: 80)
@@ -180,20 +222,20 @@ extension SSNewHomeViewController: UICollectionViewDelegate, UICollectionViewDat
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 2
+        return 3
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch section {
         case 0:
             return 1
-            //        case 1:
-        //            return 1
+        case 1:
+            return 1
         default:
             return lotteryArray.count
         }
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if indexPath.section == 2 {
+        if indexPath.section == 1 {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SSTjCollectionViewCell", for: indexPath) as? SSTjCollectionViewCell
             cell?.homesaveBtnBlock = {
                 self.showMessage(message: "保存成功")
@@ -222,7 +264,7 @@ extension SSNewHomeViewController: UICollectionViewDelegate, UICollectionViewDat
             }
             
             return cell!
-        } else if indexPath.section == 1 {
+        } else if indexPath.section == 2 {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SSHomeCollectionViewCell", for: indexPath) as? SSHomeCollectionViewCell
             if lotteryArray.count > indexPath.row {
                 cell?.setNewModel(model: lotteryArray[indexPath.row])
@@ -254,7 +296,7 @@ extension SSNewHomeViewController: UICollectionViewDelegate, UICollectionViewDat
                     let vc = SSZstViewController()
                     _ = self.navigationController?.pushViewController(vc, animated: true)
                 default:
-                    let vc = SSLotteryViewController()
+                    let vc = SliderSSNewsViewController()
                     _ = self.navigationController?.pushViewController(vc, animated: true)
                 }
             }

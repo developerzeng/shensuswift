@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="LotteryOpenInfoCell">
+            <rect key="frame" x="0.0" y="0.0" width="170" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="170" height="120"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jcf-bA-Y5R">
+                        <rect key="frame" x="0.0" y="0.0" width="170" height="65"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开奖信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Gy-cO-zsv">
+                                <rect key="frame" x="73" y="18" width="54" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.96862745100000003" green="0.16078431369999999" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="官方开奖早知道" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogz-hU-1aB">
+                                <rect key="frame" x="72" y="35" width="72" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.67843137249999996" green="0.67843137249999996" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="icon_HomeTool_Lottery" translatesAutoresizingMaskIntoConstraints="NO" id="Ftw-ar-cdB">
+                                <rect key="frame" x="0.0" y="3" width="66" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="66" id="Mwd-bJ-hi9"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ftw-ar-cdB" firstAttribute="leading" secondItem="jcf-bA-Y5R" secondAttribute="leading" id="95u-Fk-edc"/>
+                            <constraint firstItem="ogz-hU-1aB" firstAttribute="leading" secondItem="Ftw-ar-cdB" secondAttribute="trailing" constant="6" id="ACJ-zL-VRI"/>
+                            <constraint firstItem="7Gy-cO-zsv" firstAttribute="top" secondItem="jcf-bA-Y5R" secondAttribute="top" constant="18" id="L44-bv-ow7"/>
+                            <constraint firstItem="Ftw-ar-cdB" firstAttribute="top" secondItem="jcf-bA-Y5R" secondAttribute="top" constant="3" id="POD-su-37g"/>
+                            <constraint firstItem="7Gy-cO-zsv" firstAttribute="leading" secondItem="Ftw-ar-cdB" secondAttribute="trailing" constant="7" id="Vay-I5-FID"/>
+                            <constraint firstItem="ogz-hU-1aB" firstAttribute="top" secondItem="7Gy-cO-zsv" secondAttribute="bottom" constant="1" id="sPc-Rt-uPy"/>
+                            <constraint firstAttribute="bottom" secondItem="Ftw-ar-cdB" secondAttribute="bottom" constant="3" id="sgp-aX-iOn"/>
+                        </constraints>
+                    </view>
+                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eiS-QY-T7e">
+                        <rect key="frame" x="0.0" y="66" width="170" height="54"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="zhishi" translatesAutoresizingMaskIntoConstraints="NO" id="EPz-2z-yEl">
+                                <rect key="frame" x="0.0" y="0.0" width="170" height="54"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EPz-2z-yEl" firstAttribute="leading" secondItem="eiS-QY-T7e" secondAttribute="leading" id="6Xt-U4-NPF"/>
+                            <constraint firstAttribute="trailing" secondItem="EPz-2z-yEl" secondAttribute="trailing" id="Ktt-Px-wRE"/>
+                            <constraint firstAttribute="bottom" secondItem="EPz-2z-yEl" secondAttribute="bottom" id="QMi-Wz-Z0S"/>
+                            <constraint firstItem="EPz-2z-yEl" firstAttribute="top" secondItem="eiS-QY-T7e" secondAttribute="top" id="gqQ-BR-gJI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="jcf-bA-Y5R" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="0s8-Ad-OS2"/>
+                <constraint firstAttribute="trailing" secondItem="jcf-bA-Y5R" secondAttribute="trailing" id="7Dg-5k-Yar"/>
+                <constraint firstItem="eiS-QY-T7e" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="66" id="AQ2-pU-ypJ"/>
+                <constraint firstItem="eiS-QY-T7e" firstAttribute="top" secondItem="jcf-bA-Y5R" secondAttribute="bottom" constant="1" id="Gdm-Si-SbB"/>
+                <constraint firstItem="eiS-QY-T7e" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="TL6-Uo-uGY"/>
+                <constraint firstAttribute="trailing" secondItem="eiS-QY-T7e" secondAttribute="trailing" id="VAI-ZL-o7P"/>
+                <constraint firstItem="jcf-bA-Y5R" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="WJA-qi-iwh"/>
+                <constraint firstAttribute="bottom" secondItem="eiS-QY-T7e" secondAttribute="bottom" id="d2E-LD-79C"/>
+            </constraints>
+            <size key="customSize" width="170" height="123"/>
+            <connections>
+                <outlet property="bottomView" destination="eiS-QY-T7e" id="x2f-hL-zm7"/>
+                <outlet property="topView" destination="jcf-bA-Y5R" id="zjs-X0-nDu"/>
+            </connections>
+            <point key="canvasLocation" x="7" y="92"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon_HomeTool_Lottery" width="125" height="100"/>
+        <image name="zhishi" width="180" height="70"/>
+    </resources>
+</document>

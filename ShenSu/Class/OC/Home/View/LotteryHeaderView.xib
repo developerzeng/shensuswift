@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LotteryHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="296" height="38"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y1L-Kd-TXd">
+                    <rect key="frame" x="0.0" y="0.0" width="296" height="38"/>
+                    <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="icon_location" translatesAutoresizingMaskIntoConstraints="NO" id="u6Y-7t-jzd">
+                    <rect key="frame" x="13" y="10" width="11" height="17"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIE-mm-PXm">
+                    <rect key="frame" x="34" y="11" width="33" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mTz-pz-jz7">
+                    <rect key="frame" x="0.0" y="37" width="296" height="1"/>
+                    <color key="backgroundColor" red="0.82352941180000006" green="0.82352941180000006" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="DSd-DV-JLo"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="y1L-Kd-TXd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0Kq-LK-u8b"/>
+                <constraint firstAttribute="trailing" secondItem="y1L-Kd-TXd" secondAttribute="trailing" id="0v4-OK-yjn"/>
+                <constraint firstItem="y1L-Kd-TXd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1hM-bF-NL6"/>
+                <constraint firstItem="u6Y-7t-jzd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="13" id="68S-uy-1ok"/>
+                <constraint firstItem="u6Y-7t-jzd" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="6Oc-AU-vcs"/>
+                <constraint firstItem="kIE-mm-PXm" firstAttribute="leading" secondItem="u6Y-7t-jzd" secondAttribute="trailing" constant="10" id="OM3-nd-iQR"/>
+                <constraint firstAttribute="bottom" secondItem="mTz-pz-jz7" secondAttribute="bottom" id="X4t-OL-hzE"/>
+                <constraint firstItem="mTz-pz-jz7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="c7u-T1-yFe"/>
+                <constraint firstItem="kIE-mm-PXm" firstAttribute="centerY" secondItem="u6Y-7t-jzd" secondAttribute="centerY" id="cTK-3P-Eoo"/>
+                <constraint firstAttribute="trailing" secondItem="mTz-pz-jz7" secondAttribute="trailing" id="ooi-gh-2Ho"/>
+                <constraint firstAttribute="bottom" secondItem="y1L-Kd-TXd" secondAttribute="bottom" id="owV-zj-2he"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="headerLabel" destination="kIE-mm-PXm" id="MNv-Ic-dtG"/>
+            </connections>
+            <point key="canvasLocation" x="-370" y="101"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_location" width="11" height="17"/>
+    </resources>
+</document>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LotteryResultController">
+            <connections>
+                <outlet property="topCollectionHCons" destination="mJw-8V-oBx" id="gm2-xf-4xc"/>
+                <outlet property="topCollectionView" destination="KtO-Go-IAu" id="7uh-OL-UUx"/>
+                <outlet property="topLeftLabel" destination="hU9-uR-aYs" id="a91-Io-T1W"/>
+                <outlet property="topRightLabel" destination="0SM-QL-JaX" id="DqT-gL-SaO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017043期开奖结果" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hU9-uR-aYs">
+                    <rect key="frame" x="10" y="20" width="138" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="04月05日开奖 周六" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0SM-QL-JaX">
+                    <rect key="frame" x="249" y="21" width="116" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="KtO-Go-IAu" userLabel="topCollectionView">
+                    <rect key="frame" x="40" y="58" width="295" height="70"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="mJw-8V-oBx"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="8qn-FA-eFw">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="hoJ-tm-pYu"/>
+                        <outlet property="delegate" destination="-1" id="F6u-Jw-Gd2"/>
+                    </connections>
+                </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无开奖详情数据" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQH-Tr-ey3">
+                    <rect key="frame" x="131" y="148" width="114.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqR-jS-f9N">
+                    <rect key="frame" x="128" y="185" width="120" height="35"/>
+                    <color key="backgroundColor" red="0.83137254901960778" green="0.16862745098039217" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="c6U-0R-vCv"/>
+                        <constraint firstAttribute="width" constant="120" id="vYp-0o-fI1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="去网页版下注"/>
+                    <connections>
+                        <action selector="gotoWebAction:" destination="-1" eventType="touchUpInside" id="6n5-qh-4fa"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hU9-uR-aYs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="INs-4W-aag"/>
+                <constraint firstItem="KtO-Go-IAu" firstAttribute="top" secondItem="hU9-uR-aYs" secondAttribute="bottom" constant="20" id="Jxz-Xx-tkq"/>
+                <constraint firstAttribute="trailing" secondItem="KtO-Go-IAu" secondAttribute="trailing" constant="40" id="YEj-zj-wpi"/>
+                <constraint firstItem="sqR-jS-f9N" firstAttribute="top" secondItem="cQH-Tr-ey3" secondAttribute="bottom" constant="20" id="Za4-mb-f4m"/>
+                <constraint firstItem="cQH-Tr-ey3" firstAttribute="centerX" secondItem="KtO-Go-IAu" secondAttribute="centerX" id="nLu-Tc-YjG"/>
+                <constraint firstAttribute="trailing" secondItem="0SM-QL-JaX" secondAttribute="trailing" constant="10" id="pLb-6b-rY1"/>
+                <constraint firstItem="0SM-QL-JaX" firstAttribute="centerY" secondItem="hU9-uR-aYs" secondAttribute="centerY" id="wHZ-VI-w2O"/>
+                <constraint firstItem="hU9-uR-aYs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="wo9-PU-Sg7"/>
+                <constraint firstItem="sqR-jS-f9N" firstAttribute="centerX" secondItem="cQH-Tr-ey3" secondAttribute="centerX" id="xMf-w9-Ta6"/>
+                <constraint firstItem="cQH-Tr-ey3" firstAttribute="top" secondItem="KtO-Go-IAu" secondAttribute="bottom" constant="20" id="xwo-Jc-83D"/>
+                <constraint firstItem="KtO-Go-IAu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="ybe-Wh-CCk"/>
+            </constraints>
+            <point key="canvasLocation" x="-257" y="-188"/>
+        </view>
+    </objects>
+</document>

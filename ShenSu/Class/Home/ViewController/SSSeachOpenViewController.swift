@@ -15,6 +15,7 @@ class SSSeachOpenViewController: BaseViewController, UITableViewDelegate, UITabl
     var lotteryDic:Dictionary<String,String>!
     var lotteryinfoArray = Array<SSLotteryJSModel>()
     var lotteryTypeArray = Array<SSHomeSSLotteryModel>()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setNavTitle(title: "\(lotteryDic["name"]!)历史开奖")

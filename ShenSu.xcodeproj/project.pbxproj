@@ -76,6 +76,57 @@
 		6D1070011EEE7C6600CE67BF /* NotDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1070001EEE7C6600CE67BF /* NotDataView.swift */; };
 		6D1070031EEE7C8500CE67BF /* NotDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D1070021EEE7C8500CE67BF /* NotDataView.xib */; };
 		6D1E164C1EDEB2A000A45B02 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1E164B1EDEB2A000A45B02 /* BaseView.swift */; };
+		6D3A0B621F14830300434B61 /* FootBallLiveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0B0E1F14830300434B61 /* FootBallLiveController.m */; };
+		6D3A0B631F14830300434B61 /* FootBallLiveController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D3A0B0F1F14830300434B61 /* FootBallLiveController.xib */; };
+		6D3A0B641F14830300434B61 /* LotteryHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0B111F14830300434B61 /* LotteryHomeController.m */; };
+		6D3A0B651F14830300434B61 /* LotteryListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0B131F14830300434B61 /* LotteryListController.m */; };
+		6D3A0B661F14830300434B61 /* LotteryNewHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0B151F14830300434B61 /* LotteryNewHomeController.m */; };
+		6D3A0B671F14830300434B61 /* LotteryResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0B171F14830300434B61 /* LotteryResultController.m */; };
+		6D3A0B681F14830300434B61 /* LotteryResultController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D3A0B181F14830300434B61 /* LotteryResultController.xib */; };
+		6D3A0B691F14830300434B61 /* LotteryZhuDanController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0B1A1F14830300434B61 /* LotteryZhuDanController.m */; };
+		6D3A0B6A1F14830300434B61 /* LotteryZhuDanController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D3A0B1B1F14830300434B61 /* LotteryZhuDanController.xib */; };
+		6D3A0B6B1F14830300434B61 /* NoticeInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0B1D1F14830300434B61 /* NoticeInfoViewController.m */; };
+		6D3A0B6C1F14830300434B61 /* PcAndXJResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0B1F1F14830300434B61 /* PcAndXJResultController.m */; };
+		6D3A0B6D1F14830300434B61 /* PcAndXJResultController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D3A0B201F14830300434B61 /* PcAndXJResultController.xib */; };
+		6D3A0B6E1F14830300434B61 /* FXFootBallLive.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0B231F14830300434B61 /* FXFootBallLive.m */; };
+		6D3A0B6F1F14830300434B61 /* FXLotteryMiddleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0B251F14830300434B61 /* FXLotteryMiddleModel.m */; };
+		6D3A0B701F14830300434B61 /* FXNoticeInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0B271F14830300434B61 /* FXNoticeInfo.m */; };
+		6D3A0B711F14830300434B61 /* Lottery.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0B291F14830300434B61 /* Lottery.m */; };
+		6D3A0B721F14830300434B61 /* LotteryAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0B2B1F14830300434B61 /* LotteryAd.m */; };
+		6D3A0B731F14830300434B61 /* LotteryDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0B2D1F14830300434B61 /* LotteryDetail.m */; };
+		6D3A0B741F14830300434B61 /* LotteryDiFang.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0B2F1F14830300434B61 /* LotteryDiFang.m */; };
+		6D3A0B751F14830300434B61 /* LotteryKind.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0B311F14830300434B61 /* LotteryKind.m */; };
+		6D3A0B761F14830300434B61 /* FootBallLivewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0B341F14830300434B61 /* FootBallLivewCell.m */; };
+		6D3A0B771F14830300434B61 /* FootBallLivewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D3A0B351F14830300434B61 /* FootBallLivewCell.xib */; };
+		6D3A0B781F14830300434B61 /* FXLoopViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0B371F14830300434B61 /* FXLoopViewCell.m */; };
+		6D3A0B791F14830300434B61 /* LotteryGameViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0B391F14830300434B61 /* LotteryGameViewCell.m */; };
+		6D3A0B7A1F14830300434B61 /* LotteryGameViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D3A0B3A1F14830300434B61 /* LotteryGameViewCell.xib */; };
+		6D3A0B7B1F14830300434B61 /* LotteryGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0B3C1F14830300434B61 /* LotteryGridViewCell.m */; };
+		6D3A0B7C1F14830300434B61 /* LotteryGridViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D3A0B3D1F14830300434B61 /* LotteryGridViewCell.xib */; };
+		6D3A0B7D1F14830300434B61 /* LotteryHallHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0B3F1F14830300434B61 /* LotteryHallHeaderView.m */; };
+		6D3A0B7E1F14830300434B61 /* LotteryHallHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D3A0B401F14830300434B61 /* LotteryHallHeaderView.xib */; };
+		6D3A0B7F1F14830300434B61 /* LotteryHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0B421F14830300434B61 /* LotteryHeaderView.m */; };
+		6D3A0B801F14830300434B61 /* LotteryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D3A0B431F14830300434B61 /* LotteryHeaderView.xib */; };
+		6D3A0B811F14830300434B61 /* LotteryHomeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0B451F14830300434B61 /* LotteryHomeViewCell.m */; };
+		6D3A0B821F14830300434B61 /* LotteryHomeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D3A0B461F14830300434B61 /* LotteryHomeViewCell.xib */; };
+		6D3A0B831F14830300434B61 /* LotteryItemViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0B481F14830300434B61 /* LotteryItemViewCell.m */; };
+		6D3A0B841F14830300434B61 /* LotteryItemViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D3A0B491F14830300434B61 /* LotteryItemViewCell.xib */; };
+		6D3A0B851F14830300434B61 /* LotteryOpenInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0B4B1F14830300434B61 /* LotteryOpenInfoCell.m */; };
+		6D3A0B861F14830300434B61 /* LotteryOpenInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D3A0B4C1F14830300434B61 /* LotteryOpenInfoCell.xib */; };
+		6D3A0B871F14830300434B61 /* LotteryResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0B4E1F14830300434B61 /* LotteryResultCell.m */; };
+		6D3A0B881F14830300434B61 /* LotteryResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D3A0B4F1F14830300434B61 /* LotteryResultCell.xib */; };
+		6D3A0B891F14830300434B61 /* LotteryScoreLiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0B511F14830300434B61 /* LotteryScoreLiveCell.m */; };
+		6D3A0B8A1F14830300434B61 /* LotteryScoreLiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D3A0B521F14830300434B61 /* LotteryScoreLiveCell.xib */; };
+		6D3A0B8B1F14830300434B61 /* LotteryToolHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0B541F14830300434B61 /* LotteryToolHeaderCell.m */; };
+		6D3A0B8C1F14830300434B61 /* LotteryToolHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D3A0B551F14830300434B61 /* LotteryToolHeaderCell.xib */; };
+		6D3A0B8D1F14830300434B61 /* LotteryTurntableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0B571F14830300434B61 /* LotteryTurntableCell.m */; };
+		6D3A0B8E1F14830300434B61 /* LotteryTurntableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D3A0B581F14830300434B61 /* LotteryTurntableCell.xib */; };
+		6D3A0B8F1F14830300434B61 /* LotteryViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0B5A1F14830300434B61 /* LotteryViewCell.m */; };
+		6D3A0B901F14830300434B61 /* LotteryViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D3A0B5B1F14830300434B61 /* LotteryViewCell.xib */; };
+		6D3A0B911F14830300434B61 /* LotteryZhuDanCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0B5D1F14830300434B61 /* LotteryZhuDanCell.m */; };
+		6D3A0B921F14830300434B61 /* LotteryZhuDanCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D3A0B5E1F14830300434B61 /* LotteryZhuDanCell.xib */; };
+		6D3A0B931F14830300434B61 /* NoticeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0B601F14830300434B61 /* NoticeViewCell.m */; };
+		6D3A0B941F14830300434B61 /* NoticeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D3A0B611F14830300434B61 /* NoticeViewCell.xib */; };
 		6D4D02A01ECC226000DBAAE5 /* randomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4D029F1ECC226000DBAAE5 /* randomModel.swift */; };
 		6D4D02AB1ECC568400DBAAE5 /* CaipiaoType.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 6D4D02AA1ECC568400DBAAE5 /* CaipiaoType.geojson */; };
 		6D5536571EC1B98400B0E8E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D5536551EC1B98400B0E8E8 /* Main.storyboard */; };
@@ -407,6 +458,89 @@
 		6D1070001EEE7C6600CE67BF /* NotDataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotDataView.swift; sourceTree = "<group>"; };
 		6D1070021EEE7C8500CE67BF /* NotDataView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotDataView.xib; sourceTree = "<group>"; };
 		6D1E164B1EDEB2A000A45B02 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		6D3A0B0D1F14830300434B61 /* FootBallLiveController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FootBallLiveController.h; sourceTree = "<group>"; };
+		6D3A0B0E1F14830300434B61 /* FootBallLiveController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FootBallLiveController.m; sourceTree = "<group>"; };
+		6D3A0B0F1F14830300434B61 /* FootBallLiveController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FootBallLiveController.xib; sourceTree = "<group>"; };
+		6D3A0B101F14830300434B61 /* LotteryHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LotteryHomeController.h; sourceTree = "<group>"; };
+		6D3A0B111F14830300434B61 /* LotteryHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LotteryHomeController.m; sourceTree = "<group>"; };
+		6D3A0B121F14830300434B61 /* LotteryListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LotteryListController.h; sourceTree = "<group>"; };
+		6D3A0B131F14830300434B61 /* LotteryListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LotteryListController.m; sourceTree = "<group>"; };
+		6D3A0B141F14830300434B61 /* LotteryNewHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LotteryNewHomeController.h; sourceTree = "<group>"; };
+		6D3A0B151F14830300434B61 /* LotteryNewHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LotteryNewHomeController.m; sourceTree = "<group>"; };
+		6D3A0B161F14830300434B61 /* LotteryResultController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LotteryResultController.h; sourceTree = "<group>"; };
+		6D3A0B171F14830300434B61 /* LotteryResultController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LotteryResultController.m; sourceTree = "<group>"; };
+		6D3A0B181F14830300434B61 /* LotteryResultController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LotteryResultController.xib; sourceTree = "<group>"; };
+		6D3A0B191F14830300434B61 /* LotteryZhuDanController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LotteryZhuDanController.h; sourceTree = "<group>"; };
+		6D3A0B1A1F14830300434B61 /* LotteryZhuDanController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LotteryZhuDanController.m; sourceTree = "<group>"; };
+		6D3A0B1B1F14830300434B61 /* LotteryZhuDanController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LotteryZhuDanController.xib; sourceTree = "<group>"; };
+		6D3A0B1C1F14830300434B61 /* NoticeInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticeInfoViewController.h; sourceTree = "<group>"; };
+		6D3A0B1D1F14830300434B61 /* NoticeInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoticeInfoViewController.m; sourceTree = "<group>"; };
+		6D3A0B1E1F14830300434B61 /* PcAndXJResultController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PcAndXJResultController.h; sourceTree = "<group>"; };
+		6D3A0B1F1F14830300434B61 /* PcAndXJResultController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PcAndXJResultController.m; sourceTree = "<group>"; };
+		6D3A0B201F14830300434B61 /* PcAndXJResultController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PcAndXJResultController.xib; sourceTree = "<group>"; };
+		6D3A0B221F14830300434B61 /* FXFootBallLive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXFootBallLive.h; sourceTree = "<group>"; };
+		6D3A0B231F14830300434B61 /* FXFootBallLive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXFootBallLive.m; sourceTree = "<group>"; };
+		6D3A0B241F14830300434B61 /* FXLotteryMiddleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXLotteryMiddleModel.h; sourceTree = "<group>"; };
+		6D3A0B251F14830300434B61 /* FXLotteryMiddleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXLotteryMiddleModel.m; sourceTree = "<group>"; };
+		6D3A0B261F14830300434B61 /* FXNoticeInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXNoticeInfo.h; sourceTree = "<group>"; };
+		6D3A0B271F14830300434B61 /* FXNoticeInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXNoticeInfo.m; sourceTree = "<group>"; };
+		6D3A0B281F14830300434B61 /* Lottery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lottery.h; sourceTree = "<group>"; };
+		6D3A0B291F14830300434B61 /* Lottery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lottery.m; sourceTree = "<group>"; };
+		6D3A0B2A1F14830300434B61 /* LotteryAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LotteryAd.h; sourceTree = "<group>"; };
+		6D3A0B2B1F14830300434B61 /* LotteryAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LotteryAd.m; sourceTree = "<group>"; };
+		6D3A0B2C1F14830300434B61 /* LotteryDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LotteryDetail.h; sourceTree = "<group>"; };
+		6D3A0B2D1F14830300434B61 /* LotteryDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LotteryDetail.m; sourceTree = "<group>"; };
+		6D3A0B2E1F14830300434B61 /* LotteryDiFang.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LotteryDiFang.h; sourceTree = "<group>"; };
+		6D3A0B2F1F14830300434B61 /* LotteryDiFang.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LotteryDiFang.m; sourceTree = "<group>"; };
+		6D3A0B301F14830300434B61 /* LotteryKind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LotteryKind.h; sourceTree = "<group>"; };
+		6D3A0B311F14830300434B61 /* LotteryKind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LotteryKind.m; sourceTree = "<group>"; };
+		6D3A0B331F14830300434B61 /* FootBallLivewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FootBallLivewCell.h; sourceTree = "<group>"; };
+		6D3A0B341F14830300434B61 /* FootBallLivewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FootBallLivewCell.m; sourceTree = "<group>"; };
+		6D3A0B351F14830300434B61 /* FootBallLivewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FootBallLivewCell.xib; sourceTree = "<group>"; };
+		6D3A0B361F14830300434B61 /* FXLoopViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXLoopViewCell.h; sourceTree = "<group>"; };
+		6D3A0B371F14830300434B61 /* FXLoopViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXLoopViewCell.m; sourceTree = "<group>"; };
+		6D3A0B381F14830300434B61 /* LotteryGameViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LotteryGameViewCell.h; sourceTree = "<group>"; };
+		6D3A0B391F14830300434B61 /* LotteryGameViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LotteryGameViewCell.m; sourceTree = "<group>"; };
+		6D3A0B3A1F14830300434B61 /* LotteryGameViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LotteryGameViewCell.xib; sourceTree = "<group>"; };
+		6D3A0B3B1F14830300434B61 /* LotteryGridViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LotteryGridViewCell.h; sourceTree = "<group>"; };
+		6D3A0B3C1F14830300434B61 /* LotteryGridViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LotteryGridViewCell.m; sourceTree = "<group>"; };
+		6D3A0B3D1F14830300434B61 /* LotteryGridViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LotteryGridViewCell.xib; sourceTree = "<group>"; };
+		6D3A0B3E1F14830300434B61 /* LotteryHallHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LotteryHallHeaderView.h; sourceTree = "<group>"; };
+		6D3A0B3F1F14830300434B61 /* LotteryHallHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LotteryHallHeaderView.m; sourceTree = "<group>"; };
+		6D3A0B401F14830300434B61 /* LotteryHallHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LotteryHallHeaderView.xib; sourceTree = "<group>"; };
+		6D3A0B411F14830300434B61 /* LotteryHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LotteryHeaderView.h; sourceTree = "<group>"; };
+		6D3A0B421F14830300434B61 /* LotteryHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LotteryHeaderView.m; sourceTree = "<group>"; };
+		6D3A0B431F14830300434B61 /* LotteryHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LotteryHeaderView.xib; sourceTree = "<group>"; };
+		6D3A0B441F14830300434B61 /* LotteryHomeViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LotteryHomeViewCell.h; sourceTree = "<group>"; };
+		6D3A0B451F14830300434B61 /* LotteryHomeViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LotteryHomeViewCell.m; sourceTree = "<group>"; };
+		6D3A0B461F14830300434B61 /* LotteryHomeViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LotteryHomeViewCell.xib; sourceTree = "<group>"; };
+		6D3A0B471F14830300434B61 /* LotteryItemViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LotteryItemViewCell.h; sourceTree = "<group>"; };
+		6D3A0B481F14830300434B61 /* LotteryItemViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LotteryItemViewCell.m; sourceTree = "<group>"; };
+		6D3A0B491F14830300434B61 /* LotteryItemViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LotteryItemViewCell.xib; sourceTree = "<group>"; };
+		6D3A0B4A1F14830300434B61 /* LotteryOpenInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LotteryOpenInfoCell.h; sourceTree = "<group>"; };
+		6D3A0B4B1F14830300434B61 /* LotteryOpenInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LotteryOpenInfoCell.m; sourceTree = "<group>"; };
+		6D3A0B4C1F14830300434B61 /* LotteryOpenInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LotteryOpenInfoCell.xib; sourceTree = "<group>"; };
+		6D3A0B4D1F14830300434B61 /* LotteryResultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LotteryResultCell.h; sourceTree = "<group>"; };
+		6D3A0B4E1F14830300434B61 /* LotteryResultCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LotteryResultCell.m; sourceTree = "<group>"; };
+		6D3A0B4F1F14830300434B61 /* LotteryResultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LotteryResultCell.xib; sourceTree = "<group>"; };
+		6D3A0B501F14830300434B61 /* LotteryScoreLiveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LotteryScoreLiveCell.h; sourceTree = "<group>"; };
+		6D3A0B511F14830300434B61 /* LotteryScoreLiveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LotteryScoreLiveCell.m; sourceTree = "<group>"; };
+		6D3A0B521F14830300434B61 /* LotteryScoreLiveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LotteryScoreLiveCell.xib; sourceTree = "<group>"; };
+		6D3A0B531F14830300434B61 /* LotteryToolHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LotteryToolHeaderCell.h; sourceTree = "<group>"; };
+		6D3A0B541F14830300434B61 /* LotteryToolHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LotteryToolHeaderCell.m; sourceTree = "<group>"; };
+		6D3A0B551F14830300434B61 /* LotteryToolHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LotteryToolHeaderCell.xib; sourceTree = "<group>"; };
+		6D3A0B561F14830300434B61 /* LotteryTurntableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LotteryTurntableCell.h; sourceTree = "<group>"; };
+		6D3A0B571F14830300434B61 /* LotteryTurntableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LotteryTurntableCell.m; sourceTree = "<group>"; };
+		6D3A0B581F14830300434B61 /* LotteryTurntableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LotteryTurntableCell.xib; sourceTree = "<group>"; };
+		6D3A0B591F14830300434B61 /* LotteryViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LotteryViewCell.h; sourceTree = "<group>"; };
+		6D3A0B5A1F14830300434B61 /* LotteryViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LotteryViewCell.m; sourceTree = "<group>"; };
+		6D3A0B5B1F14830300434B61 /* LotteryViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LotteryViewCell.xib; sourceTree = "<group>"; };
+		6D3A0B5C1F14830300434B61 /* LotteryZhuDanCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LotteryZhuDanCell.h; sourceTree = "<group>"; };
+		6D3A0B5D1F14830300434B61 /* LotteryZhuDanCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LotteryZhuDanCell.m; sourceTree = "<group>"; };
+		6D3A0B5E1F14830300434B61 /* LotteryZhuDanCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LotteryZhuDanCell.xib; sourceTree = "<group>"; };
+		6D3A0B5F1F14830300434B61 /* NoticeViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticeViewCell.h; sourceTree = "<group>"; };
+		6D3A0B601F14830300434B61 /* NoticeViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoticeViewCell.m; sourceTree = "<group>"; };
+		6D3A0B611F14830300434B61 /* NoticeViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoticeViewCell.xib; sourceTree = "<group>"; };
 		6D4D029F1ECC226000DBAAE5 /* randomModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = randomModel.swift; sourceTree = "<group>"; };
 		6D4D02AA1ECC568400DBAAE5 /* CaipiaoType.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CaipiaoType.geojson; sourceTree = "<group>"; };
 		6D55364E1EC1B98400B0E8E8 /* ShenSu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShenSu.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -905,6 +1039,120 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		6D3A0B0B1F14830300434B61 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6D3A0B0C1F14830300434B61 /* Controller */,
+				6D3A0B211F14830300434B61 /* Model */,
+				6D3A0B321F14830300434B61 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		6D3A0B0C1F14830300434B61 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D3A0B0D1F14830300434B61 /* FootBallLiveController.h */,
+				6D3A0B0E1F14830300434B61 /* FootBallLiveController.m */,
+				6D3A0B0F1F14830300434B61 /* FootBallLiveController.xib */,
+				6D3A0B101F14830300434B61 /* LotteryHomeController.h */,
+				6D3A0B111F14830300434B61 /* LotteryHomeController.m */,
+				6D3A0B121F14830300434B61 /* LotteryListController.h */,
+				6D3A0B131F14830300434B61 /* LotteryListController.m */,
+				6D3A0B141F14830300434B61 /* LotteryNewHomeController.h */,
+				6D3A0B151F14830300434B61 /* LotteryNewHomeController.m */,
+				6D3A0B161F14830300434B61 /* LotteryResultController.h */,
+				6D3A0B171F14830300434B61 /* LotteryResultController.m */,
+				6D3A0B181F14830300434B61 /* LotteryResultController.xib */,
+				6D3A0B191F14830300434B61 /* LotteryZhuDanController.h */,
+				6D3A0B1A1F14830300434B61 /* LotteryZhuDanController.m */,
+				6D3A0B1B1F14830300434B61 /* LotteryZhuDanController.xib */,
+				6D3A0B1C1F14830300434B61 /* NoticeInfoViewController.h */,
+				6D3A0B1D1F14830300434B61 /* NoticeInfoViewController.m */,
+				6D3A0B1E1F14830300434B61 /* PcAndXJResultController.h */,
+				6D3A0B1F1F14830300434B61 /* PcAndXJResultController.m */,
+				6D3A0B201F14830300434B61 /* PcAndXJResultController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6D3A0B211F14830300434B61 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6D3A0B221F14830300434B61 /* FXFootBallLive.h */,
+				6D3A0B231F14830300434B61 /* FXFootBallLive.m */,
+				6D3A0B241F14830300434B61 /* FXLotteryMiddleModel.h */,
+				6D3A0B251F14830300434B61 /* FXLotteryMiddleModel.m */,
+				6D3A0B261F14830300434B61 /* FXNoticeInfo.h */,
+				6D3A0B271F14830300434B61 /* FXNoticeInfo.m */,
+				6D3A0B281F14830300434B61 /* Lottery.h */,
+				6D3A0B291F14830300434B61 /* Lottery.m */,
+				6D3A0B2A1F14830300434B61 /* LotteryAd.h */,
+				6D3A0B2B1F14830300434B61 /* LotteryAd.m */,
+				6D3A0B2C1F14830300434B61 /* LotteryDetail.h */,
+				6D3A0B2D1F14830300434B61 /* LotteryDetail.m */,
+				6D3A0B2E1F14830300434B61 /* LotteryDiFang.h */,
+				6D3A0B2F1F14830300434B61 /* LotteryDiFang.m */,
+				6D3A0B301F14830300434B61 /* LotteryKind.h */,
+				6D3A0B311F14830300434B61 /* LotteryKind.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6D3A0B321F14830300434B61 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6D3A0B331F14830300434B61 /* FootBallLivewCell.h */,
+				6D3A0B341F14830300434B61 /* FootBallLivewCell.m */,
+				6D3A0B351F14830300434B61 /* FootBallLivewCell.xib */,
+				6D3A0B361F14830300434B61 /* FXLoopViewCell.h */,
+				6D3A0B371F14830300434B61 /* FXLoopViewCell.m */,
+				6D3A0B381F14830300434B61 /* LotteryGameViewCell.h */,
+				6D3A0B391F14830300434B61 /* LotteryGameViewCell.m */,
+				6D3A0B3A1F14830300434B61 /* LotteryGameViewCell.xib */,
+				6D3A0B3B1F14830300434B61 /* LotteryGridViewCell.h */,
+				6D3A0B3C1F14830300434B61 /* LotteryGridViewCell.m */,
+				6D3A0B3D1F14830300434B61 /* LotteryGridViewCell.xib */,
+				6D3A0B3E1F14830300434B61 /* LotteryHallHeaderView.h */,
+				6D3A0B3F1F14830300434B61 /* LotteryHallHeaderView.m */,
+				6D3A0B401F14830300434B61 /* LotteryHallHeaderView.xib */,
+				6D3A0B411F14830300434B61 /* LotteryHeaderView.h */,
+				6D3A0B421F14830300434B61 /* LotteryHeaderView.m */,
+				6D3A0B431F14830300434B61 /* LotteryHeaderView.xib */,
+				6D3A0B441F14830300434B61 /* LotteryHomeViewCell.h */,
+				6D3A0B451F14830300434B61 /* LotteryHomeViewCell.m */,
+				6D3A0B461F14830300434B61 /* LotteryHomeViewCell.xib */,
+				6D3A0B471F14830300434B61 /* LotteryItemViewCell.h */,
+				6D3A0B481F14830300434B61 /* LotteryItemViewCell.m */,
+				6D3A0B491F14830300434B61 /* LotteryItemViewCell.xib */,
+				6D3A0B4A1F14830300434B61 /* LotteryOpenInfoCell.h */,
+				6D3A0B4B1F14830300434B61 /* LotteryOpenInfoCell.m */,
+				6D3A0B4C1F14830300434B61 /* LotteryOpenInfoCell.xib */,
+				6D3A0B4D1F14830300434B61 /* LotteryResultCell.h */,
+				6D3A0B4E1F14830300434B61 /* LotteryResultCell.m */,
+				6D3A0B4F1F14830300434B61 /* LotteryResultCell.xib */,
+				6D3A0B501F14830300434B61 /* LotteryScoreLiveCell.h */,
+				6D3A0B511F14830300434B61 /* LotteryScoreLiveCell.m */,
+				6D3A0B521F14830300434B61 /* LotteryScoreLiveCell.xib */,
+				6D3A0B531F14830300434B61 /* LotteryToolHeaderCell.h */,
+				6D3A0B541F14830300434B61 /* LotteryToolHeaderCell.m */,
+				6D3A0B551F14830300434B61 /* LotteryToolHeaderCell.xib */,
+				6D3A0B561F14830300434B61 /* LotteryTurntableCell.h */,
+				6D3A0B571F14830300434B61 /* LotteryTurntableCell.m */,
+				6D3A0B581F14830300434B61 /* LotteryTurntableCell.xib */,
+				6D3A0B591F14830300434B61 /* LotteryViewCell.h */,
+				6D3A0B5A1F14830300434B61 /* LotteryViewCell.m */,
+				6D3A0B5B1F14830300434B61 /* LotteryViewCell.xib */,
+				6D3A0B5C1F14830300434B61 /* LotteryZhuDanCell.h */,
+				6D3A0B5D1F14830300434B61 /* LotteryZhuDanCell.m */,
+				6D3A0B5E1F14830300434B61 /* LotteryZhuDanCell.xib */,
+				6D3A0B5F1F14830300434B61 /* NoticeViewCell.h */,
+				6D3A0B601F14830300434B61 /* NoticeViewCell.m */,
+				6D3A0B611F14830300434B61 /* NoticeViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		6D4D02A91ECC567E00DBAAE5 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -1123,6 +1371,7 @@
 		6DF35F3E1ED8420B00B87559 /* OC */ = {
 			isa = PBXGroup;
 			children = (
+				6D3A0B0B1F14830300434B61 /* Home */,
 				6D0248601EF8BF29005E5748 /* WJSegment */,
 				6DAAA1751EE685320017C427 /* Jpush */,
 				6DAAA16D1EE67FE30017C427 /* UMessage_Sdk_1.5.0a */,
@@ -1576,7 +1825,7 @@
 				TargetAttributes = {
 					6D55364D1EC1B98400B0E8E8 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = JLSUU6W9N4;
+						DevelopmentTeam = MKU6PEAV7P;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
@@ -1635,39 +1884,58 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D3A0B901F14830300434B61 /* LotteryViewCell.xib in Resources */,
 				6DCEC0771F13662100EAF4BE /* SSBuyListTableViewCell.xib in Resources */,
+				6D3A0B841F14830300434B61 /* LotteryItemViewCell.xib in Resources */,
+				6D3A0B681F14830300434B61 /* LotteryResultController.xib in Resources */,
 				6DCEC0691F13660B00EAF4BE /* SSTjCollectionViewCell.xib in Resources */,
+				6D3A0B8C1F14830300434B61 /* LotteryToolHeaderCell.xib in Resources */,
 				6DCEC0C61F1366CE00EAF4BE /* SSUserBuyListTableViewCell.xib in Resources */,
 				6DCEC0C41F1366CE00EAF4BE /* SSSetupTableViewCell.xib in Resources */,
 				6DCEC0EC1F13674600EAF4BE /* CpTableViewCell.xib in Resources */,
 				6DCEC0A41F13667200EAF4BE /* SSLotteryTableViewCell.xib in Resources */,
 				6DCEC07D1F13662100EAF4BE /* SSBuyViewTableViewCell.xib in Resources */,
 				6DCEC0641F13660B00EAF4BE /* SSHomeCollectionViewCell.xib in Resources */,
+				6D3A0B921F14830300434B61 /* LotteryZhuDanCell.xib in Resources */,
+				6D3A0B7A1F14830300434B61 /* LotteryGameViewCell.xib in Resources */,
 				6DCEC0CE1F1366E700EAF4BE /* SSNewsDetaViewController.xib in Resources */,
 				6DCEC0E01F13671C00EAF4BE /* SSNaddTableViewCell.xib in Resources */,
+				6D3A0B8A1F14830300434B61 /* LotteryScoreLiveCell.xib in Resources */,
+				6D3A0B631F14830300434B61 /* FootBallLiveController.xib in Resources */,
 				6DCEC09D1F13667200EAF4BE /* SSLotteryDetaHeaderView.xib in Resources */,
 				6D8C74431EFA80B100DD8815 /* ZZYQRCode.bundle in Resources */,
 				6DCEC0541F1365E000EAF4BE /* SSLotteryRuleViewController.xib in Resources */,
 				6DCEC0EB1F13674600EAF4BE /* ChoossFinishViewController.xib in Resources */,
+				6D3A0B861F14830300434B61 /* LotteryOpenInfoCell.xib in Resources */,
 				6D5536591EC1B98400B0E8E8 /* Assets.xcassets in Resources */,
 				6DCEC0A11F13667200EAF4BE /* SSLotteryDetaTypeTableViewCell.xib in Resources */,
 				6DAAA1801EE6B12C0017C427 /* LaunchScreen.storyboard in Resources */,
 				6DCEC0E21F13671C00EAF4BE /* SSNaddZJTableViewCell.xib in Resources */,
+				6D3A0B821F14830300434B61 /* LotteryHomeViewCell.xib in Resources */,
+				6D3A0B771F14830300434B61 /* FootBallLivewCell.xib in Resources */,
+				6D3A0B8E1F14830300434B61 /* LotteryTurntableCell.xib in Resources */,
 				6DEAF92E1F0E277400680F41 /* NaddNews.geojson in Resources */,
 				6D04C2C51EE13BD90026842E /* UserInfo.geojson in Resources */,
 				6DCEC09F1F13667200EAF4BE /* SSLotteryDetaTableViewCell.xib in Resources */,
 				6DF6E7DD1ECACFC8003F2D2F /* LLCycleScrollView.bundle in Resources */,
 				6DCEC0C21F1366CE00EAF4BE /* SSMycenterCollectionViewCell.xib in Resources */,
+				6D3A0B881F14830300434B61 /* LotteryResultCell.xib in Resources */,
 				6DCEC0B11F1366BC00EAF4BE /* SSAboutUsViewController.xib in Resources */,
+				6D3A0B7E1F14830300434B61 /* LotteryHallHeaderView.xib in Resources */,
+				6D3A0B7C1F14830300434B61 /* LotteryGridViewCell.xib in Resources */,
+				6D3A0B6D1F14830300434B61 /* PcAndXJResultController.xib in Resources */,
 				6D04C28D1EE108050026842E /* AMap.bundle in Resources */,
 				6DCEC0611F13660B00EAF4BE /* SSChooseView.xib in Resources */,
 				6D1070031EEE7C8500CE67BF /* NotDataView.xib in Resources */,
+				6D3A0B6A1F14830300434B61 /* LotteryZhuDanController.xib in Resources */,
 				6DCEC0B81F1366BC00EAF4BE /* SSUserRuleViewController.xib in Resources */,
 				6DCEC0C81F1366CE00EAF4BE /* SSUserHeaderCollectionReusableView.xib in Resources */,
 				6D4D02AB1ECC568400DBAAE5 /* CaipiaoType.geojson in Resources */,
 				6D5536571EC1B98400B0E8E8 /* Main.storyboard in Resources */,
+				6D3A0B941F14830300434B61 /* NoticeViewCell.xib in Resources */,
 				6D01ACC61F0B74B5005DD0C7 /* LotteryInfo.geojson in Resources */,
 				6DCEC0D61F13670F00EAF4BE /* SSNewsTableViewCell.xib in Resources */,
+				6D3A0B801F14830300434B61 /* LotteryHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1730,31 +1998,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D3A0B721F14830300434B61 /* LotteryAd.m in Sources */,
 				6DCEC0621F13660B00EAF4BE /* SSHomecellHeadCollectionReusableView.swift in Sources */,
 				6DCEC0D01F1366E700EAF4BE /* SSSliderNewsViewController.swift in Sources */,
 				6D04C2B61EE116760026842E /* ChoossFinishViewController.m in Sources */,
+				6D3A0B6F1F14830300434B61 /* FXLotteryMiddleModel.m in Sources */,
 				6D04C3181EE13ED10026842E /* MASViewConstraint.m in Sources */,
 				6D04C26E1EE106EC0026842E /* CpDetaMapViewController.m in Sources */,
 				6D04C3131EE13ED10026842E /* MASCompositeConstraint.m in Sources */,
 				6DCEC0601F13660B00EAF4BE /* SSChooseView.swift in Sources */,
 				6DCEC0B51F1366BC00EAF4BE /* SSSetupViewController.swift in Sources */,
+				6D3A0B621F14830300434B61 /* FootBallLiveController.m in Sources */,
 				6DF35F561ED920E200B87559 /* ObjectNet.swift in Sources */,
 				6DCEC0511F1365E000EAF4BE /* SSBuyListViewController.swift in Sources */,
 				6DCEC07B1F13662100EAF4BE /* SSBuyViewHeaderView.swift in Sources */,
+				6D3A0B7D1F14830300434B61 /* LotteryHallHeaderView.m in Sources */,
+				6D3A0B761F14830300434B61 /* FootBallLivewCell.m in Sources */,
+				6D3A0B891F14830300434B61 /* LotteryScoreLiveCell.m in Sources */,
 				6D045E2C1F0BA004007775DD /* LQKGeneralWebViewController.m in Sources */,
+				6D3A0B651F14830300434B61 /* LotteryListController.m in Sources */,
 				6D045E2D1F0BA004007775DD /* TOWebViewController.m in Sources */,
 				6DCEC07A1F13662100EAF4BE /* SSBuyLottreyCollectionViewCell.swift in Sources */,
 				6D0BF94E1EC30F2C00E68B4F /* UIScreenExtensions.swift in Sources */,
 				6DF6E7E91ECACFF2003F2D2F /* LLSnakePageControl.swift in Sources */,
 				6D0BF9511EC30F2C00E68B4F /* BaseViewController.swift in Sources */,
+				6D3A0B711F14830300434B61 /* Lottery.m in Sources */,
 				6DAAA16C1EE65E6A0017C427 /* WebViewXib.m in Sources */,
 				6D0BF9531EC30F2C00E68B4F /* TableViewBaseCell.swift in Sources */,
 				6D0BF94B1EC30F2C00E68B4F /* FoundationExtensions.swift in Sources */,
+				6D3A0B6B1F14830300434B61 /* NoticeInfoViewController.m in Sources */,
 				6DCEC0A31F13667200EAF4BE /* SSLotteryTableViewCell.swift in Sources */,
 				6D04C26F1EE106EC0026842E /* CpMapViewController.m in Sources */,
 				6D4D02A01ECC226000DBAAE5 /* randomModel.swift in Sources */,
 				6DCEC0C31F1366CE00EAF4BE /* SSSetupTableViewCell.swift in Sources */,
+				6D3A0B6C1F14830300434B61 /* PcAndXJResultController.m in Sources */,
+				6D3A0B641F14830300434B61 /* LotteryHomeController.m in Sources */,
 				6DCEC0901F13665700EAF4BE /* SSLotteryDetaViewController.swift in Sources */,
+				6D3A0B831F14830300434B61 /* LotteryItemViewCell.m in Sources */,
 				6DAAA1831EE79E930017C427 /* ViewController.swift in Sources */,
 				6D04C2C21EE13BB50026842E /* MyProfileModel.m in Sources */,
 				6DF35F091ED7D3FD00B87559 /* AppUserData.swift in Sources */,
@@ -1763,6 +2043,7 @@
 				6DCEC0521F1365E000EAF4BE /* SSBuyLottreyViewController.swift in Sources */,
 				6DCEC08A1F13663700EAF4BE /* SSNewLotteryModel.swift in Sources */,
 				6DCEC0681F13660B00EAF4BE /* SSTjCollectionViewCell.swift in Sources */,
+				6D3A0B751F14830300434B61 /* LotteryKind.m in Sources */,
 				6DCEC0DD1F13671C00EAF4BE /* SSNaddHeadView.swift in Sources */,
 				6DCEC0911F13665700EAF4BE /* SSLotterypushTableViewController.swift in Sources */,
 				6DCEC04B1F1365CD00EAF4BE /* SSSeachViewController.swift in Sources */,
@@ -1771,22 +2052,29 @@
 				6D0BF9551EC30F2C00E68B4F /* TimeIntervalTransform.swift in Sources */,
 				6D0BF94C1EC30F2C00E68B4F /* UIColorExtensions.swift in Sources */,
 				6DF35EC61ED41C1000B87559 /* MainTBViewController.swift in Sources */,
+				6D3A0B671F14830300434B61 /* LotteryResultController.m in Sources */,
 				6D04C3171EE13ED10026842E /* MASViewAttribute.m in Sources */,
 				6DCEC04A1F1365CD00EAF4BE /* SSSeachOpenViewController.swift in Sources */,
+				6D3A0B8D1F14830300434B61 /* LotteryTurntableCell.m in Sources */,
 				6DCEC04C1F1365CD00EAF4BE /* SSZstViewController.swift in Sources */,
 				6DCEC0671F13660B00EAF4BE /* SSNumberView.swift in Sources */,
 				6DCEC0751F13662100EAF4BE /* SSBuyListFootView.swift in Sources */,
+				6D3A0B7B1F14830300434B61 /* LotteryGridViewCell.m in Sources */,
+				6D3A0B701F14830300434B61 /* FXNoticeInfo.m in Sources */,
 				6D0248631EF8BF29005E5748 /* WJItemsControlView.m in Sources */,
 				6DCEC0471F1365CD00EAF4BE /* SSHomeWebViewController.swift in Sources */,
 				6DCEC0E81F13672C00EAF4BE /* SSNewsModel.swift in Sources */,
 				6D0BF9521EC30F2C00E68B4F /* TableViewController.swift in Sources */,
+				6D3A0B731F14830300434B61 /* LotteryDetail.m in Sources */,
 				6DCEC0851F13663700EAF4BE /* SSBannarModel.swift in Sources */,
 				6D04C3151EE13ED10026842E /* MASConstraintMaker.m in Sources */,
 				6DCEC0491F1365CD00EAF4BE /* SSScanViewController.swift in Sources */,
 				6DF6E7E61ECACFF2003F2D2F /* LLCycleScrollViewCell.swift in Sources */,
 				6D0BF9501EC30F2C00E68B4F /* NavViewController.swift in Sources */,
+				6D3A0B781F14830300434B61 /* FXLoopViewCell.m in Sources */,
 				6D08EAF21EE547B300AD9965 /* NumberTransform.swift in Sources */,
 				6DCEC0531F1365E000EAF4BE /* SSLotteryRuleViewController.swift in Sources */,
+				6D3A0B931F14830300434B61 /* NoticeViewCell.m in Sources */,
 				6D0BF93E1EC3022C00E68B4F /* URLRouter.swift in Sources */,
 				6D04C3191EE13ED10026842E /* NSArray+MASAdditions.m in Sources */,
 				6D04C31B1EE13ED10026842E /* View+MASAdditions.m in Sources */,
@@ -1798,11 +2086,16 @@
 				6D04C2C11EE13BB50026842E /* MyProfileViewController.m in Sources */,
 				6DCEC0631F13660B00EAF4BE /* SSHomeCollectionViewCell.swift in Sources */,
 				6DF6E7E81ECACFF2003F2D2F /* LLPillPageControl.swift in Sources */,
+				6D3A0B871F14830300434B61 /* LotteryResultCell.m in Sources */,
 				6DCEC0921F13665700EAF4BE /* SSLotteryViewController.swift in Sources */,
 				6DAAA1691EE65E500017C427 /* WKWebViewController.m in Sources */,
 				6DF6E7E71ECACFF2003F2D2F /* LLFilledPageControl.swift in Sources */,
+				6D3A0B7F1F14830300434B61 /* LotteryHeaderView.m in Sources */,
+				6D3A0B741F14830300434B61 /* LotteryDiFang.m in Sources */,
 				6DCEC0C71F1366CE00EAF4BE /* SSUserHeaderCollectionReusableView.swift in Sources */,
 				6DCEC0B61F1366BC00EAF4BE /* SSUserBuyListViewController.swift in Sources */,
+				6D3A0B791F14830300434B61 /* LotteryGameViewCell.m in Sources */,
+				6D3A0B691F14830300434B61 /* LotteryZhuDanController.m in Sources */,
 				6DAAA17E1EE68D550017C427 /* AppNeedKey.swift in Sources */,
 				6D04C3141EE13ED10026842E /* MASConstraint.m in Sources */,
 				6DCEC0A01F13667200EAF4BE /* SSLotteryDetaTypeTableViewCell.swift in Sources */,
@@ -1816,10 +2109,13 @@
 				6DCEC0E71F13672C00EAF4BE /* SSNewsDataModel.swift in Sources */,
 				6D8C74411EFA80B100DD8815 /* AVCaptureSessionManager.swift in Sources */,
 				6DCEC0B21F1366BC00EAF4BE /* SSLoginViewController.swift in Sources */,
+				6D3A0B661F14830300434B61 /* LotteryNewHomeController.m in Sources */,
 				6DCEC08F1F13665700EAF4BE /* SSLotteryDetaTypeViewController.swift in Sources */,
 				6DCEC0B31F1366BC00EAF4BE /* SSMyViewController.swift in Sources */,
 				6D04C31C1EE13ED10026842E /* ViewController+MASAdditions.m in Sources */,
 				6D8C74421EFA80B100DD8815 /* UIImage+ZZYQRCodeImage.swift in Sources */,
+				6D3A0B911F14830300434B61 /* LotteryZhuDanCell.m in Sources */,
+				6D3A0B8F1F14830300434B61 /* LotteryViewCell.m in Sources */,
 				6D04C31A1EE13ED10026842E /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				6DCEC0891F13663700EAF4BE /* SSLotteryModel.swift in Sources */,
 				6DCEC09C1F13667200EAF4BE /* SSLotteryDetaHeaderView.swift in Sources */,
@@ -1832,8 +2128,11 @@
 				6D04C3161EE13ED10026842E /* MASLayoutConstraint.m in Sources */,
 				6DCEC0791F13662100EAF4BE /* SSBuyLotteryHeardCollectionReusableView.swift in Sources */,
 				6DCEC0B71F1366BC00EAF4BE /* SSUserRuleViewController.swift in Sources */,
+				6D3A0B811F14830300434B61 /* LotteryHomeViewCell.m in Sources */,
 				6D0BF93C1EC1CBF300E68B4F /* NetWorkManager.swift in Sources */,
+				6D3A0B8B1F14830300434B61 /* LotteryToolHeaderCell.m in Sources */,
 				6DCEC0DE1F13671C00EAF4BE /* SSNaddSectionHeadView.swift in Sources */,
+				6D3A0B851F14830300434B61 /* LotteryOpenInfoCell.m in Sources */,
 				6DCEC0D51F13670F00EAF4BE /* SSNewsTableViewCell.swift in Sources */,
 				6DCEC0B01F1366BC00EAF4BE /* SSAboutUsViewController.swift in Sources */,
 				6DCEC07E1F13662100EAF4BE /* SSLotteryDetaView.swift in Sources */,
@@ -1842,6 +2141,7 @@
 				6DCEC0E61F13672C00EAF4BE /* SSNaddModel.swift in Sources */,
 				6DCEC0B41F1366BC00EAF4BE /* SSRegisterViewController.swift in Sources */,
 				6DCEC0D21F1366F500EAF4BE /* SSNaddViewController.swift in Sources */,
+				6D3A0B6E1F14830300434B61 /* FXFootBallLive.m in Sources */,
 				6DCEC0A21F13667200EAF4BE /* SSLotteryNumberView.swift in Sources */,
 				6DCEC0881F13663700EAF4BE /* SSLotteryListModel.swift in Sources */,
 				6DCEC0C51F1366CE00EAF4BE /* SSUserBuyListTableViewCell.swift in Sources */,
@@ -2048,9 +2348,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ShenSu/ShenSu.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Yanmu Gu (JLSUU6W9N4)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yanmu Gu (JLSUU6W9N4)";
-				DEVELOPMENT_TEAM = JLSUU6W9N4;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Hao Chen (MKU6PEAV7P)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hao Chen (MKU6PEAV7P)";
+				DEVELOPMENT_TEAM = MKU6PEAV7P;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2065,10 +2365,10 @@
 					"$(PROJECT_DIR)/ShenSu/Class/OC/UMessage_Sdk_1.5.0a",
 					"$(PROJECT_DIR)/ShenSu/Class/OC/Jpush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hx500wcp.500wcp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wcpcpcp.cp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4f0fe473-8333-4057-9b6f-2450b38099be";
-				PROVISIONING_PROFILE_SPECIFIER = hx500wcp;
+				PROVISIONING_PROFILE = "22b08b0e-ab1d-402d-ad6e-e2d5e20a126f";
+				PROVISIONING_PROFILE_SPECIFIER = 500wcpcpcp;
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shensu/Desktop/ShenSu/ShenSu/Class/OC/Shensu-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Shensu-swift.h";
 				SWIFT_VERSION = 3.0;
@@ -2081,9 +2381,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ShenSu/ShenSu.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Yanmu Gu (JLSUU6W9N4)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yanmu Gu (JLSUU6W9N4)";
-				DEVELOPMENT_TEAM = JLSUU6W9N4;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Hao Chen (MKU6PEAV7P)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hao Chen (MKU6PEAV7P)";
+				DEVELOPMENT_TEAM = MKU6PEAV7P;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2098,10 +2398,10 @@
 					"$(PROJECT_DIR)/ShenSu/Class/OC/UMessage_Sdk_1.5.0a",
 					"$(PROJECT_DIR)/ShenSu/Class/OC/Jpush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hx500wcp.500wcp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wcpcpcp.cp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4f0fe473-8333-4057-9b6f-2450b38099be";
-				PROVISIONING_PROFILE_SPECIFIER = hx500wcp;
+				PROVISIONING_PROFILE = "22b08b0e-ab1d-402d-ad6e-e2d5e20a126f";
+				PROVISIONING_PROFILE_SPECIFIER = 500wcpcpcp;
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shensu/Desktop/ShenSu/ShenSu/Class/OC/Shensu-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Shensu-swift.h";
 				SWIFT_VERSION = 3.0;

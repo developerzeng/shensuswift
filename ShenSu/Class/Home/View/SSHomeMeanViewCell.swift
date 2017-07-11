@@ -34,7 +34,7 @@ class SSHomeMeanViewCell: UICollectionViewCell {
         smBtn.addTarget(self, action: #selector(cpShopClick), for: .touchUpInside)
         self.contentView.addSubview(smBtn)
         zxBtn = UIButton(type: .custom)
-        zxBtn.setTitle("走势", for: .normal)
+        zxBtn.setTitle("资讯", for: .normal)
         zxBtn.tag = 1003
         zxBtn.titleLabel?.font = UIFont.systemFont(ofSize: 14)
         zxBtn.setImage(UIImage.init(named: "资讯"), for: .normal)
@@ -64,6 +64,7 @@ class SSHomeMeanViewCell: UICollectionViewCell {
         smBtn.translatesAutoresizingMaskIntoConstraints = false
         zxBtn.translatesAutoresizingMaskIntoConstraints = false
         zstBtn.translatesAutoresizingMaskIntoConstraints = false
+
         let constraint = NSLayoutConstraint.constraints(withVisualFormat: "H:|[view1(==view2)][view2(==view3)][view3(==view1)][view4(==view3)]|", options: [], metrics: nil, views: ["view1":cpShop,"view2":smBtn,"view3":zxBtn , "view4":zstBtn]) + NSLayoutConstraint.constraints(withVisualFormat: "V:|[view1(==view2)]|", options: [], metrics: nil, views: ["view1":cpShop,"view2":self]) + NSLayoutConstraint.constraints(withVisualFormat: "V:|[view2(==view3)]|", options: [], metrics: nil, views: ["view2":smBtn,"view3":self]) + NSLayoutConstraint.constraints(withVisualFormat: "V:|[view3(==view1)]|", options: [], metrics: nil, views: ["view1":self,"view3":zxBtn]) + NSLayoutConstraint.constraints(withVisualFormat: "V:|[view4(==view1)]|", options: [], metrics: nil, views: ["view1":self,"view4":zstBtn])
             NSLayoutConstraint.activate(constraint)
         

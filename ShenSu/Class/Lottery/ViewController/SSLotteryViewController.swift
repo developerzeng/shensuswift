@@ -74,17 +74,17 @@ class SSLotteryViewController: BaseViewController, UITableViewDelegate, UITableV
             self.tableView.safeReload()
 			self.getopenCode()
 		}
-        self.setNavRightButton(image: UIImage.init(named: "seachbar")!)
-        self.rightButtonClicked = { btn in
-            let vc = SSSeachViewController()
-            _ = self.navigationController?.pushViewController(vc, animated: true)
-        }
+//        self.setNavRightButton(image: UIImage.init(named: "seachbar")!)
+//        self.rightButtonClicked = { btn in
+//            let vc = SSSeachViewController()
+//            _ = self.navigationController?.pushViewController(vc, animated: true)
+//        }
 		// Do any additional setup after loading the view.
 	}
     func addScrollView(){
       segment = UISegmentedControl(items: ["全部","高频","低频"])
       segment.frame = CGRect(x: 0, y: 0, w: self.view.width, h: 40)
-      segment.tintColor = UIColor.lightGray
+      segment.tintColor = UIColor.seaGreenColor()
       segment.selectedSegmentIndex = 0
       segment.backgroundColor = UIColor.white
       segment.addTarget(self, action: #selector(segmentClick), for: .valueChanged)

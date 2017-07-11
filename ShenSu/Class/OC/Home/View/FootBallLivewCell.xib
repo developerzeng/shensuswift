@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="81" id="KGk-i7-Jjw" customClass="FootBallLivewCell">
+            <rect key="frame" x="0.0" y="0.0" width="370" height="81"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="370" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="周一001" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ocG-7F-Qra">
+                        <rect key="frame" x="5" y="5" width="42" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="06:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qcU-vO-t7j">
+                        <rect key="frame" x="20" y="34" width="32" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未开赛" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BjD-iq-ebQ">
+                        <rect key="frame" x="331" y="5" width="34" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTu-MR-hR4" customClass="FXVerticalBtn">
+                        <rect key="frame" x="270" y="26" width="60" height="47.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="Z2z-Ae-Kqj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="没干过">
+                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZW-Ec-dfJ">
+                        <rect key="frame" x="181" y="36.5" width="28" height="28"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" backgroundImage="icon_LiveScores_attention">
+                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="selected" backgroundImage="icon_LiveScores_attention_sel">
+                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </state>
+                        <connections>
+                            <action selector="collectionBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="mYw-OU-TlN"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ig4-zS-09d" customClass="FXVerticalBtn">
+                        <rect key="frame" x="72" y="26" width="60" height="47.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="Vtb-Nx-9Fe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="做辣家私">
+                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="BjD-iq-ebQ" secondAttribute="trailing" constant="5" id="6oG-oe-Zqq"/>
+                    <constraint firstAttribute="trailing" secondItem="jTu-MR-hR4" secondAttribute="trailing" constant="40" id="7rO-Vk-oyp"/>
+                    <constraint firstItem="qcU-vO-t7j" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="8xX-II-63a"/>
+                    <constraint firstItem="Ig4-zS-09d" firstAttribute="leading" secondItem="qcU-vO-t7j" secondAttribute="trailing" constant="20" id="BVJ-lu-EJa"/>
+                    <constraint firstItem="hZW-Ec-dfJ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="10" id="BhZ-oe-Usx"/>
+                    <constraint firstItem="BjD-iq-ebQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="GSh-Af-7nk"/>
+                    <constraint firstItem="qcU-vO-t7j" firstAttribute="top" secondItem="ocG-7F-Qra" secondAttribute="bottom" constant="15" id="M37-A1-b91"/>
+                    <constraint firstItem="Ig4-zS-09d" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="26" id="Vsd-cM-iQc"/>
+                    <constraint firstAttribute="bottom" secondItem="Ig4-zS-09d" secondAttribute="bottom" constant="7" id="nXE-RL-Lmb"/>
+                    <constraint firstItem="ocG-7F-Qra" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="oue-U9-LlX"/>
+                    <constraint firstAttribute="bottom" secondItem="jTu-MR-hR4" secondAttribute="bottom" constant="7" id="qeu-s3-ixw"/>
+                    <constraint firstItem="ocG-7F-Qra" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="qqd-Mf-7KV"/>
+                    <constraint firstItem="hZW-Ec-dfJ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="10" id="sLF-hs-04L"/>
+                    <constraint firstItem="jTu-MR-hR4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="26" id="uFW-et-vDi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="DateLabel" destination="qcU-vO-t7j" id="vFj-Iz-Uuk"/>
+                <outlet property="GNBtn" destination="jTu-MR-hR4" id="aNI-Eb-GAR"/>
+                <outlet property="HNBtn" destination="Ig4-zS-09d" id="kUj-Ep-yMm"/>
+                <outlet property="NoLabel" destination="ocG-7F-Qra" id="LdO-iP-Ddx"/>
+                <outlet property="collectionBtn" destination="hZW-Ec-dfJ" id="22m-Sf-lim"/>
+                <outlet property="resultLabel" destination="BjD-iq-ebQ" id="4HN-Bi-SUH"/>
+            </connections>
+            <point key="canvasLocation" x="-16" y="125.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_LiveScores_attention" width="28" height="28"/>
+        <image name="icon_LiveScores_attention_sel" width="28" height="28"/>
+    </resources>
+</document>

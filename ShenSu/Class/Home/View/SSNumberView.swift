@@ -80,13 +80,13 @@ class SSNumberView: UIView {
                 if i < 6 {
                     lable.backgroundColor = UIColor.orangeRedColor()
                 } else {
-                    lable.backgroundColor = UIColor.midnightBlueColor()
+                    lable.backgroundColor = UIColor.DeepSkyBlue()
                 }
             } else if type == LotteryType.SSQ {
                 if i < 6 {
                     lable.backgroundColor = UIColor.orangeRedColor()
                 } else {
-                    lable.backgroundColor = UIColor.midnightBlueColor()
+                    lable.backgroundColor = UIColor.DeepSkyBlue()
                 }
             } else {
                 lable.backgroundColor = UIColor.orangeRedColor()

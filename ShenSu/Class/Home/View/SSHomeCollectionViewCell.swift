@@ -18,12 +18,13 @@ class SSHomeCollectionViewCell: UICollectionViewCell {
 		lotteryImage.image = UIImage.init(named: model.name)
 		lotteryLable.text = model.name
 		lotterySubLable.text = model.subTitle
+        lotteryLable.textColor = UIColor.orange
 	}
     func setNewModel(model: NewSSLotteryModel) {
         lotteryImage.image = UIImage(named:model.lot_pic)
         lotteryLable.text = model.lot_name
         lotterySubLable.text = model.lot_title
-        
+        lotterySubLable.textColor = UIColor.orange
     }
     @IBOutlet weak var colorView: UIView!
 	@IBOutlet weak var lotterySubLable: UILabel!

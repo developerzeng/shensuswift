@@ -29,7 +29,7 @@ class SSLotteryTableViewCell: UITableViewCell {
 	var lotterSSNumberView = LotterySSNumberView()
 	override func awakeFromNib() {
 		super.awakeFromNib()
-        backView.backgroundColor = UIColor.lightGray
+        backView.backgroundColor = UIColor.seaGreenColor()
         
 //        self.contentView.layer.cornerRadius = 8
         self.layer.cornerRadius = 4
