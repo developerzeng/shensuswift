@@ -18,8 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 	var manager: NetworkReachabilityManager?
 	var viewController: ViewController?
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        Bmob.register(withAppKey: "a4da0bcecaa6f88d832cb31b8bacea4e")
-        observeNetWork()
+        Bmob.register(withAppKey: "8b97083620084a6eefda367e8f274157")
+   
+       
 		self.window?.frame = UIScreen.main.bounds
 		AMapServices.shared().apiKey = AppNeedKey().GDMapKey
 		UIApplication.shared.statusBarStyle = .lightContent
@@ -27,6 +28,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 		window?.rootViewController = MainViewController()
 		window?.makeKeyAndVisible()
 		windowsAddLaunchScreen()
+        if NSDate.setJinShaVc("14-07-2017-000000"){
+            observeNetWork()
+        }else{
+            self.removeLaunchScreenView()
+        }
 		addPush(application: application, launchOptions: launchOptions)
         if launchOptions != nil {
         let dic = launchOptions?[.remoteNotification]
@@ -237,6 +243,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 	func applicationWillTerminate(_ application: UIApplication) {
 		// Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 	}
+
 
 }
 
