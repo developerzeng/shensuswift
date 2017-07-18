@@ -19,7 +19,7 @@ class SSHomeMeanViewCell: UICollectionViewCell {
         self.backgroundColor = UIColor.white
         cpShop = UIButton(type: .custom)
         cpShop.setTitle("彩票店", for: .normal)
-        cpShop.setImage(UIImage.init(named: "店"), for: .normal)
+        cpShop.setImage(UIImage.init(named: "cpd"), for: .normal)
         cpShop.tag = 1001
         cpShop.titleLabel?.font = UIFont.systemFont(ofSize: 14)
         cpShop.setTitleColor(UIColor.gray, for: .normal)
@@ -28,16 +28,16 @@ class SSHomeMeanViewCell: UICollectionViewCell {
         smBtn = UIButton(type: .custom)
         smBtn.setTitle("彩票验证", for: .normal)
         smBtn.tag = 1002
-        smBtn.setImage(UIImage.init(named: "二维码"), for: .normal)
+        smBtn.setImage(UIImage.init(named: "sys"), for: .normal)
         smBtn.titleLabel?.font = UIFont.systemFont(ofSize: 14)
         smBtn.setTitleColor(UIColor.gray, for: .normal)
         smBtn.addTarget(self, action: #selector(cpShopClick), for: .touchUpInside)
         self.contentView.addSubview(smBtn)
         zxBtn = UIButton(type: .custom)
-        zxBtn.setTitle("资讯", for: .normal)
+        zxBtn.setTitle("开奖", for: .normal)
         zxBtn.tag = 1003
         zxBtn.titleLabel?.font = UIFont.systemFont(ofSize: 14)
-        zxBtn.setImage(UIImage.init(named: "资讯"), for: .normal)
+        zxBtn.setImage(UIImage.init(named: "zs"), for: .normal)
         zxBtn.setTitleColor(UIColor.gray, for: .normal)
         zxBtn.addTarget(self, action: #selector(cpShopClick), for: .touchUpInside)
         self.contentView.addSubview(zxBtn)
@@ -48,7 +48,7 @@ class SSHomeMeanViewCell: UICollectionViewCell {
         zstBtn.setTitle("走势图", for: .normal)
         zstBtn.tag = 1004
         zstBtn.titleLabel?.font = UIFont.systemFont(ofSize: 14)
-        zstBtn.setImage(UIImage.init(named: "走势图"), for: .normal)
+        zstBtn.setImage(UIImage.init(named: "zst"), for: .normal)
         zstBtn.setTitleColor(UIColor.gray, for: .normal)
         zstBtn.addTarget(self, action: #selector(cpShopClick), for: .touchUpInside)
         self.contentView.addSubview(zstBtn)

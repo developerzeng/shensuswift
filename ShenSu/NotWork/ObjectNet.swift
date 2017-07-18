@@ -7,10 +7,15 @@
 //
 
 import UIKit
-
-class ObjectNet: NSObject {
+import Alamofire
+public class ObjectNet: NSObject {
 	public static let `default` = ObjectNet()
 	public func requestWithUrl(url: String, completionHandler: @escaping CompletionHandler) {
 		NetWorkManager.default.rawRequestWithUrl(URLString: url, method: .get, parameters: nil, completionHandler: completionHandler)
 	}
+    
+    public func requesMethodtWithUrl(url: String, parameters: [String : Any]?,completionHandler: @escaping CompletionHandler) {
+       NetWorkManager.default.rawRequestWithUrl(URLString: url, method: .post, parameters: parameters, completionHandler: completionHandler)
+    }
+    
 }

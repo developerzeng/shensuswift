@@ -111,13 +111,13 @@ class SSLotteryViewController: BaseViewController, UITableViewDelegate, UITableV
 		NetWorkManager.default.rawRequestWithUrl(URLString: url, method: .get, parameters: nil) { (status, data) in
 			if status == .Success {
 				if let jsondata = data {
-					let json = jsondata as? JSON
-					if json?["status"].stringValue == "0" {
-						if let lotteryinfo = json?["result"]["list"].arrayObject {
+					let json =  JSON(jsondata)
+					if json["status"].stringValue == "0" {
+						if let lotteryinfo = json["result"]["list"].arrayObject {
 							lotteryinfo.enumerated().forEach({ (index, lott) in
 								let model = SSLotteryJSModel()
 								_ = self.JsonMapToObject(JSON: lott, toObject: model)
-								model.caipiaoid = (json?["result"]["caipiaoid"].stringValue)!
+								model.caipiaoid = (json["result"]["caipiaoid"].stringValue)
 								self.lotteryinfoArray.append(model)
 
 							})

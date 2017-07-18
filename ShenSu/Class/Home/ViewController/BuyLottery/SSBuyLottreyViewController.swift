@@ -148,8 +148,8 @@ class SSBuyLottreyViewController: BaseViewController {
 				self.hideLoadingView()
 				self.lotteryinfoArray.removeAll()
 				if let jsondata = data {
-					let json = jsondata as? JSON
-					if let lotteryinfo = json?["data"].arrayObject {
+					let json =   JSON(jsondata)
+					if let lotteryinfo = json["data"].arrayObject {
 						lotteryinfo.enumerated().forEach({ (index, lott) in
 
 							let model = SSLotteryModel()

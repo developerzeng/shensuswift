@@ -43,8 +43,8 @@ class SSNewsViewController: BaseViewController {
 			if status == .Success {
 				self.newsData.removeAll()
 				if let jsondata = data {
-					let json = jsondata as? JSON
-					if let snsMsgList = json?["result"].arrayObject {
+					let json = JSON(jsondata)
+					if let snsMsgList = json["result"].arrayObject {
 						snsMsgList.enumerated().forEach({ (index, modeldata) in
 							let model = SSNewsModel()
 							_ = self.JsonMapToObject(JSON: modeldata, toObject: model)

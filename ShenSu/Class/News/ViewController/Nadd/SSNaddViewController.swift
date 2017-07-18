@@ -15,62 +15,156 @@ enum NaddViewType: Int {
 }
 class SSNaddViewController: BaseViewController {
     var tableView: UITableView!
+    var page = 1
+    
     var naddHeadView: SSNaddHeadView!
     var naddArray = Array<SSNaddModel>()
     var naddZJArray = Array<NaddZJMode>()
     var type: NaddViewType! = .NaddViewTypeZJ
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         tableView = UITableView(frame: CGRect.zero, style: .grouped)
         tableView.delegate = self
         tableView.dataSource = self
         self.view.addSubview(tableView)
         naddHeadView = SSNaddHeadView(frame: CGRect(x: 0, y: 0, w: self.view.width, h: 150))
         tableView.tableHeaderView = naddHeadView
-        
+        tableView.addRefreshingHeaderView { 
+            self.page = 1
+            self.getData()
+        }
+        tableView.addRefreshingFooterView { 
+            self.page += 1
+            self.getData()
+        }
         tableView <- [
         Edges(0)
         ]
         getData()
+        getbannar()
         // Do any additional setup after loading the view.
     }
-    func getData(){
-   
+    func getbannar(){
+        var bannarArray = Array<SSBannarModel>()
+        NetWorkManager.default.rawRequestWithUrl(URLString: "http://mycp.iplay78.com/trade-web/web/client/ads?", method: .post, parameters: [
+            "lot_list": [
+                "channel_cd": "Apple",
+                "app_cd": "com.zscp.lot16",
+                "access_token": ""
+            ],
+            "c_head": [
+                "client_id": "BY003000000000000002",
+                "client_os": "IOS"
+            ]
+        ]) { (status, data) in
+            if status == .Success {
+                if let jsondata = data {
+                    let json = JSON(jsondata)
+                    if let dic = json["lot_list"].dictionaryObject {
+                        if let array = dic["data"] as? Array<Dictionary<String,Any>> {
+                            array.enumerated().forEach({ (index, obj) in
+                                let model = SSBannarModel()
+                                model.bannarUrl = "http://mycp.iplay78.com\(obj["ads_url"]!)"
+                                model.openUrl = obj["a_forward_html"] as? String ?? ""
+                                bannarArray.append(model)
+                                
+                            })
+                            self.naddHeadView.bannarArray = bannarArray
+                        }
+                    }
+                }
+            }
+            
+            
+        }
 
-  var bannarArray = Array<SSBannarModel>()
-  let array = [["ImgUrl":"http://mycp.iplay78.com/res/activity/5016ae21-1641-4375-9d43-bb417c370ebb.jpg","AritleUrl":"http://mycp.iplay78.com/info/7c494511fe2440efa0205f9cc43e0699.html"],
-                 ["ImgUrl":"http://mycp.iplay78.com/res/activity/766fc1aa-567b-450e-b731-f0456173e8fb.jpg","AritleUrl":"http://mycp.iplay78.com/info/edb6fcf3901245d382f2f5fd20ff027b.html"],
-                 ["ImgUrl":"http://mycp.iplay78.com/res/activity/4bc368ab-e546-4341-ac53-bb2e5d4ff06e.jpg","AritleUrl":"http://mycp.iplay78.com/info/6a49244d750143c09f9ecd155bef78ab.html"],
-                 ["ImgUrl":"http://mycp.iplay78.com/res/activity/4bb682c5-6337-4e7a-a758-68589c63d39b.jpg"],
-                 ["ImgUrl":"http://mycp.iplay78.com/res/activity/7412cffc-992c-48e0-9f8d-99266700fb31.jpg"],
-                 ["ImgUrl":"http://mycp.iplay78.com/res/activity/cd01d8a2-2512-42b8-b3ea-1ff8cd4aab34.jpg"]]
-        
-        
-  array.enumerated().forEach { (index,data) in
-   let model = SSBannarModel()
-   _ =  self.JsonMapToObject(JSON: data, toObject: model)
-   bannarArray.append(model)
-   }
-   naddHeadView.bannarArray = bannarArray
     
-   let path = Bundle.main.path(forResource: "NaddNews", ofType: "geojson")
-   let str = try? NSString.init(contentsOfFile: path!, encoding: 4)
+    }
+    
+    
+    func getData(){
+        
+        NetWorkManager.default.rawRequestWithUrl(URLString: "http://mycp.iplay78.com/trade-web/web/lottery/winners/list?", method: .post, parameters: [
+            "winner_list": [
+                "page_index": "\(page)",
+                "page_size": "20"
+            ],
+            "c_head": [
+                "client_id": "BY003000000000000002",
+                "client_os": "IOS"
+            ]
+        ]) { (status, data) in
+            self.tableView.endRefreshing()
+            if status == .Success {
+                if let jsondata = data {
+                    let json = JSON(jsondata)
+                    if let dic = json["winner_list"].dictionaryObject {
+                        if let array = dic["data"] as? Array<Dictionary<String,String>> {
+                            if self.page == 1 {
+                            self.naddZJArray.removeAll()
+                            }
+                           array.enumerated().forEach({ (index,obj) in
+                           
+                                let model = NaddZJMode()
+                                _ = self.JsonMapToObject(JSON: obj, toObject: model)
+                                self.naddZJArray.append(model)
+                            
+                           })
+                             self.tableView.safeReload()
+                        }
+                    
+                    }
+                
+                }
+            
+            
+            
+            }
+            
+            
+        }
+        
+        
+        NetWorkManager.default.rawRequestWithUrl(URLString: "http://mycp.iplay78.com/trade-web/web/article_list?", method: .post, parameters: [
+            "article_list": [
+                "category_code": "1",
+                "page_index": page - 1 ,
+                "page_size": 20
+            ],
+            "c_head": [
+                "client_id": "BY003000000000000002",
+                "client_os": "IOS"
+            ]
+        ]
+        ) { (status, data) in
+            self.tableView.endRefreshing()
+            if status == .Success {
+                if let jsondata = data {
+                    let json = JSON(jsondata)
+                    if let dic = json["article_list"].dictionaryObject {
+                        if let array = dic["comm_article"] as? Array<Dictionary<String,Any>> {
+                            if self.page == 1 {
+                                self.naddArray.removeAll()
+                            }
+                            array.enumerated().forEach({ (index,obj) in
+                                let model = SSNaddModel()
+                                _ = self.JsonMapToObject(JSON: obj, toObject: model)
+                                self.naddArray.append(model)
+                            })
+                        }
+                        
+                    }
+                    
+                }
+                
+                
+            }
+            
+            
+
+        }
    
-   let dic = try? JSONSerialization.jsonObject(with: (str!.data(using: 4))!, options: .mutableContainers) as? Dictionary<String,Any>
-   let narray = dic??["comm_article"] as? Array<Any>
-   narray?.enumerated().forEach({ (index, data) in
-            let model = SSNaddModel()
-            _ = self.JsonMapToObject(JSON: data, toObject: model)
-            naddArray.append(model)
-    })
-   
-    let narrayzj = dic??["data"] as? Array<Any>
-    narrayzj?.enumerated().forEach({ (index, data) in
-            let model = NaddZJMode()
-            _ = self.JsonMapToObject(JSON: data, toObject: model)
-            naddZJArray.append(model)
-    })
-    self.tableView.safeReload()
   }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -107,7 +201,7 @@ extension SSNaddViewController : UITableViewDelegate, UITableViewDataSource {
             if cell == nil {
                 cell = Bundle.main.loadNibNamed("SSNaddZJTableViewCell", owner: self, options: nil)?.first as? SSNaddZJTableViewCell
             }
-            if naddArray.count > indexPath.row {
+            if naddZJArray.count > indexPath.row {
                 cell?.setModel(model: naddZJArray[indexPath.row])
             }
             cell?.selectionStyle = .none

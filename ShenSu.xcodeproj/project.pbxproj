@@ -127,6 +127,33 @@
 		6D3A0B921F14830300434B61 /* LotteryZhuDanCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D3A0B5E1F14830300434B61 /* LotteryZhuDanCell.xib */; };
 		6D3A0B931F14830300434B61 /* NoticeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0B601F14830300434B61 /* NoticeViewCell.m */; };
 		6D3A0B941F14830300434B61 /* NoticeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D3A0B611F14830300434B61 /* NoticeViewCell.xib */; };
+		6D3A0CE21F15C12300434B61 /* YHUserInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0CAC1F15C12300434B61 /* YHUserInfoManager.m */; };
+		6D3A0CE31F15C12300434B61 /* YHEducationExperienceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0CAF1F15C12300434B61 /* YHEducationExperienceModel.m */; };
+		6D3A0CE41F15C12300434B61 /* YHUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0CB11F15C12300434B61 /* YHUserInfo.m */; };
+		6D3A0CE51F15C12300434B61 /* YHUserSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0CB31F15C12300434B61 /* YHUserSetting.m */; };
+		6D3A0CE61F15C12300434B61 /* YHWorkExperienceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0CB51F15C12300434B61 /* YHWorkExperienceModel.m */; };
+		6D3A0CE71F15C12300434B61 /* YHWorkGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0CB71F15C12300434B61 /* YHWorkGroup.m */; };
+		6D3A0CE81F15C12300434B61 /* UITableView+HYBCacheHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0CBC1F15C12300434B61 /* UITableView+HYBCacheHeight.m */; };
+		6D3A0CE91F15C12300434B61 /* UITableViewCell+HYBMasonryAutoCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0CBE1F15C12300434B61 /* UITableViewCell+HYBMasonryAutoCellHeight.m */; };
+		6D3A0CEA1F15C12300434B61 /* SDBrowserImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0CC11F15C12300434B61 /* SDBrowserImageView.m */; };
+		6D3A0CEB1F15C12300434B61 /* SDPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0CC31F15C12300434B61 /* SDPhotoBrowser.m */; };
+		6D3A0CEC1F15C12300434B61 /* SDWaitingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0CC61F15C12300434B61 /* SDWaitingView.m */; };
+		6D3A0CED1F15C12300434B61 /* HKPCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0CC91F15C12300434B61 /* HKPCommon.m */; };
+		6D3A0CEE1F15C12300434B61 /* NSDate+LYXCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0CCB1F15C12300434B61 /* NSDate+LYXCategory.m */; };
+		6D3A0CEF1F15C12300434B61 /* YHUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0CCD1F15C12300434B61 /* YHUtils.m */; };
+		6D3A0CF01F15C12300434B61 /* CellForWorkGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0CD01F15C12300434B61 /* CellForWorkGroup.m */; };
+		6D3A0CF11F15C12300434B61 /* CellForWorkGroupRepost.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0CD21F15C12300434B61 /* CellForWorkGroupRepost.m */; };
+		6D3A0CF21F15C12300434B61 /* HKPBotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0CD41F15C12300434B61 /* HKPBotView.m */; };
+		6D3A0CF31F15C12300434B61 /* YHActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0CD61F15C12300434B61 /* YHActionSheet.m */; };
+		6D3A0CF41F15C12300434B61 /* YHRefreshTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0CD81F15C12300434B61 /* YHRefreshTableView.m */; };
+		6D3A0CF51F15C12300434B61 /* YHSharePresentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0CDA1F15C12300434B61 /* YHSharePresentView.m */; };
+		6D3A0CF61F15C12300434B61 /* YHWorkGroupButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0CDC1F15C12300434B61 /* YHWorkGroupButton.m */; };
+		6D3A0CF71F15C12300434B61 /* YHWorkGroupPhotoContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0CDE1F15C12300434B61 /* YHWorkGroupPhotoContainer.m */; };
+		6D3A0CF81F15C12300434B61 /* YHTimeLineListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0CE11F15C12300434B61 /* YHTimeLineListController.m */; };
+		6D3A0D661F15CCA600434B61 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3A0D651F15CCA600434B61 /* SDWebImage.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6D3A0D691F15FE0900434B61 /* JubaoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0D681F15FE0900434B61 /* JubaoTableViewController.m */; };
+		6D3A0D6C1F15FFD400434B61 /* YHTimeDetaTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0D6B1F15FFD400434B61 /* YHTimeDetaTableView.m */; };
+		6D3A0D6E1F16162300434B61 /* SSSliderHKTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A0D6D1F16162300434B61 /* SSSliderHKTimeViewController.swift */; };
 		6D4D02A01ECC226000DBAAE5 /* randomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4D029F1ECC226000DBAAE5 /* randomModel.swift */; };
 		6D4D02AB1ECC568400DBAAE5 /* CaipiaoType.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 6D4D02AA1ECC568400DBAAE5 /* CaipiaoType.geojson */; };
 		6D5536571EC1B98400B0E8E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D5536551EC1B98400B0E8E8 /* Main.storyboard */; };
@@ -239,7 +266,6 @@
 		6DCEC0E81F13672C00EAF4BE /* SSNewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCEC0E51F13672C00EAF4BE /* SSNewsModel.swift */; };
 		6DCEC0EB1F13674600EAF4BE /* ChoossFinishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DCEC0E91F13674600EAF4BE /* ChoossFinishViewController.xib */; };
 		6DCEC0EC1F13674600EAF4BE /* CpTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DCEC0EA1F13674600EAF4BE /* CpTableViewCell.xib */; };
-		6DEAF92E1F0E277400680F41 /* NaddNews.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 6DEAF92D1F0E277400680F41 /* NaddNews.geojson */; };
 		6DF35EC51ED41C1000B87559 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF35EC31ED41C1000B87559 /* AppDelegate.swift */; };
 		6DF35EC61ED41C1000B87559 /* MainTBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF35EC41ED41C1000B87559 /* MainTBViewController.swift */; };
 		6DF35F061ED7C6A400B87559 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DF35F041ED7C6A400B87559 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -541,6 +567,60 @@
 		6D3A0B5F1F14830300434B61 /* NoticeViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticeViewCell.h; sourceTree = "<group>"; };
 		6D3A0B601F14830300434B61 /* NoticeViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoticeViewCell.m; sourceTree = "<group>"; };
 		6D3A0B611F14830300434B61 /* NoticeViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoticeViewCell.xib; sourceTree = "<group>"; };
+		6D3A0C571F15BF1F00434B61 /* HKPTimeLine.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKPTimeLine.pch; sourceTree = "<group>"; };
+		6D3A0CAB1F15C12300434B61 /* YHUserInfoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHUserInfoManager.h; sourceTree = "<group>"; };
+		6D3A0CAC1F15C12300434B61 /* YHUserInfoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHUserInfoManager.m; sourceTree = "<group>"; };
+		6D3A0CAE1F15C12300434B61 /* YHEducationExperienceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHEducationExperienceModel.h; sourceTree = "<group>"; };
+		6D3A0CAF1F15C12300434B61 /* YHEducationExperienceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHEducationExperienceModel.m; sourceTree = "<group>"; };
+		6D3A0CB01F15C12300434B61 /* YHUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHUserInfo.h; sourceTree = "<group>"; };
+		6D3A0CB11F15C12300434B61 /* YHUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHUserInfo.m; sourceTree = "<group>"; };
+		6D3A0CB21F15C12300434B61 /* YHUserSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHUserSetting.h; sourceTree = "<group>"; };
+		6D3A0CB31F15C12300434B61 /* YHUserSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHUserSetting.m; sourceTree = "<group>"; };
+		6D3A0CB41F15C12300434B61 /* YHWorkExperienceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHWorkExperienceModel.h; sourceTree = "<group>"; };
+		6D3A0CB51F15C12300434B61 /* YHWorkExperienceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHWorkExperienceModel.m; sourceTree = "<group>"; };
+		6D3A0CB61F15C12300434B61 /* YHWorkGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHWorkGroup.h; sourceTree = "<group>"; };
+		6D3A0CB71F15C12300434B61 /* YHWorkGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHWorkGroup.m; sourceTree = "<group>"; };
+		6D3A0CBB1F15C12300434B61 /* UITableView+HYBCacheHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+HYBCacheHeight.h"; sourceTree = "<group>"; };
+		6D3A0CBC1F15C12300434B61 /* UITableView+HYBCacheHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+HYBCacheHeight.m"; sourceTree = "<group>"; };
+		6D3A0CBD1F15C12300434B61 /* UITableViewCell+HYBMasonryAutoCellHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+HYBMasonryAutoCellHeight.h"; sourceTree = "<group>"; };
+		6D3A0CBE1F15C12300434B61 /* UITableViewCell+HYBMasonryAutoCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+HYBMasonryAutoCellHeight.m"; sourceTree = "<group>"; };
+		6D3A0CC01F15C12300434B61 /* SDBrowserImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDBrowserImageView.h; sourceTree = "<group>"; };
+		6D3A0CC11F15C12300434B61 /* SDBrowserImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDBrowserImageView.m; sourceTree = "<group>"; };
+		6D3A0CC21F15C12300434B61 /* SDPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPhotoBrowser.h; sourceTree = "<group>"; };
+		6D3A0CC31F15C12300434B61 /* SDPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPhotoBrowser.m; sourceTree = "<group>"; };
+		6D3A0CC41F15C12300434B61 /* SDPhotoBrowserConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPhotoBrowserConfig.h; sourceTree = "<group>"; };
+		6D3A0CC51F15C12300434B61 /* SDWaitingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWaitingView.h; sourceTree = "<group>"; };
+		6D3A0CC61F15C12300434B61 /* SDWaitingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWaitingView.m; sourceTree = "<group>"; };
+		6D3A0CC81F15C12300434B61 /* HKPCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKPCommon.h; sourceTree = "<group>"; };
+		6D3A0CC91F15C12300434B61 /* HKPCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKPCommon.m; sourceTree = "<group>"; };
+		6D3A0CCA1F15C12300434B61 /* NSDate+LYXCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+LYXCategory.h"; sourceTree = "<group>"; };
+		6D3A0CCB1F15C12300434B61 /* NSDate+LYXCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+LYXCategory.m"; sourceTree = "<group>"; };
+		6D3A0CCC1F15C12300434B61 /* YHUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHUtils.h; sourceTree = "<group>"; };
+		6D3A0CCD1F15C12300434B61 /* YHUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHUtils.m; sourceTree = "<group>"; };
+		6D3A0CCF1F15C12300434B61 /* CellForWorkGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellForWorkGroup.h; sourceTree = "<group>"; };
+		6D3A0CD01F15C12300434B61 /* CellForWorkGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellForWorkGroup.m; sourceTree = "<group>"; };
+		6D3A0CD11F15C12300434B61 /* CellForWorkGroupRepost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellForWorkGroupRepost.h; sourceTree = "<group>"; };
+		6D3A0CD21F15C12300434B61 /* CellForWorkGroupRepost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellForWorkGroupRepost.m; sourceTree = "<group>"; };
+		6D3A0CD31F15C12300434B61 /* HKPBotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKPBotView.h; sourceTree = "<group>"; };
+		6D3A0CD41F15C12300434B61 /* HKPBotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKPBotView.m; sourceTree = "<group>"; };
+		6D3A0CD51F15C12300434B61 /* YHActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHActionSheet.h; sourceTree = "<group>"; };
+		6D3A0CD61F15C12300434B61 /* YHActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHActionSheet.m; sourceTree = "<group>"; };
+		6D3A0CD71F15C12300434B61 /* YHRefreshTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHRefreshTableView.h; sourceTree = "<group>"; };
+		6D3A0CD81F15C12300434B61 /* YHRefreshTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHRefreshTableView.m; sourceTree = "<group>"; };
+		6D3A0CD91F15C12300434B61 /* YHSharePresentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHSharePresentView.h; sourceTree = "<group>"; };
+		6D3A0CDA1F15C12300434B61 /* YHSharePresentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHSharePresentView.m; sourceTree = "<group>"; };
+		6D3A0CDB1F15C12300434B61 /* YHWorkGroupButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHWorkGroupButton.h; sourceTree = "<group>"; };
+		6D3A0CDC1F15C12300434B61 /* YHWorkGroupButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHWorkGroupButton.m; sourceTree = "<group>"; };
+		6D3A0CDD1F15C12300434B61 /* YHWorkGroupPhotoContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHWorkGroupPhotoContainer.h; sourceTree = "<group>"; };
+		6D3A0CDE1F15C12300434B61 /* YHWorkGroupPhotoContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHWorkGroupPhotoContainer.m; sourceTree = "<group>"; };
+		6D3A0CE01F15C12300434B61 /* YHTimeLineListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHTimeLineListController.h; sourceTree = "<group>"; };
+		6D3A0CE11F15C12300434B61 /* YHTimeLineListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTimeLineListController.m; sourceTree = "<group>"; };
+		6D3A0D651F15CCA600434B61 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = "<group>"; };
+		6D3A0D671F15FE0900434B61 /* JubaoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JubaoTableViewController.h; sourceTree = "<group>"; };
+		6D3A0D681F15FE0900434B61 /* JubaoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JubaoTableViewController.m; sourceTree = "<group>"; };
+		6D3A0D6A1F15FFD400434B61 /* YHTimeDetaTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHTimeDetaTableView.h; sourceTree = "<group>"; };
+		6D3A0D6B1F15FFD400434B61 /* YHTimeDetaTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTimeDetaTableView.m; sourceTree = "<group>"; };
+		6D3A0D6D1F16162300434B61 /* SSSliderHKTimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSSliderHKTimeViewController.swift; sourceTree = "<group>"; };
 		6D4D029F1ECC226000DBAAE5 /* randomModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = randomModel.swift; sourceTree = "<group>"; };
 		6D4D02AA1ECC568400DBAAE5 /* CaipiaoType.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CaipiaoType.geojson; sourceTree = "<group>"; };
 		6D55364E1EC1B98400B0E8E8 /* ShenSu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShenSu.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -665,7 +745,6 @@
 		6DCEC0E51F13672C00EAF4BE /* SSNewsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSNewsModel.swift; sourceTree = "<group>"; };
 		6DCEC0E91F13674600EAF4BE /* ChoossFinishViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChoossFinishViewController.xib; sourceTree = "<group>"; };
 		6DCEC0EA1F13674600EAF4BE /* CpTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CpTableViewCell.xib; sourceTree = "<group>"; };
-		6DEAF92D1F0E277400680F41 /* NaddNews.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NaddNews.geojson; sourceTree = "<group>"; };
 		6DF35EC31ED41C1000B87559 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DF35EC41ED41C1000B87559 /* MainTBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTBViewController.swift; sourceTree = "<group>"; };
 		6DF35F041ED7C6A400B87559 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
@@ -756,6 +835,7 @@
 				6D04C29E1EE109E70026842E /* CoreLocation.framework in Frameworks */,
 				6D04C29C1EE109DE0026842E /* SystemConfiguration.framework in Frameworks */,
 				6D04C29A1EE109D60026842E /* JavaScriptCore.framework in Frameworks */,
+				6D3A0D661F15CCA600434B61 /* SDWebImage.framework in Frameworks */,
 				6D04C2981EE109D10026842E /* Security.framework in Frameworks */,
 				6D04C2961EE109CA0026842E /* libstdc++.6.0.9.tbd in Frameworks */,
 				6D04C2941EE109BF0026842E /* libz.tbd in Frameworks */,
@@ -923,6 +1003,7 @@
 				6DCEC0CA1F1366E700EAF4BE /* SSNewsDetaViewController.xib */,
 				6DCEC0CB1F1366E700EAF4BE /* SSNewsViewController.swift */,
 				6DCEC0CC1F1366E700EAF4BE /* SSSliderNewsViewController.swift */,
+				6D3A0D6D1F16162300434B61 /* SSSliderHKTimeViewController.swift */,
 				6DEAF9221F0E1C8900680F41 /* Nadd */,
 			);
 			path = ViewController;
@@ -959,6 +1040,7 @@
 		6D0BF9241EC1BC2700E68B4F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6D3A0D651F15CCA600434B61 /* SDWebImage.framework */,
 				6D8C743D1EFA80B100DD8815 /* ZZYQRCodeSwift */,
 				6D04C2871EE108050026842E /* MAMapKit.framework */,
 				6D04C2881EE108050026842E /* AMap.bundle */,
@@ -1153,13 +1235,143 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		6D3A0C561F15BF0800434B61 /* Community */ = {
+			isa = PBXGroup;
+			children = (
+				6D3A0CAA1F15C12300434B61 /* Manager */,
+				6D3A0CAD1F15C12300434B61 /* Model */,
+				6D3A0CB81F15C12300434B61 /* Others */,
+				6D3A0CC71F15C12300434B61 /* Tools */,
+				6D3A0CCE1F15C12300434B61 /* View */,
+				6D3A0CDF1F15C12300434B61 /* ViewController */,
+				6D3A0C571F15BF1F00434B61 /* HKPTimeLine.pch */,
+			);
+			path = Community;
+			sourceTree = "<group>";
+		};
+		6D3A0CAA1F15C12300434B61 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				6D3A0CAB1F15C12300434B61 /* YHUserInfoManager.h */,
+				6D3A0CAC1F15C12300434B61 /* YHUserInfoManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		6D3A0CAD1F15C12300434B61 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6D3A0CAE1F15C12300434B61 /* YHEducationExperienceModel.h */,
+				6D3A0CAF1F15C12300434B61 /* YHEducationExperienceModel.m */,
+				6D3A0CB01F15C12300434B61 /* YHUserInfo.h */,
+				6D3A0CB11F15C12300434B61 /* YHUserInfo.m */,
+				6D3A0CB21F15C12300434B61 /* YHUserSetting.h */,
+				6D3A0CB31F15C12300434B61 /* YHUserSetting.m */,
+				6D3A0CB41F15C12300434B61 /* YHWorkExperienceModel.h */,
+				6D3A0CB51F15C12300434B61 /* YHWorkExperienceModel.m */,
+				6D3A0CB61F15C12300434B61 /* YHWorkGroup.h */,
+				6D3A0CB71F15C12300434B61 /* YHWorkGroup.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6D3A0CB81F15C12300434B61 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				6D3A0CB91F15C12300434B61 /* ThirdParty */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		6D3A0CB91F15C12300434B61 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				6D3A0CBA1F15C12300434B61 /* HYBMasonryAutoCellHeight */,
+				6D3A0CBF1F15C12300434B61 /* SDPhotoBrowser */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		6D3A0CBA1F15C12300434B61 /* HYBMasonryAutoCellHeight */ = {
+			isa = PBXGroup;
+			children = (
+				6D3A0CBB1F15C12300434B61 /* UITableView+HYBCacheHeight.h */,
+				6D3A0CBC1F15C12300434B61 /* UITableView+HYBCacheHeight.m */,
+				6D3A0CBD1F15C12300434B61 /* UITableViewCell+HYBMasonryAutoCellHeight.h */,
+				6D3A0CBE1F15C12300434B61 /* UITableViewCell+HYBMasonryAutoCellHeight.m */,
+			);
+			path = HYBMasonryAutoCellHeight;
+			sourceTree = "<group>";
+		};
+		6D3A0CBF1F15C12300434B61 /* SDPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				6D3A0CC01F15C12300434B61 /* SDBrowserImageView.h */,
+				6D3A0CC11F15C12300434B61 /* SDBrowserImageView.m */,
+				6D3A0CC21F15C12300434B61 /* SDPhotoBrowser.h */,
+				6D3A0CC31F15C12300434B61 /* SDPhotoBrowser.m */,
+				6D3A0CC41F15C12300434B61 /* SDPhotoBrowserConfig.h */,
+				6D3A0CC51F15C12300434B61 /* SDWaitingView.h */,
+				6D3A0CC61F15C12300434B61 /* SDWaitingView.m */,
+			);
+			path = SDPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		6D3A0CC71F15C12300434B61 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				6D3A0CC81F15C12300434B61 /* HKPCommon.h */,
+				6D3A0CC91F15C12300434B61 /* HKPCommon.m */,
+				6D3A0CCA1F15C12300434B61 /* NSDate+LYXCategory.h */,
+				6D3A0CCB1F15C12300434B61 /* NSDate+LYXCategory.m */,
+				6D3A0CCC1F15C12300434B61 /* YHUtils.h */,
+				6D3A0CCD1F15C12300434B61 /* YHUtils.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		6D3A0CCE1F15C12300434B61 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6D3A0CCF1F15C12300434B61 /* CellForWorkGroup.h */,
+				6D3A0CD01F15C12300434B61 /* CellForWorkGroup.m */,
+				6D3A0CD11F15C12300434B61 /* CellForWorkGroupRepost.h */,
+				6D3A0CD21F15C12300434B61 /* CellForWorkGroupRepost.m */,
+				6D3A0CD31F15C12300434B61 /* HKPBotView.h */,
+				6D3A0CD41F15C12300434B61 /* HKPBotView.m */,
+				6D3A0CD51F15C12300434B61 /* YHActionSheet.h */,
+				6D3A0CD61F15C12300434B61 /* YHActionSheet.m */,
+				6D3A0CD71F15C12300434B61 /* YHRefreshTableView.h */,
+				6D3A0CD81F15C12300434B61 /* YHRefreshTableView.m */,
+				6D3A0CD91F15C12300434B61 /* YHSharePresentView.h */,
+				6D3A0CDA1F15C12300434B61 /* YHSharePresentView.m */,
+				6D3A0CDB1F15C12300434B61 /* YHWorkGroupButton.h */,
+				6D3A0CDC1F15C12300434B61 /* YHWorkGroupButton.m */,
+				6D3A0CDD1F15C12300434B61 /* YHWorkGroupPhotoContainer.h */,
+				6D3A0CDE1F15C12300434B61 /* YHWorkGroupPhotoContainer.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6D3A0CDF1F15C12300434B61 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6D3A0CE01F15C12300434B61 /* YHTimeLineListController.h */,
+				6D3A0CE11F15C12300434B61 /* YHTimeLineListController.m */,
+				6D3A0D6A1F15FFD400434B61 /* YHTimeDetaTableView.h */,
+				6D3A0D6B1F15FFD400434B61 /* YHTimeDetaTableView.m */,
+				6D3A0D671F15FE0900434B61 /* JubaoTableViewController.h */,
+				6D3A0D681F15FE0900434B61 /* JubaoTableViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		6D4D02A91ECC567E00DBAAE5 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
 				6D04C2C41EE13BD90026842E /* UserInfo.geojson */,
 				6D4D02AA1ECC568400DBAAE5 /* CaipiaoType.geojson */,
 				6D01ACC51F0B74B5005DD0C7 /* LotteryInfo.geojson */,
-				6DEAF92D1F0E277400680F41 /* NaddNews.geojson */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -1371,6 +1583,7 @@
 		6DF35F3E1ED8420B00B87559 /* OC */ = {
 			isa = PBXGroup;
 			children = (
+				6D3A0C561F15BF0800434B61 /* Community */,
 				6D3A0B0B1F14830300434B61 /* Home */,
 				6D0248601EF8BF29005E5748 /* WJSegment */,
 				6DAAA1751EE685320017C427 /* Jpush */,
@@ -1825,7 +2038,7 @@
 				TargetAttributes = {
 					6D55364D1EC1B98400B0E8E8 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = MKU6PEAV7P;
+						DevelopmentTeam = 2798NMTRJV;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
@@ -1914,7 +2127,6 @@
 				6D3A0B821F14830300434B61 /* LotteryHomeViewCell.xib in Resources */,
 				6D3A0B771F14830300434B61 /* FootBallLivewCell.xib in Resources */,
 				6D3A0B8E1F14830300434B61 /* LotteryTurntableCell.xib in Resources */,
-				6DEAF92E1F0E277400680F41 /* NaddNews.geojson in Resources */,
 				6D04C2C51EE13BD90026842E /* UserInfo.geojson in Resources */,
 				6DCEC09F1F13667200EAF4BE /* SSLotteryDetaTableViewCell.xib in Resources */,
 				6DF6E7DD1ECACFC8003F2D2F /* LLCycleScrollView.bundle in Resources */,
@@ -1984,6 +2196,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Chameleon.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftDate.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/EasyPeasy.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SDWebImage.framework",
 			);
 			outputPaths = (
 			);
@@ -2012,6 +2225,7 @@
 				6DF35F561ED920E200B87559 /* ObjectNet.swift in Sources */,
 				6DCEC0511F1365E000EAF4BE /* SSBuyListViewController.swift in Sources */,
 				6DCEC07B1F13662100EAF4BE /* SSBuyViewHeaderView.swift in Sources */,
+				6D3A0CF81F15C12300434B61 /* YHTimeLineListController.m in Sources */,
 				6D3A0B7D1F14830300434B61 /* LotteryHallHeaderView.m in Sources */,
 				6D3A0B761F14830300434B61 /* FootBallLivewCell.m in Sources */,
 				6D3A0B891F14830300434B61 /* LotteryScoreLiveCell.m in Sources */,
@@ -2022,6 +2236,7 @@
 				6D0BF94E1EC30F2C00E68B4F /* UIScreenExtensions.swift in Sources */,
 				6DF6E7E91ECACFF2003F2D2F /* LLSnakePageControl.swift in Sources */,
 				6D0BF9511EC30F2C00E68B4F /* BaseViewController.swift in Sources */,
+				6D3A0CED1F15C12300434B61 /* HKPCommon.m in Sources */,
 				6D3A0B711F14830300434B61 /* Lottery.m in Sources */,
 				6DAAA16C1EE65E6A0017C427 /* WebViewXib.m in Sources */,
 				6D0BF9531EC30F2C00E68B4F /* TableViewBaseCell.swift in Sources */,
@@ -2033,25 +2248,33 @@
 				6DCEC0C31F1366CE00EAF4BE /* SSSetupTableViewCell.swift in Sources */,
 				6D3A0B6C1F14830300434B61 /* PcAndXJResultController.m in Sources */,
 				6D3A0B641F14830300434B61 /* LotteryHomeController.m in Sources */,
+				6D3A0CEA1F15C12300434B61 /* SDBrowserImageView.m in Sources */,
 				6DCEC0901F13665700EAF4BE /* SSLotteryDetaViewController.swift in Sources */,
 				6D3A0B831F14830300434B61 /* LotteryItemViewCell.m in Sources */,
 				6DAAA1831EE79E930017C427 /* ViewController.swift in Sources */,
+				6D3A0D6C1F15FFD400434B61 /* YHTimeDetaTableView.m in Sources */,
 				6D04C2C21EE13BB50026842E /* MyProfileModel.m in Sources */,
+				6D3A0D6E1F16162300434B61 /* SSSliderHKTimeViewController.swift in Sources */,
 				6DF35F091ED7D3FD00B87559 /* AppUserData.swift in Sources */,
 				6DCEC0651F13660B00EAF4BE /* SSHomeHeaderView.swift in Sources */,
 				6DCEC0E11F13671C00EAF4BE /* SSNaddZJTableViewCell.swift in Sources */,
 				6DCEC0521F1365E000EAF4BE /* SSBuyLottreyViewController.swift in Sources */,
+				6D3A0CE61F15C12300434B61 /* YHWorkExperienceModel.m in Sources */,
+				6D3A0CF11F15C12300434B61 /* CellForWorkGroupRepost.m in Sources */,
 				6DCEC08A1F13663700EAF4BE /* SSNewLotteryModel.swift in Sources */,
 				6DCEC0681F13660B00EAF4BE /* SSTjCollectionViewCell.swift in Sources */,
 				6D3A0B751F14830300434B61 /* LotteryKind.m in Sources */,
 				6DCEC0DD1F13671C00EAF4BE /* SSNaddHeadView.swift in Sources */,
+				6D3A0CE81F15C12300434B61 /* UITableView+HYBCacheHeight.m in Sources */,
 				6DCEC0911F13665700EAF4BE /* SSLotterypushTableViewController.swift in Sources */,
 				6DCEC04B1F1365CD00EAF4BE /* SSSeachViewController.swift in Sources */,
 				6D0BF94D1EC30F2C00E68B4F /* UIImageExtensions.swift in Sources */,
 				6DCEC0461F1365CD00EAF4BE /* SSHomeViewController.swift in Sources */,
 				6D0BF9551EC30F2C00E68B4F /* TimeIntervalTransform.swift in Sources */,
 				6D0BF94C1EC30F2C00E68B4F /* UIColorExtensions.swift in Sources */,
+				6D3A0CE41F15C12300434B61 /* YHUserInfo.m in Sources */,
 				6DF35EC61ED41C1000B87559 /* MainTBViewController.swift in Sources */,
+				6D3A0CE51F15C12300434B61 /* YHUserSetting.m in Sources */,
 				6D3A0B671F14830300434B61 /* LotteryResultController.m in Sources */,
 				6D04C3171EE13ED10026842E /* MASViewAttribute.m in Sources */,
 				6DCEC04A1F1365CD00EAF4BE /* SSSeachOpenViewController.swift in Sources */,
@@ -2060,34 +2283,46 @@
 				6DCEC0671F13660B00EAF4BE /* SSNumberView.swift in Sources */,
 				6DCEC0751F13662100EAF4BE /* SSBuyListFootView.swift in Sources */,
 				6D3A0B7B1F14830300434B61 /* LotteryGridViewCell.m in Sources */,
+				6D3A0CE91F15C12300434B61 /* UITableViewCell+HYBMasonryAutoCellHeight.m in Sources */,
 				6D3A0B701F14830300434B61 /* FXNoticeInfo.m in Sources */,
 				6D0248631EF8BF29005E5748 /* WJItemsControlView.m in Sources */,
 				6DCEC0471F1365CD00EAF4BE /* SSHomeWebViewController.swift in Sources */,
+				6D3A0CF61F15C12300434B61 /* YHWorkGroupButton.m in Sources */,
 				6DCEC0E81F13672C00EAF4BE /* SSNewsModel.swift in Sources */,
 				6D0BF9521EC30F2C00E68B4F /* TableViewController.swift in Sources */,
 				6D3A0B731F14830300434B61 /* LotteryDetail.m in Sources */,
+				6D3A0CE31F15C12300434B61 /* YHEducationExperienceModel.m in Sources */,
 				6DCEC0851F13663700EAF4BE /* SSBannarModel.swift in Sources */,
 				6D04C3151EE13ED10026842E /* MASConstraintMaker.m in Sources */,
+				6D3A0CF21F15C12300434B61 /* HKPBotView.m in Sources */,
 				6DCEC0491F1365CD00EAF4BE /* SSScanViewController.swift in Sources */,
 				6DF6E7E61ECACFF2003F2D2F /* LLCycleScrollViewCell.swift in Sources */,
+				6D3A0CEB1F15C12300434B61 /* SDPhotoBrowser.m in Sources */,
 				6D0BF9501EC30F2C00E68B4F /* NavViewController.swift in Sources */,
 				6D3A0B781F14830300434B61 /* FXLoopViewCell.m in Sources */,
 				6D08EAF21EE547B300AD9965 /* NumberTransform.swift in Sources */,
 				6DCEC0531F1365E000EAF4BE /* SSLotteryRuleViewController.swift in Sources */,
+				6D3A0CEF1F15C12300434B61 /* YHUtils.m in Sources */,
 				6D3A0B931F14830300434B61 /* NoticeViewCell.m in Sources */,
 				6D0BF93E1EC3022C00E68B4F /* URLRouter.swift in Sources */,
+				6D3A0CF71F15C12300434B61 /* YHWorkGroupPhotoContainer.m in Sources */,
 				6D04C3191EE13ED10026842E /* NSArray+MASAdditions.m in Sources */,
+				6D3A0D691F15FE0900434B61 /* JubaoTableViewController.m in Sources */,
 				6D04C31B1EE13ED10026842E /* View+MASAdditions.m in Sources */,
 				6D0BF94F1EC30F2C00E68B4F /* UIViewExtensions.swift in Sources */,
 				6DCEC07C1F13662100EAF4BE /* SSBuyViewTableViewCell.swift in Sources */,
 				6DCEC0661F13660B00EAF4BE /* SSHomeMeanViewCell.swift in Sources */,
 				6D1E164C1EDEB2A000A45B02 /* BaseView.swift in Sources */,
+				6D3A0CF51F15C12300434B61 /* YHSharePresentView.m in Sources */,
 				6DF35EC51ED41C1000B87559 /* AppDelegate.swift in Sources */,
+				6D3A0CF31F15C12300434B61 /* YHActionSheet.m in Sources */,
 				6D04C2C11EE13BB50026842E /* MyProfileViewController.m in Sources */,
 				6DCEC0631F13660B00EAF4BE /* SSHomeCollectionViewCell.swift in Sources */,
 				6DF6E7E81ECACFF2003F2D2F /* LLPillPageControl.swift in Sources */,
+				6D3A0CE71F15C12300434B61 /* YHWorkGroup.m in Sources */,
 				6D3A0B871F14830300434B61 /* LotteryResultCell.m in Sources */,
 				6DCEC0921F13665700EAF4BE /* SSLotteryViewController.swift in Sources */,
+				6D3A0CE21F15C12300434B61 /* YHUserInfoManager.m in Sources */,
 				6DAAA1691EE65E500017C427 /* WKWebViewController.m in Sources */,
 				6DF6E7E71ECACFF2003F2D2F /* LLFilledPageControl.swift in Sources */,
 				6D3A0B7F1F14830300434B61 /* LotteryHeaderView.m in Sources */,
@@ -2102,6 +2337,7 @@
 				6DCEC0C11F1366CE00EAF4BE /* SSMycenterCollectionViewCell.swift in Sources */,
 				6DF6E7EA1ECACFF2003F2D2F /* LLViewExtensions.swift in Sources */,
 				6DCEC0481F1365CD00EAF4BE /* SSNewHomeViewController.swift in Sources */,
+				6D3A0CF01F15C12300434B61 /* CellForWorkGroup.m in Sources */,
 				6DF6E7E51ECACFF2003F2D2F /* LLCycleScrollView.swift in Sources */,
 				6DCEC0761F13662100EAF4BE /* SSBuyListTableViewCell.swift in Sources */,
 				6DCEC0DF1F13671C00EAF4BE /* SSNaddTableViewCell.swift in Sources */,
@@ -2114,6 +2350,7 @@
 				6DCEC0B31F1366BC00EAF4BE /* SSMyViewController.swift in Sources */,
 				6D04C31C1EE13ED10026842E /* ViewController+MASAdditions.m in Sources */,
 				6D8C74421EFA80B100DD8815 /* UIImage+ZZYQRCodeImage.swift in Sources */,
+				6D3A0CF41F15C12300434B61 /* YHRefreshTableView.m in Sources */,
 				6D3A0B911F14830300434B61 /* LotteryZhuDanCell.m in Sources */,
 				6D3A0B8F1F14830300434B61 /* LotteryViewCell.m in Sources */,
 				6D04C31A1EE13ED10026842E /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
@@ -2124,6 +2361,7 @@
 				6DCEC0871F13663700EAF4BE /* SSHomeLotteryModel.swift in Sources */,
 				6DCEC0CD1F1366E700EAF4BE /* SSNewsDetaViewController.swift in Sources */,
 				6DCEC06A1F13660B00EAF4BE /* SSZstControl.swift in Sources */,
+				6D3A0CEC1F15C12300434B61 /* SDWaitingView.m in Sources */,
 				6D04C2C31EE13BB50026842E /* MyProfileTableViewCell.m in Sources */,
 				6D04C3161EE13ED10026842E /* MASLayoutConstraint.m in Sources */,
 				6DCEC0791F13662100EAF4BE /* SSBuyLotteryHeardCollectionReusableView.swift in Sources */,
@@ -2141,6 +2379,7 @@
 				6DCEC0E61F13672C00EAF4BE /* SSNaddModel.swift in Sources */,
 				6DCEC0B41F1366BC00EAF4BE /* SSRegisterViewController.swift in Sources */,
 				6DCEC0D21F1366F500EAF4BE /* SSNaddViewController.swift in Sources */,
+				6D3A0CEE1F15C12300434B61 /* NSDate+LYXCategory.m in Sources */,
 				6D3A0B6E1F14830300434B61 /* FXFootBallLive.m in Sources */,
 				6DCEC0A21F13667200EAF4BE /* SSLotteryNumberView.swift in Sources */,
 				6DCEC0881F13663700EAF4BE /* SSLotteryListModel.swift in Sources */,
@@ -2348,15 +2587,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ShenSu/ShenSu.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Hao Chen (MKU6PEAV7P)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hao Chen (MKU6PEAV7P)";
-				DEVELOPMENT_TEAM = MKU6PEAV7P;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Page Chen (2798NMTRJV)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Page Chen (2798NMTRJV)";
+				DEVELOPMENT_TEAM = 2798NMTRJV;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ShenSu/Frameworks",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
+				GCC_PREFIX_HEADER = /Users/shensu/Desktop/ShenSu/ShenSu/Class/OC/Community/HKPTimeLine.pch;
 				INFOPLIST_FILE = ShenSu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -2365,10 +2605,11 @@
 					"$(PROJECT_DIR)/ShenSu/Class/OC/UMessage_Sdk_1.5.0a",
 					"$(PROJECT_DIR)/ShenSu/Class/OC/Jpush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wcpcpcp.cp;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PK10CP.cp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "22b08b0e-ab1d-402d-ad6e-e2d5e20a126f";
-				PROVISIONING_PROFILE_SPECIFIER = 500wcpcpcp;
+				PROVISIONING_PROFILE = "8662f018-66e4-4793-a85c-646ddd43a981";
+				PROVISIONING_PROFILE_SPECIFIER = PK10CP;
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shensu/Desktop/ShenSu/ShenSu/Class/OC/Shensu-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Shensu-swift.h";
 				SWIFT_VERSION = 3.0;
@@ -2381,15 +2622,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ShenSu/ShenSu.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Hao Chen (MKU6PEAV7P)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hao Chen (MKU6PEAV7P)";
-				DEVELOPMENT_TEAM = MKU6PEAV7P;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Page Chen (2798NMTRJV)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Page Chen (2798NMTRJV)";
+				DEVELOPMENT_TEAM = 2798NMTRJV;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ShenSu/Frameworks",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
+				GCC_PREFIX_HEADER = /Users/shensu/Desktop/ShenSu/ShenSu/Class/OC/Community/HKPTimeLine.pch;
 				INFOPLIST_FILE = ShenSu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -2398,10 +2640,11 @@
 					"$(PROJECT_DIR)/ShenSu/Class/OC/UMessage_Sdk_1.5.0a",
 					"$(PROJECT_DIR)/ShenSu/Class/OC/Jpush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wcpcpcp.cp;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PK10CP.cp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "22b08b0e-ab1d-402d-ad6e-e2d5e20a126f";
-				PROVISIONING_PROFILE_SPECIFIER = 500wcpcpcp;
+				PROVISIONING_PROFILE = "8662f018-66e4-4793-a85c-646ddd43a981";
+				PROVISIONING_PROFILE_SPECIFIER = PK10CP;
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shensu/Desktop/ShenSu/ShenSu/Class/OC/Shensu-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Shensu-swift.h";
 				SWIFT_VERSION = 3.0;

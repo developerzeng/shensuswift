@@ -40,8 +40,8 @@ class SSSeachViewController: BaseViewController {
             self.hideLoadingView()
             if status == .Success {
                 if let jsondata = data {
-                let json = jsondata as? JSON
-                    if let dic = json?["result"].arrayObject {
+                let json =   JSON(jsondata)
+                    if let dic = json["result"].arrayObject {
                      AppUserData.default.lotteryClass = dic as? Array<Dictionary<String,String>>
                      self.dataArray = AppUserData.default.lotteryClass!
                     }

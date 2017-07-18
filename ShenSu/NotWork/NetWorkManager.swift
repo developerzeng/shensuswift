@@ -189,7 +189,7 @@ public class NetWorkManager: NSObject {
 					if (json.arrayObject != nil) {
 						completionHandler?(.Success, json.arrayObject);
 					} else {
-						completionHandler?(.Success, json);
+						completionHandler?(.Success, json.dictionaryObject);
 					}
 
 				}

@@ -1,17 +1,18 @@
 {
     
-    data= ({
+    data= (
+           {
            is_title_highlight= "0";
-           lot_code= "701";
-           lot_name= "竞彩足球";
-           lot_pic= "07";
+           lot_code= "152";
+           lot_name= "山东11选5";
+           lot_pic= "08";
            lot_tag= "1001000000";
-           lot_title= "倍投收益更高";
-           lot_url= "http://5.9188.com/#type=url&p=list/jczq.html";
+           lot_title= "10分钟一期";
+           lot_url= "http://5.9188.com/#type=url&p=list/11ydj.html";
            }, {
            is_title_highlight= "0";
            lot_code= "153";
-           lot_name= "新11选5";
+           lot_name= "江西11选5";
            lot_pic= "05";
            lot_tag= "1001000000";
            lot_title= "中540送100";
@@ -26,12 +27,12 @@
            lot_url= "http://5.9188.com/#type=url&p=list/gd11x5.html";
            }, {
            is_title_highlight= "0";
-           lot_code= "152";
-           lot_name= "老11选5";
-           lot_pic= "08";
+           lot_code= "701";
+           lot_name= "竞彩足球";
+           lot_pic= "07";
            lot_tag= "1001000000";
-           lot_title= "10分钟一期";
-           lot_url= "http://5.9188.com/#type=url&p=list/11ydj.html";
+           lot_title= "倍投收益更高";
+           lot_url= "http://5.9188.com/#type=url&p=list/jczq.html";
            }, {
            is_title_highlight= "0";
            lot_code= "210";

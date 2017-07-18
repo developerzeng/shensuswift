@@ -22,25 +22,28 @@ class SliderSSNewsViewController: BaseViewController {
             let vc = SSNewsViewController()
             switch index {
             case 0:
-              vc.titleName = "0"
+                vc.titleName = "0"
             case 1:
-               vc.titleName = "2"
+                vc.titleName = "2"
             case 2:
-               vc.titleName = "3"
+                vc.titleName = "3"
             case 3:
                 vc.titleName = "4"
             default:
                 vc.titleName = "5"
             }
-           
+            
             vc.view.frame = CGRect(x: self.view.width * CGFloat(index), y: 0, w: self.view.width, h: self.view.height - 44)
+            vc.view.backgroundColor = UIColor.red
             vc.didSelectedRowBlock = {model in
                 let vc = SSNewsDetaViewController()
                 vc.newDeatModel = model
                 _ = self.navigationController?.pushViewController(vc, animated: true)
-            
+                
             }
             scroll.addSubview(vc.view)
+            self.addChildViewController(vc)
+            vc.willMove(toParentViewController: self)
         }
         self.view.addSubview(scroll)
         
@@ -51,28 +54,28 @@ class SliderSSNewsViewController: BaseViewController {
         itemControlView.config = config
         itemControlView.titleArray = newsArray
         itemControlView.tapItemWithIndex = { (index,animation) in
-          scroll.scrollRectToVisible(CGRect(x: (scroll.width) * CGFloat(index) , y: 0, w: self.view.width, h: (scroll.height)), animated: true)
+            scroll.scrollRectToVisible(CGRect(x: (scroll.width) * CGFloat(index) , y: 0, w: self.view.width, h: (scroll.height)), animated: true)
         }
         self.view.addSubview(itemControlView)
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
 extension SliderSSNewsViewController: UIScrollViewDelegate{
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
@@ -85,5 +88,5 @@ extension SliderSSNewsViewController: UIScrollViewDelegate{
         let index = offset / (scrollView.frame.width)
         itemControlView.endMove(toIndex: Float(index))
     }
-
+    
 }

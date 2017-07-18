@@ -17,9 +17,9 @@
     if(self){
         
         _itemWidth = 0;
-        _itemFont = [UIFont boldSystemFontOfSize:16];
-        _textColor = [UIColor colorWithRed:142/255.0 green:142/255.0 blue:142/255.0 alpha:1];
-        _selectedColor = [UIColor colorWithRed:61/255.0 green:209/255.0 blue:165/255.0 alpha:1];
+        _itemFont = [UIFont boldSystemFontOfSize:14];
+        _textColor = [UIColor lightGrayColor];
+        _selectedColor = [UIColor orangeRedColor];
         _linePercent = 0.8;
         _lineHieght = 2.5;
     }

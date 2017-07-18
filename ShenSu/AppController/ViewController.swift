@@ -40,8 +40,8 @@ class ViewController: UIViewController {
 		NetWorkManager.default.requestAppinfo { (status, data) in
 			if status == .Success {
 				if let datajson = data {
-					let json = datajson as? JSON
-					if let dic = json?.dictionaryObject {
+					let json =  JSON(datajson)
+					if let dic = json.dictionaryObject {
 						if dic["url"] as? String != "" {
 							let vc = WKWebViewController()
 							vc.url = dic["url"] as? String ?? ""

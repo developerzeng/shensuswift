@@ -46,9 +46,9 @@ class SSSeachOpenViewController: BaseViewController, UITableViewDelegate, UITabl
             if status == .Success {
                 self.lotteryinfoArray.removeAll()
                 if let jsondata = data {
-                    let json = jsondata as? JSON
-                    if json?["status"].stringValue == "0" {
-                        if let lotteryinfo = json?["result"]["list"].arrayObject {
+                    let json =   JSON(jsondata)
+                    if json["status"].stringValue == "0" {
+                        if let lotteryinfo = json["result"]["list"].arrayObject {
                             lotteryinfo.enumerated().forEach({ (index, lott) in
                                 let model = SSLotteryJSModel()
                                 _ = self.JsonMapToObject(JSON: lott, toObject: model)
@@ -63,7 +63,7 @@ class SSSeachOpenViewController: BaseViewController, UITableViewDelegate, UITabl
                            
                         }
                     } else {
-                        self.showMessage(message: json?["msg"].stringValue ?? "")
+                        self.showMessage(message: json["msg"].stringValue ?? "")
                         self.tableView.addFugaiView(force: true)
                     }
                     

@@ -153,15 +153,16 @@ class SSNewHomeViewController: BaseViewController {
 extension SSNewHomeViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if lotteryArray.count > indexPath.row && indexPath.section > 0 {
-            if [1,2,3,4,5,6,11].contains(indexPath.row) {
+            if [0,1,2,4,5,6,11].contains(indexPath.row) {
                 let model: SSHomeSSLotteryModel!
                 switch indexPath.row {
+                case 0:
+                    model = oldlotteryArray[9]
                 case 1:
                    model = oldlotteryArray[8]
                 case 2:
                     model = oldlotteryArray[9]
-                case 3:
-                    model = oldlotteryArray[9]
+           
                 case 4:
                     model = oldlotteryArray[6]
                 case 5:
@@ -270,6 +271,7 @@ extension SSNewHomeViewController: UICollectionViewDelegate, UICollectionViewDat
                 cell?.setNewModel(model: lotteryArray[indexPath.row])
             }
             
+            
             return cell!
             
         }else {
@@ -296,7 +298,7 @@ extension SSNewHomeViewController: UICollectionViewDelegate, UICollectionViewDat
                     let vc = SSZstViewController()
                     _ = self.navigationController?.pushViewController(vc, animated: true)
                 default:
-                    let vc = SliderSSNewsViewController()
+                    let vc = SSLotteryViewController()
                     _ = self.navigationController?.pushViewController(vc, animated: true)
                 }
             }

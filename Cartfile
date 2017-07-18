@@ -7,4 +7,5 @@ github "ViccAlexander/Chameleon"
 github "malcommac/SwiftDate"
 github "Ramotion/animated-tab-bar"
 github "jdg/MBProgressHUD"
+github "rs/SDWebImage"
 

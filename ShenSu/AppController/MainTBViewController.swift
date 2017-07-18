@@ -47,7 +47,7 @@ class MainViewController: UITabBarController, UITabBarControllerDelegate {
 			case 0:
 				vc = SSNewHomeViewController()
 			case 1:
-				vc = SSLotteryViewController()
+				vc = SSSliderHKTimeViewController()
 			case 2:
 				vc = SSNaddViewController()
 			case 3:
@@ -74,8 +74,8 @@ class MainViewController: UITabBarController, UITabBarControllerDelegate {
 	}
 
 	func initData() {
-		let model1 = MainViewModel(title: "首页", selectImage: UIImage(named: "sehome"), defaultImage: UIImage(named: "homei"))
-		let model2 = MainViewModel(title: "彩票", selectImage: UIImage(named: "selottery"), defaultImage: UIImage(named: "lottery"))
+		let model1 = MainViewModel(title: "大厅", selectImage: UIImage(named: "sehome"), defaultImage: UIImage(named: "homei"))
+		let model2 = MainViewModel(title: "社区", selectImage: UIImage(named: "selottery"), defaultImage: UIImage(named: "lottery"))
 		let model3 = MainViewModel(title: "彩票资讯", selectImage: UIImage(named: "sezixun"), defaultImage: UIImage(named: "zixun"))
 		let model4 = MainViewModel(title: "我的", selectImage: UIImage(named: "semy"), defaultImage: UIImage(named: "my"))
 		self.models.append(contentsOf: [model1,  model2 ,  model3, model4])

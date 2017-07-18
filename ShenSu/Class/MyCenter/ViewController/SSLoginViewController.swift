@@ -58,7 +58,7 @@ class SSLoginViewController: BaseViewController {
 			self.dismissViewController()
 		}
 		self.rightButtonClicked = { btn in
-			let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "SSRegisterViewController")
+			let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "RegisterViewController")
 			_ = self.navigationController?.pushViewController(vc, animated: true)
 		}
 		self.setNavBarWithColor(naviColor: UIColor.white, force: false)

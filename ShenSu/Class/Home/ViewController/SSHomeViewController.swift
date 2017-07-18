@@ -22,11 +22,9 @@ class SSHomeViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //		self.automaticallyAdjustsScrollViewInsets = false
-        
+        getData()
         addcollectionView()
         getLotteryData()
-        
-      
         
     }
     
@@ -77,9 +75,7 @@ class SSHomeViewController: BaseViewController {
             Edges(UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0))
         ]
         collectionView.addRefreshingHeaderView {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
-                self.collectionView.endRefreshing()
-            })
+           self.getData()
         }
         
     }
@@ -94,6 +90,39 @@ class SSHomeViewController: BaseViewController {
         })
         self.collectionView.safeReload()
         
+    }
+    func getData(){
+        NetWorkManager.default.rawRequestWithUrl(URLString: "http://mycp.iplay78.com/trade-web/web/client/tips?", method: .post, parameters: [
+            "lot_list": [
+                "channel_cd": "Apple",
+                "app_cd": "com.zscp.lot16",
+                "access_token": ""
+            ],
+            "c_head": [
+                "client_id": "BY003000000000000002",
+                "client_os": "IOS"
+            ]
+        ]) { (status, data) in
+        
+    }
+        NetWorkManager.default.rawRequestWithUrl(URLString: "http://mycp.iplay78.com/trade-web/web/client/ads?", method: .post, parameters: [
+            "lot_list": [
+                "channel_cd": "Apple",
+                "app_cd": "com.zscp.lot16",
+                "access_token": ""
+            ],
+            "c_head": [
+                "client_id": "BY003000000000000002",
+                "client_os": "IOS"
+            ]
+        ]) { (status, data) in
+            
+            
+        }
+        
+       DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { 
+         self.collectionView.endRefreshing()
+       }
     }
     func setBannarData() {
         
