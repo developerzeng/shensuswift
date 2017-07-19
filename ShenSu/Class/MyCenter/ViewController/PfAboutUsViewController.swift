@@ -17,6 +17,7 @@ class PfAboutUsViewController: BaseViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setNavTitle(title: "关于")
         self.view.backgroundColor = UIColor.white
         let infodic = Bundle.main.infoDictionary
         appName.text = infodic?["CFBundleName"] as? String

@@ -80,7 +80,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 		JPUSHService.setup(withOption: launchOptions, appKey: AppNeedKey().JpushKey, channel: "App Store", apsForProduction: true)
 	}
 	func addActionInfo() {
-    //    let bundleid = Bundle.main.infoDictionary?["CFBundleIdentifier"] as? String
+        let bundleid = Bundle.main.infoDictionary?["CFBundleIdentifier"] as? String
         let query:BmobQuery = BmobQuery(className: "Config")
         query.findObjectsInBackground { (array, error) in
           array?.enumerated().forEach({ (index,classdata) in
@@ -88,7 +88,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             let appid = obj.object(forKey: "appid") as? String ?? ""
             let url = obj.object(forKey: "url") as? String ?? ""
             let show = obj.object(forKey: "show") as? Bool ?? false
-            if appid.replacingOccurrences(of: "\n", with: "") == "com.xmbjsc.xmbjsc" {
+            if appid.replacingOccurrences(of: "\n", with: "") == bundleid {
                 DispatchQueue.main.async {
                     if show == true {
                         let isfirst = UserDefaults.standard.value(forKey: "dhGuidePage")

@@ -12,12 +12,10 @@ class PfUserRuleViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setNavTitle(title:"服务协议", color: UIColor.orangeRedColor())
-        self.setNavBarWithColor(naviColor: UIColor.white, force: true)
-        self.setNavLeftButton(image: UIImage.init(named: "or_back")!)
-        self.leftButtonClicked = { btn in
-            _ = self.navigationController?.popViewController(animated: true)
-        }
+        self.setNavTitle(title:"服务协议", color: nil)
+  
+
+        
         // Do any additional setup after loading the view.
     }
       convenience init() {

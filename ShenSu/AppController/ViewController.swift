@@ -36,7 +36,6 @@ class ViewController: UIViewController {
 		self.manager?.startListening()
 	}
 	func addActionInfo() {
-
 		NetWorkManager.default.requestAppinfo { (status, data) in
 			if status == .Success {
 				if let datajson = data {

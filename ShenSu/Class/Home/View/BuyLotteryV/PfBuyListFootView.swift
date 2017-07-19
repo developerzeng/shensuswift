@@ -11,6 +11,7 @@ import EasyPeasy
 class PfBuyListFootView: UIView {
 	var ruleBtn: UIButton!
 	var ruleLable: UILabel!
+    var ruleLableBlock: (()->())?
 	override init(frame: CGRect) {
 		super.init(frame: frame)
 		ruleBtn = UIButton(type: .custom)
@@ -18,8 +19,11 @@ class PfBuyListFootView: UIView {
 		self.addSubview(ruleBtn)
 
 		ruleLable = UILabel()
-		ruleLable.text = "我已阅读并同意《用户服务协议》"
+		ruleLable.text = "我已阅读并同意《PC蛋蛋用户服务协议》"
 		ruleLable.font = UIFont.systemFont(ofSize: 12)
+        ruleLable.isUserInteractionEnabled = true
+        let tap = UITapGestureRecognizer(target: self, action: #selector(rulelableClick))
+        ruleLable.addGestureRecognizer(tap)
 		self.addSubview(ruleLable)
 
 		ruleBtn <- [
@@ -33,7 +37,9 @@ class PfBuyListFootView: UIView {
 		]
 
 	}
-
+    func rulelableClick(){
+    self.ruleLableBlock?()
+    }
 	required init?(coder aDecoder: NSCoder) {
 		fatalError("init(coder:) has not been implemented")
 	}

@@ -25,6 +25,11 @@ class PfBuyListViewController: BaseViewController {
 		tableView.backgroundColor = UIColor.backColor()
 		self.view.addSubview(tableView)
 		let footer = PfBuyListFootView(frame: CGRect(x: 0, y: 0, w: self.view.width, h: 30))
+        footer.ruleLableBlock = {
+            let vc = PfUserRuleViewController()
+            _ = self.navigationController?.pushViewController(vc, animated: true)
+        
+        }
 		tableView.tableFooterView = footer
 		addViewFoot()
 		// Do any additional setup after loading the view.
