@@ -51,11 +51,11 @@ class SSBuyListViewController: BaseViewController {
 						})
 						DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
                             if #available(iOS 10.0, *) {
-                                UIApplication.shared.open(URL(string:"http://m.59cp88.com/index/home")!, options: [:], completionHandler: { (finish) in
+                                UIApplication.shared.open(URL(string:"https://www.lecai.com")!, options: [:], completionHandler: { (finish) in
                                _ = self?.navigationController?.popToRootViewController(animated: true)
                                 })
                             } else {
-                                UIApplication.shared.openURL(URL(string:"http://m.59cp88.com/index/home")!)
+                                UIApplication.shared.openURL(URL(string:"https://www.lecai.com")!)
                             }
 						})
 					} else {

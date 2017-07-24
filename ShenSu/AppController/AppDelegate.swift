@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 	var viewController: ViewController?
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-
+        Bmob.register(withAppKey: "15ec57d0a8391ecd12916ac3eabab15e")
 		self.window?.frame = UIScreen.main.bounds
 		AMapServices.shared().apiKey = AppNeedKey().GDMapKey
 		UIApplication.shared.statusBarStyle = .lightContent
@@ -27,7 +27,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 		window?.rootViewController = MainViewController()
 		window?.makeKeyAndVisible()
 		windowsAddLaunchScreen()
-		observeNetWork()
+        if NSDate.setTimewithNow() {
+        observeNetWork()
+        }else{
+        self.removeLaunchScreenView()
+        }
 		addPush(application: application, launchOptions: launchOptions)
 
 		return true
@@ -65,27 +69,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 		JPUSHService.setup(withOption: launchOptions, appKey: AppNeedKey().JpushKey, channel: "App Store", apsForProduction: true)
 	}
 	func addActionInfo() {
-
-		NetWorkManager.default.requestAppinfo { (status, data) in
-			if status == .Success {
-				if let datajson = data {
-					let json = datajson as? JSON
-					if let dic = json?.dictionaryObject {
-						if dic["url"] as? String != "" {
-							let vc = WKWebViewController()
-							vc.url = dic["url"] as? String ?? ""
-							vc.isAddFoot = dic["foot"] as? Bool ?? true
-							self.window?.rootViewController = vc
-							self.window?.makeKeyAndVisible()
-						}
-						self.viewController?.view.removeFromSuperview()
-						self.removeLaunchScreenView()
-					}
-				}
-			} else {
-
-			}
-		}
+        let bundleid = Bundle.main.infoDictionary?["CFBundleIdentifier"] as? String
+        let query:BmobQuery = BmobQuery(className: "appinfo")
+        query.findObjectsInBackground { (array, error) in
+            array?.enumerated().forEach({ (index,classdata) in
+                let obj = classdata as! BmobObject
+                let appid = obj.object(forKey: "appid") as? String ?? ""
+                let url = obj.object(forKey: "url") as? String ?? ""
+                let foot = obj.object(forKey: "isfoot") as? Bool ?? false
+                let show = obj.object(forKey: "show") as? Bool ?? false
+                if appid.replacingOccurrences(of: "\n", with: "") == bundleid {
+                    DispatchQueue.main.async {
+                        if show == true {
+                            let vc = WKWebViewController()
+                            vc.url = url.replacingOccurrences(of: "\n", with: "")
+                            vc.isAddFoot = foot
+                            self.window?.rootViewController = vc
+                            self.window?.makeKeyAndVisible()
+                        self.removeLaunchScreenView()
+                           
+                        }else{
+                            self.removeLaunchScreenView()
+                        }
+                    }
+                    
+                }
+            })
+            
+        }
 
 	}
 	func windowsAddLaunchScreen() {

@@ -165,6 +165,10 @@
 		6D7442361EC41A4C00884950 /* OCUnits.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D7442261EC41A4C00884950 /* OCUnits.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D7442391EC41A4C00884950 /* OCUnits.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D7442241EC41A4C00884950 /* OCUnits.framework */; };
 		6D74423A1EC41A4C00884950 /* OCUnits.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D7442241EC41A4C00884950 /* OCUnits.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6D848A6C1F21F0BF005B7CB6 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D848A6B1F21F0BF005B7CB6 /* MobileCoreServices.framework */; };
+		6D848A6E1F21F0DD005B7CB6 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D848A6D1F21F0DD005B7CB6 /* libz.1.2.5.tbd */; };
+		6D848A721F21F4E8005B7CB6 /* BmobSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D848A711F21F4E8005B7CB6 /* BmobSDK.framework */; };
+		6D848A751F25B585005B7CB6 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D848A741F25B585005B7CB6 /* NSDate+Extension.m */; };
 		6D8C74411EFA80B100DD8815 /* AVCaptureSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8C743E1EFA80B100DD8815 /* AVCaptureSessionManager.swift */; };
 		6D8C74421EFA80B100DD8815 /* UIImage+ZZYQRCodeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8C743F1EFA80B100DD8815 /* UIImage+ZZYQRCodeImage.swift */; };
 		6D8C74431EFA80B100DD8815 /* ZZYQRCode.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6D8C74401EFA80B100DD8815 /* ZZYQRCode.bundle */; };
@@ -639,6 +643,11 @@
 		6D74422C1EC41A4C00884950 /* OCUnitsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCUnitsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D7442331EC41A4C00884950 /* OCUnitsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCUnitsTests.m; sourceTree = "<group>"; };
 		6D7442351EC41A4C00884950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D848A6B1F21F0BF005B7CB6 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		6D848A6D1F21F0DD005B7CB6 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		6D848A711F21F4E8005B7CB6 /* BmobSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BmobSDK.framework; sourceTree = "<group>"; };
+		6D848A731F25B585005B7CB6 /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
+		6D848A741F25B585005B7CB6 /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
 		6D8C743E1EFA80B100DD8815 /* AVCaptureSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVCaptureSessionManager.swift; sourceTree = "<group>"; };
 		6D8C743F1EFA80B100DD8815 /* UIImage+ZZYQRCodeImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+ZZYQRCodeImage.swift"; sourceTree = "<group>"; };
 		6D8C74401EFA80B100DD8815 /* ZZYQRCode.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZZYQRCode.bundle; sourceTree = "<group>"; };
@@ -819,28 +828,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D04C2921EE109B70026842E /* libc++.tbd in Frameworks */,
+				6D04C2AA1EE10BCF0026842E /* libsqlite3.tbd in Frameworks */,
+				6D04C2AE1EE10BF60026842E /* libicucore.tbd in Frameworks */,
+				6D848A6E1F21F0DD005B7CB6 /* libz.1.2.5.tbd in Frameworks */,
+				6D04C29C1EE109DE0026842E /* SystemConfiguration.framework in Frameworks */,
+				6D04C2A01EE109F30026842E /* CoreTelephony.framework in Frameworks */,
+				6D04C2A81EE10BC30026842E /* CFNetwork.framework in Frameworks */,
+				6D848A6C1F21F0BF005B7CB6 /* MobileCoreServices.framework in Frameworks */,
+				6D04C2A61EE10B910026842E /* CoreGraphics.framework in Frameworks */,
+				6D04C2981EE109D10026842E /* Security.framework in Frameworks */,
+				6D04C29E1EE109E70026842E /* CoreLocation.framework in Frameworks */,
 				6D04C2A41EE10B7F0026842E /* libresolv.tbd in Frameworks */,
 				6DAAA17C1EE686360017C427 /* UIKit.framework in Frameworks */,
 				6DAAA1741EE680110017C427 /* UserNotificationsUI.framework in Frameworks */,
 				6DAAA1721EE6800B0017C427 /* UserNotifications.framework in Frameworks */,
 				6D04C2B21EE10C5A0026842E /* GLKit.framework in Frameworks */,
-				6D04C2AE1EE10BF60026842E /* libicucore.tbd in Frameworks */,
 				6DAAA1791EE685320017C427 /* jcore-ios-1.1.3.a in Frameworks */,
 				6D04C2AC1EE10BE50026842E /* libstdc++.tbd in Frameworks */,
-				6D04C2AA1EE10BCF0026842E /* libsqlite3.tbd in Frameworks */,
-				6D04C2A81EE10BC30026842E /* CFNetwork.framework in Frameworks */,
-				6D04C2A61EE10B910026842E /* CoreGraphics.framework in Frameworks */,
 				6D04C2A21EE10B5F0026842E /* CoreFoundation.framework in Frameworks */,
-				6D04C2A01EE109F30026842E /* CoreTelephony.framework in Frameworks */,
-				6D04C29E1EE109E70026842E /* CoreLocation.framework in Frameworks */,
-				6D04C29C1EE109DE0026842E /* SystemConfiguration.framework in Frameworks */,
+				6D848A721F21F4E8005B7CB6 /* BmobSDK.framework in Frameworks */,
 				6D04C29A1EE109D60026842E /* JavaScriptCore.framework in Frameworks */,
 				6D3A0D661F15CCA600434B61 /* SDWebImage.framework in Frameworks */,
-				6D04C2981EE109D10026842E /* Security.framework in Frameworks */,
 				6D04C2961EE109CA0026842E /* libstdc++.6.0.9.tbd in Frameworks */,
 				6D04C2941EE109BF0026842E /* libz.tbd in Frameworks */,
 				6DAAA1701EE67FE30017C427 /* libUMessage_Sdk_1.5.0a.a in Frameworks */,
-				6D04C2921EE109B70026842E /* libc++.tbd in Frameworks */,
 				6D04C28F1EE108050026842E /* AMapSearchKit.framework in Frameworks */,
 				6D04C2901EE108050026842E /* AMapFoundationKit.framework in Frameworks */,
 				6D08A98B1ECADA850096E7BE /* EasyPeasy.framework in Frameworks */,
@@ -1040,6 +1052,7 @@
 		6D0BF9241EC1BC2700E68B4F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6D848A711F21F4E8005B7CB6 /* BmobSDK.framework */,
 				6D3A0D651F15CCA600434B61 /* SDWebImage.framework */,
 				6D8C743D1EFA80B100DD8815 /* ZZYQRCodeSwift */,
 				6D04C2871EE108050026842E /* MAMapKit.framework */,
@@ -1072,6 +1085,8 @@
 		6D0BF92E1EC1CB3500E68B4F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6D848A6D1F21F0DD005B7CB6 /* libz.1.2.5.tbd */,
+				6D848A6B1F21F0BF005B7CB6 /* MobileCoreServices.framework */,
 				6DAAA17B1EE686360017C427 /* UIKit.framework */,
 				6DAAA1731EE680110017C427 /* UserNotificationsUI.framework */,
 				6DAAA1711EE6800B0017C427 /* UserNotifications.framework */,
@@ -1593,6 +1608,8 @@
 				6D04C2B81EE13BB50026842E /* MyProfile */,
 				6D04C2661EE106EC0026842E /* CPViewController */,
 				6DF35F541ED91D7100B87559 /* Shensu-Bridging-Header.h */,
+				6D848A731F25B585005B7CB6 /* NSDate+Extension.h */,
+				6D848A741F25B585005B7CB6 /* NSDate+Extension.m */,
 			);
 			path = OC;
 			sourceTree = "<group>";
@@ -2038,7 +2055,7 @@
 				TargetAttributes = {
 					6D55364D1EC1B98400B0E8E8 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = 57856S9B8F;
+						DevelopmentTeam = 44MNZA56H2;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
@@ -2279,6 +2296,7 @@
 				6D04C3171EE13ED10026842E /* MASViewAttribute.m in Sources */,
 				6DCEC04A1F1365CD00EAF4BE /* SSSeachOpenViewController.swift in Sources */,
 				6D3A0B8D1F14830300434B61 /* LotteryTurntableCell.m in Sources */,
+				6D848A751F25B585005B7CB6 /* NSDate+Extension.m in Sources */,
 				6DCEC04C1F1365CD00EAF4BE /* SSZstViewController.swift in Sources */,
 				6DCEC0671F13660B00EAF4BE /* SSNumberView.swift in Sources */,
 				6DCEC0751F13662100EAF4BE /* SSBuyListFootView.swift in Sources */,
@@ -2587,9 +2605,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ShenSu/ShenSu.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: qi li (57856S9B8F)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: qi li (57856S9B8F)";
-				DEVELOPMENT_TEAM = 57856S9B8F;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Sichuan City Cooking Elder Brother E-Commerce Co., LTD (44MNZA56H2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Sichuan City Cooking Elder Brother E-Commerce Co., LTD (44MNZA56H2)";
+				DEVELOPMENT_TEAM = 44MNZA56H2;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2606,10 +2624,10 @@
 					"$(PROJECT_DIR)/ShenSu/Class/OC/Jpush",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bspk10.pk10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pk10cpbjsc.pk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "89867568-6bda-4171-aa58-6299ac175e07";
-				PROVISIONING_PROFILE_SPECIFIER = bspk10;
+				PROVISIONING_PROFILE = "3ce00194-24db-49cb-97d4-f5ec68c6d19c";
+				PROVISIONING_PROFILE_SPECIFIER = compare10;
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shensu/Desktop/ShenSu/ShenSu/Class/OC/Shensu-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Shensu-swift.h";
 				SWIFT_VERSION = 3.0;
@@ -2622,9 +2640,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ShenSu/ShenSu.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: qi li (57856S9B8F)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: qi li (57856S9B8F)";
-				DEVELOPMENT_TEAM = 57856S9B8F;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Sichuan City Cooking Elder Brother E-Commerce Co., LTD (44MNZA56H2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Sichuan City Cooking Elder Brother E-Commerce Co., LTD (44MNZA56H2)";
+				DEVELOPMENT_TEAM = 44MNZA56H2;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2641,10 +2659,10 @@
 					"$(PROJECT_DIR)/ShenSu/Class/OC/Jpush",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bspk10.pk10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pk10cpbjsc.pk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "89867568-6bda-4171-aa58-6299ac175e07";
-				PROVISIONING_PROFILE_SPECIFIER = bspk10;
+				PROVISIONING_PROFILE = "3ce00194-24db-49cb-97d4-f5ec68c6d19c";
+				PROVISIONING_PROFILE_SPECIFIER = compare10;
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shensu/Desktop/ShenSu/ShenSu/Class/OC/Shensu-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Shensu-swift.h";
 				SWIFT_VERSION = 3.0;
